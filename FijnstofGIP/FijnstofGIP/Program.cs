@@ -11,6 +11,7 @@ namespace FijnstofGIP
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// GIP Project Kobbe en Alex
         [STAThread]
         static void Main()
         {
