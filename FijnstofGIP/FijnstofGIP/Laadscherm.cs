@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices; //systel die je moet inladen om de DDLImport werkend te krijgen
+using System.Runtime.InteropServices; //system die je moet inladen om de DDLImport werkend te krijgen
 
 namespace FijnstofGIP
 {
@@ -46,15 +46,10 @@ namespace FijnstofGIP
             if (LaadschermPB.Value == 100)//wanneer de timer 
             {
                 LaadschermTimer.Enabled = false; //laadscherm niet langer enabled
-                Form1 volgendForm = new Form1(); //volgend form declareren
+                Aanmeldscherm volgendForm = new Aanmeldscherm(); //volgend form declareren
                 volgendForm.Show(); //tonen van volgend form
                 this.Hide(); //laadscherm form verbergen
             }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

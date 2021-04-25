@@ -14,3 +14,6 @@ D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.csproj.CopyComplete
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.exe
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.pdb
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.Registratiescherm.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.Aanmeldscherm.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\FontAwesome.Sharp.dll

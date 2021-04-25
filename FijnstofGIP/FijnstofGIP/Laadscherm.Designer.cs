@@ -33,20 +33,20 @@ namespace FijnstofGIP
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Laadscherm));
             this.LaadschermPB = new CircularProgressBar.CircularProgressBar();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LaadschermTimer = new System.Windows.Forms.Timer(this.components);
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LaadschermPB
             // 
             this.LaadschermPB.AnimationFunction = ((WinFormAnimation.AnimationFunctions.Function)(resources.GetObject("LaadschermPB.AnimationFunction")));
             this.LaadschermPB.AnimationSpeed = 500;
-            this.LaadschermPB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
+            this.LaadschermPB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.LaadschermPB.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.LaadschermPB.Font = new System.Drawing.Font("Myanmar Text", 33.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LaadschermPB.ForeColor = System.Drawing.Color.Red;
-            this.LaadschermPB.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
+            this.LaadschermPB.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.LaadschermPB.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.LaadschermPB.InnerMargin = 2;
             this.LaadschermPB.InnerWidth = -1;
             this.LaadschermPB.Location = new System.Drawing.Point(47, 101);
@@ -55,7 +55,7 @@ namespace FijnstofGIP
             this.LaadschermPB.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(28)))), ((int)(((byte)(43)))));
             this.LaadschermPB.OuterMargin = -25;
             this.LaadschermPB.OuterWidth = 26;
-            this.LaadschermPB.ProgressColor = System.Drawing.Color.Red;
+            this.LaadschermPB.ProgressColor = System.Drawing.Color.DeepSkyBlue;
             this.LaadschermPB.ProgressWidth = 8;
             this.LaadschermPB.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
             this.LaadschermPB.Size = new System.Drawing.Size(150, 150);
@@ -75,30 +75,18 @@ namespace FijnstofGIP
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Location = new System.Drawing.Point(28, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 48);
             this.label1.TabIndex = 1;
             this.label1.Text = "Fijnstofmeter";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(74, 254);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 37);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Inladen...";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label3.Location = new System.Drawing.Point(20, 329);
             this.label3.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label3.Name = "label3";
@@ -112,14 +100,25 @@ namespace FijnstofGIP
             this.LaadschermTimer.Enabled = true;
             this.LaadschermTimer.Tick += new System.EventHandler(this.LaadschermTimer_Tick);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label4.Location = new System.Drawing.Point(69, 254);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 37);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Inladen...";
+            // 
             // Laadscherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(255, 378);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LaadschermPB);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
@@ -138,8 +137,8 @@ namespace FijnstofGIP
 
         private CircularProgressBar.CircularProgressBar LaadschermPB;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer LaadschermTimer;
+        private System.Windows.Forms.Label label4;
     }
 }
