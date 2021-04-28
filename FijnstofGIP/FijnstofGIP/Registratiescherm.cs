@@ -201,7 +201,7 @@ namespace FijnstofGIP
                     naar = txtEmail.Text;
                     van = "kalex.fijnstofmeter@gmail.com";
                     ww = "eY2d2Cwd2DKd3VG";
-                    bericht = "Beste " + txtVoornaam.Text + " " + txtFamilienaam.Text + "," +  "<br />" + "<br /> Dank u voor te registreren bij de fijnstofmeter van Kalex.<br /> Dit is zijn uw login gegevens: <br /> Gebruikersnaam: " + txtGebruikersnaam.Text + " en wachtwoord: " + txtWachtwoord.Text + "<br /> Als u ooit problemen heeft kan u ons altijd een mail sturen. <br /> <br /> Met vriendelijke groeten, <br />Kalex";
+                    bericht = "Beste " + txtVoornaam.Text + " " + txtFamilienaam.Text + "," +  "<br />" + "<br /> Dank u voor te registreren bij de fijnstofmeter van Kalex.<br /> Als u ooit problemen heeft kan u ons altijd een mail sturen. <br /> <br /> Met vriendelijke groeten, <br />Kalex";
                     onderwerp = "Welkom bij Kalex";
                     RegistratieBericht.To.Add(naar);
                     RegistratieBericht.From = new MailAddress(van);

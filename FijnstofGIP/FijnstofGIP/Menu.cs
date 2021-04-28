@@ -23,10 +23,10 @@ namespace FijnstofGIP
             //welkom tekst op gebruikersnaam
             lblwelkom.Text = "Welkom "+  InfoGebruiker.gebruikersnaam +", bij de fijnstofmeter van Kalex";
 
-            //gebruiker voornaam en naam
+            //gebruiker zijn voornaam en naam
             lblNaamGebruiker.Text = InfoGebruiker.voornaam + " " + InfoGebruiker.familienaam;
         }
-        #region Code voor de dropmenu's + openen van forms + formstijl
+        #region Code voor de dropmenu's + openen van forms
 
         private Form actieveForm = null;
         private void openChildForm(Form childForm)
@@ -93,20 +93,12 @@ namespace FijnstofGIP
         private void btnPM2_5_Click(object sender, EventArgs e)
         {
             openChildForm(new FormsMenu.FormDataPM2_5());
-            //code hier
-
-
-
             SluitDropMenuDesign();
         }
 
         private void btnPM10_Click(object sender, EventArgs e)
         {
             openChildForm(new FormsMenu.FormDataPM10());
-            //code hier
-
-
-
             SluitDropMenuDesign();
         }
 
@@ -118,29 +110,17 @@ namespace FijnstofGIP
         private void btnStatistischePM2_5_Click(object sender, EventArgs e)
         {
             openChildForm(new FormsMenu.FormDataStatsPM2_5());
-            //code hier
-
-
-
             SluitDropMenuDesign();
         }
 
         private void btnStatistischePM10_Click(object sender, EventArgs e)
         {
             openChildForm(new FormsMenu.FormDataStatsPM10());
-            //code hier
-
-
-
             SluitDropMenuDesign();
         }
         private void btnGebruikerSettings_Click(object sender, EventArgs e)
         {
             openChildForm(new FormsMenu.InstellingenGebuiker());
-            //code hier
-
-
-
             SluitDropMenuDesign();
         }
 
@@ -158,5 +138,31 @@ namespace FijnstofGIP
         }
         */
         #endregion
+
+
+        //knop voor uit te loggen
+        private void btnUitloggen_Click(object sender, EventArgs e)
+        {
+            DialogResult Uitloggen = MessageBox.Show("Ben je zeker dat je wilt uitloggen?", "Uitloggen", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (Uitloggen == DialogResult.Yes)
+            {
+                Aanmeldscherm volgendForm = new Aanmeldscherm(); //volgend form declareren
+                volgendForm.Show(); //tonen van volgend form
+                this.Hide(); //Menu form verbergen
+                MessageBox.Show("Succesvol uitgelogd", "Uitloggen", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (Uitloggen == DialogResult.No)
+            {
+                //er gebeurd dan niks
+            }
+            else //FOUT PROTECTIE: moest er iets random foutlopen en de waarde is niet ja of nee 0.0
+            {
+                MessageBox.Show("Er is iets foutgelopen terwijl je op de knop drukte!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
+
     }
 }

@@ -17,14 +17,14 @@ namespace FijnstofGIP
         {
             InitializeComponent();
         }
-
+        //code die naar het registratie scherm gaat wnr je nog geen account hebt
         private void lblGeenAccount_Click(object sender, EventArgs e)
         {
             Registratiescherm volgendForm = new Registratiescherm(); //volgend form declareren
             volgendForm.Show(); //tonen van volgend form
             this.Hide(); //Aanmeldscherm form verbergen
         }
-        #region kleuren van de panelen veranderen wanneer je op een bepaalde textblock klikt + hover over label - dit is zodat de gebruiker weet waar hij gaat typen
+        #region kleuren van de panelen veranderen wanneer je op een bepaalde textblock klikt + hover over label - dit is de gebruiker feedback geven waar hij typt en waar hij kan drukken
         private void txtGebruikersnaam_Click(object sender, EventArgs e)
         {
             pnlgebruikersnaam.BackColor = Color.DeepSkyBlue;
@@ -78,6 +78,7 @@ namespace FijnstofGIP
                 InfoGebruiker.gebruikersnaam = gebruiker.Substring(0, 1).ToUpper() + gebruiker.Substring(1);
                 //----------------------------------------
 
+                //als de de datareader kan lezen met andere woorden de login bestaat/is juist dan log je in
                 if (dr.Read() == true)
                 {
                     Menu volgendForm = new Menu(); //volgend form declareren
@@ -91,7 +92,7 @@ namespace FijnstofGIP
                     txtWachtwoord.Text = "";
                     txtGebruikersnaam.Focus();
                 }
-                
+                //--------------------------------------------------------------------------------------------
                 MijnVerbinding.Close();
             }
             catch

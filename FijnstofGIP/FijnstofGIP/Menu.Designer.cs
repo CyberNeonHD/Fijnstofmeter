@@ -47,6 +47,7 @@ namespace FijnstofGIP
             this.pnlMainForms = new System.Windows.Forms.Panel();
             this.lblwelkom = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnUitloggen = new FontAwesome.Sharp.IconPictureBox();
             this.pnlMenuLinks.SuspendLayout();
             this.pnlStatistischeDateDropMenu.SuspendLayout();
             this.pnlDataDropMenu.SuspendLayout();
@@ -57,12 +58,14 @@ namespace FijnstofGIP
             this.pnlMenuBovenkant.SuspendLayout();
             this.pnlMainForms.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUitloggen)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenuLinks
             // 
             this.pnlMenuLinks.AutoScroll = true;
             this.pnlMenuLinks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.pnlMenuLinks.Controls.Add(this.btnUitloggen);
             this.pnlMenuLinks.Controls.Add(this.pnlStatistischeDateDropMenu);
             this.pnlMenuLinks.Controls.Add(this.btnStatisticheData);
             this.pnlMenuLinks.Controls.Add(this.pnlDataDropMenu);
@@ -322,6 +325,23 @@ namespace FijnstofGIP
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // btnUitloggen
+            // 
+            this.btnUitloggen.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnUitloggen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnUitloggen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUitloggen.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnUitloggen.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.btnUitloggen.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnUitloggen.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnUitloggen.IconSize = 24;
+            this.btnUitloggen.Location = new System.Drawing.Point(12, 564);
+            this.btnUitloggen.Name = "btnUitloggen";
+            this.btnUitloggen.Size = new System.Drawing.Size(24, 24);
+            this.btnUitloggen.TabIndex = 13;
+            this.btnUitloggen.TabStop = false;
+            this.btnUitloggen.Click += new System.EventHandler(this.btnUitloggen_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,7 +355,7 @@ namespace FijnstofGIP
             this.MinimumSize = new System.Drawing.Size(966, 639);
             this.Name = "Menu";
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Particulated";
             this.TopMost = true;
             this.pnlMenuLinks.ResumeLayout(false);
@@ -350,6 +370,7 @@ namespace FijnstofGIP
             this.pnlMainForms.ResumeLayout(false);
             this.pnlMainForms.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUitloggen)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -374,5 +395,6 @@ namespace FijnstofGIP
         private System.Windows.Forms.Label lblNaamGebruiker;
         private System.Windows.Forms.Panel pnlMenuBovenkant;
         private FontAwesome.Sharp.IconPictureBox btnGebruikerSettings;
+        private FontAwesome.Sharp.IconPictureBox btnUitloggen;
     }
 }
