@@ -17,3 +17,12 @@ D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.Registratiescherm.resources
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.Aanmeldscherm.resources
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\FontAwesome.Sharp.dll
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.Menu.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormDataPM2_5.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormDataPM10.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormDataStatsPM10.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormDataStatsPM2_5.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.InstellingenGebuiker.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormAdresVeranderen.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormGebruiksersNaamVeranderen.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormWWVeranderen.resources

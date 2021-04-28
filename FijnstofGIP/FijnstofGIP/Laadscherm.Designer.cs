@@ -87,12 +87,12 @@ namespace FijnstofGIP
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label3.Location = new System.Drawing.Point(20, 329);
+            this.label3.Location = new System.Drawing.Point(45, 329);
             this.label3.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(214, 29);
+            this.label3.Size = new System.Drawing.Size(152, 29);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Gemaakt door Kobbe en Alex";
+            this.label3.Text = "Gemaakt door Kalex";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // LaadschermTimer

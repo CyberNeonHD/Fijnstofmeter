@@ -47,11 +47,6 @@ namespace FijnstofGIP
         }
         #endregion
 
-        private void txtGebruikersnaam_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtWachtwoord_TextChanged(object sender, EventArgs e)
         {
 
@@ -65,12 +60,27 @@ namespace FijnstofGIP
                 OleDbCommand cmd = new OleDbCommand();
                 MijnVerbinding.Open();
                 string login = "SELECT * FROM tblgebruikers WHERE gebruikersnaam= '" + txtGebruikersnaam.Text + "' and wachtwoord= '" + txtWachtwoord.Text + "'";
+                string naamGebruiker = "SELECT voornaam,familienaam FROM tblgebruikers WHERE gebruikersnaam= '" + txtGebruikersnaam.Text + "' and wachtwoord= '" + txtWachtwoord.Text + "'";
                 cmd = new OleDbCommand(login, MijnVerbinding);
                 OleDbDataReader dr = cmd.ExecuteReader();
 
+                //gegevens van gebruiker krijgen bij login
+                OleDbCommand cmdnaamGebruiker = new OleDbCommand();
+                cmdnaamGebruiker = new OleDbCommand(naamGebruiker, MijnVerbinding);
+                OleDbDataReader drnaamGebruiker = cmdnaamGebruiker.ExecuteReader();
+
+                while (drnaamGebruiker.Read())
+                {
+                    InfoGebruiker.voornaam = drnaamGebruiker.GetValue(0).ToString();
+                    InfoGebruiker.familienaam = drnaamGebruiker.GetValue(1).ToString();
+                }
+                string gebruiker = txtGebruikersnaam.Text;
+                InfoGebruiker.gebruikersnaam = gebruiker.Substring(0, 1).ToUpper() + gebruiker.Substring(1);
+                //----------------------------------------
+
                 if (dr.Read() == true)
                 {
-                    Form1 volgendForm = new Form1(); //volgend form declareren
+                    Menu volgendForm = new Menu(); //volgend form declareren
                     volgendForm.Show(); //tonen van volgend form
                     this.Hide(); //Aanmeldscherm form verbergen
                 }
@@ -81,6 +91,7 @@ namespace FijnstofGIP
                     txtWachtwoord.Text = "";
                     txtGebruikersnaam.Focus();
                 }
+                
                 MijnVerbinding.Close();
             }
             catch

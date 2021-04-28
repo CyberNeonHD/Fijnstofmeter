@@ -49,11 +49,11 @@ namespace FijnstofGIP
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(79, 42);
+            this.label1.Location = new System.Drawing.Point(61, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 37);
+            this.label1.Size = new System.Drawing.Size(129, 37);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Welkom";
+            this.label1.Text = "Aanmelden";
             // 
             // txtGebruikersnaam
             // 
@@ -68,7 +68,6 @@ namespace FijnstofGIP
             this.txtGebruikersnaam.Size = new System.Drawing.Size(216, 20);
             this.txtGebruikersnaam.TabIndex = 5;
             this.txtGebruikersnaam.Click += new System.EventHandler(this.txtGebruikersnaam_Click);
-            this.txtGebruikersnaam.TextChanged += new System.EventHandler(this.txtGebruikersnaam_TextChanged);
             // 
             // pnlgebruikersnaam
             // 
@@ -158,6 +157,7 @@ namespace FijnstofGIP
             // iconbtnLock
             // 
             this.iconbtnLock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.iconbtnLock.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconbtnLock.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.iconbtnLock.IconChar = FontAwesome.Sharp.IconChar.Lock;
             this.iconbtnLock.IconColor = System.Drawing.Color.DeepSkyBlue;
@@ -173,6 +173,7 @@ namespace FijnstofGIP
             // iconbtnOpenLock
             // 
             this.iconbtnOpenLock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.iconbtnOpenLock.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconbtnOpenLock.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.iconbtnOpenLock.IconChar = FontAwesome.Sharp.IconChar.LockOpen;
             this.iconbtnOpenLock.IconColor = System.Drawing.Color.DeepSkyBlue;
@@ -207,7 +208,7 @@ namespace FijnstofGIP
             this.MaximizeBox = false;
             this.Name = "Aanmeldscherm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Aanmeldscherm";
+            this.Text = "Aanmelden";
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnOpenLock)).EndInit();
             this.ResumeLayout(false);

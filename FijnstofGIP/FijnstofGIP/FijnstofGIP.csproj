@@ -67,11 +67,66 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsGebruikerInstellingen\FormAdresVeranderen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsGebruikerInstellingen\FormAdresVeranderen.Designer.cs">
+      <DependentUpon>FormAdresVeranderen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsGebruikerInstellingen\FormGebruiksersNaamVeranderen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsGebruikerInstellingen\FormGebruiksersNaamVeranderen.Designer.cs">
+      <DependentUpon>FormGebruiksersNaamVeranderen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsGebruikerInstellingen\FormWWVeranderen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsGebruikerInstellingen\FormWWVeranderen.Designer.cs">
+      <DependentUpon>FormWWVeranderen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormDataPM10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormDataPM10.Designer.cs">
+      <DependentUpon>FormDataPM10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormDataPM2_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormDataPM2_5.Designer.cs">
+      <DependentUpon>FormDataPM2_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormDataStatsPM10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormDataStatsPM10.Designer.cs">
+      <DependentUpon>FormDataStatsPM10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormDataStatsPM2_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormDataStatsPM2_5.Designer.cs">
+      <DependentUpon>FormDataStatsPM2_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\InstellingenGebuiker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\InstellingenGebuiker.Designer.cs">
+      <DependentUpon>InstellingenGebuiker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoGebruiker.cs" />
     <Compile Include="Laadscherm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Laadscherm.Designer.cs">
       <DependentUpon>Laadscherm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,8 +143,35 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsGebruikerInstellingen\FormAdresVeranderen.resx">
+      <DependentUpon>FormAdresVeranderen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsGebruikerInstellingen\FormGebruiksersNaamVeranderen.resx">
+      <DependentUpon>FormGebruiksersNaamVeranderen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsGebruikerInstellingen\FormWWVeranderen.resx">
+      <DependentUpon>FormWWVeranderen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormDataPM10.resx">
+      <DependentUpon>FormDataPM10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormDataPM2_5.resx">
+      <DependentUpon>FormDataPM2_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormDataStatsPM10.resx">
+      <DependentUpon>FormDataStatsPM10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormDataStatsPM2_5.resx">
+      <DependentUpon>FormDataStatsPM2_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\InstellingenGebuiker.resx">
+      <DependentUpon>InstellingenGebuiker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Laadscherm.resx">
       <DependentUpon>Laadscherm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,6 +181,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Registratiescherm.resx">
       <DependentUpon>Registratiescherm.cs</DependentUpon>
@@ -116,6 +199,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
