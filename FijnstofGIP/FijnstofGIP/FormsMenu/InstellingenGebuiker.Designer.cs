@@ -65,9 +65,9 @@ namespace FijnstofGIP.FormsMenu
             this.pnlGebruikerMenuLinks.Controls.Add(this.btnGebruikersnaamVeranderen);
             this.pnlGebruikerMenuLinks.Controls.Add(this.btnWWAanpassen);
             this.pnlGebruikerMenuLinks.Controls.Add(this.btnAdresVeranderen);
-            this.pnlGebruikerMenuLinks.Location = new System.Drawing.Point(-3, 64);
+            this.pnlGebruikerMenuLinks.Location = new System.Drawing.Point(-3, 122);
             this.pnlGebruikerMenuLinks.Name = "pnlGebruikerMenuLinks";
-            this.pnlGebruikerMenuLinks.Size = new System.Drawing.Size(267, 443);
+            this.pnlGebruikerMenuLinks.Size = new System.Drawing.Size(267, 385);
             this.pnlGebruikerMenuLinks.TabIndex = 0;
             // 
             // btnGebruikersnaamVeranderen

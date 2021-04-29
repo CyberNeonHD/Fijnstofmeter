@@ -48,7 +48,7 @@ namespace FijnstofGIP
                 LaadschermTimer.Enabled = false; //laadscherm niet langer enabled
                 Aanmeldscherm volgendForm = new Aanmeldscherm(); //volgend form declareren
                 volgendForm.Show(); //tonen van volgend form
-                this.Hide(); //laadscherm form verbergen
+                this.Close(); //laadscherm form sluiten
             }
         }
     }

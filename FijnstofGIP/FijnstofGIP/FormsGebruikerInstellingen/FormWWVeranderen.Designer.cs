@@ -35,14 +35,13 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // 
             // lbltitel
             // 
-            this.lbltitel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbltitel.AutoSize = true;
-            this.lbltitel.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitel.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lbltitel.Location = new System.Drawing.Point(234, 9);
+            this.lbltitel.Location = new System.Drawing.Point(231, 9);
             this.lbltitel.Name = "lbltitel";
             this.lbltitel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbltitel.Size = new System.Drawing.Size(185, 27);
+            this.lbltitel.Size = new System.Drawing.Size(237, 34);
             this.lbltitel.TabIndex = 2;
             this.lbltitel.Text = "Wachtwoord veranderen";
             this.lbltitel.TextAlign = System.Drawing.ContentAlignment.TopCenter;

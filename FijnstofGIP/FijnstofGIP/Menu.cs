@@ -18,15 +18,17 @@ namespace FijnstofGIP
         public Menu()
         {
             InitializeComponent();
+            tijd.Start();
             DropMenuDesign();
-
             //welkom tekst op gebruikersnaam
             lblwelkom.Text = "Welkom "+  InfoGebruiker.gebruikersnaam +", bij de fijnstofmeter van Kalex";
 
             //gebruiker zijn voornaam en naam
             lblNaamGebruiker.Text = InfoGebruiker.voornaam + " " + InfoGebruiker.familienaam;
+            
         }
-        #region Code voor de dropmenu's + openen van forms
+
+        #region Code voor de dropmenu + openen van alle forms/uitvoeren van knoppen
 
         private Form actieveForm = null;
         private void openChildForm(Form childForm)
@@ -49,7 +51,6 @@ namespace FijnstofGIP
         private void DropMenuDesign()
         {
             pnlDataDropMenu.Visible = false;
-            pnlStatistischeDateDropMenu.Visible = false;
         }
 
         private void SluitDropMenuDesign()
@@ -57,10 +58,6 @@ namespace FijnstofGIP
             if(pnlDataDropMenu.Visible ==true)
             {
                 pnlDataDropMenu.Visible = false;
-            }
-            if (pnlStatistischeDateDropMenu.Visible == true)
-            {
-                pnlStatistischeDateDropMenu.Visible = false;
             }
         }
 
@@ -89,33 +86,40 @@ namespace FijnstofGIP
         {
             ToonDropMenuDesign(pnlDataDropMenu);
         }
-
-        private void btnPM2_5_Click(object sender, EventArgs e)
+        private void btnDataBekijken_Click(object sender, EventArgs e)
         {
-            openChildForm(new FormsMenu.FormDataPM2_5());
+            openChildForm(new FormsMenu.FormDataBekijken());
             SluitDropMenuDesign();
         }
 
-        private void btnPM10_Click(object sender, EventArgs e)
+        private void btnDataAanpassen_Click(object sender, EventArgs e)
         {
-            openChildForm(new FormsMenu.FormDataPM10());
+            openChildForm(new FormsMenu.FormDataAanpassen());
             SluitDropMenuDesign();
         }
-
+        private void btnDataVerwijderen_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormsMenu.FormDataVerwijderen());
+            SluitDropMenuDesign();
+        }
+        private void btnDataZoeken_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormsMenu.FormDataZoeken());
+            SluitDropMenuDesign();
+        }
+        private void btnFijnstofmeterToevoegen_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormsMenu.FormFijnstofmeterToevoegen());
+            SluitDropMenuDesign();
+        }
         private void btnStatisticheData_Click(object sender, EventArgs e)
         {
-            ToonDropMenuDesign(pnlStatistischeDateDropMenu);
-        }
-
-        private void btnStatistischePM2_5_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormsMenu.FormDataStatsPM2_5());
+            openChildForm(new FormsMenu.FormStatisticheData());
             SluitDropMenuDesign();
         }
-
-        private void btnStatistischePM10_Click(object sender, EventArgs e)
+        private void btnKaartWeergeven_Click(object sender, EventArgs e)
         {
-            openChildForm(new FormsMenu.FormDataStatsPM10());
+            openChildForm(new FormsMenu.FormMapWeergeven());
             SluitDropMenuDesign();
         }
         private void btnGebruikerSettings_Click(object sender, EventArgs e)
@@ -139,8 +143,7 @@ namespace FijnstofGIP
         */
         #endregion
 
-
-        //knop voor uit te loggen
+        #region knop voor uit te loggen
         private void btnUitloggen_Click(object sender, EventArgs e)
         {
             DialogResult Uitloggen = MessageBox.Show("Ben je zeker dat je wilt uitloggen?", "Uitloggen", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -148,7 +151,7 @@ namespace FijnstofGIP
             {
                 Aanmeldscherm volgendForm = new Aanmeldscherm(); //volgend form declareren
                 volgendForm.Show(); //tonen van volgend form
-                this.Hide(); //Menu form verbergen
+                this.Close(); //Menu form verbergen
                 MessageBox.Show("Succesvol uitgelogd", "Uitloggen", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (Uitloggen == DialogResult.No)
@@ -160,9 +163,12 @@ namespace FijnstofGIP
                 MessageBox.Show("Er is iets foutgelopen terwijl je op de knop drukte!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        #endregion
 
-
-
-
+        //timer die de datum update
+        private void tijd_Tick(object sender, EventArgs e)
+        {
+            lblDatum.Text = DateTime.Now.ToString("dddd dd MMMM yyyy");
+        }
     }
 }

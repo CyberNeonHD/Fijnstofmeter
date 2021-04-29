@@ -36,12 +36,12 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // lbltitel
             // 
             this.lbltitel.AutoSize = true;
-            this.lbltitel.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitel.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lbltitel.Location = new System.Drawing.Point(241, 9);
+            this.lbltitel.Location = new System.Drawing.Point(210, 9);
             this.lbltitel.Name = "lbltitel";
             this.lbltitel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbltitel.Size = new System.Drawing.Size(210, 27);
+            this.lbltitel.Size = new System.Drawing.Size(269, 34);
             this.lbltitel.TabIndex = 4;
             this.lbltitel.Text = "Gebruikersnaam veranderen";
             this.lbltitel.TextAlign = System.Drawing.ContentAlignment.TopCenter;

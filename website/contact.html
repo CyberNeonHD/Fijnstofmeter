@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <script defer src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+
+    <link rel="stylesheet" href="style.css" class="css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- NAVIGATIE: moet in elke pagina staan -->
+    <nav>
+      <!-- de meeste webservers zijn geconfigureerd om index.html automatisch als startbestand te gebruiken -->
+      <a href="./index.html">HOME</a>
+      <a href="./gallery.html">GALLERY</a>
+      <a href="./services.html">SERVICES</a>
+      <a href="./contact.html">CONTACT</a>
+    </nav>
+
+    <!-- CONTACT -->
+    <section>
+      <p>Je kan ons bereiken door een e-mail te versturen naar test@hotmail.com of door onderstaand contactformulier in te vullen.</p>
+      <form method="post" action="mailto:test@hotmail.com?subject=Contactformulier">
+        <input id="naam" type="text" placeholder="Naam" required />
+        <input id="email" type="email" placeholder="E-mailadres" required />
+        <textarea id="vraag" rows="4" cols="50" placeholder="Vraag of opmerking" required></textarea>
+        <input id="submit" type="submit" value="Verstuur" />
+      </form>
+    </section>
+
+    <section class="socialmedia">
+      <a href="https://www.linkedin.com/" target="_blank"><i class="icon fab fa-linkedin fa-4x"></i></a>
+      <a href="https://www.facebook.com/sintmaartenaalst" target="_blank"><i class="icon fab fa-facebook fa-4x"></i></a>
+      <a href="https://www.instagram.com/smiaalst" target="_blank"><i class="icon fab fa-instagram fa-4x"></i></a>
+      <a href="https://www.twitter.com/" target="_blank"><i class="icon fab fa-twitter fa-4x"></i></a>
+    </section>
+
+    <!-- FOOTER: moet in elke pagina staan -->
+    <footer>
+      <p class="copyright">Webdesign &copy; 2020</p>
+    </footer>
+  </body>
+</html>

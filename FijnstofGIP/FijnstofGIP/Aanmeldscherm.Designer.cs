@@ -37,11 +37,13 @@ namespace FijnstofGIP
             this.pnlwachtwoord = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.btnAanmelden = new System.Windows.Forms.Button();
-            this.lblGeenAccount = new System.Windows.Forms.Label();
             this.iconbtnLock = new FontAwesome.Sharp.IconPictureBox();
             this.iconbtnOpenLock = new FontAwesome.Sharp.IconPictureBox();
+            this.btnGeenAccount = new System.Windows.Forms.Button();
+            this.btnClose = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnOpenLock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -52,7 +54,7 @@ namespace FijnstofGIP
             this.label1.Location = new System.Drawing.Point(61, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 37);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Aanmelden";
             // 
             // txtGebruikersnaam
@@ -66,8 +68,10 @@ namespace FijnstofGIP
             this.txtGebruikersnaam.Multiline = true;
             this.txtGebruikersnaam.Name = "txtGebruikersnaam";
             this.txtGebruikersnaam.Size = new System.Drawing.Size(216, 20);
-            this.txtGebruikersnaam.TabIndex = 5;
+            this.txtGebruikersnaam.TabIndex = 1;
             this.txtGebruikersnaam.Click += new System.EventHandler(this.txtGebruikersnaam_Click);
+            this.txtGebruikersnaam.Enter += new System.EventHandler(this.txtGebruikersnaam_Enter);
+            this.txtGebruikersnaam.Leave += new System.EventHandler(this.txtGebruikersnaam_Leave);
             // 
             // pnlgebruikersnaam
             // 
@@ -86,7 +90,7 @@ namespace FijnstofGIP
             this.label2.Location = new System.Drawing.Point(19, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 27);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Gebruikersnaam";
             // 
             // txtWachtwoord
@@ -101,9 +105,10 @@ namespace FijnstofGIP
             this.txtWachtwoord.Name = "txtWachtwoord";
             this.txtWachtwoord.PasswordChar = '*';
             this.txtWachtwoord.Size = new System.Drawing.Size(216, 20);
-            this.txtWachtwoord.TabIndex = 8;
+            this.txtWachtwoord.TabIndex = 2;
             this.txtWachtwoord.Click += new System.EventHandler(this.txtWachtwoord_Click);
-            this.txtWachtwoord.TextChanged += new System.EventHandler(this.txtWachtwoord_TextChanged);
+            this.txtWachtwoord.Enter += new System.EventHandler(this.txtWachtwoord_Enter);
+            this.txtWachtwoord.Leave += new System.EventHandler(this.txtWachtwoord_Leave);
             // 
             // pnlwachtwoord
             // 
@@ -122,7 +127,7 @@ namespace FijnstofGIP
             this.label9.Location = new System.Drawing.Point(19, 174);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 27);
-            this.label9.TabIndex = 7;
+            this.label9.TabIndex = 0;
             this.label9.Text = "Wachtwoord";
             // 
             // btnAanmelden
@@ -134,25 +139,10 @@ namespace FijnstofGIP
             this.btnAanmelden.Location = new System.Drawing.Point(61, 261);
             this.btnAanmelden.Name = "btnAanmelden";
             this.btnAanmelden.Size = new System.Drawing.Size(129, 34);
-            this.btnAanmelden.TabIndex = 10;
+            this.btnAanmelden.TabIndex = 3;
             this.btnAanmelden.Text = "Aanmelden";
             this.btnAanmelden.UseVisualStyleBackColor = true;
             this.btnAanmelden.Click += new System.EventHandler(this.btnAanmelden_Click);
-            // 
-            // lblGeenAccount
-            // 
-            this.lblGeenAccount.AutoSize = true;
-            this.lblGeenAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblGeenAccount.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGeenAccount.ForeColor = System.Drawing.Color.SteelBlue;
-            this.lblGeenAccount.Location = new System.Drawing.Point(57, 307);
-            this.lblGeenAccount.Name = "lblGeenAccount";
-            this.lblGeenAccount.Size = new System.Drawing.Size(138, 20);
-            this.lblGeenAccount.TabIndex = 4;
-            this.lblGeenAccount.Text = "Ik heb nog geen account";
-            this.lblGeenAccount.Click += new System.EventHandler(this.lblGeenAccount_Click);
-            this.lblGeenAccount.MouseEnter += new System.EventHandler(this.lblGeenAccount_Hover);
-            this.lblGeenAccount.MouseLeave += new System.EventHandler(this.lblGeenAccount_GeenHover);
             // 
             // iconbtnLock
             // 
@@ -186,12 +176,50 @@ namespace FijnstofGIP
             this.iconbtnOpenLock.TabStop = false;
             this.iconbtnOpenLock.Click += new System.EventHandler(this.iconbtnOpenLock_Click);
             // 
+            // btnGeenAccount
+            // 
+            this.btnGeenAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGeenAccount.FlatAppearance.BorderSize = 0;
+            this.btnGeenAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnGeenAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGeenAccount.Font = new System.Drawing.Font("Myanmar Text", 8.25F);
+            this.btnGeenAccount.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnGeenAccount.Location = new System.Drawing.Point(53, 301);
+            this.btnGeenAccount.Name = "btnGeenAccount";
+            this.btnGeenAccount.Size = new System.Drawing.Size(146, 25);
+            this.btnGeenAccount.TabIndex = 4;
+            this.btnGeenAccount.Text = "Ik heb nog geen account";
+            this.btnGeenAccount.UseVisualStyleBackColor = true;
+            this.btnGeenAccount.Click += new System.EventHandler(this.btnGeenAccount_Click);
+            this.btnGeenAccount.Enter += new System.EventHandler(this.btnGeenAccount_Enter);
+            this.btnGeenAccount.Leave += new System.EventHandler(this.btnGeenAccount_Leave);
+            this.btnGeenAccount.MouseEnter += new System.EventHandler(this.btnGeenAccount_Hover);
+            this.btnGeenAccount.MouseLeave += new System.EventHandler(this.btnGeenAccount_GeenHover);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnClose.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClose.IconSize = 20;
+            this.btnClose.Location = new System.Drawing.Point(236, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(20, 21);
+            this.btnClose.TabIndex = 13;
+            this.btnClose.TabStop = false;
+            // 
             // Aanmeldscherm
             // 
+            this.AcceptButton = this.btnAanmelden;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(258, 389);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnGeenAccount);
             this.Controls.Add(this.iconbtnLock);
             this.Controls.Add(this.iconbtnOpenLock);
             this.Controls.Add(this.btnAanmelden);
@@ -200,7 +228,6 @@ namespace FijnstofGIP
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtGebruikersnaam);
             this.Controls.Add(this.pnlgebruikersnaam);
-            this.Controls.Add(this.lblGeenAccount);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -211,6 +238,7 @@ namespace FijnstofGIP
             this.Text = "Aanmelden";
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnOpenLock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,8 +254,9 @@ namespace FijnstofGIP
         private System.Windows.Forms.Panel pnlwachtwoord;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnAanmelden;
-        private System.Windows.Forms.Label lblGeenAccount;
         private FontAwesome.Sharp.IconPictureBox iconbtnLock;
         private FontAwesome.Sharp.IconPictureBox iconbtnOpenLock;
+        private System.Windows.Forms.Button btnGeenAccount;
+        private FontAwesome.Sharp.IconPictureBox btnClose;
     }
 }
