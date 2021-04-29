@@ -124,7 +124,7 @@ namespace FijnstofGIP
                 {
                     Menu volgendForm = new Menu(); //volgend form declareren
                     volgendForm.Show(); //tonen van volgend form
-                    this.Close(); //Aanmeldscherm form verbergen
+                    this.Hide(); //Aanmeldscherm form verbergen
                 }
                 else
                 {

@@ -40,10 +40,8 @@ namespace FijnstofGIP
             this.iconbtnLock = new FontAwesome.Sharp.IconPictureBox();
             this.iconbtnOpenLock = new FontAwesome.Sharp.IconPictureBox();
             this.btnGeenAccount = new System.Windows.Forms.Button();
-            this.btnClose = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnOpenLock)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -196,21 +194,6 @@ namespace FijnstofGIP
             this.btnGeenAccount.MouseEnter += new System.EventHandler(this.btnGeenAccount_Hover);
             this.btnGeenAccount.MouseLeave += new System.EventHandler(this.btnGeenAccount_GeenHover);
             // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnClose.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClose.IconSize = 20;
-            this.btnClose.Location = new System.Drawing.Point(236, 3);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 21);
-            this.btnClose.TabIndex = 13;
-            this.btnClose.TabStop = false;
-            // 
             // Aanmeldscherm
             // 
             this.AcceptButton = this.btnAanmelden;
@@ -218,7 +201,6 @@ namespace FijnstofGIP
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(258, 389);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnGeenAccount);
             this.Controls.Add(this.iconbtnLock);
             this.Controls.Add(this.iconbtnOpenLock);
@@ -238,7 +220,6 @@ namespace FijnstofGIP
             this.Text = "Aanmelden";
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnOpenLock)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,6 +238,5 @@ namespace FijnstofGIP
         private FontAwesome.Sharp.IconPictureBox iconbtnLock;
         private FontAwesome.Sharp.IconPictureBox iconbtnOpenLock;
         private System.Windows.Forms.Button btnGeenAccount;
-        private FontAwesome.Sharp.IconPictureBox btnClose;
     }
 }
