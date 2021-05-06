@@ -29,6 +29,247 @@ namespace FijnstofGIP.FormsMenu
             GegevensTonen();
         }
 
+        #region kleuren van de panelen veranderen wanneer je op een bepaalde textblock klikt - dit is zodat de gebruiker weet waar hij gaat typen
+        private void txtZoekstring_Click(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.DeepSkyBlue;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtMeterID_Click(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.DeepSkyBlue;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtTijdstip_Click(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.DeepSkyBlue;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtDatum_Click(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.DeepSkyBlue;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtTemp_Click(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.DeepSkyBlue;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtPM10_Click(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.DeepSkyBlue;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtPM2_5_Click(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.DeepSkyBlue;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtVochtigheid_Click(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.DeepSkyBlue;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtLuchtdruk_Click(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.DeepSkyBlue;
+        }
+        #endregion
+
+        #region Kleuren van de panelen veranderen via tab - full tab support
+        private void txtZoekstring_Enter(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.DeepSkyBlue;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtMeterID_Enter(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.DeepSkyBlue;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtTijdstip_Enter(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.DeepSkyBlue;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtDatum_Enter(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.DeepSkyBlue;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtTemp_Enter(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.DeepSkyBlue;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtPM10_Enter(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.DeepSkyBlue;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtPM2_5_Enter(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.DeepSkyBlue;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtVochtigheid_Enter(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.DeepSkyBlue;
+            pnlLuchtdruk.BackColor = Color.White;
+        }
+
+        private void txtLuchtdruk_Enter(object sender, EventArgs e)
+        {
+            pnlZoekstring.BackColor = Color.White;
+            pnlMeterID.BackColor = Color.White;
+            pnlTijdstip.BackColor = Color.White;
+            pnlDatum.BackColor = Color.White;
+            pnlTemp.BackColor = Color.White;
+            pnlPM10.BackColor = Color.White;
+            pnl2_5.BackColor = Color.White;
+            pnlVochtigheid.BackColor = Color.White;
+            pnlLuchtdruk.BackColor = Color.DeepSkyBlue;
+        }
+
+
+        #endregion
+
+        #region Public void's van VerbindingGegevens en GegevensTonen
         public void VerbindingGegevens()
         {
             try
@@ -36,9 +277,13 @@ namespace FijnstofGIP.FormsMenu
                 OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
                 MijnVerbinding.Open();
                 OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlAlleGegevens, MijnVerbinding);
+                //standaard inladen van de hoofdmeter esp8266-3130811
                 adapter.SelectCommand.Parameters.AddWithValue("@meterid", Convert.ToString("esp8266-3130811"));
 
-                //combobox vullen met de tabalnamen van de database
+                dt.Clear();
+                adapter.Fill(dt);
+
+                //combobox -> CmbWelkVeld vullen met de tabalnamen van de database
                 DataSet ds = new DataSet();
                 adapter.Fill(ds, "MijnTabel");
                 foreach (DataColumn column in ds.Tables[0].Columns)
@@ -46,8 +291,20 @@ namespace FijnstofGIP.FormsMenu
                     cmbWelkVeld.Items.Add(column.ColumnName);
                 }
                 //---------------------------------------------------
-                dt.Clear();
-                adapter.Fill(dt);
+                //combobox -> cmbWelkeMeter vullen met de fijnstofmeters die er zijn
+                OleDbCommand cmd = new OleDbCommand();
+                cmd= new OleDbCommand(SQLScripts.sqlMeterID, MijnVerbinding);
+                OleDbDataReader Sdr = cmd.ExecuteReader();
+                while (Sdr.Read())
+                {
+                    for (int i = 0; i < Sdr.FieldCount; i++)
+                    {
+                        cmbWelkeMeter.Items.Add(Sdr.GetString(i));
+
+                    }
+                }
+                //---------------------------------------------------
+
                 MijnVerbinding.Close();
             }
             catch
@@ -59,18 +316,21 @@ namespace FijnstofGIP.FormsMenu
 
 
         public void GegevensTonen()
-        {
+        {   //gegevensID is verstopt voor de gebruiker maar nodig voor een record te kunnen verwijderen
            txtGegevensID.Text = dt.Rows[RijNummer].ItemArray[0].ToString();
-           txtMeterNaam.Text = dt.Rows[RijNummer].ItemArray[1].ToString().TrimEnd();
+           txtMeterID.Text = dt.Rows[RijNummer].ItemArray[1].ToString().TrimEnd();
            txtPM2_5.Text = dt.Rows[RijNummer].ItemArray[2].ToString().TrimEnd();
            txtPM10.Text = dt.Rows[RijNummer].ItemArray[3].ToString().TrimEnd();
-           txtTemp.Text = dt.Rows[RijNummer].ItemArray[4].ToString().TrimEnd() + " °C";
+           txtTemp.Text = dt.Rows[RijNummer].ItemArray[4].ToString().TrimEnd();
            txtVochtigheid.Text = dt.Rows[RijNummer].ItemArray[5].ToString().TrimEnd();
            txtLuchtdruk.Text = dt.Rows[RijNummer].ItemArray[6].ToString().TrimEnd();
            txtTijdstip.Text = dt.Rows[RijNummer].ItemArray[7].ToString().TrimEnd();
            txtDatum.Text = dt.Rows[RijNummer].ItemArray[8].ToString().TrimEnd();
 
         }
+        #endregion
+
+        #region code voor de knopjes :D
         private void btnEerste_Click(object sender, EventArgs e)
         {
             RijNummer = 0;
@@ -117,6 +377,150 @@ namespace FijnstofGIP.FormsMenu
                this.Close();  
         }
 
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtGegevensID.Text = "";
+            txtPM2_5.Text = "";
+            txtPM10.Text = "";
+            txtTemp.Text = "";
+            txtVochtigheid.Text = "";
+            txtLuchtdruk.Text = "";
+            txtTijdstip.Text = "";
+            txtDatum.Text = "";
+        }
+
+        private void btnVerwijderen_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
+
+                OleDbCommand cmd = new OleDbCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = SQLScripts.sqlDataRecordVerwijderen;
+                cmd.Connection = MijnVerbinding;
+
+                cmd.Parameters.AddWithValue("@gegevensid", Convert.ToString(txtGegevensID.Text));
+
+                MijnVerbinding.Open();
+                cmd.ExecuteNonQuery();
+                MijnVerbinding.Close();
+
+                //clearen van de txt's
+                txtGegevensID.Text = "";
+                txtPM2_5.Text = "";
+                txtPM10.Text = "";
+                txtTemp.Text = "";
+                txtVochtigheid.Text = "";
+                txtLuchtdruk.Text = "";
+                txtTijdstip.Text = "";
+                txtDatum.Text = "";
+            }
+            catch
+            {
+                MessageBox.Show("ERROR, er is een fout gebeurd bij het verwijderen", "Onverwachte error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void btnToevoegen_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtMeterID.Text == "" && txtPM2_5.Text == "" && txtPM10.Text == "" && txtTemp.Text == "" && txtVochtigheid.Text == "" && txtLuchtdruk.Text == "" && txtTijdstip.Text == "" && txtDatum.Text == "")
+                {
+                    MessageBox.Show("Je moet alle velden invullen", "Data toevoegen mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else
+                {
+                    DialogResult Toevoegen = MessageBox.Show("Ben je zeker dat je deze gegevens wilt toevoegen?", "Data toevoegen", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (Toevoegen == DialogResult.Yes)
+                    {
+                        OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
+                        OleDbCommand cmd = new OleDbCommand();
+                        cmd.CommandType = CommandType.Text;
+                        cmd.CommandText = SQLScripts.sqlDataAanmaken;
+                        cmd.Connection = MijnVerbinding;
+                        OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAanmaken, MijnVerbinding);
+
+                        cmd.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
+                        cmd.Parameters.AddWithValue("@PM2_5", Convert.ToString(txtPM2_5.Text));
+                        cmd.Parameters.AddWithValue("@PM10", Convert.ToString(txtPM10.Text));
+                        cmd.Parameters.AddWithValue("@temperatuur", Convert.ToString(txtTemp.Text));
+                        cmd.Parameters.AddWithValue("@vochtigheid", Convert.ToString(txtVochtigheid.Text));
+                        cmd.Parameters.AddWithValue("@luchtdruk", Convert.ToString(txtLuchtdruk.Text));
+                        cmd.Parameters.AddWithValue("@tijdstip", Convert.ToString(txtTijdstip.Text));
+                        cmd.Parameters.AddWithValue("@datum", Convert.ToString(txtDatum.Text));
+
+                        MijnVerbinding.Open();
+                        cmd.ExecuteNonQuery();
+                        MijnVerbinding.Close();
+
+                        txtMeterID.Text = "";
+                        txtPM2_5.Text = "";
+                        txtPM10.Text = "";
+                        txtTemp.Text = "";
+                        txtVochtigheid.Text = "";
+                        txtLuchtdruk.Text = "";
+                        txtTijdstip.Text = "";
+                        txtDatum.Text = "";
+                        MessageBox.Show("Je hebt de data succesvol toegevoegd!", "SUCCES: data toegevoegd", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        this.Close(); //deze form sluiten form verbergen
+                    }
+                    else if (Toevoegen == DialogResult.No)
+                    {
+                        //er gebeurd dan niks
+                    }
+                    else //FOUT PROTECTIE: moest er iets random foutlopen en de waarde is niet ja of nee 0.0
+                    {
+                        MessageBox.Show("Er is iets foutgelopen terwijl je op de knop drukte!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("ERROR, er is een fout gebeurd", "Onverwachte error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+        }
+
+        private void btnRecordBewaren_Click(object sender, EventArgs e)
+        {
+            OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
+
+            OleDbCommand cmd = new OleDbCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = SQLScripts.sqlAanpassenDataRecord;
+            cmd.Connection = MijnVerbinding;
+
+            OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlAanpassenDataRecord, MijnVerbinding);
+
+
+            cmd.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
+            cmd.Parameters.AddWithValue("@PM2_5", Convert.ToString(txtPM2_5.Text));
+            cmd.Parameters.AddWithValue("@PM10", Convert.ToString(txtPM10.Text));
+            cmd.Parameters.AddWithValue("@temperatuur", Convert.ToString(txtTemp.Text));
+            cmd.Parameters.AddWithValue("@vochtigheid", Convert.ToString(txtVochtigheid.Text));
+            cmd.Parameters.AddWithValue("@luchtdruk", Convert.ToString(txtLuchtdruk.Text));
+            cmd.Parameters.AddWithValue("@tijdstip", Convert.ToString(txtTijdstip.Text));
+            cmd.Parameters.AddWithValue("@datum", Convert.ToString(txtDatum.Text));
+            cmd.Parameters.AddWithValue("@gegevensid", Convert.ToString(txtGegevensID.Text));
+
+            MijnVerbinding.Open();
+            cmd.ExecuteNonQuery();
+            MijnVerbinding.Close();
+
+            VerbindingGegevens();
+            GegevensTonen();
+        }
+
+        #endregion
+
+        #region code van de zoekfuncties die werken op het zoeken van strings EN meterID
         private void txtZoekstring_TextChanged(object sender, EventArgs e)
         {
             try
@@ -126,7 +530,9 @@ namespace FijnstofGIP.FormsMenu
                 OleDbDataAdapter adapter = new OleDbDataAdapter();
 
                 String zoekVeld = cmbWelkVeld.SelectedItem.ToString();
-                adapter = new OleDbDataAdapter(String.Format("SELECT * FROM tblgegevens WHERE ({0} Like @zoekString + '%')", zoekVeld), MijnVerbinding);
+                String fijnstofMeter = cmbWelkeMeter.SelectedItem.ToString();
+                adapter = new OleDbDataAdapter(String.Format("SELECT meterID,PM2_5, PM10, temperatuur, vochtigheid, luchtdruk, tijdstip, datum FROM tblgegevens WHERE (meterID = @meterid) AND ({0} Like @zoekString + '%')", zoekVeld), MijnVerbinding);
+                adapter.SelectCommand.Parameters.AddWithValue("@meterid", fijnstofMeter);
                 adapter.SelectCommand.Parameters.AddWithValue("@zoekString", txtZoekstring.Text);
 
                 dt.Clear();
@@ -136,108 +542,47 @@ namespace FijnstofGIP.FormsMenu
             }
             catch
             {
-                MessageBox.Show("ERROR: er moet iets foutgelopen zijn, heb je op enter gedrukt??", "Zoeken Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ERROR: Er kunnen meerdere reden zijn waarom. Maar de voornaamste is dat de fijnstofmeter de data niet heeft die u zoekt", "Zoeken Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
            
         }
 
-        /*
-        private void btnVerwijderen_Click(object sender, EventArgs e)
+        private void cmbWelkeMeter_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            try
+            {
+                OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
+                MijnVerbinding.Open();
+                OleDbDataAdapter adapter = new OleDbDataAdapter();
 
-            SqlConnection MijnVerbinding = new
-            SqlConnection(Properties.Settings.Default.DBTest);
 
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = SQLScripts.sqlVerwijderKlant;
-            cmd.Connection = MijnVerbinding;
+                String fijnstofMeter = cmbWelkeMeter.SelectedItem.ToString();
+                //alle tekstvakken leegmaken en meter opvullen met de meter dit is puur en alleen voor meters die nog geen data hebben en een error geven - nu dat alles leeg is behalve de meterid kan de gebruiker makkelijk data toevoegen :D
+                txtMeterID.Text = fijnstofMeter;
+                txtGegevensID.Text = "";
+                txtPM2_5.Text = "";
+                txtPM10.Text = "";
+                txtTemp.Text = "";
+                txtVochtigheid.Text = "";
+                txtLuchtdruk.Text = "";
+                txtTijdstip.Text = "";
+                txtDatum.Text = "";
+                adapter = new OleDbDataAdapter(SQLScripts.sqlAlleGegevens, MijnVerbinding);
+                adapter.SelectCommand.Parameters.AddWithValue("@meterid", fijnstofMeter);
 
-            cmd.Parameters.AddWithValue("@Klantnummer", Convert.ToInt32(txtKlantNummer.Text));
-
-            MijnVerbinding.Open();
-
-            cmd.ExecuteNonQuery();
-
-            MijnVerbinding.Close();
-
-            VerbindingGegevens();
-            GegevensTonen();
-
+                dt.Clear();
+                adapter.Fill(dt);
+                MijnVerbinding.Close();
+                GegevensTonen();
+            }
+            catch
+            {
+                MessageBox.Show("ERROR: De fijnstof meter die u net heeft aangeduid heeft geen gegevens", "Zoeken Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-        
-        private void btnAanpassen_Click(object sender, EventArgs e)
-        {
-            OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
-            MijnVerbinding.Open();
+        #endregion
 
-            OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlAlleGegevens, MijnVerbinding);
-            OleDbCommand cmd = new OleDbCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = SQLScripts.sqlAanpassenKlant;
-            cmd.Connection = MijnVerbinding;
 
-            cmd.Parameters.AddWithValue("@Klantnummer", Convert.ToInt32(txtKlantNummer.Text));
-            cmd.Parameters.AddWithValue("@Naam", Convert.ToString(txtNaam.Text));
-            cmd.Parameters.AddWithValue("@Straat", Convert.ToString(txtStraat.Text));
-            cmd.Parameters.AddWithValue("@Postnr", Convert.ToString(txtPostCode.Text));
-            cmd.Parameters.AddWithValue("@Gemeente", Convert.ToString(txtGemeente.Text));
-
-            MijnVerbinding.Open();
-            cmd.ExecuteNonQuery();
-            MijnVerbinding.Close();
-
-            VerbindingGegevens();
-            GegevensTonen();
-        }
-
-        private void btnToevoegen_Click(object sender, EventArgs e)
-        {
-            btnBewaren.Visible = true;
-            btnAnnuleren.Visible = true;
-            btnToevoegen.Visible = false;
-            btnAanpassen.Visible = false;
-            btnVerwijderen.Visible = false;
-
-            txtNaam.Text = "";
-            txtStraat.Text = "";
-            txtPostCode.Text = "";
-            txtGemeente.Text = "";
-
-            txtKlantNummer.Visible = false;
-
-        }
-       
-        
-        private void btnBewaren_Click(object sender, EventArgs e)
-        {
-            SqlConnection MijnVerbinding = new SqlConnection(Properties.Settings.Default.DBTest);
-
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = SQLScripts.sqlToevoegenKlant;
-            cmd.Connection = MijnVerbinding;
-
-            cmd.Parameters.AddWithValue("@Naam", Convert.ToString(txtNaam.Text));
-            cmd.Parameters.AddWithValue("@Straat", Convert.ToString(txtStraat.Text));
-            cmd.Parameters.AddWithValue("@Postnr", Convert.ToString(txtPostCode.Text));
-            cmd.Parameters.AddWithValue("@Gemeente", Convert.ToString(txtGemeente.Text));
-
-            MijnVerbinding.Open();
-            cmd.ExecuteNonQuery();
-            MijnVerbinding.Close();
-
-            txtKlantNummer.Visible = true;
-            btnBewaren.Visible = false;
-            btnAnnuleren.Visible = false;
-            btnToevoegen.Visible = true;
-            btnAanpassen.Visible = true;
-            btnVerwijderen.Visible = true;
-
-            VerbindingGegevens();
-            GegevensTonen();
-        }
-        */
     }
 }
