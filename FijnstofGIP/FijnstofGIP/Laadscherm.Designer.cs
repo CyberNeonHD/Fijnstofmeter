@@ -103,7 +103,7 @@ namespace FijnstofGIP
             // 
             // MenuLogo
             // 
-            this.MenuLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MenuLogo.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.MenuLogo.Image = global::FijnstofGIP.Properties.Resources.output_onlinepngtools;
             this.MenuLogo.Location = new System.Drawing.Point(26, 3);
             this.MenuLogo.Name = "MenuLogo";

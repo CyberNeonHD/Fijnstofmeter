@@ -35,11 +35,6 @@ namespace FijnstofGIP
             this.btnFijnstofmeterToevoegen = new FontAwesome.Sharp.IconButton();
             this.btnStatisticheData = new FontAwesome.Sharp.IconButton();
             this.btnUitloggen = new FontAwesome.Sharp.IconPictureBox();
-            this.pnlDataDropMenu = new System.Windows.Forms.Panel();
-            this.btnDataZoeken = new System.Windows.Forms.Button();
-            this.btnDataVerwijderen = new System.Windows.Forms.Button();
-            this.btnDataAanpassen = new System.Windows.Forms.Button();
-            this.btnDataBekijken = new System.Windows.Forms.Button();
             this.btnData = new FontAwesome.Sharp.IconButton();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.lblDatum = new System.Windows.Forms.Label();
@@ -54,7 +49,6 @@ namespace FijnstofGIP
             this.tijd = new System.Windows.Forms.Timer(this.components);
             this.pnlMenuLinks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnUitloggen)).BeginInit();
-            this.pnlDataDropMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MenuLogo)).BeginInit();
             this.pnlTopMenu.SuspendLayout();
@@ -72,7 +66,6 @@ namespace FijnstofGIP
             this.pnlMenuLinks.Controls.Add(this.btnFijnstofmeterToevoegen);
             this.pnlMenuLinks.Controls.Add(this.btnStatisticheData);
             this.pnlMenuLinks.Controls.Add(this.btnUitloggen);
-            this.pnlMenuLinks.Controls.Add(this.pnlDataDropMenu);
             this.pnlMenuLinks.Controls.Add(this.btnData);
             this.pnlMenuLinks.Controls.Add(this.pnlLogo);
             this.pnlMenuLinks.Dock = System.Windows.Forms.DockStyle.Left;
@@ -94,7 +87,7 @@ namespace FijnstofGIP
             this.btnKaartWeergeven.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnKaartWeergeven.IconSize = 26;
             this.btnKaartWeergeven.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnKaartWeergeven.Location = new System.Drawing.Point(0, 485);
+            this.btnKaartWeergeven.Location = new System.Drawing.Point(0, 320);
             this.btnKaartWeergeven.Name = "btnKaartWeergeven";
             this.btnKaartWeergeven.Padding = new System.Windows.Forms.Padding(0, 14, 0, 0);
             this.btnKaartWeergeven.Size = new System.Drawing.Size(220, 60);
@@ -118,7 +111,7 @@ namespace FijnstofGIP
             this.btnFijnstofmeterToevoegen.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnFijnstofmeterToevoegen.IconSize = 26;
             this.btnFijnstofmeterToevoegen.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnFijnstofmeterToevoegen.Location = new System.Drawing.Point(0, 425);
+            this.btnFijnstofmeterToevoegen.Location = new System.Drawing.Point(0, 260);
             this.btnFijnstofmeterToevoegen.Name = "btnFijnstofmeterToevoegen";
             this.btnFijnstofmeterToevoegen.Padding = new System.Windows.Forms.Padding(0, 14, 0, 0);
             this.btnFijnstofmeterToevoegen.Size = new System.Drawing.Size(220, 60);
@@ -142,7 +135,7 @@ namespace FijnstofGIP
             this.btnStatisticheData.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnStatisticheData.IconSize = 26;
             this.btnStatisticheData.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnStatisticheData.Location = new System.Drawing.Point(0, 365);
+            this.btnStatisticheData.Location = new System.Drawing.Point(0, 200);
             this.btnStatisticheData.Name = "btnStatisticheData";
             this.btnStatisticheData.Padding = new System.Windows.Forms.Padding(0, 14, 0, 0);
             this.btnStatisticheData.Size = new System.Drawing.Size(220, 60);
@@ -169,91 +162,6 @@ namespace FijnstofGIP
             this.btnUitloggen.TabIndex = 13;
             this.btnUitloggen.TabStop = false;
             this.btnUitloggen.Click += new System.EventHandler(this.btnUitloggen_Click);
-            // 
-            // pnlDataDropMenu
-            // 
-            this.pnlDataDropMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.pnlDataDropMenu.Controls.Add(this.btnDataZoeken);
-            this.pnlDataDropMenu.Controls.Add(this.btnDataVerwijderen);
-            this.pnlDataDropMenu.Controls.Add(this.btnDataAanpassen);
-            this.pnlDataDropMenu.Controls.Add(this.btnDataBekijken);
-            this.pnlDataDropMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDataDropMenu.Location = new System.Drawing.Point(0, 200);
-            this.pnlDataDropMenu.Name = "pnlDataDropMenu";
-            this.pnlDataDropMenu.Size = new System.Drawing.Size(220, 165);
-            this.pnlDataDropMenu.TabIndex = 2;
-            // 
-            // btnDataZoeken
-            // 
-            this.btnDataZoeken.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDataZoeken.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDataZoeken.FlatAppearance.BorderSize = 0;
-            this.btnDataZoeken.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataZoeken.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDataZoeken.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnDataZoeken.Location = new System.Drawing.Point(0, 120);
-            this.btnDataZoeken.Name = "btnDataZoeken";
-            this.btnDataZoeken.Padding = new System.Windows.Forms.Padding(35, 5, 0, 0);
-            this.btnDataZoeken.Size = new System.Drawing.Size(220, 40);
-            this.btnDataZoeken.TabIndex = 4;
-            this.btnDataZoeken.Text = "Zoeken";
-            this.btnDataZoeken.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDataZoeken.UseVisualStyleBackColor = true;
-            this.btnDataZoeken.Click += new System.EventHandler(this.btnDataZoeken_Click);
-            // 
-            // btnDataVerwijderen
-            // 
-            this.btnDataVerwijderen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDataVerwijderen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDataVerwijderen.FlatAppearance.BorderSize = 0;
-            this.btnDataVerwijderen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataVerwijderen.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDataVerwijderen.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnDataVerwijderen.Location = new System.Drawing.Point(0, 80);
-            this.btnDataVerwijderen.Name = "btnDataVerwijderen";
-            this.btnDataVerwijderen.Padding = new System.Windows.Forms.Padding(35, 5, 0, 0);
-            this.btnDataVerwijderen.Size = new System.Drawing.Size(220, 40);
-            this.btnDataVerwijderen.TabIndex = 3;
-            this.btnDataVerwijderen.Text = "Verwijderen";
-            this.btnDataVerwijderen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDataVerwijderen.UseVisualStyleBackColor = true;
-            this.btnDataVerwijderen.Click += new System.EventHandler(this.btnDataVerwijderen_Click);
-            // 
-            // btnDataAanpassen
-            // 
-            this.btnDataAanpassen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDataAanpassen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDataAanpassen.FlatAppearance.BorderSize = 0;
-            this.btnDataAanpassen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataAanpassen.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDataAanpassen.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnDataAanpassen.Location = new System.Drawing.Point(0, 40);
-            this.btnDataAanpassen.Name = "btnDataAanpassen";
-            this.btnDataAanpassen.Padding = new System.Windows.Forms.Padding(35, 5, 0, 0);
-            this.btnDataAanpassen.Size = new System.Drawing.Size(220, 40);
-            this.btnDataAanpassen.TabIndex = 2;
-            this.btnDataAanpassen.Text = "Aanpassen";
-            this.btnDataAanpassen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDataAanpassen.UseVisualStyleBackColor = true;
-            this.btnDataAanpassen.Click += new System.EventHandler(this.btnDataAanpassen_Click);
-            // 
-            // btnDataBekijken
-            // 
-            this.btnDataBekijken.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDataBekijken.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDataBekijken.FlatAppearance.BorderSize = 0;
-            this.btnDataBekijken.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataBekijken.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDataBekijken.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnDataBekijken.Location = new System.Drawing.Point(0, 0);
-            this.btnDataBekijken.Name = "btnDataBekijken";
-            this.btnDataBekijken.Padding = new System.Windows.Forms.Padding(35, 5, 0, 0);
-            this.btnDataBekijken.Size = new System.Drawing.Size(220, 40);
-            this.btnDataBekijken.TabIndex = 1;
-            this.btnDataBekijken.Text = "Bekijken";
-            this.btnDataBekijken.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDataBekijken.UseVisualStyleBackColor = true;
-            this.btnDataBekijken.Click += new System.EventHandler(this.btnDataBekijken_Click);
             // 
             // btnData
             // 
@@ -391,7 +299,7 @@ namespace FijnstofGIP
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::FijnstofGIP.Properties.Resources.output_onlinepngtools;
-            this.pictureBox1.Location = new System.Drawing.Point(227, 85);
+            this.pictureBox1.Location = new System.Drawing.Point(223, 107);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(299, 202);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -423,7 +331,6 @@ namespace FijnstofGIP
             this.TopMost = true;
             this.pnlMenuLinks.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnUitloggen)).EndInit();
-            this.pnlDataDropMenu.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MenuLogo)).EndInit();
             this.pnlTopMenu.ResumeLayout(false);
@@ -442,11 +349,6 @@ namespace FijnstofGIP
         private System.Windows.Forms.Panel pnlMenuLinks;
         private FontAwesome.Sharp.IconButton btnData;
         private System.Windows.Forms.Panel pnlLogo;
-        private System.Windows.Forms.Panel pnlDataDropMenu;
-        private System.Windows.Forms.Button btnDataVerwijderen;
-        private System.Windows.Forms.Button btnDataBekijken;
-        private System.Windows.Forms.Button btnDataZoeken;
-        private System.Windows.Forms.Button btnDataAanpassen;
         private System.Windows.Forms.Panel pnlTopMenu;
         private System.Windows.Forms.PictureBox MenuLogo;
         private System.Windows.Forms.Panel pnlMainForms;

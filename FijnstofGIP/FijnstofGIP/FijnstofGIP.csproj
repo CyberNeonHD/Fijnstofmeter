@@ -113,29 +113,11 @@
     <Compile Include="FormsGebruikerInstellingen\FormWWVeranderen.Designer.cs">
       <DependentUpon>FormWWVeranderen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsMenu\FormDataAanpassen.cs">
+    <Compile Include="FormsMenu\FormData.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsMenu\FormDataAanpassen.Designer.cs">
-      <DependentUpon>FormDataAanpassen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormsMenu\FormDataBekijken.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormsMenu\FormDataBekijken.Designer.cs">
-      <DependentUpon>FormDataBekijken.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormsMenu\FormDataVerwijderen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormsMenu\FormDataVerwijderen.Designer.cs">
-      <DependentUpon>FormDataVerwijderen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormsMenu\FormDataZoeken.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormsMenu\FormDataZoeken.Designer.cs">
-      <DependentUpon>FormDataZoeken.cs</DependentUpon>
+    <Compile Include="FormsMenu\FormData.Designer.cs">
+      <DependentUpon>FormData.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsMenu\FormFijnstofmeterToevoegen.cs">
       <SubType>Form</SubType>
@@ -195,17 +177,8 @@
     <EmbeddedResource Include="FormsGebruikerInstellingen\FormWWVeranderen.resx">
       <DependentUpon>FormWWVeranderen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsMenu\FormDataAanpassen.resx">
-      <DependentUpon>FormDataAanpassen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormsMenu\FormDataBekijken.resx">
-      <DependentUpon>FormDataBekijken.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormsMenu\FormDataVerwijderen.resx">
-      <DependentUpon>FormDataVerwijderen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormsMenu\FormDataZoeken.resx">
-      <DependentUpon>FormDataZoeken.cs</DependentUpon>
+    <EmbeddedResource Include="FormsMenu\FormData.resx">
+      <DependentUpon>FormData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsMenu\FormFijnstofmeterToevoegen.resx">
       <DependentUpon>FormFijnstofmeterToevoegen.cs</DependentUpon>

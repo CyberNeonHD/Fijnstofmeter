@@ -19,7 +19,7 @@ namespace FijnstofGIP
         {
             InitializeComponent();
             tijd.Start();
-            DropMenuDesign();
+            //DropMenuDesign();
             //welkom tekst op gebruikersnaam
             lblwelkom.Text = "Welkom "+  InfoGebruiker.gebruikersnaam +", bij de fijnstofmeter van Kalex";
 
@@ -47,7 +47,7 @@ namespace FijnstofGIP
             childForm.Show();
 
         }
-
+        /*
         private void DropMenuDesign()
         {
             pnlDataDropMenu.Visible = false;
@@ -73,59 +73,39 @@ namespace FijnstofGIP
                 DropMenu.Visible = false;
             }
         }
+        */
         private void MenuLogo_Click(object sender, EventArgs e)
         {
             if (actieveForm != null)
             {
                 actieveForm.Close();
             }
-            SluitDropMenuDesign();
+            //SluitDropMenuDesign();
         }
 
         private void btnData_Click(object sender, EventArgs e)
         {
-            ToonDropMenuDesign(pnlDataDropMenu);
-        }
-        private void btnDataBekijken_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormsMenu.FormDataBekijken());
-            SluitDropMenuDesign();
-        }
-
-        private void btnDataAanpassen_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormsMenu.FormDataAanpassen());
-            SluitDropMenuDesign();
-        }
-        private void btnDataVerwijderen_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormsMenu.FormDataVerwijderen());
-            SluitDropMenuDesign();
-        }
-        private void btnDataZoeken_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormsMenu.FormDataZoeken());
-            SluitDropMenuDesign();
+            openChildForm(new FormsMenu.FormData());
         }
         private void btnFijnstofmeterToevoegen_Click(object sender, EventArgs e)
         {
             openChildForm(new FormsMenu.FormFijnstofmeterToevoegen());
-            SluitDropMenuDesign();
+            //SluitDropMenuDesign();
         }
         private void btnStatisticheData_Click(object sender, EventArgs e)
         {
             openChildForm(new FormsMenu.FormStatisticheData());
-            SluitDropMenuDesign();
+            //SluitDropMenuDesign();
         }
         private void btnKaartWeergeven_Click(object sender, EventArgs e)
         {
             openChildForm(new FormsMenu.FormMapWeergeven());
-            SluitDropMenuDesign();
+            //SluitDropMenuDesign();
         }
         private void btnGebruikerSettings_Click(object sender, EventArgs e)
         {
             openChildForm(new FormsMenu.InstellingenGebuiker());
-            SluitDropMenuDesign();
+            //SluitDropMenuDesign();
         }
 
         //Slepen van de  Form (komt van pas als we de balk zelf maken)
