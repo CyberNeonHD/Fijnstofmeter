@@ -10,8 +10,18 @@ namespace FijnstofGIP
     {
         //Registreren van gebruiker
         public static readonly string sqlRegistreren =
-            "INSERT INTO tblgebruikers (gebruikersnaam, email, wachtwoord, voornaam, familienaam, huisnummer, straat, postcode, gemeente)" +
-            "VALUES (@gebruikersnaam,@email, @wachtwoord, @voornaam, @familienaam, @huisnummer, @straat, @postcode, @gemeente)";
+            "INSERT INTO tblgebruikers (gebruikersnaam, email, voornaam, familienaam, huisnummer, straat, postcode, gemeente)" +
+            "VALUES (@gebruikersnaam,@email, @voornaam, @familienaam, @huisnummer, @straat, @postcode, @gemeente)";
+
+        //krijgen van gebruikersID via gebruikersnaam -> gebruikersnaam is uniek
+        public static readonly string sqltblgebuikersID = "SELECT gebruikersID from tblgebruikers WHERE (gebruikersnaam = @gebruikersnaam);";
+
+        //verkrijgen van info over een gebruiker
+        public static readonly string sqlInfoGebruiker = "SELECT email,voornaam,familienaam,huisnummer,straat,postcode,gemeente FROM tblgebruikers WHERE (gebruikersnaam = @gebruikersnaam);";
+
+        //invoegen van het wachtwoord in aparte tabel -> omslachtige manier maar het werkt wel :P
+        public static readonly string sqlWWInvoeren = "INSERT INTO tblgebruikersWW (gebruikersID, wachtwoord)" +
+           "VALUES (@gebruikersid, @wachtwoord)";
 
         public static readonly string sqlLocatieFijnstofMeter = "SELECT * FROM tblfijnstofmeters";
 
@@ -33,6 +43,17 @@ namespace FijnstofGIP
         public static readonly string sqlAanpassenDataRecord = "UPDATE tblgegevens " +
          "SET meterID=@meterid, PM2_5=@PM2_5, PM10=@PM10,temperatuur=@temperatuur, vochtigheid=@vochtigheid, luchtdruk=@luchtdruk, tijdstip=@tijdstip,datum=@datum WHERE " + 
          "(gegevensID = @gegevensid) AND (meterID = @meterid)";
+
+
+
+
+
+
+
+
+
+
+
 
         //statistische GEGEVENS -----------------------------------------
 

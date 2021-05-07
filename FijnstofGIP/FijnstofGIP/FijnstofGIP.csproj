@@ -143,6 +143,7 @@
     <Compile Include="FormsMenu\InstellingenGebuiker.Designer.cs">
       <DependentUpon>InstellingenGebuiker.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hasher.cs" />
     <Compile Include="InfoGebruiker.cs" />
     <Compile Include="Laadscherm.cs">
       <SubType>Form</SubType>

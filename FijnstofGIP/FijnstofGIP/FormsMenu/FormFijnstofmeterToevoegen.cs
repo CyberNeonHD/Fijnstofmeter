@@ -148,7 +148,7 @@ namespace FijnstofGIP.FormsMenu
                         cmd.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
                         cmd.Parameters.AddWithValue("@meternaam", Convert.ToString(txtMeterNaam.Text));
                         cmd.Parameters.AddWithValue("@latitude", Convert.ToString(txtLatitude.Text));
-                        cmd.Parameters.AddWithValue("@longyitude", Convert.ToString(txtLongtitude.Text));
+                        cmd.Parameters.AddWithValue("@longtitude", Convert.ToString(txtLongtitude.Text));
 
 
                         MijnVerbinding.Open();

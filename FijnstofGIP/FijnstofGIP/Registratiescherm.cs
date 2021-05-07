@@ -9,13 +9,15 @@ using System.Threading.Tasks;
 
 using System.Windows.Forms;
 using System.Data.OleDb;
-using System.Net;
-using System.Net.Mail;
+using System.Net; //voor de mail
+using System.Net.Mail; //voor de mail
+using System.Security.Cryptography; //voor beveiliging wachtwoord
 
 namespace FijnstofGIP
 {
     public partial class Registratiescherm : Form
     {
+        
         public Registratiescherm()
         {
             InitializeComponent();
@@ -437,8 +439,8 @@ namespace FijnstofGIP
         #region code voor de knop registeren
         private void btnRegistreren_Click(object sender, EventArgs e)
         {
-            try
-            {
+            //try
+            //{
 
                 if (txtVoornaam.Text == "" && txtFamilienaam.Text == "" && txtStraat.Text == "" && txtHuisNummer.Text == "" && txtPostcode.Text == "" && txtGemeente.Text == "" && txtGebruikersnaam.Text == "" && txtEmail.Text == "" && txtWachtwoord.Text == "" && txtWachtwoordBevestigen.Text == "")
                 {
@@ -448,15 +450,16 @@ namespace FijnstofGIP
                 else if (txtWachtwoord.Text == txtWachtwoordBevestigen.Text)
                 {
                     OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
+                    MijnVerbinding.Open();
+
+                    //volledige registratie in de tabel gebruikers zetten
                     OleDbCommand cmd = new OleDbCommand();
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = SQLScripts.sqlRegistreren;
                     cmd.Connection = MijnVerbinding;
-                    OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlRegistreren, MijnVerbinding);
 
                     cmd.Parameters.AddWithValue("@gebruikersnaam", Convert.ToString(txtGebruikersnaam.Text));
                     cmd.Parameters.AddWithValue("@email", Convert.ToString(txtEmail.Text));
-                    cmd.Parameters.AddWithValue("@wachtwoord", Convert.ToString(txtWachtwoord.Text));
                     cmd.Parameters.AddWithValue("@voornaam", Convert.ToString(txtVoornaam.Text));
                     cmd.Parameters.AddWithValue("@familienaam", Convert.ToString(txtFamilienaam.Text));
                     cmd.Parameters.AddWithValue("@huisnummer", Convert.ToInt32(txtHuisNummer.Text));
@@ -464,8 +467,42 @@ namespace FijnstofGIP
                     cmd.Parameters.AddWithValue("@postcode", Convert.ToInt32(txtPostcode.Text));
                     cmd.Parameters.AddWithValue("@gemeente", Convert.ToString(txtGemeente.Text));
 
-                    MijnVerbinding.Open();
                     cmd.ExecuteNonQuery();
+                    //---------------------------------------------------------------------------------------------------------------
+                    
+                    // de gebruikersID opvragen van de tabel gebruikers zodat we het ww op de juiste manier kunnen plaatsen in een aparte tabel
+                    //we doen dit via gebruikersnaam -> gebruikersnaam is uniek
+                    OleDbCommand cmdGebrID = new OleDbCommand();
+                    cmdGebrID.CommandType = CommandType.Text;
+                    cmdGebrID.CommandText = SQLScripts.sqltblgebuikersID;
+                    cmdGebrID.Connection = MijnVerbinding;
+
+
+                    cmdGebrID.Parameters.AddWithValue("@gebruikersnaam", Convert.ToString(txtGebruikersnaam.Text));
+
+                    cmdGebrID.ExecuteNonQuery();
+                    OleDbDataReader drWW = cmdGebrID.ExecuteReader();
+                    string GebruikersID = "";
+                    while (drWW.Read())
+                    {   //De id oplaan in de string
+                        GebruikersID = drWW.GetValue(0).ToString();
+                    }
+                    //---------------------------------------------------------------------------------------------------------------
+
+                    //invoegen van het wachtwoord in aparte tabel 
+                    OleDbCommand cmdWW = new OleDbCommand();
+                    cmdWW.CommandType = CommandType.Text;
+                    cmdWW.CommandText = SQLScripts.sqlWWInvoeren;
+                    cmdWW.Connection = MijnVerbinding;
+
+                    //zet de string om naar Hash CODE
+                    string hashedWW = Hasher.Hash_SHA1(txtWachtwoord.Text);
+                    cmdWW.Parameters.AddWithValue("@gebruikersid", GebruikersID);
+                    cmdWW.Parameters.AddWithValue("@wachtwoord", hashedWW);
+                    cmdWW.ExecuteNonQuery();
+
+                //---------------------------------------------------------------------------------------------------------------
+
                     MijnVerbinding.Close();
 
                     MessageBox.Show("Je bent succesvol geregistreerd! ", "Registratie Gelukt", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -480,7 +517,7 @@ namespace FijnstofGIP
                     van = InfoGebruiker.KalexEmail;
                     ww = InfoGebruiker.KalexWW;
                     bericht = "Beste " + txtVoornaam.Text + " " + txtFamilienaam.Text + "," +  "<br />" + "<br /> Dank u voor te registreren bij Particulated, het fijnstofmeter programma van Kalex.<br /> Als u ooit problemen heeft kan u ons altijd een mail sturen. <br /> <br /> Met vriendelijke groeten, <br />Kalex";
-                    onderwerp = "Welkom bij Kalex";
+                    onderwerp = "Welkom bij Particulated";
                     RegistratieBericht.To.Add(naar);
                     RegistratieBericht.From = new MailAddress(van);
                     RegistratieBericht.Body = bericht;
@@ -517,11 +554,11 @@ namespace FijnstofGIP
                     txtWachtwoord.Focus();
                 }
 
-            }
+            /*}
             catch
             {
                 MessageBox.Show("ERROR, er is een fout gebeurd", "Onverwachte error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
 
         }
         #endregion

@@ -276,6 +276,7 @@ namespace FijnstofGIP.FormsMenu
             {
                 OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
                 MijnVerbinding.Open();
+
                 OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlAlleGegevens, MijnVerbinding);
                 //standaard inladen van de hoofdmeter esp8266-3130811
                 adapter.SelectCommand.Parameters.AddWithValue("@meterid", Convert.ToString("esp8266-3130811"));
@@ -291,6 +292,7 @@ namespace FijnstofGIP.FormsMenu
                     cmbWelkVeld.Items.Add(column.ColumnName);
                 }
                 //---------------------------------------------------
+
                 //combobox -> cmbWelkeMeter vullen met de fijnstofmeters die er zijn
                 OleDbCommand cmd = new OleDbCommand();
                 cmd= new OleDbCommand(SQLScripts.sqlMeterID, MijnVerbinding);
