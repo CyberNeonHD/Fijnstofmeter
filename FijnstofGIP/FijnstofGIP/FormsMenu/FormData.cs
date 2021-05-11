@@ -302,7 +302,6 @@ namespace FijnstofGIP.FormsMenu
                     for (int i = 0; i < Sdr.FieldCount; i++)
                     {
                         cmbWelkeMeter.Items.Add(Sdr.GetString(i));
-
                     }
                 }
                 //---------------------------------------------------
@@ -544,7 +543,7 @@ namespace FijnstofGIP.FormsMenu
             }
             catch
             {
-                MessageBox.Show("ERROR: Er kunnen meerdere reden zijn waarom. Maar de voornaamste is dat de fijnstofmeter de data niet heeft die u zoekt", "Zoeken Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ERROR: Er kunnen meerdere reden zijn waarom. Maar de voornaamste is dat de fijnstofmeter de data niet heeft die u zoekt.", "Zoeken Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
            

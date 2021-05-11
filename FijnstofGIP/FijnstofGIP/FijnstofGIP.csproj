@@ -166,6 +166,12 @@
       <DependentUpon>Registratiescherm.cs</DependentUpon>
     </Compile>
     <Compile Include="SQLScripts.cs" />
+    <Compile Include="WachtwoordReset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WachtwoordReset.Designer.cs">
+      <DependentUpon>WachtwoordReset.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Aanmeldscherm.resx">
       <DependentUpon>Aanmeldscherm.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +217,9 @@
     </Compile>
     <EmbeddedResource Include="Registratiescherm.resx">
       <DependentUpon>Registratiescherm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WachtwoordReset.resx">
+      <DependentUpon>WachtwoordReset.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

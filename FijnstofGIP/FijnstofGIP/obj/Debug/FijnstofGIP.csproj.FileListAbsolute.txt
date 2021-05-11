@@ -84,3 +84,4 @@ K:\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\System.Security.Principal.Win
 K:\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\WinFormAnimation.xml
 K:\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.csproj.CopyComplete
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormData.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.WachtwoordReset.resources

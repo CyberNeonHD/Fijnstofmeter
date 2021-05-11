@@ -122,7 +122,7 @@ namespace FijnstofGIP.FormsMenu
         }
         #endregion
 
-        #region "advanced coding" voor email en opslaan van nieuwe fijnstofmeter
+        #region coding voor email en opslaan van nieuwe fijnstofmeter
         private void btnGegevensOpslaan_Click(object sender, EventArgs e)
         {
             try
@@ -203,8 +203,9 @@ namespace FijnstofGIP.FormsMenu
                 MessageBox.Show("ERROR, er is een fout gebeurd", "Onverwachte error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            #endregion
+            
         }
+        #endregion
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();

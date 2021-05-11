@@ -495,13 +495,12 @@ namespace FijnstofGIP
                     cmdWW.CommandText = SQLScripts.sqlWWInvoeren;
                     cmdWW.Connection = MijnVerbinding;
 
-                    //zet de string om naar Hash CODE
+                    //zet het wachtwoord om naar Hash CODE
                     string hashedWW = Hasher.Hash_SHA1(txtWachtwoord.Text);
+
                     cmdWW.Parameters.AddWithValue("@gebruikersid", GebruikersID);
                     cmdWW.Parameters.AddWithValue("@wachtwoord", hashedWW);
                     cmdWW.ExecuteNonQuery();
-
-                //---------------------------------------------------------------------------------------------------------------
 
                     MijnVerbinding.Close();
 
@@ -575,11 +574,7 @@ namespace FijnstofGIP
         #region code zichtbaar ww of niet zichtbaar
         private void iconbtnLock_Click(object sender, EventArgs e)
         {
-            if (txtWachtwoord.PasswordChar == '*')
-            {
-                iconbtnOpenLock.BringToFront();
-                txtWachtwoord.PasswordChar = '\0';
-            }
+
         }
 
         private void iconbtnOpenLock_Click(object sender, EventArgs e)

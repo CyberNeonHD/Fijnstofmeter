@@ -6,10 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 using System.Windows.Forms;
 using System.Data.OleDb;
-using System.Threading;
+
 
 namespace FijnstofGIP
 {
@@ -24,10 +25,16 @@ namespace FijnstofGIP
         DataSet ds = new DataSet();
         DataSet dsWW = new DataSet();
 
-        #region code die naar het registratie scherm gaat wnr je nog geen account hebt
+        #region code die naar andere from verwijst
         private void btnGeenAccount_Click(object sender, EventArgs e)
         {
             Registratiescherm volgendForm = new Registratiescherm(); //volgend form declareren
+            volgendForm.Show(); //tonen van volgend form
+            this.Hide(); //Aanmeldscherm form verbergen
+        }
+        private void btnWWVergeten_Click(object sender, EventArgs e)
+        {
+            WachtwoordReset volgendForm = new WachtwoordReset(); //volgend form declareren
             volgendForm.Show(); //tonen van volgend form
             this.Hide(); //Aanmeldscherm form verbergen
         }
@@ -40,7 +47,6 @@ namespace FijnstofGIP
             pnlwachtwoord.BackColor = Color.White;
 
         }
-
         private void txtWachtwoord_Click(object sender, EventArgs e)
         {
             pnlgebruikersnaam.BackColor = Color.White;
@@ -54,6 +60,15 @@ namespace FijnstofGIP
         {
             btnGeenAccount.ForeColor = Color.SteelBlue;
         }
+        private void btnWWVergeten_Hover(object sender, EventArgs e)
+        {
+            btnWWVergeten.ForeColor = Color.DeepSkyBlue;
+        }
+        private void btnWWVergeten_GeenHover(object sender, EventArgs e)
+        {
+            btnWWVergeten.ForeColor = Color.SteelBlue;
+        }
+
         #endregion
 
         #region Kleuren van de panelen veranderen via de tab - full tab support
@@ -89,6 +104,16 @@ namespace FijnstofGIP
         private void btnGeenAccount_Leave(object sender, EventArgs e)
         {
             btnGeenAccount.ForeColor = Color.SteelBlue;
+        }
+
+        private void btnWWVergeten_Enter(object sender, EventArgs e)
+        {
+            btnWWVergeten.ForeColor = Color.DeepSkyBlue;
+        }
+
+        private void btnWWVergeten_Leave(object sender, EventArgs e)
+        {
+            btnWWVergeten.ForeColor = Color.SteelBlue;
         }
         #endregion
 
@@ -199,7 +224,8 @@ namespace FijnstofGIP
                 txtWachtwoord.PasswordChar = '*';
             }
         }
-        #endregion
 
+
+        #endregion
     }
 }

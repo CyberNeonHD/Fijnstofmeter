@@ -37,9 +37,10 @@ namespace FijnstofGIP
             this.pnlwachtwoord = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.btnAanmelden = new System.Windows.Forms.Button();
+            this.btnGeenAccount = new System.Windows.Forms.Button();
+            this.btnWWVergeten = new System.Windows.Forms.Button();
             this.iconbtnLock = new FontAwesome.Sharp.IconPictureBox();
             this.iconbtnOpenLock = new FontAwesome.Sharp.IconPictureBox();
-            this.btnGeenAccount = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnOpenLock)).BeginInit();
             this.SuspendLayout();
@@ -142,6 +143,46 @@ namespace FijnstofGIP
             this.btnAanmelden.UseVisualStyleBackColor = true;
             this.btnAanmelden.Click += new System.EventHandler(this.btnAanmelden_Click);
             // 
+            // btnGeenAccount
+            // 
+            this.btnGeenAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGeenAccount.FlatAppearance.BorderSize = 0;
+            this.btnGeenAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnGeenAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGeenAccount.Font = new System.Drawing.Font("Myanmar Text", 8.25F);
+            this.btnGeenAccount.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnGeenAccount.Location = new System.Drawing.Point(53, 301);
+            this.btnGeenAccount.Name = "btnGeenAccount";
+            this.btnGeenAccount.Size = new System.Drawing.Size(146, 25);
+            this.btnGeenAccount.TabIndex = 4;
+            this.btnGeenAccount.Text = "Ik heb nog geen account";
+            this.btnGeenAccount.UseVisualStyleBackColor = true;
+            this.btnGeenAccount.Click += new System.EventHandler(this.btnGeenAccount_Click);
+            this.btnGeenAccount.Enter += new System.EventHandler(this.btnGeenAccount_Enter);
+            this.btnGeenAccount.Leave += new System.EventHandler(this.btnGeenAccount_Leave);
+            this.btnGeenAccount.MouseEnter += new System.EventHandler(this.btnGeenAccount_Hover);
+            this.btnGeenAccount.MouseLeave += new System.EventHandler(this.btnGeenAccount_GeenHover);
+            // 
+            // btnWWVergeten
+            // 
+            this.btnWWVergeten.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnWWVergeten.FlatAppearance.BorderSize = 0;
+            this.btnWWVergeten.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnWWVergeten.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWWVergeten.Font = new System.Drawing.Font("Myanmar Text", 8.25F);
+            this.btnWWVergeten.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnWWVergeten.Location = new System.Drawing.Point(53, 322);
+            this.btnWWVergeten.Name = "btnWWVergeten";
+            this.btnWWVergeten.Size = new System.Drawing.Size(146, 25);
+            this.btnWWVergeten.TabIndex = 5;
+            this.btnWWVergeten.Text = "Wachtwoord vergeten?";
+            this.btnWWVergeten.UseVisualStyleBackColor = true;
+            this.btnWWVergeten.Click += new System.EventHandler(this.btnWWVergeten_Click);
+            this.btnWWVergeten.Enter += new System.EventHandler(this.btnWWVergeten_Enter);
+            this.btnWWVergeten.Leave += new System.EventHandler(this.btnWWVergeten_Leave);
+            this.btnWWVergeten.MouseEnter += new System.EventHandler(this.btnWWVergeten_Hover);
+            this.btnWWVergeten.MouseLeave += new System.EventHandler(this.btnWWVergeten_GeenHover);
+            // 
             // iconbtnLock
             // 
             this.iconbtnLock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
@@ -174,26 +215,6 @@ namespace FijnstofGIP
             this.iconbtnOpenLock.TabStop = false;
             this.iconbtnOpenLock.Click += new System.EventHandler(this.iconbtnOpenLock_Click);
             // 
-            // btnGeenAccount
-            // 
-            this.btnGeenAccount.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGeenAccount.FlatAppearance.BorderSize = 0;
-            this.btnGeenAccount.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnGeenAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGeenAccount.Font = new System.Drawing.Font("Myanmar Text", 8.25F);
-            this.btnGeenAccount.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnGeenAccount.Location = new System.Drawing.Point(53, 301);
-            this.btnGeenAccount.Name = "btnGeenAccount";
-            this.btnGeenAccount.Size = new System.Drawing.Size(146, 25);
-            this.btnGeenAccount.TabIndex = 4;
-            this.btnGeenAccount.Text = "Ik heb nog geen account";
-            this.btnGeenAccount.UseVisualStyleBackColor = true;
-            this.btnGeenAccount.Click += new System.EventHandler(this.btnGeenAccount_Click);
-            this.btnGeenAccount.Enter += new System.EventHandler(this.btnGeenAccount_Enter);
-            this.btnGeenAccount.Leave += new System.EventHandler(this.btnGeenAccount_Leave);
-            this.btnGeenAccount.MouseEnter += new System.EventHandler(this.btnGeenAccount_Hover);
-            this.btnGeenAccount.MouseLeave += new System.EventHandler(this.btnGeenAccount_GeenHover);
-            // 
             // Aanmeldscherm
             // 
             this.AcceptButton = this.btnAanmelden;
@@ -201,6 +222,7 @@ namespace FijnstofGIP
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(258, 389);
+            this.Controls.Add(this.btnWWVergeten);
             this.Controls.Add(this.btnGeenAccount);
             this.Controls.Add(this.iconbtnLock);
             this.Controls.Add(this.iconbtnOpenLock);
@@ -238,5 +260,6 @@ namespace FijnstofGIP
         private FontAwesome.Sharp.IconPictureBox iconbtnLock;
         private FontAwesome.Sharp.IconPictureBox iconbtnOpenLock;
         private System.Windows.Forms.Button btnGeenAccount;
+        private System.Windows.Forms.Button btnWWVergeten;
     }
 }

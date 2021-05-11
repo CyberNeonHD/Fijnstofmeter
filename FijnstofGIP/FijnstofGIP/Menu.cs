@@ -134,13 +134,9 @@ namespace FijnstofGIP
                 this.Close(); //Menu form verbergen
                 MessageBox.Show("Succesvol uitgelogd", "Uitloggen", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (Uitloggen == DialogResult.No)
+            else
             {
                 //er gebeurd dan niks
-            }
-            else //FOUT PROTECTIE: moest er iets random foutlopen en de waarde is niet ja of nee 0.0
-            {
-                MessageBox.Show("Er is iets foutgelopen terwijl je op de knop drukte!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion

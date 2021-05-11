@@ -144,9 +144,9 @@ namespace FijnstofGIP.FormsMenu
             this.label7.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label7.Location = new System.Drawing.Point(404, 229);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 27);
+            this.label7.Size = new System.Drawing.Size(96, 27);
             this.label7.TabIndex = 5;
-            this.label7.Text = "longtitude";
+            this.label7.Text = "Lengtegraad";
             // 
             // txtMeterID
             // 
@@ -172,9 +172,9 @@ namespace FijnstofGIP.FormsMenu
             this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label5.Location = new System.Drawing.Point(57, 229);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 27);
+            this.label5.Size = new System.Drawing.Size(103, 27);
             this.label5.TabIndex = 7;
-            this.label5.Text = "latitude";
+            this.label5.Text = "Breedtegraad";
             // 
             // pnlMeterID
             // 
