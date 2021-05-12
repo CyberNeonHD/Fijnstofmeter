@@ -574,7 +574,11 @@ namespace FijnstofGIP
         #region code zichtbaar ww of niet zichtbaar
         private void iconbtnLock_Click(object sender, EventArgs e)
         {
-
+            if (txtWachtwoord.PasswordChar == '*')
+            {
+                iconbtnOpenLock.BringToFront();
+                txtWachtwoord.PasswordChar = '\0';
+            }
         }
 
         private void iconbtnOpenLock_Click(object sender, EventArgs e)

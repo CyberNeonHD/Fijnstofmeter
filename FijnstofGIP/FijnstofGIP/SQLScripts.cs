@@ -66,7 +66,7 @@ namespace FijnstofGIP
         //Registreren van gebruiker
         public static readonly string sqlRegistreren =
             "INSERT INTO tblgebruikers (gebruikersnaam, email, voornaam, familienaam, huisnummer, straat, postcode, gemeente)" +
-            "VALUES (@gebruikersnaam,@email, @voornaam, @familienaam, @huisnummer, @straat, @postcode, @gemeente)";
+            "VALUES (@gebruikersnaam,@email, @voornaam, @familienaam, @huisnummer, @straat, @postcode, @gemeente);";
 
         //invoegen van het wachtwoord in aparte tabel -> omslachtige manier maar het werkt wel :P
         public static readonly string sqlWWInvoeren = "INSERT INTO tblgebruikersWW (gebruikersID, wachtwoord)" +
