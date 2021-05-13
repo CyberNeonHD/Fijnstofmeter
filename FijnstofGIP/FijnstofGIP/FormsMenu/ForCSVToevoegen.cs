@@ -10,18 +10,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 
-namespace FijnstofGIP.FormsGebruikerInstellingen
+namespace FijnstofGIP.FormsMenu
 {
-    public partial class FormGebruiksersNaamVeranderen : Form
+    public partial class ForCSVToevoegen : Form
     {
-        public FormGebruiksersNaamVeranderen()
+        public ForCSVToevoegen()
         {
             InitializeComponent();
         }
 
-        private void btnGegevensOpslaan_Click(object sender, EventArgs e)
-        {
-            
-        }
+       
     }
 }

@@ -50,8 +50,9 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // 
             this.btnGegevensOpslaan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGegevensOpslaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGegevensOpslaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGegevensOpslaan.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnGegevensOpslaan.Location = new System.Drawing.Point(437, 361);
+            this.btnGegevensOpslaan.Location = new System.Drawing.Point(448, 426);
             this.btnGegevensOpslaan.Name = "btnGegevensOpslaan";
             this.btnGegevensOpslaan.Size = new System.Drawing.Size(129, 34);
             this.btnGegevensOpslaan.TabIndex = 5;
@@ -64,7 +65,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(686, 407);
+            this.ClientSize = new System.Drawing.Size(686, 461);
             this.Controls.Add(this.btnGegevensOpslaan);
             this.Controls.Add(this.lbltitel);
             this.Name = "FormWWVeranderen";

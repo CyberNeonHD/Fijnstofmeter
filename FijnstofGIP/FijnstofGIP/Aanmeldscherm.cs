@@ -120,8 +120,6 @@ namespace FijnstofGIP
         #region code voor de knop aanmelden -> ingewikkeld door de 2 tabellen
         private void btnAanmelden_Click(object sender, EventArgs e)
         {
-
-
             try
             {
                 //gegevens van gebruiker krijgen bij login -> ik heb een aparte connectie moeten maken en dit voor de wachtwoord check moeten doen anders werden de variabele niet opgevuld 0.0
@@ -138,16 +136,17 @@ namespace FijnstofGIP
                 cmdGebrInfo.ExecuteNonQuery();
                 OleDbDataReader drGebrInfo = cmdGebrInfo.ExecuteReader();
 
-                //we slaan deze op in de InfoGebruiker -> handig om de gebruiker zijn info te hebben bij ALLE forms
+                //we slaan deze op in de InfoGebruiker -> handig om de gebruiker zijn info te hebben bij ALLE forms + ID van gebruiker krijgen
                 while (drGebrInfo.Read())
                 {
-                    InfoGebruiker.email = drGebrInfo.GetValue(0).ToString();
-                    InfoGebruiker.voornaam = drGebrInfo.GetValue(1).ToString();
-                    InfoGebruiker.familienaam = drGebrInfo.GetValue(2).ToString();
-                    InfoGebruiker.huisnummer = drGebrInfo.GetValue(3).ToString();
-                    InfoGebruiker.straat = drGebrInfo.GetValue(4).ToString();
-                    InfoGebruiker.postcode = drGebrInfo.GetValue(5).ToString();
-                    InfoGebruiker.gemeente = drGebrInfo.GetValue(6).ToString();
+                    InfoGebruiker.gebruikersID = Convert.ToInt32(drGebrInfo.GetValue(0).ToString());
+                    InfoGebruiker.email = drGebrInfo.GetValue(1).ToString();
+                    InfoGebruiker.voornaam = drGebrInfo.GetValue(2).ToString();
+                    InfoGebruiker.familienaam = drGebrInfo.GetValue(3).ToString();
+                    InfoGebruiker.huisnummer = drGebrInfo.GetValue(4).ToString();
+                    InfoGebruiker.straat = drGebrInfo.GetValue(5).ToString();
+                    InfoGebruiker.postcode = drGebrInfo.GetValue(6).ToString();
+                    InfoGebruiker.gemeente = drGebrInfo.GetValue(7).ToString();
                 }
                 InfoGebruiker.gebruikersnaam = txtGebruikersnaam.Text;
                 
@@ -157,51 +156,44 @@ namespace FijnstofGIP
                 //Login instructie ----------------------------------------------------------------------------
                 OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
                 MijnVerbinding.Open();
-                string login = "SELECT * FROM tblgebruikers WHERE gebruikersnaam= '" + txtGebruikersnaam.Text + "'";
-                string loginWW = "SELECT * FROM tblgebruikersWW WHERE wachtwoord= '" + Hasher.Hash_SHA1(txtWachtwoord.Text) + "'";
+                //we nemen de gebruikersnaam via de gebruikersnaam -> we doen dit omdat we de adapter login gaan vullen
+                string login = "SELECT gebruikersnaam FROM tblgebruikers WHERE gebruikersnaam=@gebruikersnaam";
+                //via de gebruikersID die we verkregen hebben via gebruikersnaam nemen we het wachtwoord
+                string loginWW = "SELECT wachtwoord FROM tblgebruikersWW WHERE gebruikersID=@gebruikersID";
 
                 OleDbDataAdapter adapter = new OleDbDataAdapter(login, MijnVerbinding);
+                adapter.SelectCommand.Parameters.AddWithValue("@gebruikersnaam", Convert.ToString(txtGebruikersnaam.Text));
                 OleDbDataAdapter adapterWW = new OleDbDataAdapter(loginWW, MijnVerbinding);
-                adapter.Fill(ds, "login");
-                adapterWW.Fill(dsWW, "login");
+                adapterWW.SelectCommand.Parameters.AddWithValue("@gebruikersID", InfoGebruiker.gebruikersID);
 
-                int i = 0;
-                if ((dsWW.Tables[i].Rows.Count > 0) && (ds.Tables[i].Rows.Count > 0))  //meer dan 0 resulaten -> login bestaat | gelijk aan nu -> login bestaat niet
-                {
-                    //deze if zorgt ervoor dat we de login HOOFDLETTER gevoelig maken, heel belangrijk!
-                    //Hasher.Hash_SHA1 neemt de hash code van de string
-                    if ((Hasher.Hash_SHA1(txtWachtwoord.Text) == dsWW.Tables[i].Rows[i]["wachtwoord"].ToString()) && (txtGebruikersnaam.Text == ds.Tables[i].Rows[i]["gebruikersnaam"].ToString()))
-                    {   //als de login klopt wordt je ingelogdt
-                        Menu volgendForm = new Menu(); //volgend form declareren
-                        volgendForm.Show(); //tonen van volgend form
-                        this.Hide(); //Aanmeldscherm form verbergen
-                    }
-                    else
-                    {
-                        //als de login niet klopt door bv een hoofdletter te vergeten krijg je deze melding te zien
-                        //uit veiligheid geven we de globale melding "Ongeldige gebruikersnaam of wachtwoord"
-                        MessageBox.Show("Ongeldige gebruikersnaam of wachtwoord, probeer opnieuw aub", "Login mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        txtGebruikersnaam.Text = "";
-                        txtWachtwoord.Text = "";
-                        txtGebruikersnaam.Focus();
-                    }
+                //we vullen de datasetten in
+                adapter.Fill(ds, "login");
+                adapterWW.Fill(dsWW, "loginWW");
+
+                //deze if zorgt ervoor dat we de login HOOFDLETTER gevoelig maken, heel belangrijk!
+                //Hasher.Hash_SHA1 neemt de hash code van de string
+                if ((Hasher.Hash_SHA1(txtWachtwoord.Text) == dsWW.Tables[0].Rows[0]["wachtwoord"].ToString()) && (txtGebruikersnaam.Text == ds.Tables[0].Rows[0]["gebruikersnaam"].ToString()))
+                {   //als de login klopt wordt je ingelogd
+                    Menu volgendForm = new Menu(); //volgend form declareren
+                    volgendForm.Show(); //tonen van volgend form
+                    this.Hide(); //Aanmeldscherm form verbergen
                 }
-                else //als hij de data niet vind met andere woorden de gebruikersnaam of wachtwoord bestaat niet dan toont hij dit bericht  + schoonmaken van de textboxen
+                else
                 {
+                    //als een hoofdletter niet klopt krijg deze melding te zien
+                    //uit veiligheid geven we de globale melding "Ongeldige gebruikersnaam of wachtwoord"
                     MessageBox.Show("Ongeldige gebruikersnaam of wachtwoord, probeer opnieuw aub", "Login mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtGebruikersnaam.Text = "";
                     txtWachtwoord.Text = "";
                     txtGebruikersnaam.Focus();
                 }
+                
                 MijnVerbinding.Close();
-                //---------------------------------------------------------------------------------------------------
-        
-
-
+                //---------------------------------------------------------------------------------------------------      
             }
             catch
-            {
-                MessageBox.Show("ERROR: er moet iets foutgelopen zijn", "Aanmelden Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            {   //wanneer de gebruiker niet bestaat en er dus geen gebruikersID is gebeurd er een error dus tonen we deze globale melding
+                MessageBox.Show("Ongeldige gebruikersnaam of wachtwoord, probeer opnieuw aub", "Aanmelden Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion

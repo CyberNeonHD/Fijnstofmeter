@@ -160,278 +160,101 @@ namespace FijnstofGIP
         private void txtVoornaam_Enter(object sender, EventArgs e)
         {
             pnlvoornaam.BackColor = Color.DeepSkyBlue;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtVoornaam_Leave(object sender, EventArgs e)
         {
             pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtFamilienaam_Enter(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
             pnlfamilie.BackColor = Color.DeepSkyBlue;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtFamilienaam_Leave(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
             pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtStraat_Enter(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
             pnlstraat.BackColor = Color.DeepSkyBlue;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
         private void txtStraat_Leave(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
+
             pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
         private void txtPostcode_Enter(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
             pnlpostcode.BackColor = Color.DeepSkyBlue;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtPostcode_Leave(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
             pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtHuisNummer_Enter(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
+
             pnlhuisnummer.BackColor = Color.DeepSkyBlue;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtHuisNummer_Leave(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
+
             pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtGemeente_Enter(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
             pnlgemeente.BackColor = Color.DeepSkyBlue;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtGemeente_Leave(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
             pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtGebruikersnaam_Enter(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
             pnlgebruikersnaam.BackColor = Color.DeepSkyBlue;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtGebruikersnaam_Leave(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
             pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtEmail_Enter(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
             pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.DeepSkyBlue;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtEmail_Leave(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
             pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtWachtwoord_Enter(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
             pnlww.BackColor = Color.DeepSkyBlue;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtWachtwoord_Leave(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
             pnlww.BackColor = Color.White;
-            pnlwwbevestigen.BackColor = Color.White;
         }
 
         private void txtWachtwoordBevestigen_Enter(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
             pnlwwbevestigen.BackColor = Color.DeepSkyBlue;
         }
 
         private void txtWachtwoordBevestigen_Leave(object sender, EventArgs e)
         {
-            pnlvoornaam.BackColor = Color.White;
-            pnlfamilie.BackColor = Color.White;
-            pnlstraat.BackColor = Color.White;
-            pnlpostcode.BackColor = Color.White;
-            pnlhuisnummer.BackColor = Color.White;
-            pnlgemeente.BackColor = Color.White;
-            pnlgebruikersnaam.BackColor = Color.White;
-            pnlEmail.BackColor = Color.White;
-            pnlww.BackColor = Color.White;
             pnlwwbevestigen.BackColor = Color.White;
         }
         #endregion
@@ -441,7 +264,6 @@ namespace FijnstofGIP
         {
             //try
             //{
-
                 if (txtVoornaam.Text == "" && txtFamilienaam.Text == "" && txtStraat.Text == "" && txtHuisNummer.Text == "" && txtPostcode.Text == "" && txtGemeente.Text == "" && txtGebruikersnaam.Text == "" && txtEmail.Text == "" && txtWachtwoord.Text == "" && txtWachtwoordBevestigen.Text == "")
                 {
                     MessageBox.Show("Je moet alle velden invullen", "Registratie Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -462,8 +284,8 @@ namespace FijnstofGIP
                     cmd.Parameters.AddWithValue("@email", Convert.ToString(txtEmail.Text));
                     cmd.Parameters.AddWithValue("@voornaam", Convert.ToString(txtVoornaam.Text));
                     cmd.Parameters.AddWithValue("@familienaam", Convert.ToString(txtFamilienaam.Text));
-                    cmd.Parameters.AddWithValue("@huisnummer", Convert.ToInt32(txtHuisNummer.Text));
                     cmd.Parameters.AddWithValue("@straat", Convert.ToString(txtStraat.Text));
+                    cmd.Parameters.AddWithValue("@huisnummer", Convert.ToInt32(txtHuisNummer.Text));
                     cmd.Parameters.AddWithValue("@postcode", Convert.ToInt32(txtPostcode.Text));
                     cmd.Parameters.AddWithValue("@gemeente", Convert.ToString(txtGemeente.Text));
 

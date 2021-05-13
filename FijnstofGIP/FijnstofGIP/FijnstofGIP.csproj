@@ -113,11 +113,23 @@
     <Compile Include="FormsGebruikerInstellingen\FormWWVeranderen.Designer.cs">
       <DependentUpon>FormWWVeranderen.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsMenu\ForCSVToevoegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\ForCSVToevoegen.Designer.cs">
+      <DependentUpon>ForCSVToevoegen.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsMenu\FormData.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsMenu\FormData.Designer.cs">
       <DependentUpon>FormData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormDataTabelvorm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormDataTabelvorm.Designer.cs">
+      <DependentUpon>FormDataTabelvorm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsMenu\FormFijnstofmeterToevoegen.cs">
       <SubType>Form</SubType>
@@ -184,8 +196,14 @@
     <EmbeddedResource Include="FormsGebruikerInstellingen\FormWWVeranderen.resx">
       <DependentUpon>FormWWVeranderen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\ForCSVToevoegen.resx">
+      <DependentUpon>ForCSVToevoegen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsMenu\FormData.resx">
       <DependentUpon>FormData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormDataTabelvorm.resx">
+      <DependentUpon>FormDataTabelvorm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsMenu\FormFijnstofmeterToevoegen.resx">
       <DependentUpon>FormFijnstofmeterToevoegen.cs</DependentUpon>

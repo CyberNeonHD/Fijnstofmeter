@@ -32,7 +32,7 @@ namespace FijnstofGIP.FormsMenu
             this.label2 = new System.Windows.Forms.Label();
             this.cmbWelkeMeter = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.dtpDatum = new System.Windows.Forms.DateTimePicker();
+            this.dtpDatumP1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTempAVG = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -83,6 +83,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtLuchtdrukMAX = new System.Windows.Forms.TextBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.btnClose = new FontAwesome.Sharp.IconPictureBox();
+            this.dtpDatumP2 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,7 +109,7 @@ namespace FijnstofGIP.FormsMenu
             this.cmbWelkeMeter.FormattingEnabled = true;
             this.cmbWelkeMeter.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cmbWelkeMeter.ItemHeight = 14;
-            this.cmbWelkeMeter.Location = new System.Drawing.Point(425, 73);
+            this.cmbWelkeMeter.Location = new System.Drawing.Point(443, 73);
             this.cmbWelkeMeter.Name = "cmbWelkeMeter";
             this.cmbWelkeMeter.Size = new System.Drawing.Size(119, 22);
             this.cmbWelkeMeter.TabIndex = 82;
@@ -126,15 +127,15 @@ namespace FijnstofGIP.FormsMenu
             this.label6.TabIndex = 81;
             this.label6.Text = "Kies hier de meter die u wilt inladen";
             // 
-            // dtpDatum
+            // dtpDatumP1
             // 
-            this.dtpDatum.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDatum.Location = new System.Drawing.Point(425, 110);
-            this.dtpDatum.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
-            this.dtpDatum.Name = "dtpDatum";
-            this.dtpDatum.Size = new System.Drawing.Size(119, 20);
-            this.dtpDatum.TabIndex = 83;
-            this.dtpDatum.ValueChanged += new System.EventHandler(this.dtpDatum_ValueChanged);
+            this.dtpDatumP1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDatumP1.Location = new System.Drawing.Point(309, 110);
+            this.dtpDatumP1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dtpDatumP1.Name = "dtpDatumP1";
+            this.dtpDatumP1.Size = new System.Drawing.Size(119, 20);
+            this.dtpDatumP1.TabIndex = 83;
+            this.dtpDatumP1.ValueChanged += new System.EventHandler(this.dtpDatum_ValueChanged);
             // 
             // label1
             // 
@@ -143,9 +144,9 @@ namespace FijnstofGIP.FormsMenu
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Location = new System.Drawing.Point(166, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(200, 23);
+            this.label1.Size = new System.Drawing.Size(130, 23);
             this.label1.TabIndex = 84;
-            this.label1.Text = "Kies hier de datum voor de data";
+            this.label1.Text = "Kies hier uw periode";
             // 
             // txtTempAVG
             // 
@@ -736,12 +737,23 @@ namespace FijnstofGIP.FormsMenu
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // dtpDatumP2
+            // 
+            this.dtpDatumP2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDatumP2.Location = new System.Drawing.Point(443, 110);
+            this.dtpDatumP2.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
+            this.dtpDatumP2.Name = "dtpDatumP2";
+            this.dtpDatumP2.Size = new System.Drawing.Size(119, 20);
+            this.dtpDatumP2.TabIndex = 141;
+            this.dtpDatumP2.ValueChanged += new System.EventHandler(this.dtpDatumP2_ValueChanged);
+            // 
             // FormStatisticheData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(714, 540);
+            this.Controls.Add(this.dtpDatumP2);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
@@ -792,7 +804,7 @@ namespace FijnstofGIP.FormsMenu
             this.Controls.Add(this.txtLuchtdrukAVG);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dtpDatum);
+            this.Controls.Add(this.dtpDatumP1);
             this.Controls.Add(this.cmbWelkeMeter);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
@@ -810,7 +822,7 @@ namespace FijnstofGIP.FormsMenu
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbWelkeMeter;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dtpDatum;
+        private System.Windows.Forms.DateTimePicker dtpDatumP1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTempAVG;
         private System.Windows.Forms.Panel panel7;
@@ -861,5 +873,6 @@ namespace FijnstofGIP.FormsMenu
         private System.Windows.Forms.TextBox txtLuchtdrukMAX;
         private System.Windows.Forms.Panel panel15;
         private FontAwesome.Sharp.IconPictureBox btnClose;
+        private System.Windows.Forms.DateTimePicker dtpDatumP2;
     }
 }

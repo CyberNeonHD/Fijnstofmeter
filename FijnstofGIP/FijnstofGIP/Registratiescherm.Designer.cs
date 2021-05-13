@@ -111,7 +111,7 @@ namespace FijnstofGIP
             this.txtGebruikersnaam.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGebruikersnaam.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.txtGebruikersnaam.Location = new System.Drawing.Point(16, 303);
-            this.txtGebruikersnaam.MaxLength = 27;
+            this.txtGebruikersnaam.MaxLength = 30;
             this.txtGebruikersnaam.Multiline = true;
             this.txtGebruikersnaam.Name = "txtGebruikersnaam";
             this.txtGebruikersnaam.Size = new System.Drawing.Size(240, 20);
@@ -310,7 +310,7 @@ namespace FijnstofGIP
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label8.Location = new System.Drawing.Point(20, 206);
+            this.label8.Location = new System.Drawing.Point(16, 208);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 27);
             this.label8.TabIndex = 1;
@@ -536,7 +536,7 @@ namespace FijnstofGIP
             this.txtEmail.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.txtEmail.Location = new System.Drawing.Point(278, 303);
-            this.txtEmail.MaxLength = 29;
+            this.txtEmail.MaxLength = 30;
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(236, 20);

@@ -16,14 +16,14 @@ namespace FijnstofGIP
             {
                 //maakt de hash code
                 var hash = sha1.ComputeHash(Encoding.UTF8.GetBytes(input));
-                //lengte van de input *2
-                var sb = new StringBuilder(hash.Length * 2);
+                //lengte van de input *4
+                var sb = new StringBuilder(hash.Length * 4);
 
                 //neemt elke byte in de hash
                 foreach (byte b in hash)
                 {
-                    //voegt de hash bytes samen om de lengte van *2 te bereiken
-                    sb.Append(b.ToString("X2"));
+                    //voegt de hash bytes samen om de lengte van *4 te bereiken
+                    sb.Append(b.ToString("X4"));
                 }
                 //returned de de string
                 return sb.ToString();

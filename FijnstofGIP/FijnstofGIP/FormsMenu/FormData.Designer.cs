@@ -503,6 +503,7 @@
             this.cmbWelkVeld.Size = new System.Drawing.Size(119, 22);
             this.cmbWelkVeld.TabIndex = 6;
             this.cmbWelkVeld.Tag = "Hier kan je kiezen in welk veld je wil zoeken";
+            this.cmbWelkVeld.SelectionChangeCommitted += new System.EventHandler(this.cmbWelkVeld_SelectionChangeCommitted);
             // 
             // label7
             // 

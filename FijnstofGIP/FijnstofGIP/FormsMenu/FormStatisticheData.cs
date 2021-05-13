@@ -14,7 +14,8 @@ namespace FijnstofGIP.FormsMenu
 {
     public partial class FormStatisticheData : Form
     {
-        string datum = "";
+        string datumP1 = "";
+        string datumP2 = "";
         public FormStatisticheData()
         {
             InitializeComponent();
@@ -24,7 +25,8 @@ namespace FijnstofGIP.FormsMenu
         {
             comboBoxVullen();
             //bij inladen ook een datum
-            datum = Convert.ToString(dtpDatum.Value.Date.ToShortDateString());
+            datumP1 = Convert.ToString(dtpDatumP1.Value.Date.ToShortDateString());
+            datumP2 = Convert.ToString(dtpDatumP2.Value.Date.ToShortDateString());
         }
 
         public void comboBoxVullen()
@@ -48,10 +50,13 @@ namespace FijnstofGIP.FormsMenu
         }
 
         private void dtpDatum_ValueChanged(object sender, EventArgs e)
-        { 
-           datum = Convert.ToString(dtpDatum.Value.Date.ToShortDateString());
+        {
+            datumP1 = Convert.ToString(dtpDatumP1.Value.Date.ToShortDateString());
         }
-
+        private void dtpDatumP2_ValueChanged(object sender, EventArgs e)
+        {
+            datumP2 = Convert.ToString(dtpDatumP2.Value.Date.ToShortDateString());
+        }
         private void cmbWelkeMeter_SelectionChangeCommitted(object sender, EventArgs e)
         {
             OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
@@ -72,15 +77,20 @@ namespace FijnstofGIP.FormsMenu
 
             String fijnstofMeter = cmbWelkeMeter.SelectedItem.ToString();
             cmdAVG.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdAVG.Parameters.AddWithValue("@datum", datum);
+            cmdAVG.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdAVG.Parameters.AddWithValue("@datumP2", datumP2);
             cmdAVG2.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdAVG2.Parameters.AddWithValue("@datum", datum);
+            cmdAVG2.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdAVG2.Parameters.AddWithValue("@datumP2", datumP2);
             cmdAVG3.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdAVG3.Parameters.AddWithValue("@datum", datum);
+            cmdAVG3.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdAVG3.Parameters.AddWithValue("@datumP2", datumP2);
             cmdAVG4.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdAVG4.Parameters.AddWithValue("@datum", datum);
+            cmdAVG4.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdAVG4.Parameters.AddWithValue("@datumP2", datumP2);
             cmdAVG5.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdAVG5.Parameters.AddWithValue("@datum", datum);
+            cmdAVG5.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdAVG5.Parameters.AddWithValue("@datumP2", datumP2);
 
             OleDbDataReader drAVG = cmdAVG.ExecuteReader();
             OleDbDataReader drAVG2 = cmdAVG2.ExecuteReader();
@@ -125,15 +135,15 @@ namespace FijnstofGIP.FormsMenu
             cmdMIN5 = new OleDbCommand(SQLScripts.sqlStatistischeGegevensMIN5, MijnVerbinding);
 
             cmdMIN.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMIN.Parameters.AddWithValue("@datum", datum);
+            cmdMIN.Parameters.AddWithValue("@datum", datumP1);
             cmdMIN2.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMIN2.Parameters.AddWithValue("@datum", datum);
+            cmdMIN2.Parameters.AddWithValue("@datum", datumP1);
             cmdMIN3.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMIN3.Parameters.AddWithValue("@datum", datum);
+            cmdMIN3.Parameters.AddWithValue("@datum", datumP1);
             cmdMIN4.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMIN4.Parameters.AddWithValue("@datum", datum);
+            cmdMIN4.Parameters.AddWithValue("@datum", datumP1);
             cmdMIN5.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMIN5.Parameters.AddWithValue("@datum", datum);
+            cmdMIN5.Parameters.AddWithValue("@datum", datumP1);
 
             OleDbDataReader drMIN = cmdMIN.ExecuteReader();
             OleDbDataReader drMIN2 = cmdMIN2.ExecuteReader();
@@ -177,15 +187,15 @@ namespace FijnstofGIP.FormsMenu
             cmdMAX5 = new OleDbCommand(SQLScripts.sqlStatistischeGegevensMAX5, MijnVerbinding);
 
             cmdMAX.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMAX.Parameters.AddWithValue("@datum", datum);
+            cmdMAX.Parameters.AddWithValue("@datum", datumP1);
             cmdMAX2.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMAX2.Parameters.AddWithValue("@datum", datum);
+            cmdMAX2.Parameters.AddWithValue("@datum", datumP1);
             cmdMAX3.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMAX3.Parameters.AddWithValue("@datum", datum);
+            cmdMAX3.Parameters.AddWithValue("@datum", datumP1);
             cmdMAX4.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMAX4.Parameters.AddWithValue("@datum", datum);
+            cmdMAX4.Parameters.AddWithValue("@datum", datumP1);
             cmdMAX5.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMAX5.Parameters.AddWithValue("@datum", datum);
+            cmdMAX5.Parameters.AddWithValue("@datum", datumP1);
 
             OleDbDataReader drMAX = cmdMAX.ExecuteReader();
             OleDbDataReader drMAX2 = cmdMAX2.ExecuteReader();

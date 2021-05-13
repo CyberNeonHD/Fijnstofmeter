@@ -39,6 +39,7 @@ namespace FijnstofGIP.FormsMenu
         {
             pnlGebruikerMenuLinks.Visible = false;
             btnTerugkeren.Visible = true;
+            btnClose.Visible = false;
             openChildForm(new FormsGebruikerInstellingen.FormWWVeranderen());
         }
 
@@ -46,6 +47,7 @@ namespace FijnstofGIP.FormsMenu
         {
             pnlGebruikerMenuLinks.Visible = false;
             btnTerugkeren.Visible = true;
+            btnClose.Visible = false;
             openChildForm(new FormsGebruikerInstellingen.FormAdresVeranderen());
 
         }
@@ -54,6 +56,7 @@ namespace FijnstofGIP.FormsMenu
         {
             pnlGebruikerMenuLinks.Visible = false;
             btnTerugkeren.Visible = true;
+            btnClose.Visible = false;
             openChildForm(new FormsGebruikerInstellingen.FormGebruiksersNaamVeranderen());
         }
 
@@ -61,7 +64,13 @@ namespace FijnstofGIP.FormsMenu
         {
             actieveForm.Close();
             btnTerugkeren.Visible = false;
+            btnClose.Visible = true;
             pnlGebruikerMenuLinks.Visible = true;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -159,6 +159,7 @@ namespace FijnstofGIP
                     Random rnd = new Random();
                     Int32 codeRnd = rnd.Next(132579, 999999);
                     codeWW = codeRnd;
+
                     MailMessage CodeMail = new MailMessage();
                     string naar, van, ww, bericht, onderwerp;
 
@@ -167,6 +168,7 @@ namespace FijnstofGIP
                     ww = InfoGebruiker.KalexWW;
                     bericht = "Beste " + voornaam + " " + achternaam + "," + "<br />" + "<br /> U heeft een code aangevraagd om uw wachtwoord te veranderen, dit is uw code: " + codeWW + " <br /> Nog een prettige dag verder! <br /> <br /> Met vriendelijke groeten, <br />Kalex";
                     onderwerp = "Code nieuw wachtwoord";
+
                     CodeMail.To.Add(naar);
                     CodeMail.From = new MailAddress(van);
                     CodeMail.Body = bericht;

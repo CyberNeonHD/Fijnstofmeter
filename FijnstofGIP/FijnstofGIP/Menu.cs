@@ -20,11 +20,11 @@ namespace FijnstofGIP
             InitializeComponent();
             tijd.Start();
             //DropMenuDesign();
-            //welkom tekst op gebruikersnaam
-            lblwelkom.Text = "Welkom "+  InfoGebruiker.gebruikersnaam +", bij de fijnstofmeter van Kalex";
+            //welkom tekst op naam
+            lblwelkom.Text = "Welkom "+ InfoGebruiker.voornaam + " " + InfoGebruiker.familienaam + ", bij de fijnstofmeter van Kalex";
 
-            //gebruiker zijn voornaam en naam
-            lblNaamGebruiker.Text = InfoGebruiker.voornaam + " " + InfoGebruiker.familienaam;
+            //gebruikersnaam naast de gerbuikersinstellingen
+            lblNaamGebruiker.Text = InfoGebruiker.gebruikersnaam;
             
         }
 
@@ -87,14 +87,18 @@ namespace FijnstofGIP
         {
             openChildForm(new FormsMenu.FormData());
         }
-        private void btnFijnstofmeterToevoegen_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormsMenu.FormFijnstofmeterToevoegen());
-            //SluitDropMenuDesign();
-        }
         private void btnStatisticheData_Click(object sender, EventArgs e)
         {
             openChildForm(new FormsMenu.FormStatisticheData());
+            //SluitDropMenuDesign();
+        }
+        private void btnDataTabelvorm_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormsMenu.FormDataTabelvorm());
+        }
+        private void btnFijnstofmeterToevoegen_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormsMenu.FormFijnstofmeterToevoegen());
             //SluitDropMenuDesign();
         }
         private void btnKaartWeergeven_Click(object sender, EventArgs e)
@@ -145,6 +149,11 @@ namespace FijnstofGIP
         private void tijd_Tick(object sender, EventArgs e)
         {
             lblDatum.Text = DateTime.Now.ToString("dddd dd MMMM yyyy");
+        }
+
+        private void btnCSVToevoegen_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormsMenu.ForCSVToevoegen());
         }
     }
 }
