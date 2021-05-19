@@ -80,7 +80,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             }
             catch
             {
-                MessageBox.Show("ERROR: Tijdens het opslaan is er een fout gebeurd", "Oplsaan Mislukt!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ERROR: Gebruikersnaam bestaat al!", "Opslaan Mislukt!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         #endregion

@@ -114,12 +114,6 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     cmdAdresAanpassen.CommandText = SQLScripts.sqlAanpassenAdres;
                     cmdAdresAanpassen.Connection = MijnVerbinding;
 
-                    //updaten van de info over de gebruiker
-                    InfoGebruiker.straat = txtStraat.Text;
-                    InfoGebruiker.huisnummer = txtHuisNummer.Text;
-                    InfoGebruiker.postcode = txtPostcode.Text;
-                    InfoGebruiker.gemeente = txtGemeente.Text;
-
                     cmdAdresAanpassen.Parameters.AddWithValue("@gebruikersID", Convert.ToString(InfoGebruiker.gebruikersID));
                     cmdAdresAanpassen.Parameters.AddWithValue("@gebruikersnaam", Convert.ToString(InfoGebruiker.gebruikersnaam));
                     cmdAdresAanpassen.Parameters.AddWithValue("@email", Convert.ToString(InfoGebruiker.email));
@@ -132,6 +126,12 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
 
                     cmdAdresAanpassen.ExecuteNonQuery();
                     MijnVerbinding.Close();
+
+                    //updaten van de info over de gebruiker
+                    InfoGebruiker.straat = txtStraat.Text;
+                    InfoGebruiker.huisnummer = txtHuisNummer.Text;
+                    InfoGebruiker.postcode = txtPostcode.Text;
+                    InfoGebruiker.gemeente = txtGemeente.Text;
                     MessageBox.Show("Jouw adres is upgedate!", "Gegevens bewaard!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else

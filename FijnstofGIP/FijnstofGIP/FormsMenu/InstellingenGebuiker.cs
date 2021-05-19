@@ -59,7 +59,13 @@ namespace FijnstofGIP.FormsMenu
             btnClose.Visible = false;
             openChildForm(new FormsGebruikerInstellingen.FormGebruiksersNaamVeranderen());
         }
-
+        private void btnEmailVeranderen_Click(object sender, EventArgs e)
+        {
+            pnlGebruikerMenuLinks.Visible = false;
+            btnTerugkeren.Visible = true;
+            btnClose.Visible = false;
+            openChildForm(new FormsGebruikerInstellingen.FormEmailVeranderen());
+        }
         private void btnTerugkeren_Click(object sender, EventArgs e)
         {
             actieveForm.Close();
@@ -72,5 +78,7 @@ namespace FijnstofGIP.FormsMenu
         {
             this.Close();
         }
+
+
     }
 }

@@ -47,20 +47,26 @@ namespace FijnstofGIP
 
         #endregion
 
-        #region [WachtwoordReset +  + FormWWVeranderen]
+        #region [WachtwoordReset +  + FormWWVeranderen + FormEmailVeranderen]
         //via de ingevoerde email, de email,voornaam,familienaam opvragen -> 
         //dit doen we om deze op te slaan voor zo de email te kunnen versturen in de code + email extra controleren
         //form: WachtwoordReset
         public static readonly string sqlEmailGebruiker = "SELECT gebruikersID, email,voornaam,familienaam FROM tblgebruikers WHERE (email = @email);";
 
         //via de gebruikersID het wachtwoordID inladen
-        //form: WachtwoordReset en FormWWVeranderen
+        //form: WachtwoordReset en FormWWVeranderen en FormEmailVeranderen
         public static readonly string sqlWachtwoordID = "SELECT wachtwoordID from tblgebruikersWW WHERE (gebruikersID = @gebruikersID);";
 
         //aanpassen van nieuw wachtwoord
         //form: WachtwoordReset en FormWWVeranderen
         public static readonly string sqlAanpassenWWGebruiker = "UPDATE tblgebruikersWW " +
         "SET gebruikersID=@gebruikersID, wachtwoord=@wachtwoord WHERE (wachtwoordID = @wachtwoordID)";
+
+        //aanpassen van email -> daarvoor moeten we alles updaten 
+        public static readonly string sqlAanpassenEmail = "UPDATE tblgebruikers " +
+         "SET gebruikersid=@gebruikersid, gebruikersnaam=@gebruikersnaam, email=@email, voornaam=@voornaam, familienaam=@familienaam,straat=@straat, huisnummer=@huisnummer, postcode=@postcode, gemeente=@gemeente WHERE " +
+         "(gebruikersnaam = @gebruikersnaam)";
+
         #endregion
 
         #region [Aanmeldscherm]
@@ -81,6 +87,7 @@ namespace FijnstofGIP
 
         //krijgen van gebruikersID via gebruikersnaam -> gebruikersnaam is uniek
         public static readonly string sqltblgebuikersID = "SELECT gebruikersID from tblgebruikers WHERE (gebruikersnaam = @gebruikersnaam);";
+
         #endregion
 
         #region statistische GEGEVENS [FormStatisticheData]

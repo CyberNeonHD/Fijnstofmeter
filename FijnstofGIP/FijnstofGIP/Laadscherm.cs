@@ -57,7 +57,6 @@ namespace FijnstofGIP
         }
 
         Int32 teller = 0;
-        Int32 tellerPuntjes = 0;
         private void TxtTimer_Tick(object sender, EventArgs e)
         {
             lblLaden.Show();

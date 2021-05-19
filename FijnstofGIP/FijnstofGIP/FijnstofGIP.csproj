@@ -101,6 +101,12 @@
     <Compile Include="FormsGebruikerInstellingen\FormAdresVeranderen.Designer.cs">
       <DependentUpon>FormAdresVeranderen.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormsGebruikerInstellingen\FormEmailVeranderen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsGebruikerInstellingen\FormEmailVeranderen.Designer.cs">
+      <DependentUpon>FormEmailVeranderen.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsGebruikerInstellingen\FormGebruiksersNaamVeranderen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsGebruikerInstellingen\FormAdresVeranderen.resx">
       <DependentUpon>FormAdresVeranderen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsGebruikerInstellingen\FormEmailVeranderen.resx">
+      <DependentUpon>FormEmailVeranderen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsGebruikerInstellingen\FormGebruiksersNaamVeranderen.resx">
       <DependentUpon>FormGebruiksersNaamVeranderen.cs</DependentUpon>

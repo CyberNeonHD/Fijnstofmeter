@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Net; //voor de mail
+using System.Net.Mail; //voor de mail
 
 namespace FijnstofGIP.FormsGebruikerInstellingen
 {
@@ -71,6 +73,45 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
         }
         #endregion
 
+        #region tekst bij hover -> geeft de gebruiker meer feedback over wat iets doet
+
+        private void btnLock_MouseHover(object sender, EventArgs e)
+        {
+            //als je nu over met de muis over de icoon gaat zie je deze tekst -> spatie zodat de muis niet voor de tekst zit
+            TipTxt.Show("  Klik om jouw wachtwoord te tonen.", btnLock);
+        }
+
+        private void btnLockBevestigen_MouseHover(object sender, EventArgs e)
+        {
+            //als je nu over met de muis over de icoon gaat zie je deze tekst -> spatie zodat de muis niet voor de tekst zit
+            TipTxt.Show("  Klik om jouw wachtwoord te tonen.", btnLockBevestigen);
+        }
+
+        private void btnLockHuidigWW_MouseHover(object sender, EventArgs e)
+        {
+            //als je nu over met de muis over de icoon gaat zie je deze tekst -> spatie zodat de muis niet voor de tekst zit
+            TipTxt.Show("  Klik om jouw wachtwoord te tonen.", btnLockHuidigWW);
+        }
+
+        private void btnOpenLock_MouseHover(object sender, EventArgs e)
+        {
+            //als je nu over met de muis over de icoon gaat zie je deze tekst -> spatie zodat de muis niet voor de tekst zit
+            TipTxt.Show("  Klik om jouw wachtwoord te verbergen.", btnOpenLock);
+        }
+
+        private void btnOpenLockBevestigen_MouseHover(object sender, EventArgs e)
+        {
+            //als je nu over met de muis over de icoon gaat zie je deze tekst -> spatie zodat de muis niet voor de tekst zit
+            TipTxt.Show("  Klik om jouw wachtwoord te verbergen.", btnOpenLockBevestigen);
+        }
+
+        private void btnOpenLockHuidigWW_MouseHover(object sender, EventArgs e)
+        {
+            //als je nu over met de muis over de icoon gaat zie je deze tekst -> spatie zodat de muis niet voor de tekst zit
+            TipTxt.Show("  Klik om jouw wachtwoord te verbergen.", btnOpenLockHuidigWW);
+        }
+        #endregion
+
         #region code knop gegevens Opslaan
         private void btnGegevensOpslaan_Click(object sender, EventArgs e)
         {
@@ -121,6 +162,29 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                 MessageBox.Show("U heeft uw wachtwoord succesvol verandered, gelieve uit te loggen zodat U met uw nieuwe gegevens kan inloggen.", "Succesvol nieuw wachtwoord", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 pnlWWCheckSectie.Visible = true;
                 pnlWWVeranderenSectie.Visible = false;
+
+                //versturen van de email om de gebruiker te waarschuwen van het nieuwe wachtwoord
+                MailMessage CodeMail = new MailMessage();
+                string naar, van, ww, bericht, onderwerp;
+
+                naar = InfoGebruiker.email;
+                van = InfoGebruiker.KalexEmail;
+                ww = InfoGebruiker.KalexWW;
+                bericht = "Beste " + InfoGebruiker.voornaam + " " + InfoGebruiker.familienaam + "," + "<br />" + "<br /> U wachtwoord is succesvol veranderd op: " + DateTime.Now.ToString("dd MMMM yyyy") + " om " + DateTime.Now.ToString("H:m:s") + ".<br /> Uw wachtwoord is veranderd via de gebruikersinstellingen (dus na het inloggen).<br /> Als U dit niet was gelieve persoonlijk contact met ons op te nemen.<br /> Nog een prettige dag verder! <br /> <br /> Met vriendelijke groeten, <br />Kalex";
+                onderwerp = "Wachtwoord veranderd";
+                CodeMail.To.Add(naar);
+                CodeMail.From = new MailAddress(van);
+                CodeMail.Body = bericht;
+                CodeMail.Subject = onderwerp;
+                CodeMail.IsBodyHtml = true;
+
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                smtp.EnableSsl = true;
+                smtp.Port = 587;
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtp.Credentials = new NetworkCredential(van, ww);
+                smtp.Send(CodeMail);
+                // einde code voor de email -------------------------------------
             }
             catch 
             {
@@ -206,6 +270,24 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
         }
 
 
+        
+        private void btnLockHuidigWW_Click(object sender, EventArgs e)
+        {
+            if (txtHuidigWW.PasswordChar == '*')
+            {
+                btnOpenLockHuidigWW.BringToFront();
+                txtHuidigWW.PasswordChar = '\0';
+            }
+        }
+
+        private void btnOpenLockHuidigWW_Click(object sender, EventArgs e)
+        {
+            if (txtHuidigWW.PasswordChar == '\0')
+            {
+                btnLockHuidigWW.BringToFront();
+                txtHuidigWW.PasswordChar = '*';
+            }
+        }
         #endregion
     }
 }

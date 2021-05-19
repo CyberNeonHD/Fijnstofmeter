@@ -149,7 +149,7 @@ namespace FijnstofGIP
                     InfoGebruiker.gemeente = drGebrInfo.GetValue(7).ToString();
                 }
                 InfoGebruiker.gebruikersnaam = txtGebruikersnaam.Text;
-                
+                drGebrInfo.Close();
                 verbindingInfoGebruiker.Close();
                 //--------------------------------------------------------------------------------------------
 
@@ -186,6 +186,8 @@ namespace FijnstofGIP
                     txtGebruikersnaam.Text = "";
                     txtWachtwoord.Text = "";
                     txtGebruikersnaam.Focus();
+                    ds.Clear();
+                    dsWW.Clear();
                 }
                 
                 MijnVerbinding.Close();

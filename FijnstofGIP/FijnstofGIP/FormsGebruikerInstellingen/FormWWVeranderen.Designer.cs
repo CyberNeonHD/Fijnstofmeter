@@ -29,30 +29,36 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbltitel = new System.Windows.Forms.Label();
             this.btnGegevensOpslaan = new System.Windows.Forms.Button();
-            this.pnlWWVeranderenSectie = new System.Windows.Forms.Panel();
             this.pnlWWCheckSectie = new System.Windows.Forms.Panel();
             this.txtHuidigWW = new System.Windows.Forms.TextBox();
             this.pnlHuidigWW = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBevestigen = new System.Windows.Forms.Button();
-            this.btnLock = new FontAwesome.Sharp.IconPictureBox();
-            this.txtWW = new System.Windows.Forms.TextBox();
-            this.pnlWW = new System.Windows.Forms.Panel();
-            this.btnLockBevestigen = new FontAwesome.Sharp.IconPictureBox();
-            this.txtWWBevestigen = new System.Windows.Forms.TextBox();
-            this.pnlWWBevestigen = new System.Windows.Forms.Panel();
-            this.btnOpenLockBevestigen = new FontAwesome.Sharp.IconPictureBox();
-            this.btnOpenLock = new FontAwesome.Sharp.IconPictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pnlWWVeranderenSectie.SuspendLayout();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnOpenLock = new FontAwesome.Sharp.IconPictureBox();
+            this.btnOpenLockBevestigen = new FontAwesome.Sharp.IconPictureBox();
+            this.pnlWWBevestigen = new System.Windows.Forms.Panel();
+            this.txtWWBevestigen = new System.Windows.Forms.TextBox();
+            this.btnLockBevestigen = new FontAwesome.Sharp.IconPictureBox();
+            this.pnlWW = new System.Windows.Forms.Panel();
+            this.txtWW = new System.Windows.Forms.TextBox();
+            this.btnLock = new FontAwesome.Sharp.IconPictureBox();
+            this.pnlWWVeranderenSectie = new System.Windows.Forms.Panel();
+            this.btnLockHuidigWW = new FontAwesome.Sharp.IconPictureBox();
+            this.btnOpenLockHuidigWW = new FontAwesome.Sharp.IconPictureBox();
+            this.TipTxt = new System.Windows.Forms.ToolTip(this.components);
             this.pnlWWCheckSectie.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLock)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLockBevestigen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockBevestigen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenLock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockBevestigen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLockBevestigen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLock)).BeginInit();
+            this.pnlWWVeranderenSectie.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLockHuidigWW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockHuidigWW)).BeginInit();
             this.SuspendLayout();
             // 
             // lbltitel
@@ -82,31 +88,15 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.btnGegevensOpslaan.UseVisualStyleBackColor = true;
             this.btnGegevensOpslaan.Click += new System.EventHandler(this.btnGegevensOpslaan_Click);
             // 
-            // pnlWWVeranderenSectie
-            // 
-            this.pnlWWVeranderenSectie.Controls.Add(this.btnLock);
-            this.pnlWWVeranderenSectie.Controls.Add(this.txtWW);
-            this.pnlWWVeranderenSectie.Controls.Add(this.pnlWW);
-            this.pnlWWVeranderenSectie.Controls.Add(this.btnLockBevestigen);
-            this.pnlWWVeranderenSectie.Controls.Add(this.txtWWBevestigen);
-            this.pnlWWVeranderenSectie.Controls.Add(this.pnlWWBevestigen);
-            this.pnlWWVeranderenSectie.Controls.Add(this.btnOpenLockBevestigen);
-            this.pnlWWVeranderenSectie.Controls.Add(this.btnOpenLock);
-            this.pnlWWVeranderenSectie.Controls.Add(this.label5);
-            this.pnlWWVeranderenSectie.Controls.Add(this.label4);
-            this.pnlWWVeranderenSectie.Location = new System.Drawing.Point(145, 160);
-            this.pnlWWVeranderenSectie.Name = "pnlWWVeranderenSectie";
-            this.pnlWWVeranderenSectie.Size = new System.Drawing.Size(396, 135);
-            this.pnlWWVeranderenSectie.TabIndex = 21;
-            this.pnlWWVeranderenSectie.Visible = false;
-            // 
             // pnlWWCheckSectie
             // 
+            this.pnlWWCheckSectie.Controls.Add(this.btnLockHuidigWW);
+            this.pnlWWCheckSectie.Controls.Add(this.btnOpenLockHuidigWW);
             this.pnlWWCheckSectie.Controls.Add(this.txtHuidigWW);
             this.pnlWWCheckSectie.Controls.Add(this.pnlHuidigWW);
             this.pnlWWCheckSectie.Controls.Add(this.label2);
             this.pnlWWCheckSectie.Controls.Add(this.btnBevestigen);
-            this.pnlWWCheckSectie.Location = new System.Drawing.Point(169, 170);
+            this.pnlWWCheckSectie.Location = new System.Drawing.Point(135, 163);
             this.pnlWWCheckSectie.Name = "pnlWWCheckSectie";
             this.pnlWWCheckSectie.Size = new System.Drawing.Size(425, 128);
             this.pnlWWCheckSectie.TabIndex = 19;
@@ -122,6 +112,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.txtHuidigWW.MaxLength = 28;
             this.txtHuidigWW.Multiline = true;
             this.txtHuidigWW.Name = "txtHuidigWW";
+            this.txtHuidigWW.PasswordChar = '*';
             this.txtHuidigWW.Size = new System.Drawing.Size(246, 20);
             this.txtHuidigWW.TabIndex = 1;
             this.txtHuidigWW.Click += new System.EventHandler(this.txtHuidigWW_Click);
@@ -162,64 +153,70 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.btnBevestigen.UseVisualStyleBackColor = true;
             this.btnBevestigen.Click += new System.EventHandler(this.btnBevestigen_Click);
             // 
-            // btnLock
+            // label4
             // 
-            this.btnLock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnLock.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLock.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnLock.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.btnLock.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnLock.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLock.IconSize = 24;
-            this.btnLock.Location = new System.Drawing.Point(351, 11);
-            this.btnLock.Name = "btnLock";
-            this.btnLock.Size = new System.Drawing.Size(24, 24);
-            this.btnLock.TabIndex = 19;
-            this.btnLock.TabStop = false;
-            this.btnLock.Click += new System.EventHandler(this.btnLock_Click);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label4.Location = new System.Drawing.Point(3, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(146, 27);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Nieuw Wachtwoord:";
             // 
-            // txtWW
+            // label5
             // 
-            this.txtWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.txtWW.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtWW.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtWW.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtWW.Location = new System.Drawing.Point(190, 33);
-            this.txtWW.MaxLength = 28;
-            this.txtWW.Multiline = true;
-            this.txtWW.Name = "txtWW";
-            this.txtWW.PasswordChar = '*';
-            this.txtWW.Size = new System.Drawing.Size(179, 20);
-            this.txtWW.TabIndex = 1;
-            this.txtWW.Click += new System.EventHandler(this.txtWW_Click);
-            this.txtWW.Enter += new System.EventHandler(this.txtWW_Enter);
-            this.txtWW.Leave += new System.EventHandler(this.txtWW_Leave);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label5.Location = new System.Drawing.Point(3, 93);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(176, 27);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Wachtwoord bevestigen:";
             // 
-            // pnlWW
+            // btnOpenLock
             // 
-            this.pnlWW.BackColor = System.Drawing.Color.White;
-            this.pnlWW.Location = new System.Drawing.Point(193, 52);
-            this.pnlWW.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlWW.Name = "pnlWW";
-            this.pnlWW.Size = new System.Drawing.Size(175, 3);
-            this.pnlWW.TabIndex = 22;
+            this.btnOpenLock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnOpenLock.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenLock.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnOpenLock.IconChar = FontAwesome.Sharp.IconChar.LockOpen;
+            this.btnOpenLock.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnOpenLock.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOpenLock.IconSize = 24;
+            this.btnOpenLock.Location = new System.Drawing.Point(351, 11);
+            this.btnOpenLock.Name = "btnOpenLock";
+            this.btnOpenLock.Size = new System.Drawing.Size(24, 24);
+            this.btnOpenLock.TabIndex = 20;
+            this.btnOpenLock.TabStop = false;
+            this.btnOpenLock.Click += new System.EventHandler(this.btnOpenLock_Click);
+            this.btnOpenLock.MouseHover += new System.EventHandler(this.btnOpenLock_MouseHover);
             // 
-            // btnLockBevestigen
+            // btnOpenLockBevestigen
             // 
-            this.btnLockBevestigen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnLockBevestigen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLockBevestigen.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnLockBevestigen.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.btnLockBevestigen.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnLockBevestigen.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLockBevestigen.IconSize = 24;
-            this.btnLockBevestigen.Location = new System.Drawing.Point(352, 69);
-            this.btnLockBevestigen.Name = "btnLockBevestigen";
-            this.btnLockBevestigen.Size = new System.Drawing.Size(24, 24);
-            this.btnLockBevestigen.TabIndex = 21;
-            this.btnLockBevestigen.TabStop = false;
-            this.btnLockBevestigen.Click += new System.EventHandler(this.btnLockBevestigen_Click);
+            this.btnOpenLockBevestigen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnOpenLockBevestigen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenLockBevestigen.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnOpenLockBevestigen.IconChar = FontAwesome.Sharp.IconChar.LockOpen;
+            this.btnOpenLockBevestigen.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnOpenLockBevestigen.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOpenLockBevestigen.IconSize = 24;
+            this.btnOpenLockBevestigen.Location = new System.Drawing.Point(352, 69);
+            this.btnOpenLockBevestigen.Name = "btnOpenLockBevestigen";
+            this.btnOpenLockBevestigen.Size = new System.Drawing.Size(24, 24);
+            this.btnOpenLockBevestigen.TabIndex = 22;
+            this.btnOpenLockBevestigen.TabStop = false;
+            this.btnOpenLockBevestigen.Click += new System.EventHandler(this.btnOpenLockBevestigen_Click);
+            this.btnOpenLockBevestigen.MouseHover += new System.EventHandler(this.btnOpenLockBevestigen_MouseHover);
+            // 
+            // pnlWWBevestigen
+            // 
+            this.pnlWWBevestigen.BackColor = System.Drawing.Color.White;
+            this.pnlWWBevestigen.Location = new System.Drawing.Point(194, 107);
+            this.pnlWWBevestigen.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlWWBevestigen.Name = "pnlWWBevestigen";
+            this.pnlWWBevestigen.Size = new System.Drawing.Size(175, 3);
+            this.pnlWWBevestigen.TabIndex = 20;
             // 
             // txtWWBevestigen
             // 
@@ -239,68 +236,118 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.txtWWBevestigen.Enter += new System.EventHandler(this.txtWWBevestigen_Enter);
             this.txtWWBevestigen.Leave += new System.EventHandler(this.txtHuidigWW_Leave);
             // 
-            // pnlWWBevestigen
+            // btnLockBevestigen
             // 
-            this.pnlWWBevestigen.BackColor = System.Drawing.Color.White;
-            this.pnlWWBevestigen.Location = new System.Drawing.Point(194, 107);
-            this.pnlWWBevestigen.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlWWBevestigen.Name = "pnlWWBevestigen";
-            this.pnlWWBevestigen.Size = new System.Drawing.Size(175, 3);
-            this.pnlWWBevestigen.TabIndex = 20;
+            this.btnLockBevestigen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnLockBevestigen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLockBevestigen.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLockBevestigen.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.btnLockBevestigen.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLockBevestigen.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLockBevestigen.IconSize = 24;
+            this.btnLockBevestigen.Location = new System.Drawing.Point(352, 69);
+            this.btnLockBevestigen.Name = "btnLockBevestigen";
+            this.btnLockBevestigen.Size = new System.Drawing.Size(24, 24);
+            this.btnLockBevestigen.TabIndex = 21;
+            this.btnLockBevestigen.TabStop = false;
+            this.btnLockBevestigen.Click += new System.EventHandler(this.btnLockBevestigen_Click);
+            this.btnLockBevestigen.MouseHover += new System.EventHandler(this.btnLockBevestigen_MouseHover);
             // 
-            // btnOpenLockBevestigen
+            // pnlWW
             // 
-            this.btnOpenLockBevestigen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnOpenLockBevestigen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpenLockBevestigen.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnOpenLockBevestigen.IconChar = FontAwesome.Sharp.IconChar.LockOpen;
-            this.btnOpenLockBevestigen.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnOpenLockBevestigen.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOpenLockBevestigen.IconSize = 24;
-            this.btnOpenLockBevestigen.Location = new System.Drawing.Point(352, 69);
-            this.btnOpenLockBevestigen.Name = "btnOpenLockBevestigen";
-            this.btnOpenLockBevestigen.Size = new System.Drawing.Size(24, 24);
-            this.btnOpenLockBevestigen.TabIndex = 22;
-            this.btnOpenLockBevestigen.TabStop = false;
-            this.btnOpenLockBevestigen.Click += new System.EventHandler(this.btnOpenLockBevestigen_Click);
+            this.pnlWW.BackColor = System.Drawing.Color.White;
+            this.pnlWW.Location = new System.Drawing.Point(193, 52);
+            this.pnlWW.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlWW.Name = "pnlWW";
+            this.pnlWW.Size = new System.Drawing.Size(175, 3);
+            this.pnlWW.TabIndex = 22;
             // 
-            // btnOpenLock
+            // txtWW
             // 
-            this.btnOpenLock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnOpenLock.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpenLock.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnOpenLock.IconChar = FontAwesome.Sharp.IconChar.LockOpen;
-            this.btnOpenLock.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnOpenLock.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOpenLock.IconSize = 24;
-            this.btnOpenLock.Location = new System.Drawing.Point(351, 11);
-            this.btnOpenLock.Name = "btnOpenLock";
-            this.btnOpenLock.Size = new System.Drawing.Size(24, 24);
-            this.btnOpenLock.TabIndex = 20;
-            this.btnOpenLock.TabStop = false;
-            this.btnOpenLock.Click += new System.EventHandler(this.btnOpenLock_Click);
+            this.txtWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.txtWW.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtWW.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtWW.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtWW.Location = new System.Drawing.Point(190, 33);
+            this.txtWW.MaxLength = 28;
+            this.txtWW.Multiline = true;
+            this.txtWW.Name = "txtWW";
+            this.txtWW.PasswordChar = '*';
+            this.txtWW.Size = new System.Drawing.Size(179, 20);
+            this.txtWW.TabIndex = 1;
+            this.txtWW.Click += new System.EventHandler(this.txtWW_Click);
+            this.txtWW.Enter += new System.EventHandler(this.txtWW_Enter);
+            this.txtWW.Leave += new System.EventHandler(this.txtWW_Leave);
             // 
-            // label5
+            // btnLock
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label5.Location = new System.Drawing.Point(3, 93);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(176, 27);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Wachtwoord bevestigen:";
+            this.btnLock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnLock.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLock.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLock.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.btnLock.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLock.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLock.IconSize = 24;
+            this.btnLock.Location = new System.Drawing.Point(351, 11);
+            this.btnLock.Name = "btnLock";
+            this.btnLock.Size = new System.Drawing.Size(24, 24);
+            this.btnLock.TabIndex = 19;
+            this.btnLock.TabStop = false;
+            this.btnLock.Click += new System.EventHandler(this.btnLock_Click);
+            this.btnLock.MouseHover += new System.EventHandler(this.btnLock_MouseHover);
             // 
-            // label4
+            // pnlWWVeranderenSectie
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label4.Location = new System.Drawing.Point(3, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 27);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Nieuw Wachtwoord:";
+            this.pnlWWVeranderenSectie.Controls.Add(this.btnLock);
+            this.pnlWWVeranderenSectie.Controls.Add(this.txtWW);
+            this.pnlWWVeranderenSectie.Controls.Add(this.pnlWW);
+            this.pnlWWVeranderenSectie.Controls.Add(this.btnLockBevestigen);
+            this.pnlWWVeranderenSectie.Controls.Add(this.txtWWBevestigen);
+            this.pnlWWVeranderenSectie.Controls.Add(this.pnlWWBevestigen);
+            this.pnlWWVeranderenSectie.Controls.Add(this.btnOpenLockBevestigen);
+            this.pnlWWVeranderenSectie.Controls.Add(this.btnOpenLock);
+            this.pnlWWVeranderenSectie.Controls.Add(this.label5);
+            this.pnlWWVeranderenSectie.Controls.Add(this.label4);
+            this.pnlWWVeranderenSectie.Location = new System.Drawing.Point(145, 160);
+            this.pnlWWVeranderenSectie.Name = "pnlWWVeranderenSectie";
+            this.pnlWWVeranderenSectie.Size = new System.Drawing.Size(396, 135);
+            this.pnlWWVeranderenSectie.TabIndex = 21;
+            this.pnlWWVeranderenSectie.Visible = false;
+            // 
+            // btnLockHuidigWW
+            // 
+            this.btnLockHuidigWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnLockHuidigWW.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLockHuidigWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLockHuidigWW.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.btnLockHuidigWW.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLockHuidigWW.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLockHuidigWW.IconSize = 24;
+            this.btnLockHuidigWW.Location = new System.Drawing.Point(283, 41);
+            this.btnLockHuidigWW.Name = "btnLockHuidigWW";
+            this.btnLockHuidigWW.Size = new System.Drawing.Size(24, 24);
+            this.btnLockHuidigWW.TabIndex = 23;
+            this.btnLockHuidigWW.TabStop = false;
+            this.btnLockHuidigWW.Click += new System.EventHandler(this.btnLockHuidigWW_Click);
+            this.btnLockHuidigWW.MouseHover += new System.EventHandler(this.btnLockHuidigWW_MouseHover);
+            // 
+            // btnOpenLockHuidigWW
+            // 
+            this.btnOpenLockHuidigWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnOpenLockHuidigWW.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenLockHuidigWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnOpenLockHuidigWW.IconChar = FontAwesome.Sharp.IconChar.LockOpen;
+            this.btnOpenLockHuidigWW.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnOpenLockHuidigWW.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOpenLockHuidigWW.IconSize = 24;
+            this.btnOpenLockHuidigWW.Location = new System.Drawing.Point(283, 41);
+            this.btnOpenLockHuidigWW.Name = "btnOpenLockHuidigWW";
+            this.btnOpenLockHuidigWW.Size = new System.Drawing.Size(24, 24);
+            this.btnOpenLockHuidigWW.TabIndex = 24;
+            this.btnOpenLockHuidigWW.TabStop = false;
+            this.btnOpenLockHuidigWW.Click += new System.EventHandler(this.btnOpenLockHuidigWW_Click);
+            this.btnOpenLockHuidigWW.MouseHover += new System.EventHandler(this.btnOpenLockHuidigWW_MouseHover);
             // 
             // FormWWVeranderen
             // 
@@ -308,20 +355,22 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(686, 461);
-            this.Controls.Add(this.pnlWWCheckSectie);
             this.Controls.Add(this.btnGegevensOpslaan);
             this.Controls.Add(this.lbltitel);
+            this.Controls.Add(this.pnlWWCheckSectie);
             this.Controls.Add(this.pnlWWVeranderenSectie);
             this.Name = "FormWWVeranderen";
             this.Text = "FormWWVeranderen";
-            this.pnlWWVeranderenSectie.ResumeLayout(false);
-            this.pnlWWVeranderenSectie.PerformLayout();
             this.pnlWWCheckSectie.ResumeLayout(false);
             this.pnlWWCheckSectie.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLock)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLockBevestigen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockBevestigen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenLock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockBevestigen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLockBevestigen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLock)).EndInit();
+            this.pnlWWVeranderenSectie.ResumeLayout(false);
+            this.pnlWWVeranderenSectie.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLockHuidigWW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockHuidigWW)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,21 +380,24 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
 
         private System.Windows.Forms.Label lbltitel;
         private System.Windows.Forms.Button btnGegevensOpslaan;
-        private System.Windows.Forms.Panel pnlWWVeranderenSectie;
         private System.Windows.Forms.Panel pnlWWCheckSectie;
         private System.Windows.Forms.TextBox txtHuidigWW;
         private System.Windows.Forms.Panel pnlHuidigWW;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnBevestigen;
-        private FontAwesome.Sharp.IconPictureBox btnLock;
-        private System.Windows.Forms.TextBox txtWW;
-        private System.Windows.Forms.Panel pnlWW;
-        private FontAwesome.Sharp.IconPictureBox btnLockBevestigen;
-        private System.Windows.Forms.TextBox txtWWBevestigen;
-        private System.Windows.Forms.Panel pnlWWBevestigen;
-        private FontAwesome.Sharp.IconPictureBox btnOpenLockBevestigen;
-        private FontAwesome.Sharp.IconPictureBox btnOpenLock;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private FontAwesome.Sharp.IconPictureBox btnOpenLock;
+        private FontAwesome.Sharp.IconPictureBox btnOpenLockBevestigen;
+        private System.Windows.Forms.Panel pnlWWBevestigen;
+        private System.Windows.Forms.TextBox txtWWBevestigen;
+        private FontAwesome.Sharp.IconPictureBox btnLockBevestigen;
+        private System.Windows.Forms.Panel pnlWW;
+        private System.Windows.Forms.TextBox txtWW;
+        private FontAwesome.Sharp.IconPictureBox btnLock;
+        private System.Windows.Forms.Panel pnlWWVeranderenSectie;
+        private FontAwesome.Sharp.IconPictureBox btnLockHuidigWW;
+        private FontAwesome.Sharp.IconPictureBox btnOpenLockHuidigWW;
+        private System.Windows.Forms.ToolTip TipTxt;
     }
 }

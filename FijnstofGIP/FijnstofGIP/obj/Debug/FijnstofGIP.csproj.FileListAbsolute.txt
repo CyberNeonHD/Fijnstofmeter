@@ -179,3 +179,4 @@ D:\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.csproj.CoreCompil
 D:\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.csproj.CopyComplete
 D:\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.exe
 D:\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.pdb
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormEmailVeranderen.resources
