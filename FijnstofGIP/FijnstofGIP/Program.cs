@@ -19,7 +19,7 @@ namespace FijnstofGIP
             Application.SetCompatibleTextRenderingDefault(false);
             try
             {
-                Application.Run(new Aanmeldscherm());
+                Application.Run(new Laadscherm());
             }
             catch
             {

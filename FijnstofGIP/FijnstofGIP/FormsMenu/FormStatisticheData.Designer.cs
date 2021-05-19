@@ -109,7 +109,7 @@ namespace FijnstofGIP.FormsMenu
             this.cmbWelkeMeter.FormattingEnabled = true;
             this.cmbWelkeMeter.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cmbWelkeMeter.ItemHeight = 14;
-            this.cmbWelkeMeter.Location = new System.Drawing.Point(443, 73);
+            this.cmbWelkeMeter.Location = new System.Drawing.Point(430, 122);
             this.cmbWelkeMeter.Name = "cmbWelkeMeter";
             this.cmbWelkeMeter.Size = new System.Drawing.Size(119, 22);
             this.cmbWelkeMeter.TabIndex = 82;
@@ -121,7 +121,7 @@ namespace FijnstofGIP.FormsMenu
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label6.Location = new System.Drawing.Point(166, 74);
+            this.label6.Location = new System.Drawing.Point(153, 123);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(219, 23);
             this.label6.TabIndex = 81;
@@ -130,7 +130,7 @@ namespace FijnstofGIP.FormsMenu
             // dtpDatumP1
             // 
             this.dtpDatumP1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDatumP1.Location = new System.Drawing.Point(309, 110);
+            this.dtpDatumP1.Location = new System.Drawing.Point(296, 83);
             this.dtpDatumP1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpDatumP1.Name = "dtpDatumP1";
             this.dtpDatumP1.Size = new System.Drawing.Size(119, 20);
@@ -142,7 +142,7 @@ namespace FijnstofGIP.FormsMenu
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(166, 110);
+            this.label1.Location = new System.Drawing.Point(153, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 23);
             this.label1.TabIndex = 84;
@@ -740,7 +740,7 @@ namespace FijnstofGIP.FormsMenu
             // dtpDatumP2
             // 
             this.dtpDatumP2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDatumP2.Location = new System.Drawing.Point(443, 110);
+            this.dtpDatumP2.Location = new System.Drawing.Point(430, 83);
             this.dtpDatumP2.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpDatumP2.Name = "dtpDatumP2";
             this.dtpDatumP2.Size = new System.Drawing.Size(119, 20);
@@ -752,7 +752,7 @@ namespace FijnstofGIP.FormsMenu
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(714, 540);
+            this.ClientSize = new System.Drawing.Size(722, 540);
             this.Controls.Add(this.dtpDatumP2);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label15);

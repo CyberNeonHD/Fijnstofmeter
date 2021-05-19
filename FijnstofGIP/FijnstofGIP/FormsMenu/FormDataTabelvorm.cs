@@ -19,7 +19,8 @@ namespace FijnstofGIP.FormsMenu
             InitializeComponent();
         }
         DataSet dsGegevens = new DataSet();
-        string fijnstofMeter = "";
+        //standaard laden we deze meter in
+        string fijnstofMeter = "esp8266-3130811";
         string zoekVeld = "";
 
         #region code lay-out -> tab support en kleur paneel veranderen 

@@ -32,10 +32,14 @@ namespace FijnstofGIP
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             LaadschermPB.Value = 0; //ronde laadbalk op 0 zetten
         }
-
+        string tekst;
+        int lengte = 0;
         private void Laadscherm_Load(object sender, EventArgs e)
         {
-
+            lblLaden.Hide();
+            tekst = lblLaden.Text;
+            lengte = tekst.Length;
+            TxtTimer.Start();
         }
 
         private void LaadschermTimer_Tick(object sender, EventArgs e)
@@ -43,12 +47,26 @@ namespace FijnstofGIP
             LaadschermPB.Value += 1; // via dit vullen we de laadbalk op 
             LaadschermPB.Text = LaadschermPB.Value.ToString() + "%"; //hierbij tonen we het juiste cijfer + % in de cirkel
 
-            if (LaadschermPB.Value == 100)//wanneer de timer 
+            if (LaadschermPB.Value == 100)//wanneer de timer 10 sec heeft bereikt
             {
                 LaadschermTimer.Enabled = false; //laadscherm niet langer enabled
                 Aanmeldscherm volgendForm = new Aanmeldscherm(); //volgend form declareren
                 volgendForm.Show(); //tonen van volgend form
                 this.Hide(); //laadscherm form sluiten
+            }
+        }
+
+        Int32 teller = 0;
+        Int32 tellerPuntjes = 0;
+        private void TxtTimer_Tick(object sender, EventArgs e)
+        {
+            lblLaden.Show();
+            lblLaden.Text = tekst.Substring(0, teller);
+            ++teller;
+
+            if (teller > lengte)
+            {
+                TxtTimer.Stop();
             }
         }
     }
