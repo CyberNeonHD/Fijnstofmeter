@@ -49,6 +49,7 @@ namespace FijnstofGIP
             this.lblwelkom = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tijd = new System.Windows.Forms.Timer(this.components);
+            this.lblVersie = new System.Windows.Forms.Label();
             this.pnlMenuLinks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnUitloggen)).BeginInit();
             this.pnlLogo.SuspendLayout();
@@ -325,6 +326,7 @@ namespace FijnstofGIP
             // pnlMainForms
             // 
             this.pnlMainForms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.pnlMainForms.Controls.Add(this.lblVersie);
             this.pnlMainForms.Controls.Add(this.lblwelkom);
             this.pnlMainForms.Controls.Add(this.pictureBox1);
             this.pnlMainForms.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -359,6 +361,17 @@ namespace FijnstofGIP
             this.tijd.Interval = 1000;
             this.tijd.Tick += new System.EventHandler(this.tijd_Tick);
             // 
+            // lblVersie
+            // 
+            this.lblVersie.AutoSize = true;
+            this.lblVersie.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersie.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblVersie.Location = new System.Drawing.Point(684, 515);
+            this.lblVersie.Name = "lblVersie";
+            this.lblVersie.Size = new System.Drawing.Size(43, 21);
+            this.lblVersie.TabIndex = 3;
+            this.lblVersie.Text = "V0.5";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -386,6 +399,7 @@ namespace FijnstofGIP
             this.pnlMenuBovenkant.ResumeLayout(false);
             this.pnlMenuBovenkant.PerformLayout();
             this.pnlMainForms.ResumeLayout(false);
+            this.pnlMainForms.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -412,5 +426,6 @@ namespace FijnstofGIP
         private FontAwesome.Sharp.IconButton btnFijnstofmeterToevoegen;
         private FontAwesome.Sharp.IconButton btnDataTabelvorm;
         private FontAwesome.Sharp.IconButton btnCSVToevoegen;
+        private System.Windows.Forms.Label lblVersie;
     }
 }

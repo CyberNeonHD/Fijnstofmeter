@@ -50,7 +50,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.lbltitel.AutoSize = true;
             this.lbltitel.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lbltitel.Location = new System.Drawing.Point(262, 9);
+            this.lbltitel.Location = new System.Drawing.Point(255, 9);
             this.lbltitel.Name = "lbltitel";
             this.lbltitel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbltitel.Size = new System.Drawing.Size(173, 34);
@@ -62,7 +62,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // 
             this.btnGegevensOpslaan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGegevensOpslaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGegevensOpslaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGegevensOpslaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGegevensOpslaan.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btnGegevensOpslaan.Location = new System.Drawing.Point(448, 426);
             this.btnGegevensOpslaan.Name = "btnGegevensOpslaan";
@@ -242,6 +242,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.Controls.Add(this.lbltitel);
             this.Name = "FormAdresVeranderen";
             this.Text = "FormAdresVeranderen";
+            this.Load += new System.EventHandler(this.FormAdresVeranderen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

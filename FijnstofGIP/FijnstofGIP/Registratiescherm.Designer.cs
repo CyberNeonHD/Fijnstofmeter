@@ -29,6 +29,7 @@ namespace FijnstofGIP
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlgebruikersnaam = new System.Windows.Forms.Panel();
@@ -66,6 +67,8 @@ namespace FijnstofGIP
             this.label11 = new System.Windows.Forms.Label();
             this.pnlEmail = new System.Windows.Forms.Panel();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblVerplichtVeld = new System.Windows.Forms.Label();
+            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnOpenLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnOpenLockBevestigen)).BeginInit();
@@ -90,9 +93,9 @@ namespace FijnstofGIP
             this.label2.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label2.Location = new System.Drawing.Point(17, 277);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 27);
+            this.label2.Size = new System.Drawing.Size(125, 27);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Gebruikersnaam";
+            this.label2.Text = "Gebruikersnaam*";
             // 
             // pnlgebruikersnaam
             // 
@@ -127,9 +130,9 @@ namespace FijnstofGIP
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label3.Location = new System.Drawing.Point(15, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 27);
+            this.label3.Size = new System.Drawing.Size(87, 27);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Voornaam";
+            this.label3.Text = "Voornaam*";
             // 
             // pnlvoornaam
             // 
@@ -164,9 +167,9 @@ namespace FijnstofGIP
             this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label4.Location = new System.Drawing.Point(275, 72);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 27);
+            this.label4.Size = new System.Drawing.Size(103, 27);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Familienaam";
+            this.label4.Text = "Familienaam*";
             // 
             // pnlfamilie
             // 
@@ -349,9 +352,9 @@ namespace FijnstofGIP
             this.label9.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label9.Location = new System.Drawing.Point(17, 340);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 27);
+            this.label9.Size = new System.Drawing.Size(103, 27);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Wachtwoord";
+            this.label9.Text = "Wachtwoord*";
             // 
             // pnlww
             // 
@@ -387,9 +390,9 @@ namespace FijnstofGIP
             this.label10.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label10.Location = new System.Drawing.Point(273, 340);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(173, 27);
+            this.label10.Size = new System.Drawing.Size(179, 27);
             this.label10.TabIndex = 1;
-            this.label10.Text = "Wachtwoord bevestigen";
+            this.label10.Text = "Wachtwoord bevestigen*";
             // 
             // pnlwwbevestigen
             // 
@@ -459,6 +462,7 @@ namespace FijnstofGIP
             this.iconbtnLock.TabIndex = 6;
             this.iconbtnLock.TabStop = false;
             this.iconbtnLock.Click += new System.EventHandler(this.iconbtnLock_Click);
+            this.iconbtnLock.MouseHover += new System.EventHandler(this.iconbtnLock_MouseHover);
             // 
             // iconbtnOpenLock
             // 
@@ -475,6 +479,7 @@ namespace FijnstofGIP
             this.iconbtnOpenLock.TabIndex = 6;
             this.iconbtnOpenLock.TabStop = false;
             this.iconbtnOpenLock.Click += new System.EventHandler(this.iconbtnOpenLock_Click);
+            this.iconbtnOpenLock.MouseHover += new System.EventHandler(this.iconbtnOpenLock_MouseHover);
             // 
             // iconbtnOpenLockBevestigen
             // 
@@ -491,6 +496,7 @@ namespace FijnstofGIP
             this.iconbtnOpenLockBevestigen.TabIndex = 6;
             this.iconbtnOpenLockBevestigen.TabStop = false;
             this.iconbtnOpenLockBevestigen.Click += new System.EventHandler(this.iconbtnOpenLockBevestigen_Click);
+            this.iconbtnOpenLockBevestigen.MouseHover += new System.EventHandler(this.iconbtnOpenLockBevestigen_MouseHover);
             // 
             // iconbtnLockBevestigen
             // 
@@ -507,6 +513,7 @@ namespace FijnstofGIP
             this.iconbtnLockBevestigen.TabIndex = 6;
             this.iconbtnLockBevestigen.TabStop = false;
             this.iconbtnLockBevestigen.Click += new System.EventHandler(this.iconbtnLockBevestigen_Click);
+            this.iconbtnLockBevestigen.MouseHover += new System.EventHandler(this.iconbtnLockBevestigen_MouseHover);
             // 
             // label11
             // 
@@ -515,9 +522,9 @@ namespace FijnstofGIP
             this.label11.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label11.Location = new System.Drawing.Point(275, 277);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(49, 27);
+            this.label11.Size = new System.Drawing.Size(55, 27);
             this.label11.TabIndex = 1;
-            this.label11.Text = "Email";
+            this.label11.Text = "Email*";
             // 
             // pnlEmail
             // 
@@ -545,12 +552,24 @@ namespace FijnstofGIP
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
+            // lblVerplichtVeld
+            // 
+            this.lblVerplichtVeld.AutoSize = true;
+            this.lblVerplichtVeld.Font = new System.Drawing.Font("Myanmar Text", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVerplichtVeld.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblVerplichtVeld.Location = new System.Drawing.Point(18, 400);
+            this.lblVerplichtVeld.Name = "lblVerplichtVeld";
+            this.lblVerplichtVeld.Size = new System.Drawing.Size(91, 20);
+            this.lblVerplichtVeld.TabIndex = 14;
+            this.lblVerplichtVeld.Text = "(*) verplicht veld";
+            // 
             // Registratiescherm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 34F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(528, 464);
+            this.Controls.Add(this.lblVerplichtVeld);
             this.Controls.Add(this.iconbtnLockBevestigen);
             this.Controls.Add(this.iconbtnLock);
             this.Controls.Add(this.btnNaarLogin);
@@ -645,5 +664,7 @@ namespace FijnstofGIP
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel pnlEmail;
         private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label lblVerplichtVeld;
+        private System.Windows.Forms.ToolTip ToolTip;
     }
 }

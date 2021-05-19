@@ -135,7 +135,7 @@ namespace FijnstofGIP
             {
                 Aanmeldscherm volgendForm = new Aanmeldscherm(); //volgend form declareren
                 volgendForm.Show(); //tonen van volgend form
-                this.Close(); //Menu form verbergen
+                this.Close(); //Menu form sluiten
                 MessageBox.Show("Succesvol uitgelogd", "Uitloggen", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else

@@ -17,7 +17,15 @@ namespace FijnstofGIP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Aanmeldscherm());
+            try
+            {
+                Application.Run(new Aanmeldscherm());
+            }
+            catch
+            {
+                MessageBox.Show("Crash: Verbinding mislukt. Heb je internet of blokkeert de firewall de connectie?", "Geen verbinding", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
     }
 }

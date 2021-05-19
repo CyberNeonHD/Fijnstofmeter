@@ -47,14 +47,18 @@ namespace FijnstofGIP
 
         #endregion
 
-        #region [WachtwoordReset]
-        //via de ingevoerde email, de email,voornaam,familienaam opvragen -> dit doen we om deze op te slaan voor zo de email te kunnen versturen in de code + email extra controleren
+        #region [WachtwoordReset +  + FormWWVeranderen]
+        //via de ingevoerde email, de email,voornaam,familienaam opvragen -> 
+        //dit doen we om deze op te slaan voor zo de email te kunnen versturen in de code + email extra controleren
+        //form: WachtwoordReset
         public static readonly string sqlEmailGebruiker = "SELECT gebruikersID, email,voornaam,familienaam FROM tblgebruikers WHERE (email = @email);";
 
         //via de gebruikersID het wachtwoordID inladen
+        //form: WachtwoordReset en FormWWVeranderen
         public static readonly string sqlWachtwoordID = "SELECT wachtwoordID from tblgebruikersWW WHERE (gebruikersID = @gebruikersID);";
 
         //aanpassen van nieuw wachtwoord
+        //form: WachtwoordReset en FormWWVeranderen
         public static readonly string sqlAanpassenWWGebruiker = "UPDATE tblgebruikersWW " +
         "SET gebruikersID=@gebruikersID, wachtwoord=@wachtwoord WHERE (wachtwoordID = @wachtwoordID)";
         #endregion
@@ -68,8 +72,8 @@ namespace FijnstofGIP
         #region [Registratiescherm]
         //Registreren van gebruiker
         public static readonly string sqlRegistreren =
-            "INSERT INTO tblgebruikers (gebruikersnaam, email, voornaam, familienaam, straat, huisnummer, postcode, gemeente)" +
-            "VALUES (@gebruikersnaam,@email, @voornaam, @familienaam, @straat, @huisnummer, @postcode, @gemeente);";
+            "INSERT INTO tblgebruikers (gebruikersID, gebruikersnaam, email, voornaam, familienaam, straat, huisnummer, postcode, gemeente)" +
+            "VALUES (@gebruikersid, @gebruikersnaam,@email, @voornaam, @familienaam, @straat, @huisnummer, @postcode, @gemeente);";
 
         //invoegen van het wachtwoord in aparte tabel -> omslachtige manier maar het werkt wel :P
         public static readonly string sqlWWInvoeren = "INSERT INTO tblgebruikersWW (gebruikersID, wachtwoord)" +
@@ -81,35 +85,41 @@ namespace FijnstofGIP
 
         #region statistische GEGEVENS [FormStatisticheData]
 
-        //average "SELECT avg(PM2_5) FROM tblgegevens WHERE (meterID = @meterid) AND WHERE datum BETWEEN (@datumP1) and (@datumP2);";
-        public static readonly string sqlStatistischeGegevensAVG = "SELECT avg(PM2_5) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensAVG2 = "SELECT avg(PM10) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensAVG3 = "SELECT avg(temperatuur) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensAVG4 = "SELECT avg(vochtigheid) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensAVG5 = "SELECT avg(luchtdruk) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
+        //average "SELECT avg(PM2_5) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensAVG = "SELECT avg(PM2_5) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensAVG2 = "SELECT avg(PM10) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensAVG3 = "SELECT avg(temperatuur) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensAVG4 = "SELECT avg(vochtigheid) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensAVG5 = "SELECT avg(luchtdruk) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
 
         //min
-        public static readonly string sqlStatistischeGegevensMIN = "SELECT min(PM2_5) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensMIN2 = "SELECT min(PM10) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensMIN3 = "SELECT min(temperatuur) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensMIN4 = "SELECT min(vochtigheid) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensMIN5 = "SELECT min(luchtdruk) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
+        public static readonly string sqlStatistischeGegevensMIN = "SELECT min(PM2_5) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensMIN2 = "SELECT min(PM10) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensMIN3 = "SELECT min(temperatuur) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensMIN4 = "SELECT min(vochtigheid) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensMIN5 = "SELECT min(luchtdruk) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
 
         //max
-        public static readonly string sqlStatistischeGegevensMAX = "SELECT max(PM2_5) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensMAX2 = "SELECT max(PM10) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensMAX3 = "SELECT max(temperatuur) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensMAX4 = "SELECT max(vochtigheid) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
-        public static readonly string sqlStatistischeGegevensMAX5 = "SELECT max(luchtdruk) FROM tblgegevens WHERE (meterID = @meterid) AND (datum = @datum);";
+        public static readonly string sqlStatistischeGegevensMAX = "SELECT max(PM2_5) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensMAX2 = "SELECT max(PM10) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensMAX3 = "SELECT max(temperatuur) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensMAX4 = "SELECT max(vochtigheid) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
+        public static readonly string sqlStatistischeGegevensMAX5 = "SELECT max(luchtdruk) FROM tblgegevens WHERE (meterID = @meterid) AND datum BETWEEN (@datumP1) and (@datumP2);";
         #endregion
 
         #region [FormAdresVeranderen]
         //aanpassen van een record
-
         public static readonly string sqlAanpassenAdres = "UPDATE tblgebruikers " +
-         "SET gebruikersnaam=@gebruikersnaam, email=@email, voornaam=@voornaam, familienaam=@familienaam,straat=@straat, huisnummer=@huisnummer, postcode=@postcode, gemeente=@gemeente WHERE " +
+         "SET gebruikersid=@gebruikersid, gebruikersnaam=@gebruikersnaam, email=@email, voornaam=@voornaam, familienaam=@familienaam,straat=@straat, huisnummer=@huisnummer, postcode=@postcode, gemeente=@gemeente WHERE " +
          "(gebruikersnaam = @gebruikersnaam)";
-
         #endregion
+
+        #region [FormGebruiksersNaamVeranderen]
+        //aanpassen van een record
+        public static readonly string sqlAanpassenGebruikersnaam = "UPDATE tblgebruikers " +
+         "SET gebruikersid=@gebruikersid, gebruikersnaam=@gebruikersnaam, email=@email, voornaam=@voornaam, familienaam=@familienaam,straat=@straat, huisnummer=@huisnummer, postcode=@postcode, gemeente=@gemeente WHERE " +
+         "(gebruikersid = @gebruikersid)";
+        #endregion
+
     }
 }

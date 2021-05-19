@@ -149,7 +149,7 @@ namespace FijnstofGIP.FormsMenu
             this.btnTerugkeren.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnTerugkeren.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTerugkeren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTerugkeren.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
+            this.btnTerugkeren.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTerugkeren.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btnTerugkeren.Location = new System.Drawing.Point(583, 487);
             this.btnTerugkeren.Name = "btnTerugkeren";

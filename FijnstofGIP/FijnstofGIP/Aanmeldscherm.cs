@@ -139,7 +139,7 @@ namespace FijnstofGIP
                 //we slaan deze op in de InfoGebruiker -> handig om de gebruiker zijn info te hebben bij ALLE forms + ID van gebruiker krijgen
                 while (drGebrInfo.Read())
                 {
-                    InfoGebruiker.gebruikersID = Convert.ToInt32(drGebrInfo.GetValue(0).ToString());
+                    InfoGebruiker.gebruikersID = drGebrInfo.GetValue(0).ToString();
                     InfoGebruiker.email = drGebrInfo.GetValue(1).ToString();
                     InfoGebruiker.voornaam = drGebrInfo.GetValue(2).ToString();
                     InfoGebruiker.familienaam = drGebrInfo.GetValue(3).ToString();
@@ -157,12 +157,12 @@ namespace FijnstofGIP
                 OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
                 MijnVerbinding.Open();
                 //we nemen de gebruikersnaam via de gebruikersnaam -> we doen dit omdat we de adapter login gaan vullen
-                string login = "SELECT gebruikersnaam FROM tblgebruikers WHERE gebruikersnaam=@gebruikersnaam";
+                string login = "SELECT gebruikersnaam FROM tblgebruikers WHERE gebruikersID=@gebruikersID";
                 //via de gebruikersID die we verkregen hebben via gebruikersnaam nemen we het wachtwoord
                 string loginWW = "SELECT wachtwoord FROM tblgebruikersWW WHERE gebruikersID=@gebruikersID";
 
                 OleDbDataAdapter adapter = new OleDbDataAdapter(login, MijnVerbinding);
-                adapter.SelectCommand.Parameters.AddWithValue("@gebruikersnaam", Convert.ToString(txtGebruikersnaam.Text));
+                adapter.SelectCommand.Parameters.AddWithValue("@gebruikersID", InfoGebruiker.gebruikersID);
                 OleDbDataAdapter adapterWW = new OleDbDataAdapter(loginWW, MijnVerbinding);
                 adapterWW.SelectCommand.Parameters.AddWithValue("@gebruikersID", InfoGebruiker.gebruikersID);
 

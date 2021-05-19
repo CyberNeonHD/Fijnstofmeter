@@ -230,12 +230,12 @@ namespace FijnstofGIP
 
         private void txtEmail_Enter(object sender, EventArgs e)
         {
-            pnlgebruikersnaam.BackColor = Color.White;
+            pnlEmail.BackColor = Color.DeepSkyBlue;
         }
 
         private void txtEmail_Leave(object sender, EventArgs e)
         {
-            pnlgebruikersnaam.BackColor = Color.White;
+            pnlEmail.BackColor = Color.White;
         }
 
         private void txtWachtwoord_Enter(object sender, EventArgs e)
@@ -264,7 +264,7 @@ namespace FijnstofGIP
         {
             //try
             //{
-                if (txtVoornaam.Text == "" && txtFamilienaam.Text == "" && txtStraat.Text == "" && txtHuisNummer.Text == "" && txtPostcode.Text == "" && txtGemeente.Text == "" && txtGebruikersnaam.Text == "" && txtEmail.Text == "" && txtWachtwoord.Text == "" && txtWachtwoordBevestigen.Text == "")
+                if (txtVoornaam.Text == "" && txtFamilienaam.Text == "" && txtGebruikersnaam.Text == "" && txtEmail.Text == "" && txtWachtwoord.Text == "" && txtWachtwoordBevestigen.Text == "")
                 {
                     MessageBox.Show("Je moet alle velden invullen", "Registratie Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -280,10 +280,20 @@ namespace FijnstofGIP
                     cmd.CommandText = SQLScripts.sqlRegistreren;
                     cmd.Connection = MijnVerbinding;
 
+                    //aanmaken van eigen gebruikersID -> dit zorgt ervoor dat we geen autonummering moeten hebben en dus gebruikersinstellingen kunnen aanmaken want je moet de gebruikersID ook "updaten" bij (UPDATE SQL commando) en bij autonummering gaf dat problemen
+                    Random rnd = new Random();
+                    string codeRnd = Convert.ToString(rnd.Next(1325, 9999));
+                    string gebruikersID = txtVoornaam.Text.ToString().Substring(0, 1).ToUpper() + txtVoornaam.Text.ToString().Substring(1,1) + txtFamilienaam.Text.ToString().Substring(0, 1).ToUpper() + txtFamilienaam.Text.ToString().Substring(1,1) + "_" + txtGemeente.Text.ToString().Substring(0, 1).ToUpper() + codeRnd;
+
+                    //Ten allen tijden de eerste letter van de voornaam en familienaam als hoofdletter zetten
+                    string voornaam = txtVoornaam.Text.ToString().Substring(0, 1).ToUpper() + txtVoornaam.Text.ToString().Substring(1, txtVoornaam.Text.Length - 1);
+                    string familienaam = txtFamilienaam.Text.ToString().Substring(0, 1).ToUpper() + txtFamilienaam.Text.ToString().Substring(1, txtFamilienaam.Text.Length - 1);
+
+                    cmd.Parameters.AddWithValue("@gebruikersid", gebruikersID);
                     cmd.Parameters.AddWithValue("@gebruikersnaam", Convert.ToString(txtGebruikersnaam.Text));
                     cmd.Parameters.AddWithValue("@email", Convert.ToString(txtEmail.Text));
-                    cmd.Parameters.AddWithValue("@voornaam", Convert.ToString(txtVoornaam.Text));
-                    cmd.Parameters.AddWithValue("@familienaam", Convert.ToString(txtFamilienaam.Text));
+                    cmd.Parameters.AddWithValue("@voornaam", voornaam);
+                    cmd.Parameters.AddWithValue("@familienaam", familienaam);
                     cmd.Parameters.AddWithValue("@straat", Convert.ToString(txtStraat.Text));
                     cmd.Parameters.AddWithValue("@huisnummer", Convert.ToInt32(txtHuisNummer.Text));
                     cmd.Parameters.AddWithValue("@postcode", Convert.ToInt32(txtPostcode.Text));
@@ -291,26 +301,6 @@ namespace FijnstofGIP
 
                     cmd.ExecuteNonQuery();
                     //---------------------------------------------------------------------------------------------------------------
-                    
-                    // de gebruikersID opvragen van de tabel gebruikers zodat we het ww op de juiste manier kunnen plaatsen in een aparte tabel
-                    //we doen dit via gebruikersnaam -> gebruikersnaam is uniek
-                    OleDbCommand cmdGebrID = new OleDbCommand();
-                    cmdGebrID.CommandType = CommandType.Text;
-                    cmdGebrID.CommandText = SQLScripts.sqltblgebuikersID;
-                    cmdGebrID.Connection = MijnVerbinding;
-
-
-                    cmdGebrID.Parameters.AddWithValue("@gebruikersnaam", Convert.ToString(txtGebruikersnaam.Text));
-
-                    cmdGebrID.ExecuteNonQuery();
-                    OleDbDataReader drWW = cmdGebrID.ExecuteReader();
-                    string GebruikersID = "";
-                    while (drWW.Read())
-                    {   //De id oplaan in de string
-                        GebruikersID = drWW.GetValue(0).ToString();
-                    }
-                    //---------------------------------------------------------------------------------------------------------------
-
                     //invoegen van het wachtwoord in aparte tabel 
                     OleDbCommand cmdWW = new OleDbCommand();
                     cmdWW.CommandType = CommandType.Text;
@@ -320,7 +310,7 @@ namespace FijnstofGIP
                     //zet het wachtwoord om naar Hash CODE
                     string hashedWW = Hasher.Hash_SHA1(txtWachtwoord.Text);
 
-                    cmdWW.Parameters.AddWithValue("@gebruikersid", GebruikersID);
+                    cmdWW.Parameters.AddWithValue("@gebruikersid", gebruikersID);
                     cmdWW.Parameters.AddWithValue("@wachtwoord", hashedWW);
                     cmdWW.ExecuteNonQuery();
 
@@ -428,6 +418,34 @@ namespace FijnstofGIP
                 iconbtnLockBevestigen.BringToFront();
                 txtWachtwoordBevestigen.PasswordChar = '*';
             }
+        }
+
+
+        #endregion
+
+        #region tekst bij hover -> geeft de gebruiker meer feedback over wat iets doet
+        private void iconbtnLock_MouseHover(object sender, EventArgs e)
+        {
+            //als je nu over met de muis over de icoon gaat zie je deze tekst -> spatie zodat de muis niet voor de tekst zit
+            ToolTip.Show("  Klik om jouw wachtwoord te tonen", iconbtnLock);
+        }
+
+        private void iconbtnLockBevestigen_MouseHover(object sender, EventArgs e)
+        {
+            //als je nu over met de muis over de icoon gaat zie je deze tekst -> spatie zodat de muis niet voor de tekst zit
+            ToolTip.Show("  Klik om jouw wachtwoord te tonen", iconbtnLockBevestigen);
+        }
+
+        private void iconbtnOpenLock_MouseHover(object sender, EventArgs e)
+        {
+            //als je nu over met de muis over de icoon gaat zie je deze tekst -> spatie zodat de muis niet voor de tekst zit
+            ToolTip.Show("  Klik om jouw wachtwoord te verbergen", iconbtnOpenLock);
+        }
+
+        private void iconbtnOpenLockBevestigen_MouseHover(object sender, EventArgs e)
+        {
+            //als je nu over met de muis over de icoon gaat zie je deze tekst -> spatie zodat de muis niet voor de tekst zit
+            ToolTip.Show("  Klik om jouw wachtwoord te verbergen", iconbtnOpenLockBevestigen);
         }
 
 

@@ -421,11 +421,11 @@ namespace FijnstofGIP.FormsMenu
                         cmdVindID.Connection = MijnVerbinding;
 
                         cmdVindID.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
-                        cmdVindID.Parameters.AddWithValue("@PM2_5", Convert.ToString(txtPM2_5.Text));
-                        cmdVindID.Parameters.AddWithValue("@PM10", Convert.ToString(txtPM10.Text));
-                        cmdVindID.Parameters.AddWithValue("@temperatuur", Convert.ToString(txtTemp.Text));
-                        cmdVindID.Parameters.AddWithValue("@vochtigheid", Convert.ToString(txtVochtigheid.Text));
-                        cmdVindID.Parameters.AddWithValue("@luchtdruk", Convert.ToString(txtLuchtdruk.Text));
+                        cmdVindID.Parameters.AddWithValue("@PM2_5", Convert.ToInt32(txtPM2_5.Text));
+                        cmdVindID.Parameters.AddWithValue("@PM10", Convert.ToInt32(txtPM10.Text));
+                        cmdVindID.Parameters.AddWithValue("@temperatuur", Convert.ToInt32(txtTemp.Text));
+                        cmdVindID.Parameters.AddWithValue("@vochtigheid", Convert.ToInt32(txtVochtigheid.Text));
+                        cmdVindID.Parameters.AddWithValue("@luchtdruk", Convert.ToInt32(txtLuchtdruk.Text));
                         cmdVindID.Parameters.AddWithValue("@tijdstip", Convert.ToString(txtTijdstip.Text));
                         cmdVindID.Parameters.AddWithValue("@datum", Convert.ToString(txtDatum.Text));
                         cmdVindID.Parameters.AddWithValue("@gegevensid", Convert.ToString(txtGegevensID.Text));
@@ -502,11 +502,11 @@ namespace FijnstofGIP.FormsMenu
                         OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAanmaken, MijnVerbinding);
 
                         cmd.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
-                        cmd.Parameters.AddWithValue("@PM2_5", Convert.ToString(txtPM2_5.Text));
-                        cmd.Parameters.AddWithValue("@PM10", Convert.ToString(txtPM10.Text));
-                        cmd.Parameters.AddWithValue("@temperatuur", Convert.ToString(txtTemp.Text));
-                        cmd.Parameters.AddWithValue("@vochtigheid", Convert.ToString(txtVochtigheid.Text));
-                        cmd.Parameters.AddWithValue("@luchtdruk", Convert.ToString(txtLuchtdruk.Text));
+                        cmd.Parameters.AddWithValue("@PM2_5", Convert.ToInt32(txtPM2_5.Text));
+                        cmd.Parameters.AddWithValue("@PM10", Convert.ToInt32(txtPM10.Text));
+                        cmd.Parameters.AddWithValue("@temperatuur", Convert.ToInt32(txtTemp.Text));
+                        cmd.Parameters.AddWithValue("@vochtigheid", Convert.ToInt32(txtVochtigheid.Text));
+                        cmd.Parameters.AddWithValue("@luchtdruk", Convert.ToInt32(txtLuchtdruk.Text));
                         cmd.Parameters.AddWithValue("@tijdstip", Convert.ToString(txtTijdstip.Text));
                         cmd.Parameters.AddWithValue("@datum", Convert.ToString(txtDatum.Text));
 
@@ -560,11 +560,11 @@ namespace FijnstofGIP.FormsMenu
                     cmd.Connection = MijnVerbinding;
 
                     cmd.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
-                    cmd.Parameters.AddWithValue("@PM2_5", Convert.ToString(txtPM2_5.Text));
-                    cmd.Parameters.AddWithValue("@PM10", Convert.ToString(txtPM10.Text));
-                    cmd.Parameters.AddWithValue("@temperatuur", Convert.ToString(txtTemp.Text));
-                    cmd.Parameters.AddWithValue("@vochtigheid", Convert.ToString(txtVochtigheid.Text));
-                    cmd.Parameters.AddWithValue("@luchtdruk", Convert.ToString(txtLuchtdruk.Text));
+                    cmd.Parameters.AddWithValue("@PM2_5", Convert.ToInt32(txtPM2_5.Text));
+                    cmd.Parameters.AddWithValue("@PM10", Convert.ToInt32(txtPM10.Text));
+                    cmd.Parameters.AddWithValue("@temperatuur", Convert.ToInt32(txtTemp.Text));
+                    cmd.Parameters.AddWithValue("@vochtigheid", Convert.ToInt32(txtVochtigheid.Text));
+                    cmd.Parameters.AddWithValue("@luchtdruk", Convert.ToInt32(txtLuchtdruk.Text));
                     cmd.Parameters.AddWithValue("@tijdstip", Convert.ToString(txtTijdstip.Text));
                     cmd.Parameters.AddWithValue("@datum", Convert.ToString(txtDatum.Text));
                     cmd.Parameters.AddWithValue("@gegevensid", Convert.ToString(txtGegevensID.Text));
@@ -678,11 +678,11 @@ namespace FijnstofGIP.FormsMenu
             {
                 MessageBox.Show("ERROR: Toen U het veld selecteerde is er een ovenverwachte error gebeurd...", "Veld selectie error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            #endregion
+           
 
 
         }
-
+        #endregion
 
     }
 }

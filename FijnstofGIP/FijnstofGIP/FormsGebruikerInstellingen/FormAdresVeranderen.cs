@@ -18,6 +18,13 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
         {
             InitializeComponent();
         }
+        private void FormAdresVeranderen_Load(object sender, EventArgs e)
+        {
+            txtStraat.Text = InfoGebruiker.straat;
+            txtHuisNummer.Text = InfoGebruiker.huisnummer;
+            txtPostcode.Text = InfoGebruiker.postcode;
+            txtGemeente.Text = InfoGebruiker.gemeente;
+        }
         #region kleuren van de panelen veranderen wanneer je op een bepaalde textblock klikt - dit is zodat de gebruiker weet waar hij gaat typen
         private void txtStraat_Click(object sender, EventArgs e)
         {
@@ -90,14 +97,11 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             pnlgemeente.BackColor = Color.White;
         }
         #endregion
+
+        #region Code Knop gegevensOpslaan
         private void btnGegevensOpslaan_Click(object sender, EventArgs e)
         {
-            if (txtStraat.Text == "" && txtHuisNummer.Text == "" && txtPostcode.Text == "" && txtGemeente.Text == "")
-            {
-                MessageBox.Show("Niet alle velden zijn ingevuld..", "Opslaan Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-            else
+            try
             {
                 DialogResult gegevensBewaren = MessageBox.Show("Ben je zeker dat U de juiste gegevens hebt ingevult?", "Adres bewaren", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (gegevensBewaren == DialogResult.Yes)
@@ -110,7 +114,13 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     cmdAdresAanpassen.CommandText = SQLScripts.sqlAanpassenAdres;
                     cmdAdresAanpassen.Connection = MijnVerbinding;
 
-                    cmdAdresAanpassen.Parameters.AddWithValue("@gebruikersID", Convert.ToInt32(InfoGebruiker.gebruikersID));
+                    //updaten van de info over de gebruiker
+                    InfoGebruiker.straat = txtStraat.Text;
+                    InfoGebruiker.huisnummer = txtHuisNummer.Text;
+                    InfoGebruiker.postcode = txtPostcode.Text;
+                    InfoGebruiker.gemeente = txtGemeente.Text;
+
+                    cmdAdresAanpassen.Parameters.AddWithValue("@gebruikersID", Convert.ToString(InfoGebruiker.gebruikersID));
                     cmdAdresAanpassen.Parameters.AddWithValue("@gebruikersnaam", Convert.ToString(InfoGebruiker.gebruikersnaam));
                     cmdAdresAanpassen.Parameters.AddWithValue("@email", Convert.ToString(InfoGebruiker.email));
                     cmdAdresAanpassen.Parameters.AddWithValue("@voornaam", Convert.ToString(InfoGebruiker.voornaam));
@@ -129,7 +139,14 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     //er gebeurd dan niks
                 }
             }
+            catch 
+            {
+
+                MessageBox.Show("ERROR: Tijdens het opslaan is er een fout gebeurd", "Oplsaan Mislukt!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }   
 
         }
+        #endregion
+
     }
 }

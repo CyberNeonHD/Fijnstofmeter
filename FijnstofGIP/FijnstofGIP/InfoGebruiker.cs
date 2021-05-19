@@ -8,7 +8,7 @@ namespace FijnstofGIP
 {
     class InfoGebruiker
     {   //info gebruiker
-        public static Int32 gebruikersID = 0;
+        public static string gebruikersID = "";
         public static string gebruikersnaam = "";
         public static string voornaam = "";
         public static string familienaam = "";

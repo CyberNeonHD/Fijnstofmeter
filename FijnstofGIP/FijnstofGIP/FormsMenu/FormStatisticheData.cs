@@ -92,32 +92,15 @@ namespace FijnstofGIP.FormsMenu
             cmdAVG5.Parameters.AddWithValue("@datumP1", datumP1);
             cmdAVG5.Parameters.AddWithValue("@datumP2", datumP2);
 
-            OleDbDataReader drAVG = cmdAVG.ExecuteReader();
-            OleDbDataReader drAVG2 = cmdAVG2.ExecuteReader();
-            OleDbDataReader drAVG3 = cmdAVG3.ExecuteReader();
-            OleDbDataReader drAVG4 = cmdAVG4.ExecuteReader();
-            OleDbDataReader drAVG5 = cmdAVG5.ExecuteReader();
 
-            while (drAVG.Read())
-            {
-                txtPM2_5AVG.Text = drAVG.GetValue(0).ToString();
-            }
-            while (drAVG2.Read())
-            {
-                txtPM10AVG.Text = drAVG2.GetValue(0).ToString();
-            }
-            while (drAVG3.Read())
-            {
-                txtTempAVG.Text = drAVG3.GetValue(0).ToString();
-            }
-            while (drAVG4.Read())
-            {
-                txtVochtigheidAVG.Text = drAVG4.GetValue(0).ToString();
-            }
-            while (drAVG5.Read())
-            {
-                txtLuchtdrukAVG.Text = drAVG5.GetValue(0).ToString();
-            }
+
+            txtPM2_5AVG.Text = Convert.ToString(cmdAVG.ExecuteScalar());
+            txtPM10AVG.Text = Convert.ToString(cmdAVG2.ExecuteScalar());
+            txtTempAVG.Text = Convert.ToString(cmdAVG3.ExecuteScalar());
+            txtVochtigheidAVG.Text = Convert.ToString(cmdAVG4.ExecuteScalar());
+            txtLuchtdrukAVG.Text = Convert.ToString(cmdAVG5.ExecuteScalar());
+
+           
             //--------------------------------------------------------------------------------------
             //MIN ----------------------------------------------------------------------------------
 
@@ -135,42 +118,28 @@ namespace FijnstofGIP.FormsMenu
             cmdMIN5 = new OleDbCommand(SQLScripts.sqlStatistischeGegevensMIN5, MijnVerbinding);
 
             cmdMIN.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMIN.Parameters.AddWithValue("@datum", datumP1);
+            cmdMIN.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdMIN.Parameters.AddWithValue("@datumP2", datumP2);
             cmdMIN2.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMIN2.Parameters.AddWithValue("@datum", datumP1);
+            cmdMIN2.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdMIN2.Parameters.AddWithValue("@datumP2", datumP2);
             cmdMIN3.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMIN3.Parameters.AddWithValue("@datum", datumP1);
+            cmdMIN3.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdMIN3.Parameters.AddWithValue("@datumP2", datumP2);
             cmdMIN4.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMIN4.Parameters.AddWithValue("@datum", datumP1);
+            cmdMIN4.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdMIN4.Parameters.AddWithValue("@datumP2", datumP2);
             cmdMIN5.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMIN5.Parameters.AddWithValue("@datum", datumP1);
+            cmdMIN5.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdMIN5.Parameters.AddWithValue("@datumP2", datumP2);
 
-            OleDbDataReader drMIN = cmdMIN.ExecuteReader();
-            OleDbDataReader drMIN2 = cmdMIN2.ExecuteReader();
-            OleDbDataReader drMIN3 = cmdMIN3.ExecuteReader();
-            OleDbDataReader drMIN4 = cmdMIN4.ExecuteReader();
-            OleDbDataReader drMIN5 = cmdMIN5.ExecuteReader();
+            txtPM2_5MIN.Text = Convert.ToString(cmdMIN.ExecuteScalar());
+            txtPM10MIN.Text = Convert.ToString(cmdMIN2.ExecuteScalar());
+            txtTempMIN.Text = Convert.ToString(cmdMIN3.ExecuteScalar());
+            txtVochtigheidMIN.Text = Convert.ToString(cmdMIN4.ExecuteScalar());
+            txtLuchtdrukMIN.Text = Convert.ToString(cmdMIN5.ExecuteScalar());
 
-            while (drMIN.Read())
-            {
-                txtPM2_5MIN.Text = drMIN.GetValue(0).ToString();
-            }
-            while (drMIN2.Read())
-            {
-                txtPM10MIN.Text = drMIN2.GetValue(0).ToString();
-            }
-            while (drMIN3.Read())
-            {
-                txtTempMIN.Text = drMIN3.GetValue(0).ToString();
-            }
-            while (drMIN4.Read())
-            {
-                txtVochtigheidMIN.Text = drMIN4.GetValue(0).ToString();
-            }
-            while (drMIN5.Read())
-            {
-                txtLuchtdrukMIN.Text = drMIN5.GetValue(0).ToString();
-            }
+           
             //--------------------------------------------------------------------------------------
             //MAX ----------------------------------------------------------------------------------
             OleDbCommand cmdMAX = new OleDbCommand();
@@ -187,43 +156,29 @@ namespace FijnstofGIP.FormsMenu
             cmdMAX5 = new OleDbCommand(SQLScripts.sqlStatistischeGegevensMAX5, MijnVerbinding);
 
             cmdMAX.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMAX.Parameters.AddWithValue("@datum", datumP1);
+            cmdMAX.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdMAX.Parameters.AddWithValue("@datumP2", datumP2);
             cmdMAX2.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMAX2.Parameters.AddWithValue("@datum", datumP1);
+            cmdMAX2.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdMAX2.Parameters.AddWithValue("@datumP2", datumP2);
             cmdMAX3.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMAX3.Parameters.AddWithValue("@datum", datumP1);
+            cmdMAX3.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdMAX3.Parameters.AddWithValue("@datumP2", datumP2);
             cmdMAX4.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMAX4.Parameters.AddWithValue("@datum", datumP1);
+            cmdMAX4.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdMAX4.Parameters.AddWithValue("@datumP2", datumP2);
             cmdMAX5.Parameters.AddWithValue("@meterid", fijnstofMeter);
-            cmdMAX5.Parameters.AddWithValue("@datum", datumP1);
+            cmdMAX5.Parameters.AddWithValue("@datumP1", datumP1);
+            cmdMAX5.Parameters.AddWithValue("@datumP2", datumP2);
+            
 
-            OleDbDataReader drMAX = cmdMAX.ExecuteReader();
-            OleDbDataReader drMAX2 = cmdMAX2.ExecuteReader();
-            OleDbDataReader drMAX3 = cmdMAX3.ExecuteReader();
-            OleDbDataReader drMAX4 = cmdMAX4.ExecuteReader();
-            OleDbDataReader drMAX5 = cmdMAX5.ExecuteReader();
+            txtPM2_5MAX.Text = cmdMAX.ExecuteScalar().ToString();
+            txtPM10MAX.Text = cmdMAX2.ExecuteScalar().ToString();
+            txtTempMAX.Text = cmdMAX3.ExecuteScalar().ToString();
+            txtVochtigheidMAX.Text = cmdMAX4.ExecuteScalar().ToString();
+            txtLuchtdrukMAX.Text = cmdMAX5.ExecuteScalar().ToString();
 
-            while (drMAX.Read())
-            {
-                txtPM2_5MAX.Text = drMAX.GetValue(0).ToString();
-            }
-            while (drMAX2.Read())
-            {
-                txtPM10MAX.Text = drMAX2.GetValue(0).ToString();
-            }
-            while (drMAX3.Read())
-            {
-                txtTempMAX.Text = drMAX3.GetValue(0).ToString();
-            }
-            while (drMAX4.Read())
-            {
-                txtVochtigheidMAX.Text = drMAX4.GetValue(0).ToString();
-            }
-            while (drMAX5.Read())
-            {
-                txtLuchtdrukMAX.Text = drMAX5.GetValue(0).ToString();
-            }
-
+           
             MijnVerbinding.Close();
             
         }
