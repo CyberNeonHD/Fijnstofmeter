@@ -31,6 +31,8 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
         {
             this.components = new System.ComponentModel.Container();
             this.pnlWWCheckSectie = new System.Windows.Forms.Panel();
+            this.btnLockWW = new FontAwesome.Sharp.IconPictureBox();
+            this.btnOpenLockWW = new FontAwesome.Sharp.IconPictureBox();
             this.txtWW = new System.Windows.Forms.TextBox();
             this.pnlWW = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,13 +43,11 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.pnlEmail = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnLockWW = new FontAwesome.Sharp.IconPictureBox();
-            this.btnOpenLockWW = new FontAwesome.Sharp.IconPictureBox();
             this.TipTxt = new System.Windows.Forms.ToolTip(this.components);
             this.pnlWWCheckSectie.SuspendLayout();
-            this.pnlEmailSectie.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLockWW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockWW)).BeginInit();
+            this.pnlEmailSectie.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlWWCheckSectie
@@ -58,10 +58,44 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.pnlWWCheckSectie.Controls.Add(this.pnlWW);
             this.pnlWWCheckSectie.Controls.Add(this.label2);
             this.pnlWWCheckSectie.Controls.Add(this.btnBevestigen);
-            this.pnlWWCheckSectie.Location = new System.Drawing.Point(152, 150);
+            this.pnlWWCheckSectie.Location = new System.Drawing.Point(228, 134);
             this.pnlWWCheckSectie.Name = "pnlWWCheckSectie";
             this.pnlWWCheckSectie.Size = new System.Drawing.Size(425, 128);
             this.pnlWWCheckSectie.TabIndex = 24;
+            // 
+            // btnLockWW
+            // 
+            this.btnLockWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnLockWW.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLockWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLockWW.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.btnLockWW.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLockWW.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLockWW.IconSize = 24;
+            this.btnLockWW.Location = new System.Drawing.Point(279, 41);
+            this.btnLockWW.Name = "btnLockWW";
+            this.btnLockWW.Size = new System.Drawing.Size(24, 24);
+            this.btnLockWW.TabIndex = 25;
+            this.btnLockWW.TabStop = false;
+            this.btnLockWW.Click += new System.EventHandler(this.btnLockWW_Click);
+            this.btnLockWW.MouseHover += new System.EventHandler(this.btnLockWW_MouseHover);
+            // 
+            // btnOpenLockWW
+            // 
+            this.btnOpenLockWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnOpenLockWW.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenLockWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnOpenLockWW.IconChar = FontAwesome.Sharp.IconChar.LockOpen;
+            this.btnOpenLockWW.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnOpenLockWW.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOpenLockWW.IconSize = 24;
+            this.btnOpenLockWW.Location = new System.Drawing.Point(279, 41);
+            this.btnOpenLockWW.Name = "btnOpenLockWW";
+            this.btnOpenLockWW.Size = new System.Drawing.Size(24, 24);
+            this.btnOpenLockWW.TabIndex = 26;
+            this.btnOpenLockWW.TabStop = false;
+            this.btnOpenLockWW.Click += new System.EventHandler(this.btnOpenLockWW_Click);
+            this.btnOpenLockWW.MouseHover += new System.EventHandler(this.btnOpenLockWW_MouseHover);
             // 
             // txtWW
             // 
@@ -118,10 +152,11 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // btnGegevensOpslaan
             // 
             this.btnGegevensOpslaan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGegevensOpslaan.Enabled = false;
             this.btnGegevensOpslaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGegevensOpslaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGegevensOpslaan.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnGegevensOpslaan.Location = new System.Drawing.Point(448, 426);
+            this.btnGegevensOpslaan.Location = new System.Drawing.Point(477, 426);
             this.btnGegevensOpslaan.Name = "btnGegevensOpslaan";
             this.btnGegevensOpslaan.Size = new System.Drawing.Size(129, 34);
             this.btnGegevensOpslaan.TabIndex = 23;
@@ -134,7 +169,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.lbltitel.AutoSize = true;
             this.lbltitel.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lbltitel.Location = new System.Drawing.Point(265, 9);
+            this.lbltitel.Location = new System.Drawing.Point(288, -2);
             this.lbltitel.Name = "lbltitel";
             this.lbltitel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbltitel.Size = new System.Drawing.Size(169, 34);
@@ -147,7 +182,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.pnlEmailSectie.Controls.Add(this.txtEmail);
             this.pnlEmailSectie.Controls.Add(this.pnlEmail);
             this.pnlEmailSectie.Controls.Add(this.label1);
-            this.pnlEmailSectie.Location = new System.Drawing.Point(152, 150);
+            this.pnlEmailSectie.Location = new System.Drawing.Point(228, 134);
             this.pnlEmailSectie.Name = "pnlEmailSectie";
             this.pnlEmailSectie.Size = new System.Drawing.Size(425, 128);
             this.pnlEmailSectie.TabIndex = 25;
@@ -190,40 +225,6 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.label1.TabIndex = 7;
             this.label1.Text = "Vul hier uw nieuwe email in";
             // 
-            // btnLockWW
-            // 
-            this.btnLockWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnLockWW.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLockWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnLockWW.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.btnLockWW.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnLockWW.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLockWW.IconSize = 24;
-            this.btnLockWW.Location = new System.Drawing.Point(279, 41);
-            this.btnLockWW.Name = "btnLockWW";
-            this.btnLockWW.Size = new System.Drawing.Size(24, 24);
-            this.btnLockWW.TabIndex = 25;
-            this.btnLockWW.TabStop = false;
-            this.btnLockWW.Click += new System.EventHandler(this.btnLockWW_Click);
-            this.btnLockWW.MouseHover += new System.EventHandler(this.btnLockWW_MouseHover);
-            // 
-            // btnOpenLockWW
-            // 
-            this.btnOpenLockWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnOpenLockWW.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpenLockWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnOpenLockWW.IconChar = FontAwesome.Sharp.IconChar.LockOpen;
-            this.btnOpenLockWW.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnOpenLockWW.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOpenLockWW.IconSize = 24;
-            this.btnOpenLockWW.Location = new System.Drawing.Point(279, 41);
-            this.btnOpenLockWW.Name = "btnOpenLockWW";
-            this.btnOpenLockWW.Size = new System.Drawing.Size(24, 24);
-            this.btnOpenLockWW.TabIndex = 26;
-            this.btnOpenLockWW.TabStop = false;
-            this.btnOpenLockWW.Click += new System.EventHandler(this.btnOpenLockWW_Click);
-            this.btnOpenLockWW.MouseHover += new System.EventHandler(this.btnOpenLockWW_MouseHover);
-            // 
             // FormEmailVeranderen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,10 +239,10 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.Text = "FormEmailVeranderen";
             this.pnlWWCheckSectie.ResumeLayout(false);
             this.pnlWWCheckSectie.PerformLayout();
-            this.pnlEmailSectie.ResumeLayout(false);
-            this.pnlEmailSectie.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLockWW)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockWW)).EndInit();
+            this.pnlEmailSectie.ResumeLayout(false);
+            this.pnlEmailSectie.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

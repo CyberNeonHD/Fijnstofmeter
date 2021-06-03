@@ -32,12 +32,13 @@ namespace FijnstofGIP.FormsMenu
             this.label1 = new System.Windows.Forms.Label();
             this.pnlGebruikerForm = new System.Windows.Forms.Panel();
             this.pnlGebruikerMenuLinks = new System.Windows.Forms.Panel();
-            this.btnTerugkeren = new System.Windows.Forms.Button();
-            this.btnClose = new FontAwesome.Sharp.IconPictureBox();
             this.btnEmailVeranderen = new FontAwesome.Sharp.IconButton();
             this.btnGebruikersnaamVeranderen = new FontAwesome.Sharp.IconButton();
             this.btnWWAanpassen = new FontAwesome.Sharp.IconButton();
             this.btnAdresVeranderen = new FontAwesome.Sharp.IconButton();
+            this.btnTerugkeren = new System.Windows.Forms.Button();
+            this.btnClose = new FontAwesome.Sharp.IconPictureBox();
+            this.pnlGebruikerForm.SuspendLayout();
             this.pnlGebruikerMenuLinks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +49,7 @@ namespace FijnstofGIP.FormsMenu
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(231, 21);
+            this.label1.Location = new System.Drawing.Point(265, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(244, 37);
             this.label1.TabIndex = 1;
@@ -57,9 +58,10 @@ namespace FijnstofGIP.FormsMenu
             // pnlGebruikerForm
             // 
             this.pnlGebruikerForm.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pnlGebruikerForm.Location = new System.Drawing.Point(-1, 61);
+            this.pnlGebruikerForm.Controls.Add(this.pnlGebruikerMenuLinks);
+            this.pnlGebruikerForm.Location = new System.Drawing.Point(12, 61);
             this.pnlGebruikerForm.Name = "pnlGebruikerForm";
-            this.pnlGebruikerForm.Size = new System.Drawing.Size(708, 463);
+            this.pnlGebruikerForm.Size = new System.Drawing.Size(736, 463);
             this.pnlGebruikerForm.TabIndex = 2;
             // 
             // pnlGebruikerMenuLinks
@@ -69,42 +71,10 @@ namespace FijnstofGIP.FormsMenu
             this.pnlGebruikerMenuLinks.Controls.Add(this.btnGebruikersnaamVeranderen);
             this.pnlGebruikerMenuLinks.Controls.Add(this.btnWWAanpassen);
             this.pnlGebruikerMenuLinks.Controls.Add(this.btnAdresVeranderen);
-            this.pnlGebruikerMenuLinks.Location = new System.Drawing.Point(2, 122);
+            this.pnlGebruikerMenuLinks.Location = new System.Drawing.Point(3, 39);
             this.pnlGebruikerMenuLinks.Name = "pnlGebruikerMenuLinks";
             this.pnlGebruikerMenuLinks.Size = new System.Drawing.Size(267, 402);
             this.pnlGebruikerMenuLinks.TabIndex = 0;
-            // 
-            // btnTerugkeren
-            // 
-            this.btnTerugkeren.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnTerugkeren.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTerugkeren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTerugkeren.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTerugkeren.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnTerugkeren.Location = new System.Drawing.Point(583, 487);
-            this.btnTerugkeren.Name = "btnTerugkeren";
-            this.btnTerugkeren.Size = new System.Drawing.Size(129, 34);
-            this.btnTerugkeren.TabIndex = 6;
-            this.btnTerugkeren.Text = "Terugkeren";
-            this.btnTerugkeren.UseVisualStyleBackColor = true;
-            this.btnTerugkeren.Visible = false;
-            this.btnTerugkeren.Click += new System.EventHandler(this.btnTerugkeren_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.btnClose.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClose.IconSize = 20;
-            this.btnClose.Location = new System.Drawing.Point(702, 9);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 21);
-            this.btnClose.TabIndex = 19;
-            this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnEmailVeranderen
             // 
@@ -143,7 +113,7 @@ namespace FijnstofGIP.FormsMenu
             this.btnGebruikersnaamVeranderen.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGebruikersnaamVeranderen.IconSize = 34;
             this.btnGebruikersnaamVeranderen.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnGebruikersnaamVeranderen.Location = new System.Drawing.Point(0, 138);
+            this.btnGebruikersnaamVeranderen.Location = new System.Drawing.Point(3, 138);
             this.btnGebruikersnaamVeranderen.Name = "btnGebruikersnaamVeranderen";
             this.btnGebruikersnaamVeranderen.Padding = new System.Windows.Forms.Padding(0, 14, 0, 0);
             this.btnGebruikersnaamVeranderen.Size = new System.Drawing.Size(255, 60);
@@ -202,19 +172,51 @@ namespace FijnstofGIP.FormsMenu
             this.btnAdresVeranderen.UseVisualStyleBackColor = true;
             this.btnAdresVeranderen.Click += new System.EventHandler(this.btnAdresVeranderen_Click);
             // 
+            // btnTerugkeren
+            // 
+            this.btnTerugkeren.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnTerugkeren.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTerugkeren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTerugkeren.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTerugkeren.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnTerugkeren.Location = new System.Drawing.Point(624, 487);
+            this.btnTerugkeren.Name = "btnTerugkeren";
+            this.btnTerugkeren.Size = new System.Drawing.Size(129, 34);
+            this.btnTerugkeren.TabIndex = 6;
+            this.btnTerugkeren.Text = "Terugkeren";
+            this.btnTerugkeren.UseVisualStyleBackColor = true;
+            this.btnTerugkeren.Visible = false;
+            this.btnTerugkeren.Click += new System.EventHandler(this.btnTerugkeren_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.btnClose.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClose.IconSize = 20;
+            this.btnClose.Location = new System.Drawing.Point(780, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(20, 21);
+            this.btnClose.TabIndex = 19;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // InstellingenGebuiker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(724, 563);
+            this.ClientSize = new System.Drawing.Size(807, 540);
             this.Controls.Add(this.btnTerugkeren);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.pnlGebruikerMenuLinks);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlGebruikerForm);
             this.Name = "InstellingenGebuiker";
             this.Text = "InstellingenGebuiker";
+            this.pnlGebruikerForm.ResumeLayout(false);
             this.pnlGebruikerMenuLinks.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);

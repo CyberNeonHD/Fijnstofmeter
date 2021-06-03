@@ -54,6 +54,7 @@
     <Reference Include="GMap.NET.WindowsForms, Version=1.7.5.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
       <HintPath>..\packages\GMap.NET.WindowsForms.1.7.5\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -119,11 +120,11 @@
     <Compile Include="FormsGebruikerInstellingen\FormWWVeranderen.Designer.cs">
       <DependentUpon>FormWWVeranderen.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsMenu\ForCSVToevoegen.cs">
+    <Compile Include="FormsMenu\FormCSVToevoegen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsMenu\ForCSVToevoegen.Designer.cs">
-      <DependentUpon>ForCSVToevoegen.cs</DependentUpon>
+    <Compile Include="FormsMenu\FormCSVToevoegen.Designer.cs">
+      <DependentUpon>FormCSVToevoegen.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsMenu\FormData.cs">
       <SubType>Form</SubType>
@@ -137,11 +138,17 @@
     <Compile Include="FormsMenu\FormDataTabelvorm.Designer.cs">
       <DependentUpon>FormDataTabelvorm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsMenu\FormFijnstofmeterToevoegen.cs">
+    <Compile Include="FormsMenu\FormFijnstofMetersBewerken.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsMenu\FormFijnstofmeterToevoegen.Designer.cs">
-      <DependentUpon>FormFijnstofmeterToevoegen.cs</DependentUpon>
+    <Compile Include="FormsMenu\FormFijnstofMetersBewerken.Designer.cs">
+      <DependentUpon>FormFijnstofMetersBewerken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsMenu\FormLijstFijnstofmeters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsMenu\FormLijstFijnstofmeters.Designer.cs">
+      <DependentUpon>FormLijstFijnstofmeters.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsMenu\FormMapWeergeven.cs">
       <SubType>Form</SubType>
@@ -205,8 +212,8 @@
     <EmbeddedResource Include="FormsGebruikerInstellingen\FormWWVeranderen.resx">
       <DependentUpon>FormWWVeranderen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsMenu\ForCSVToevoegen.resx">
-      <DependentUpon>ForCSVToevoegen.cs</DependentUpon>
+    <EmbeddedResource Include="FormsMenu\FormCSVToevoegen.resx">
+      <DependentUpon>FormCSVToevoegen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsMenu\FormData.resx">
       <DependentUpon>FormData.cs</DependentUpon>
@@ -214,8 +221,8 @@
     <EmbeddedResource Include="FormsMenu\FormDataTabelvorm.resx">
       <DependentUpon>FormDataTabelvorm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsMenu\FormFijnstofmeterToevoegen.resx">
-      <DependentUpon>FormFijnstofmeterToevoegen.cs</DependentUpon>
+    <EmbeddedResource Include="FormsMenu\FormFijnstofMetersBewerken.resx">
+      <DependentUpon>FormFijnstofMetersBewerken.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsMenu\FormMapWeergeven.resx">
       <DependentUpon>FormMapWeergeven.cs</DependentUpon>

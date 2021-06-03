@@ -78,7 +78,5 @@ namespace FijnstofGIP.FormsMenu
         {
             this.Close();
         }
-
-
     }
 }

@@ -41,7 +41,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.lbltitel.AutoSize = true;
             this.lbltitel.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lbltitel.Location = new System.Drawing.Point(210, 9);
+            this.lbltitel.Location = new System.Drawing.Point(288, -2);
             this.lbltitel.Name = "lbltitel";
             this.lbltitel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbltitel.Size = new System.Drawing.Size(269, 34);
@@ -55,7 +55,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.btnGegevensOpslaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGegevensOpslaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGegevensOpslaan.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnGegevensOpslaan.Location = new System.Drawing.Point(448, 426);
+            this.btnGegevensOpslaan.Location = new System.Drawing.Point(477, 426);
             this.btnGegevensOpslaan.Name = "btnGegevensOpslaan";
             this.btnGegevensOpslaan.Size = new System.Drawing.Size(129, 34);
             this.btnGegevensOpslaan.TabIndex = 9;
@@ -70,7 +70,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.txtGebruikersnaam.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGebruikersnaam.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGebruikersnaam.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtGebruikersnaam.Location = new System.Drawing.Point(210, 200);
+            this.txtGebruikersnaam.Location = new System.Drawing.Point(288, 200);
             this.txtGebruikersnaam.MaxLength = 30;
             this.txtGebruikersnaam.Multiline = true;
             this.txtGebruikersnaam.Name = "txtGebruikersnaam";
@@ -83,7 +83,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // pnlgebruikersnaam
             // 
             this.pnlgebruikersnaam.BackColor = System.Drawing.Color.White;
-            this.pnlgebruikersnaam.Location = new System.Drawing.Point(215, 219);
+            this.pnlgebruikersnaam.Location = new System.Drawing.Point(293, 219);
             this.pnlgebruikersnaam.Margin = new System.Windows.Forms.Padding(0);
             this.pnlgebruikersnaam.Name = "pnlgebruikersnaam";
             this.pnlgebruikersnaam.Size = new System.Drawing.Size(226, 3);
@@ -94,7 +94,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label2.Location = new System.Drawing.Point(211, 174);
+            this.label2.Location = new System.Drawing.Point(289, 174);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 27);
             this.label2.TabIndex = 10;

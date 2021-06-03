@@ -9,19 +9,9 @@ namespace FijnstofGIP
     class SQLScripts
     {
 
-
-        public static readonly string sqlLocatieFijnstofMeter = "SELECT * FROM tblfijnstofmeters";
-
-
-        #region [FormFijnstofmeterToevoegen]
-
-        //aanmaken van een fijnstofmeter in de database
-        public static readonly string sqlFijnstofMeterAanmaken =
-           "INSERT INTO tblfijnstofmeters (meterID, meterNaam, latitude, longtitude)" +
-           "VALUES (@meterid,@meternaam, @latitude, @longtitude)";
-        #endregion
-
         #region [FormData]
+        //alles inladen van de tabel
+        public static readonly string sqlDataAlleGegevens = "SELECT * FROM tblgegevens";
 
         //via meterid alle gegevens van de meter opvragen
         public static readonly string sqlAlleGegevens = "SELECT * FROM tblgegevens WHERE (meterID = @meterid);";
@@ -128,5 +118,26 @@ namespace FijnstofGIP
          "(gebruikersid = @gebruikersid)";
         #endregion
 
+        #region [FormLijstFijnstofmeters + FormFijnstofMetersBewerken]
+        //FormLijstFijnstofmeters + FormFijnstofMetersBewerken
+        public static readonly string sqlAlleMeters = "SELECT * FROM tblfijnstofmeters;";
+        #endregion
+
+        #region [FormFijnstofMetersBewerken]
+
+
+        //verwijderen van record op basis van meterID
+        public static readonly string sqlMeterRecordVerwijderen = "DELETE FROM tblfijnstofmeters WHERE (meterID = @meterid)";
+
+        //aanmaken van een fijnstofmeter in de database
+        public static readonly string sqlFijnstofMeterAanmaken =
+           "INSERT INTO tblfijnstofmeters (meterID, meterNaam, latitude, longtitude)" +
+           "VALUES (@meterid,@meternaam, @latitude, @longtitude)";
+
+        //aanpassen van een record
+        public static readonly string sqlAanpassenMeterRecord = "UPDATE tblfijnstofmeters " +
+         "SET meterID=@meterid, meterNaam=@meterNaam, latitude=@latitude,longtitude=@longtitude WHERE " +
+         "(meterID = @meterid)";
+        #endregion
     }
 }

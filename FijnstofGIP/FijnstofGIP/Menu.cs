@@ -95,10 +95,10 @@ namespace FijnstofGIP
         private void btnDataTabelvorm_Click(object sender, EventArgs e)
         {
             openChildForm(new FormsMenu.FormDataTabelvorm());
-        }
-        private void btnFijnstofmeterToevoegen_Click(object sender, EventArgs e)
+        }   
+        private void btnFijnstofmeter_Click(object sender, EventArgs e)
         {
-            openChildForm(new FormsMenu.FormFijnstofmeterToevoegen());
+            openChildForm(new FormsMenu.FormFijnstofMetersBewerken());
             //SluitDropMenuDesign();
         }
         private void btnKaartWeergeven_Click(object sender, EventArgs e)
@@ -112,6 +112,16 @@ namespace FijnstofGIP
             //SluitDropMenuDesign();
         }
 
+        private void btnCSVToevoegen_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormsMenu.FormCSVToevoegen());
+            //SluitDropMenuDesign();
+        }
+        private void BtnLijstFijnstofmeters_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormsMenu.FormLijstFijnstofmeters());
+            //SluitDropMenuDesign();
+        }
         //Slepen van de  Form (komt van pas als we de balk zelf maken)
         /*
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -151,9 +161,6 @@ namespace FijnstofGIP
             lblDatum.Text = DateTime.Now.ToString("dddd dd MMMM yyyy");
         }
 
-        private void btnCSVToevoegen_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormsMenu.ForCSVToevoegen());
-        }
+
     }
 }

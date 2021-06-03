@@ -50,7 +50,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.lbltitel.AutoSize = true;
             this.lbltitel.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lbltitel.Location = new System.Drawing.Point(255, 9);
+            this.lbltitel.Location = new System.Drawing.Point(288, -2);
             this.lbltitel.Name = "lbltitel";
             this.lbltitel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbltitel.Size = new System.Drawing.Size(173, 34);
@@ -64,7 +64,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.btnGegevensOpslaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGegevensOpslaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGegevensOpslaan.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnGegevensOpslaan.Location = new System.Drawing.Point(448, 426);
+            this.btnGegevensOpslaan.Location = new System.Drawing.Point(477, 426);
             this.btnGegevensOpslaan.Name = "btnGegevensOpslaan";
             this.btnGegevensOpslaan.Size = new System.Drawing.Size(129, 34);
             this.btnGegevensOpslaan.TabIndex = 7;
@@ -79,7 +79,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.txtGemeente.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGemeente.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGemeente.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtGemeente.Location = new System.Drawing.Point(98, 263);
+            this.txtGemeente.Location = new System.Drawing.Point(166, 266);
             this.txtGemeente.MaxLength = 27;
             this.txtGemeente.Multiline = true;
             this.txtGemeente.Name = "txtGemeente";
@@ -92,7 +92,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // pnlgemeente
             // 
             this.pnlgemeente.BackColor = System.Drawing.Color.White;
-            this.pnlgemeente.Location = new System.Drawing.Point(103, 282);
+            this.pnlgemeente.Location = new System.Drawing.Point(171, 285);
             this.pnlgemeente.Margin = new System.Windows.Forms.Padding(0);
             this.pnlgemeente.Name = "pnlgemeente";
             this.pnlgemeente.Size = new System.Drawing.Size(226, 3);
@@ -105,7 +105,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.txtPostcode.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPostcode.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPostcode.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtPostcode.Location = new System.Drawing.Point(427, 263);
+            this.txtPostcode.Location = new System.Drawing.Point(495, 266);
             this.txtPostcode.MaxLength = 4;
             this.txtPostcode.Multiline = true;
             this.txtPostcode.Name = "txtPostcode";
@@ -118,7 +118,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // pnlpostcode
             // 
             this.pnlpostcode.BackColor = System.Drawing.Color.White;
-            this.pnlpostcode.Location = new System.Drawing.Point(430, 282);
+            this.pnlpostcode.Location = new System.Drawing.Point(498, 285);
             this.pnlpostcode.Margin = new System.Windows.Forms.Padding(0);
             this.pnlpostcode.Name = "pnlpostcode";
             this.pnlpostcode.Size = new System.Drawing.Size(74, 3);
@@ -131,7 +131,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.txtHuisNummer.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtHuisNummer.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHuisNummer.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtHuisNummer.Location = new System.Drawing.Point(428, 152);
+            this.txtHuisNummer.Location = new System.Drawing.Point(496, 155);
             this.txtHuisNummer.MaxLength = 5;
             this.txtHuisNummer.Multiline = true;
             this.txtHuisNummer.Name = "txtHuisNummer";
@@ -144,7 +144,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // pnlhuisnummer
             // 
             this.pnlhuisnummer.BackColor = System.Drawing.Color.White;
-            this.pnlhuisnummer.Location = new System.Drawing.Point(431, 171);
+            this.pnlhuisnummer.Location = new System.Drawing.Point(499, 174);
             this.pnlhuisnummer.Margin = new System.Windows.Forms.Padding(0);
             this.pnlhuisnummer.Name = "pnlhuisnummer";
             this.pnlhuisnummer.Size = new System.Drawing.Size(73, 3);
@@ -157,7 +157,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.txtStraat.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtStraat.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStraat.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtStraat.Location = new System.Drawing.Point(98, 152);
+            this.txtStraat.Location = new System.Drawing.Point(166, 155);
             this.txtStraat.MaxLength = 27;
             this.txtStraat.Multiline = true;
             this.txtStraat.Name = "txtStraat";
@@ -170,7 +170,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // pnlstraat
             // 
             this.pnlstraat.BackColor = System.Drawing.Color.White;
-            this.pnlstraat.Location = new System.Drawing.Point(103, 171);
+            this.pnlstraat.Location = new System.Drawing.Point(171, 174);
             this.pnlstraat.Margin = new System.Windows.Forms.Padding(0);
             this.pnlstraat.Name = "pnlstraat";
             this.pnlstraat.Size = new System.Drawing.Size(226, 3);
@@ -181,7 +181,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label8.Location = new System.Drawing.Point(98, 237);
+            this.label8.Location = new System.Drawing.Point(166, 240);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 27);
             this.label8.TabIndex = 8;
@@ -192,7 +192,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label6.Location = new System.Drawing.Point(424, 237);
+            this.label6.Location = new System.Drawing.Point(492, 240);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(73, 27);
             this.label6.TabIndex = 9;
@@ -203,7 +203,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label7.Location = new System.Drawing.Point(425, 126);
+            this.label7.Location = new System.Drawing.Point(493, 129);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 27);
             this.label7.TabIndex = 10;
@@ -214,7 +214,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label5.Location = new System.Drawing.Point(98, 126);
+            this.label5.Location = new System.Drawing.Point(166, 129);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 27);
             this.label5.TabIndex = 11;

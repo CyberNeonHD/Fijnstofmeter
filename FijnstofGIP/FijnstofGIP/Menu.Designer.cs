@@ -31,11 +31,12 @@ namespace FijnstofGIP
         {
             this.components = new System.ComponentModel.Container();
             this.pnlMenuLinks = new System.Windows.Forms.Panel();
+            this.BtnLijstFijnstofmeters = new FontAwesome.Sharp.IconButton();
             this.btnCSVToevoegen = new FontAwesome.Sharp.IconButton();
             this.btnKaartWeergeven = new FontAwesome.Sharp.IconButton();
             this.btnDataTabelvorm = new FontAwesome.Sharp.IconButton();
             this.btnStatisticheData = new FontAwesome.Sharp.IconButton();
-            this.btnFijnstofmeterToevoegen = new FontAwesome.Sharp.IconButton();
+            this.btnFijnstofmeter = new FontAwesome.Sharp.IconButton();
             this.btnUitloggen = new FontAwesome.Sharp.IconPictureBox();
             this.btnData = new FontAwesome.Sharp.IconButton();
             this.pnlLogo = new System.Windows.Forms.Panel();
@@ -46,10 +47,10 @@ namespace FijnstofGIP
             this.pnlMenuBovenkant = new System.Windows.Forms.Panel();
             this.lblNaamGebruiker = new System.Windows.Forms.Label();
             this.pnlMainForms = new System.Windows.Forms.Panel();
+            this.lblVersie = new System.Windows.Forms.Label();
             this.lblwelkom = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tijd = new System.Windows.Forms.Timer(this.components);
-            this.lblVersie = new System.Windows.Forms.Label();
             this.pnlMenuLinks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnUitloggen)).BeginInit();
             this.pnlLogo.SuspendLayout();
@@ -65,19 +66,43 @@ namespace FijnstofGIP
             // 
             this.pnlMenuLinks.AutoScroll = true;
             this.pnlMenuLinks.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.pnlMenuLinks.Controls.Add(this.BtnLijstFijnstofmeters);
             this.pnlMenuLinks.Controls.Add(this.btnCSVToevoegen);
             this.pnlMenuLinks.Controls.Add(this.btnKaartWeergeven);
             this.pnlMenuLinks.Controls.Add(this.btnDataTabelvorm);
             this.pnlMenuLinks.Controls.Add(this.btnStatisticheData);
-            this.pnlMenuLinks.Controls.Add(this.btnFijnstofmeterToevoegen);
+            this.pnlMenuLinks.Controls.Add(this.btnFijnstofmeter);
             this.pnlMenuLinks.Controls.Add(this.btnUitloggen);
             this.pnlMenuLinks.Controls.Add(this.btnData);
             this.pnlMenuLinks.Controls.Add(this.pnlLogo);
             this.pnlMenuLinks.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenuLinks.Location = new System.Drawing.Point(0, 0);
             this.pnlMenuLinks.Name = "pnlMenuLinks";
-            this.pnlMenuLinks.Size = new System.Drawing.Size(220, 600);
+            this.pnlMenuLinks.Size = new System.Drawing.Size(220, 608);
             this.pnlMenuLinks.TabIndex = 0;
+            // 
+            // BtnLijstFijnstofmeters
+            // 
+            this.BtnLijstFijnstofmeters.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLijstFijnstofmeters.FlatAppearance.BorderSize = 0;
+            this.BtnLijstFijnstofmeters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLijstFijnstofmeters.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLijstFijnstofmeters.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.BtnLijstFijnstofmeters.IconChar = FontAwesome.Sharp.IconChar.List;
+            this.BtnLijstFijnstofmeters.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.BtnLijstFijnstofmeters.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnLijstFijnstofmeters.IconSize = 26;
+            this.BtnLijstFijnstofmeters.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BtnLijstFijnstofmeters.Location = new System.Drawing.Point(-2, 389);
+            this.BtnLijstFijnstofmeters.Name = "BtnLijstFijnstofmeters";
+            this.BtnLijstFijnstofmeters.Padding = new System.Windows.Forms.Padding(0, 14, 0, 0);
+            this.BtnLijstFijnstofmeters.Size = new System.Drawing.Size(220, 60);
+            this.BtnLijstFijnstofmeters.TabIndex = 5;
+            this.BtnLijstFijnstofmeters.Text = "Lijst Fijnstofmeters";
+            this.BtnLijstFijnstofmeters.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BtnLijstFijnstofmeters.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnLijstFijnstofmeters.UseVisualStyleBackColor = true;
+            this.BtnLijstFijnstofmeters.Click += new System.EventHandler(this.BtnLijstFijnstofmeters_Click);
             // 
             // btnCSVToevoegen
             // 
@@ -91,11 +116,11 @@ namespace FijnstofGIP
             this.btnCSVToevoegen.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCSVToevoegen.IconSize = 26;
             this.btnCSVToevoegen.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnCSVToevoegen.Location = new System.Drawing.Point(0, 380);
+            this.btnCSVToevoegen.Location = new System.Drawing.Point(-3, 455);
             this.btnCSVToevoegen.Name = "btnCSVToevoegen";
             this.btnCSVToevoegen.Padding = new System.Windows.Forms.Padding(0, 14, 0, 0);
             this.btnCSVToevoegen.Size = new System.Drawing.Size(220, 60);
-            this.btnCSVToevoegen.TabIndex = 5;
+            this.btnCSVToevoegen.TabIndex = 6;
             this.btnCSVToevoegen.Text = "CSV toevoegen";
             this.btnCSVToevoegen.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnCSVToevoegen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -114,11 +139,11 @@ namespace FijnstofGIP
             this.btnKaartWeergeven.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnKaartWeergeven.IconSize = 26;
             this.btnKaartWeergeven.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnKaartWeergeven.Location = new System.Drawing.Point(0, 437);
+            this.btnKaartWeergeven.Location = new System.Drawing.Point(-2, 518);
             this.btnKaartWeergeven.Name = "btnKaartWeergeven";
             this.btnKaartWeergeven.Padding = new System.Windows.Forms.Padding(0, 14, 0, 0);
             this.btnKaartWeergeven.Size = new System.Drawing.Size(220, 60);
-            this.btnKaartWeergeven.TabIndex = 6;
+            this.btnKaartWeergeven.TabIndex = 7;
             this.btnKaartWeergeven.Text = "Kaart weergeven";
             this.btnKaartWeergeven.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnKaartWeergeven.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -173,28 +198,28 @@ namespace FijnstofGIP
             this.btnStatisticheData.UseVisualStyleBackColor = true;
             this.btnStatisticheData.Click += new System.EventHandler(this.btnStatisticheData_Click);
             // 
-            // btnFijnstofmeterToevoegen
+            // btnFijnstofmeter
             // 
-            this.btnFijnstofmeterToevoegen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFijnstofmeterToevoegen.FlatAppearance.BorderSize = 0;
-            this.btnFijnstofmeterToevoegen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFijnstofmeterToevoegen.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFijnstofmeterToevoegen.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnFijnstofmeterToevoegen.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
-            this.btnFijnstofmeterToevoegen.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnFijnstofmeterToevoegen.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFijnstofmeterToevoegen.IconSize = 26;
-            this.btnFijnstofmeterToevoegen.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnFijnstofmeterToevoegen.Location = new System.Drawing.Point(0, 323);
-            this.btnFijnstofmeterToevoegen.Name = "btnFijnstofmeterToevoegen";
-            this.btnFijnstofmeterToevoegen.Padding = new System.Windows.Forms.Padding(0, 14, 0, 0);
-            this.btnFijnstofmeterToevoegen.Size = new System.Drawing.Size(220, 60);
-            this.btnFijnstofmeterToevoegen.TabIndex = 4;
-            this.btnFijnstofmeterToevoegen.Text = "Fijnstofmeter toevoegen";
-            this.btnFijnstofmeterToevoegen.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnFijnstofmeterToevoegen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFijnstofmeterToevoegen.UseVisualStyleBackColor = true;
-            this.btnFijnstofmeterToevoegen.Click += new System.EventHandler(this.btnFijnstofmeterToevoegen_Click);
+            this.btnFijnstofmeter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFijnstofmeter.FlatAppearance.BorderSize = 0;
+            this.btnFijnstofmeter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFijnstofmeter.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFijnstofmeter.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnFijnstofmeter.IconChar = FontAwesome.Sharp.IconChar.Edit;
+            this.btnFijnstofmeter.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnFijnstofmeter.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFijnstofmeter.IconSize = 26;
+            this.btnFijnstofmeter.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnFijnstofmeter.Location = new System.Drawing.Point(0, 323);
+            this.btnFijnstofmeter.Name = "btnFijnstofmeter";
+            this.btnFijnstofmeter.Padding = new System.Windows.Forms.Padding(0, 14, 0, 0);
+            this.btnFijnstofmeter.Size = new System.Drawing.Size(220, 60);
+            this.btnFijnstofmeter.TabIndex = 4;
+            this.btnFijnstofmeter.Text = "Fijnstofmeter";
+            this.btnFijnstofmeter.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnFijnstofmeter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFijnstofmeter.UseVisualStyleBackColor = true;
+            this.btnFijnstofmeter.Click += new System.EventHandler(this.btnFijnstofmeter_Click);
             // 
             // btnUitloggen
             // 
@@ -206,7 +231,7 @@ namespace FijnstofGIP
             this.btnUitloggen.IconColor = System.Drawing.Color.DeepSkyBlue;
             this.btnUitloggen.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUitloggen.IconSize = 24;
-            this.btnUitloggen.Location = new System.Drawing.Point(3, 576);
+            this.btnUitloggen.Location = new System.Drawing.Point(3, 584);
             this.btnUitloggen.Name = "btnUitloggen";
             this.btnUitloggen.Size = new System.Drawing.Size(24, 24);
             this.btnUitloggen.TabIndex = 13;
@@ -279,7 +304,7 @@ namespace FijnstofGIP
             this.pnlTopMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTopMenu.Location = new System.Drawing.Point(220, 0);
             this.pnlTopMenu.Name = "pnlTopMenu";
-            this.pnlTopMenu.Size = new System.Drawing.Size(730, 55);
+            this.pnlTopMenu.Size = new System.Drawing.Size(810, 55);
             this.pnlTopMenu.TabIndex = 1;
             // 
             // btnGebruikerSettings
@@ -292,7 +317,7 @@ namespace FijnstofGIP
             this.btnGebruikerSettings.IconColor = System.Drawing.Color.DeepSkyBlue;
             this.btnGebruikerSettings.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGebruikerSettings.IconSize = 24;
-            this.btnGebruikerSettings.Location = new System.Drawing.Point(689, 15);
+            this.btnGebruikerSettings.Location = new System.Drawing.Point(769, 15);
             this.btnGebruikerSettings.Name = "btnGebruikerSettings";
             this.btnGebruikerSettings.Size = new System.Drawing.Size(24, 24);
             this.btnGebruikerSettings.TabIndex = 12;
@@ -303,7 +328,7 @@ namespace FijnstofGIP
             // 
             this.pnlMenuBovenkant.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pnlMenuBovenkant.Controls.Add(this.lblNaamGebruiker);
-            this.pnlMenuBovenkant.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenuBovenkant.Location = new System.Drawing.Point(80, 0);
             this.pnlMenuBovenkant.Name = "pnlMenuBovenkant";
             this.pnlMenuBovenkant.Size = new System.Drawing.Size(685, 55);
             this.pnlMenuBovenkant.TabIndex = 2;
@@ -332,8 +357,19 @@ namespace FijnstofGIP
             this.pnlMainForms.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMainForms.Location = new System.Drawing.Point(220, 55);
             this.pnlMainForms.Name = "pnlMainForms";
-            this.pnlMainForms.Size = new System.Drawing.Size(730, 545);
+            this.pnlMainForms.Size = new System.Drawing.Size(810, 553);
             this.pnlMainForms.TabIndex = 2;
+            // 
+            // lblVersie
+            // 
+            this.lblVersie.AutoSize = true;
+            this.lblVersie.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersie.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.lblVersie.Location = new System.Drawing.Point(755, 515);
+            this.lblVersie.Name = "lblVersie";
+            this.lblVersie.Size = new System.Drawing.Size(43, 21);
+            this.lblVersie.TabIndex = 3;
+            this.lblVersie.Text = "V0.5";
             // 
             // lblwelkom
             // 
@@ -341,7 +377,7 @@ namespace FijnstofGIP
             this.lblwelkom.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.lblwelkom.Location = new System.Drawing.Point(0, 27);
             this.lblwelkom.Name = "lblwelkom";
-            this.lblwelkom.Size = new System.Drawing.Size(730, 37);
+            this.lblwelkom.Size = new System.Drawing.Size(810, 37);
             this.lblwelkom.TabIndex = 2;
             this.lblwelkom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -349,7 +385,7 @@ namespace FijnstofGIP
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::FijnstofGIP.Properties.Resources.output_onlinepngtools;
-            this.pictureBox1.Location = new System.Drawing.Point(223, 107);
+            this.pictureBox1.Location = new System.Drawing.Point(263, 107);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(299, 202);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -361,24 +397,13 @@ namespace FijnstofGIP
             this.tijd.Interval = 1000;
             this.tijd.Tick += new System.EventHandler(this.tijd_Tick);
             // 
-            // lblVersie
-            // 
-            this.lblVersie.AutoSize = true;
-            this.lblVersie.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVersie.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblVersie.Location = new System.Drawing.Point(684, 515);
-            this.lblVersie.Name = "lblVersie";
-            this.lblVersie.Size = new System.Drawing.Size(43, 21);
-            this.lblVersie.TabIndex = 3;
-            this.lblVersie.Text = "V0.5";
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(950, 600);
+            this.ClientSize = new System.Drawing.Size(1030, 608);
             this.Controls.Add(this.pnlMainForms);
             this.Controls.Add(this.pnlTopMenu);
             this.Controls.Add(this.pnlMenuLinks);
@@ -423,9 +448,10 @@ namespace FijnstofGIP
         private System.Windows.Forms.Label lblDatum;
         private System.Windows.Forms.Timer tijd;
         private FontAwesome.Sharp.IconButton btnStatisticheData;
-        private FontAwesome.Sharp.IconButton btnFijnstofmeterToevoegen;
+        private FontAwesome.Sharp.IconButton btnFijnstofmeter;
         private FontAwesome.Sharp.IconButton btnDataTabelvorm;
         private FontAwesome.Sharp.IconButton btnCSVToevoegen;
         private System.Windows.Forms.Label lblVersie;
+        private FontAwesome.Sharp.IconButton BtnLijstFijnstofmeters;
     }
 }

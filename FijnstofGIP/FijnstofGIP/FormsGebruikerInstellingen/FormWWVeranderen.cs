@@ -162,6 +162,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                 MessageBox.Show("U heeft uw wachtwoord succesvol verandered, gelieve uit te loggen zodat U met uw nieuwe gegevens kan inloggen.", "Succesvol nieuw wachtwoord", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 pnlWWCheckSectie.Visible = true;
                 pnlWWVeranderenSectie.Visible = false;
+                btnGegevensOpslaan.Enabled = false;
 
                 //versturen van de email om de gebruiker te waarschuwen van het nieuwe wachtwoord
                 MailMessage CodeMail = new MailMessage();
@@ -216,6 +217,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     pnlWWCheckSectie.Visible = false;
                     pnlWWVeranderenSectie.Visible = true;
                     MessageBox.Show("Wachtwoord klopt", "Juist wachtwoord", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnGegevensOpslaan.Enabled = true;
                 }
                 else
                 {

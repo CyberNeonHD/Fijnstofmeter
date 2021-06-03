@@ -33,6 +33,8 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.lbltitel = new System.Windows.Forms.Label();
             this.btnGegevensOpslaan = new System.Windows.Forms.Button();
             this.pnlWWCheckSectie = new System.Windows.Forms.Panel();
+            this.btnLockHuidigWW = new FontAwesome.Sharp.IconPictureBox();
+            this.btnOpenLockHuidigWW = new FontAwesome.Sharp.IconPictureBox();
             this.txtHuidigWW = new System.Windows.Forms.TextBox();
             this.pnlHuidigWW = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,17 +50,15 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.txtWW = new System.Windows.Forms.TextBox();
             this.btnLock = new FontAwesome.Sharp.IconPictureBox();
             this.pnlWWVeranderenSectie = new System.Windows.Forms.Panel();
-            this.btnLockHuidigWW = new FontAwesome.Sharp.IconPictureBox();
-            this.btnOpenLockHuidigWW = new FontAwesome.Sharp.IconPictureBox();
             this.TipTxt = new System.Windows.Forms.ToolTip(this.components);
             this.pnlWWCheckSectie.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLockHuidigWW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockHuidigWW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockBevestigen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLockBevestigen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLock)).BeginInit();
             this.pnlWWVeranderenSectie.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLockHuidigWW)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockHuidigWW)).BeginInit();
             this.SuspendLayout();
             // 
             // lbltitel
@@ -66,7 +66,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.lbltitel.AutoSize = true;
             this.lbltitel.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitel.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lbltitel.Location = new System.Drawing.Point(231, 9);
+            this.lbltitel.Location = new System.Drawing.Point(257, -1);
             this.lbltitel.Name = "lbltitel";
             this.lbltitel.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lbltitel.Size = new System.Drawing.Size(237, 34);
@@ -77,10 +77,11 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // btnGegevensOpslaan
             // 
             this.btnGegevensOpslaan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGegevensOpslaan.Enabled = false;
             this.btnGegevensOpslaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGegevensOpslaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGegevensOpslaan.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnGegevensOpslaan.Location = new System.Drawing.Point(448, 426);
+            this.btnGegevensOpslaan.Location = new System.Drawing.Point(477, 426);
             this.btnGegevensOpslaan.Name = "btnGegevensOpslaan";
             this.btnGegevensOpslaan.Size = new System.Drawing.Size(129, 34);
             this.btnGegevensOpslaan.TabIndex = 5;
@@ -96,10 +97,44 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.pnlWWCheckSectie.Controls.Add(this.pnlHuidigWW);
             this.pnlWWCheckSectie.Controls.Add(this.label2);
             this.pnlWWCheckSectie.Controls.Add(this.btnBevestigen);
-            this.pnlWWCheckSectie.Location = new System.Drawing.Point(135, 163);
+            this.pnlWWCheckSectie.Location = new System.Drawing.Point(234, 165);
             this.pnlWWCheckSectie.Name = "pnlWWCheckSectie";
             this.pnlWWCheckSectie.Size = new System.Drawing.Size(425, 128);
             this.pnlWWCheckSectie.TabIndex = 19;
+            // 
+            // btnLockHuidigWW
+            // 
+            this.btnLockHuidigWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnLockHuidigWW.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLockHuidigWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLockHuidigWW.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.btnLockHuidigWW.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnLockHuidigWW.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLockHuidigWW.IconSize = 24;
+            this.btnLockHuidigWW.Location = new System.Drawing.Point(283, 41);
+            this.btnLockHuidigWW.Name = "btnLockHuidigWW";
+            this.btnLockHuidigWW.Size = new System.Drawing.Size(24, 24);
+            this.btnLockHuidigWW.TabIndex = 23;
+            this.btnLockHuidigWW.TabStop = false;
+            this.btnLockHuidigWW.Click += new System.EventHandler(this.btnLockHuidigWW_Click);
+            this.btnLockHuidigWW.MouseHover += new System.EventHandler(this.btnLockHuidigWW_MouseHover);
+            // 
+            // btnOpenLockHuidigWW
+            // 
+            this.btnOpenLockHuidigWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnOpenLockHuidigWW.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenLockHuidigWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnOpenLockHuidigWW.IconChar = FontAwesome.Sharp.IconChar.LockOpen;
+            this.btnOpenLockHuidigWW.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnOpenLockHuidigWW.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnOpenLockHuidigWW.IconSize = 24;
+            this.btnOpenLockHuidigWW.Location = new System.Drawing.Point(283, 41);
+            this.btnOpenLockHuidigWW.Name = "btnOpenLockHuidigWW";
+            this.btnOpenLockHuidigWW.Size = new System.Drawing.Size(24, 24);
+            this.btnOpenLockHuidigWW.TabIndex = 24;
+            this.btnOpenLockHuidigWW.TabStop = false;
+            this.btnOpenLockHuidigWW.Click += new System.EventHandler(this.btnOpenLockHuidigWW_Click);
+            this.btnOpenLockHuidigWW.MouseHover += new System.EventHandler(this.btnOpenLockHuidigWW_MouseHover);
             // 
             // txtHuidigWW
             // 
@@ -309,45 +344,11 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.pnlWWVeranderenSectie.Controls.Add(this.btnOpenLock);
             this.pnlWWVeranderenSectie.Controls.Add(this.label5);
             this.pnlWWVeranderenSectie.Controls.Add(this.label4);
-            this.pnlWWVeranderenSectie.Location = new System.Drawing.Point(145, 160);
+            this.pnlWWVeranderenSectie.Location = new System.Drawing.Point(244, 162);
             this.pnlWWVeranderenSectie.Name = "pnlWWVeranderenSectie";
             this.pnlWWVeranderenSectie.Size = new System.Drawing.Size(396, 135);
             this.pnlWWVeranderenSectie.TabIndex = 21;
             this.pnlWWVeranderenSectie.Visible = false;
-            // 
-            // btnLockHuidigWW
-            // 
-            this.btnLockHuidigWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnLockHuidigWW.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLockHuidigWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnLockHuidigWW.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.btnLockHuidigWW.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnLockHuidigWW.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLockHuidigWW.IconSize = 24;
-            this.btnLockHuidigWW.Location = new System.Drawing.Point(283, 41);
-            this.btnLockHuidigWW.Name = "btnLockHuidigWW";
-            this.btnLockHuidigWW.Size = new System.Drawing.Size(24, 24);
-            this.btnLockHuidigWW.TabIndex = 23;
-            this.btnLockHuidigWW.TabStop = false;
-            this.btnLockHuidigWW.Click += new System.EventHandler(this.btnLockHuidigWW_Click);
-            this.btnLockHuidigWW.MouseHover += new System.EventHandler(this.btnLockHuidigWW_MouseHover);
-            // 
-            // btnOpenLockHuidigWW
-            // 
-            this.btnOpenLockHuidigWW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.btnOpenLockHuidigWW.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpenLockHuidigWW.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnOpenLockHuidigWW.IconChar = FontAwesome.Sharp.IconChar.LockOpen;
-            this.btnOpenLockHuidigWW.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnOpenLockHuidigWW.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnOpenLockHuidigWW.IconSize = 24;
-            this.btnOpenLockHuidigWW.Location = new System.Drawing.Point(283, 41);
-            this.btnOpenLockHuidigWW.Name = "btnOpenLockHuidigWW";
-            this.btnOpenLockHuidigWW.Size = new System.Drawing.Size(24, 24);
-            this.btnOpenLockHuidigWW.TabIndex = 24;
-            this.btnOpenLockHuidigWW.TabStop = false;
-            this.btnOpenLockHuidigWW.Click += new System.EventHandler(this.btnOpenLockHuidigWW_Click);
-            this.btnOpenLockHuidigWW.MouseHover += new System.EventHandler(this.btnOpenLockHuidigWW_MouseHover);
             // 
             // FormWWVeranderen
             // 
@@ -363,14 +364,14 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.Text = "FormWWVeranderen";
             this.pnlWWCheckSectie.ResumeLayout(false);
             this.pnlWWCheckSectie.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLockHuidigWW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockHuidigWW)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockBevestigen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLockBevestigen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnLock)).EndInit();
             this.pnlWWVeranderenSectie.ResumeLayout(false);
             this.pnlWWVeranderenSectie.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnLockHuidigWW)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnOpenLockHuidigWW)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

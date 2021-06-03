@@ -82,7 +82,7 @@
             this.btnClose.IconColor = System.Drawing.Color.DeepSkyBlue;
             this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClose.IconSize = 20;
-            this.btnClose.Location = new System.Drawing.Point(702, 9);
+            this.btnClose.Location = new System.Drawing.Point(780, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(20, 21);
             this.btnClose.TabIndex = 18;
@@ -95,7 +95,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label2.Location = new System.Drawing.Point(276, 9);
+            this.label2.Location = new System.Drawing.Point(360, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(170, 37);
             this.label2.TabIndex = 19;
@@ -106,7 +106,7 @@
             this.btnRecordToevoegen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordToevoegen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecordToevoegen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecordToevoegen.Location = new System.Drawing.Point(372, 496);
+            this.btnRecordToevoegen.Location = new System.Drawing.Point(410, 496);
             this.btnRecordToevoegen.Name = "btnRecordToevoegen";
             this.btnRecordToevoegen.Size = new System.Drawing.Size(155, 32);
             this.btnRecordToevoegen.TabIndex = 18;
@@ -119,11 +119,11 @@
             this.btnRecordBewaren.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordBewaren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecordBewaren.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecordBewaren.Location = new System.Drawing.Point(547, 496);
+            this.btnRecordBewaren.Location = new System.Drawing.Point(585, 496);
             this.btnRecordBewaren.Name = "btnRecordBewaren";
             this.btnRecordBewaren.Size = new System.Drawing.Size(155, 32);
             this.btnRecordBewaren.TabIndex = 19;
-            this.btnRecordBewaren.Text = "Record bewaren";
+            this.btnRecordBewaren.Text = "Record aanpassen";
             this.btnRecordBewaren.UseVisualStyleBackColor = true;
             this.btnRecordBewaren.Click += new System.EventHandler(this.btnRecordBewaren_Click);
             // 
@@ -132,7 +132,7 @@
             this.btnRecordVerwijderen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordVerwijderen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecordVerwijderen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRecordVerwijderen.Location = new System.Drawing.Point(16, 496);
+            this.btnRecordVerwijderen.Location = new System.Drawing.Point(54, 496);
             this.btnRecordVerwijderen.Name = "btnRecordVerwijderen";
             this.btnRecordVerwijderen.Size = new System.Drawing.Size(155, 32);
             this.btnRecordVerwijderen.TabIndex = 16;
@@ -145,7 +145,7 @@
             this.btnLaatsteRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLaatsteRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLaatsteRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLaatsteRecord.Location = new System.Drawing.Point(573, 49);
+            this.btnLaatsteRecord.Location = new System.Drawing.Point(611, 49);
             this.btnLaatsteRecord.Name = "btnLaatsteRecord";
             this.btnLaatsteRecord.Size = new System.Drawing.Size(113, 29);
             this.btnLaatsteRecord.TabIndex = 4;
@@ -158,7 +158,7 @@
             this.btnVolgendRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVolgendRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolgendRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolgendRecord.Location = new System.Drawing.Point(438, 49);
+            this.btnVolgendRecord.Location = new System.Drawing.Point(476, 49);
             this.btnVolgendRecord.Name = "btnVolgendRecord";
             this.btnVolgendRecord.Size = new System.Drawing.Size(113, 29);
             this.btnVolgendRecord.TabIndex = 3;
@@ -171,7 +171,7 @@
             this.btnVorigRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVorigRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVorigRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVorigRecord.Location = new System.Drawing.Point(171, 49);
+            this.btnVorigRecord.Location = new System.Drawing.Point(209, 49);
             this.btnVorigRecord.Name = "btnVorigRecord";
             this.btnVorigRecord.Size = new System.Drawing.Size(113, 29);
             this.btnVorigRecord.TabIndex = 2;
@@ -184,7 +184,7 @@
             this.btnEersteRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEersteRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEersteRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEersteRecord.Location = new System.Drawing.Point(36, 49);
+            this.btnEersteRecord.Location = new System.Drawing.Point(74, 49);
             this.btnEersteRecord.Name = "btnEersteRecord";
             this.btnEersteRecord.Size = new System.Drawing.Size(113, 29);
             this.btnEersteRecord.TabIndex = 1;
@@ -197,7 +197,7 @@
             this.lblPM2_5.AutoSize = true;
             this.lblPM2_5.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.lblPM2_5.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblPM2_5.Location = new System.Drawing.Point(263, 341);
+            this.lblPM2_5.Location = new System.Drawing.Point(301, 341);
             this.lblPM2_5.Name = "lblPM2_5";
             this.lblPM2_5.Size = new System.Drawing.Size(56, 27);
             this.lblPM2_5.TabIndex = 24;
@@ -208,7 +208,7 @@
             this.lblVochtigheid.AutoSize = true;
             this.lblVochtigheid.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.lblVochtigheid.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblVochtigheid.Location = new System.Drawing.Point(405, 341);
+            this.lblVochtigheid.Location = new System.Drawing.Point(443, 341);
             this.lblVochtigheid.Name = "lblVochtigheid";
             this.lblVochtigheid.Size = new System.Drawing.Size(92, 27);
             this.lblVochtigheid.TabIndex = 23;
@@ -219,7 +219,7 @@
             this.lblTemperatuur.AutoSize = true;
             this.lblTemperatuur.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.lblTemperatuur.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblTemperatuur.Location = new System.Drawing.Point(404, 279);
+            this.lblTemperatuur.Location = new System.Drawing.Point(442, 279);
             this.lblTemperatuur.Name = "lblTemperatuur";
             this.lblTemperatuur.Size = new System.Drawing.Size(97, 27);
             this.lblTemperatuur.TabIndex = 22;
@@ -230,7 +230,7 @@
             this.lblMeterID.AutoSize = true;
             this.lblMeterID.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.lblMeterID.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblMeterID.Location = new System.Drawing.Point(83, 216);
+            this.lblMeterID.Location = new System.Drawing.Point(121, 216);
             this.lblMeterID.Name = "lblMeterID";
             this.lblMeterID.Size = new System.Drawing.Size(66, 27);
             this.lblMeterID.TabIndex = 20;
@@ -241,7 +241,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(118, 341);
+            this.label1.Location = new System.Drawing.Point(156, 341);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 27);
             this.label1.TabIndex = 38;
@@ -252,7 +252,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label3.Location = new System.Drawing.Point(540, 341);
+            this.label3.Location = new System.Drawing.Point(578, 341);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 27);
             this.label3.TabIndex = 39;
@@ -263,7 +263,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label4.Location = new System.Drawing.Point(118, 279);
+            this.label4.Location = new System.Drawing.Point(156, 279);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 27);
             this.label4.TabIndex = 40;
@@ -274,7 +274,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label5.Location = new System.Drawing.Point(263, 279);
+            this.label5.Location = new System.Drawing.Point(301, 279);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 27);
             this.label5.TabIndex = 41;
@@ -287,7 +287,7 @@
             this.txtMeterID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMeterID.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMeterID.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtMeterID.Location = new System.Drawing.Point(85, 237);
+            this.txtMeterID.Location = new System.Drawing.Point(123, 237);
             this.txtMeterID.MaxLength = 45;
             this.txtMeterID.Multiline = true;
             this.txtMeterID.Name = "txtMeterID";
@@ -300,7 +300,7 @@
             // pnlMeterID
             // 
             this.pnlMeterID.BackColor = System.Drawing.Color.White;
-            this.pnlMeterID.Location = new System.Drawing.Point(88, 256);
+            this.pnlMeterID.Location = new System.Drawing.Point(126, 256);
             this.pnlMeterID.Margin = new System.Windows.Forms.Padding(0);
             this.pnlMeterID.Name = "pnlMeterID";
             this.pnlMeterID.Size = new System.Drawing.Size(155, 3);
@@ -313,7 +313,7 @@
             this.txtDatum.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDatum.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDatum.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtDatum.Location = new System.Drawing.Point(265, 299);
+            this.txtDatum.Location = new System.Drawing.Point(303, 299);
             this.txtDatum.MaxLength = 45;
             this.txtDatum.Multiline = true;
             this.txtDatum.Name = "txtDatum";
@@ -326,7 +326,7 @@
             // pnlDatum
             // 
             this.pnlDatum.BackColor = System.Drawing.Color.White;
-            this.pnlDatum.Location = new System.Drawing.Point(268, 318);
+            this.pnlDatum.Location = new System.Drawing.Point(306, 318);
             this.pnlDatum.Margin = new System.Windows.Forms.Padding(0);
             this.pnlDatum.Name = "pnlDatum";
             this.pnlDatum.Size = new System.Drawing.Size(84, 3);
@@ -339,7 +339,7 @@
             this.txtPM2_5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPM2_5.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPM2_5.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtPM2_5.Location = new System.Drawing.Point(265, 360);
+            this.txtPM2_5.Location = new System.Drawing.Point(303, 360);
             this.txtPM2_5.MaxLength = 45;
             this.txtPM2_5.Multiline = true;
             this.txtPM2_5.Name = "txtPM2_5";
@@ -352,7 +352,7 @@
             // pnl2_5
             // 
             this.pnl2_5.BackColor = System.Drawing.Color.White;
-            this.pnl2_5.Location = new System.Drawing.Point(268, 379);
+            this.pnl2_5.Location = new System.Drawing.Point(306, 379);
             this.pnl2_5.Margin = new System.Windows.Forms.Padding(0);
             this.pnl2_5.Name = "pnl2_5";
             this.pnl2_5.Size = new System.Drawing.Size(84, 3);
@@ -365,7 +365,7 @@
             this.txtPM10.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPM10.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPM10.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtPM10.Location = new System.Drawing.Point(120, 361);
+            this.txtPM10.Location = new System.Drawing.Point(158, 361);
             this.txtPM10.MaxLength = 45;
             this.txtPM10.Multiline = true;
             this.txtPM10.Name = "txtPM10";
@@ -378,7 +378,7 @@
             // pnlPM10
             // 
             this.pnlPM10.BackColor = System.Drawing.Color.White;
-            this.pnlPM10.Location = new System.Drawing.Point(123, 380);
+            this.pnlPM10.Location = new System.Drawing.Point(161, 380);
             this.pnlPM10.Margin = new System.Windows.Forms.Padding(0);
             this.pnlPM10.Name = "pnlPM10";
             this.pnlPM10.Size = new System.Drawing.Size(84, 3);
@@ -391,7 +391,7 @@
             this.txtTijdstip.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTijdstip.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTijdstip.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtTijdstip.Location = new System.Drawing.Point(120, 301);
+            this.txtTijdstip.Location = new System.Drawing.Point(158, 301);
             this.txtTijdstip.MaxLength = 45;
             this.txtTijdstip.Multiline = true;
             this.txtTijdstip.Name = "txtTijdstip";
@@ -404,7 +404,7 @@
             // pnlTijdstip
             // 
             this.pnlTijdstip.BackColor = System.Drawing.Color.White;
-            this.pnlTijdstip.Location = new System.Drawing.Point(123, 320);
+            this.pnlTijdstip.Location = new System.Drawing.Point(161, 320);
             this.pnlTijdstip.Margin = new System.Windows.Forms.Padding(0);
             this.pnlTijdstip.Name = "pnlTijdstip";
             this.pnlTijdstip.Size = new System.Drawing.Size(84, 3);
@@ -417,7 +417,7 @@
             this.txtTemp.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTemp.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTemp.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtTemp.Location = new System.Drawing.Point(407, 298);
+            this.txtTemp.Location = new System.Drawing.Point(445, 298);
             this.txtTemp.MaxLength = 45;
             this.txtTemp.Multiline = true;
             this.txtTemp.Name = "txtTemp";
@@ -430,7 +430,7 @@
             // pnlTemp
             // 
             this.pnlTemp.BackColor = System.Drawing.Color.White;
-            this.pnlTemp.Location = new System.Drawing.Point(410, 317);
+            this.pnlTemp.Location = new System.Drawing.Point(448, 317);
             this.pnlTemp.Margin = new System.Windows.Forms.Padding(0);
             this.pnlTemp.Name = "pnlTemp";
             this.pnlTemp.Size = new System.Drawing.Size(84, 3);
@@ -443,7 +443,7 @@
             this.txtVochtigheid.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtVochtigheid.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVochtigheid.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtVochtigheid.Location = new System.Drawing.Point(406, 360);
+            this.txtVochtigheid.Location = new System.Drawing.Point(444, 360);
             this.txtVochtigheid.MaxLength = 45;
             this.txtVochtigheid.Multiline = true;
             this.txtVochtigheid.Name = "txtVochtigheid";
@@ -456,7 +456,7 @@
             // pnlVochtigheid
             // 
             this.pnlVochtigheid.BackColor = System.Drawing.Color.White;
-            this.pnlVochtigheid.Location = new System.Drawing.Point(409, 379);
+            this.pnlVochtigheid.Location = new System.Drawing.Point(447, 379);
             this.pnlVochtigheid.Margin = new System.Windows.Forms.Padding(0);
             this.pnlVochtigheid.Name = "pnlVochtigheid";
             this.pnlVochtigheid.Size = new System.Drawing.Size(84, 3);
@@ -469,7 +469,7 @@
             this.txtLuchtdruk.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLuchtdruk.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLuchtdruk.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtLuchtdruk.Location = new System.Drawing.Point(542, 360);
+            this.txtLuchtdruk.Location = new System.Drawing.Point(580, 360);
             this.txtLuchtdruk.MaxLength = 45;
             this.txtLuchtdruk.Multiline = true;
             this.txtLuchtdruk.Name = "txtLuchtdruk";
@@ -482,7 +482,7 @@
             // pnlLuchtdruk
             // 
             this.pnlLuchtdruk.BackColor = System.Drawing.Color.White;
-            this.pnlLuchtdruk.Location = new System.Drawing.Point(545, 379);
+            this.pnlLuchtdruk.Location = new System.Drawing.Point(583, 379);
             this.pnlLuchtdruk.Margin = new System.Windows.Forms.Padding(0);
             this.pnlLuchtdruk.Name = "pnlLuchtdruk";
             this.pnlLuchtdruk.Size = new System.Drawing.Size(84, 3);
@@ -498,7 +498,7 @@
             this.cmbWelkVeld.FormattingEnabled = true;
             this.cmbWelkVeld.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cmbWelkVeld.ItemHeight = 14;
-            this.cmbWelkVeld.Location = new System.Drawing.Point(550, 157);
+            this.cmbWelkVeld.Location = new System.Drawing.Point(588, 157);
             this.cmbWelkVeld.Name = "cmbWelkVeld";
             this.cmbWelkVeld.Size = new System.Drawing.Size(119, 22);
             this.cmbWelkVeld.TabIndex = 6;
@@ -510,7 +510,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label7.Location = new System.Drawing.Point(291, 153);
+            this.label7.Location = new System.Drawing.Point(329, 153);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(185, 23);
             this.label7.TabIndex = 74;
@@ -521,7 +521,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label8.Location = new System.Drawing.Point(291, 185);
+            this.label8.Location = new System.Drawing.Point(329, 185);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(200, 23);
             this.label8.TabIndex = 75;
@@ -534,7 +534,7 @@
             this.txtZoekstring.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtZoekstring.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtZoekstring.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtZoekstring.Location = new System.Drawing.Point(550, 185);
+            this.txtZoekstring.Location = new System.Drawing.Point(588, 185);
             this.txtZoekstring.MaxLength = 20;
             this.txtZoekstring.Multiline = true;
             this.txtZoekstring.Name = "txtZoekstring";
@@ -548,7 +548,7 @@
             // pnlZoekstring
             // 
             this.pnlZoekstring.BackColor = System.Drawing.Color.White;
-            this.pnlZoekstring.Location = new System.Drawing.Point(553, 204);
+            this.pnlZoekstring.Location = new System.Drawing.Point(591, 204);
             this.pnlZoekstring.Margin = new System.Windows.Forms.Padding(0);
             this.pnlZoekstring.Name = "pnlZoekstring";
             this.pnlZoekstring.Size = new System.Drawing.Size(115, 3);
@@ -559,7 +559,7 @@
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(197, 496);
+            this.btnClear.Location = new System.Drawing.Point(235, 496);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(155, 32);
             this.btnClear.TabIndex = 17;
@@ -572,7 +572,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label6.Location = new System.Drawing.Point(291, 117);
+            this.label6.Location = new System.Drawing.Point(329, 117);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(219, 23);
             this.label6.TabIndex = 79;
@@ -588,7 +588,7 @@
             this.cmbWelkeMeter.FormattingEnabled = true;
             this.cmbWelkeMeter.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.cmbWelkeMeter.ItemHeight = 14;
-            this.cmbWelkeMeter.Location = new System.Drawing.Point(550, 116);
+            this.cmbWelkeMeter.Location = new System.Drawing.Point(588, 116);
             this.cmbWelkeMeter.Name = "cmbWelkeMeter";
             this.cmbWelkeMeter.Size = new System.Drawing.Size(119, 22);
             this.cmbWelkeMeter.TabIndex = 5;
@@ -602,7 +602,7 @@
             this.txtGegevensID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGegevensID.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGegevensID.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtGegevensID.Location = new System.Drawing.Point(85, 193);
+            this.txtGegevensID.Location = new System.Drawing.Point(123, 193);
             this.txtGegevensID.MaxLength = 45;
             this.txtGegevensID.Multiline = true;
             this.txtGegevensID.Name = "txtGegevensID";
@@ -616,7 +616,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(714, 540);
+            this.ClientSize = new System.Drawing.Size(807, 540);
             this.Controls.Add(this.txtGegevensID);
             this.Controls.Add(this.cmbWelkeMeter);
             this.Controls.Add(this.label6);

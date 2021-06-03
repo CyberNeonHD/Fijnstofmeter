@@ -96,6 +96,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     pnlWWCheckSectie.Visible = false;
                     pnlEmailSectie.Visible = true;
                     MessageBox.Show("Wachtwoord klopt", "Juist wachtwoord", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnGegevensOpslaan.Enabled = true;
                 }
                 else
                 {
@@ -166,7 +167,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     //updaten van de info over de gebruiker
                     InfoGebruiker.email = txtEmail.Text;
                     MessageBox.Show("Jouw email is upgedate!", "Email bewaard!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    btnGegevensOpslaan.Enabled = false;
 
                     //versturen van de email om de gebruiker te waarschuwen van het nieuwe wachtwoord
                     MailMessage CodeMail = new MailMessage();

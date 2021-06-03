@@ -17,6 +17,7 @@ namespace FijnstofGIP.FormsMenu
         public FormDataTabelvorm()
         {
             InitializeComponent();
+            comboBoxVullen();
         }
         DataSet dsGegevens = new DataSet();
         //standaard laden we deze meter in
@@ -54,37 +55,47 @@ namespace FijnstofGIP.FormsMenu
                 dsGegevens.Clear();
                 adapter.Fill(dsGegevens, "MijnTabel");
                 GegevensTonen();
-
-                //combobox -> CmbWelkVeld vullen met de tabelnamen van de database
-                DataSet ds = new DataSet();
-                adapter.Fill(ds, "MijnTabelnamen");
-                
-                foreach (DataColumn column in ds.Tables[0].Columns)
-                {
-                    cmbWelkVeld.Items.Add(column.ColumnName);
-                }
-                //---------------------------------------------------
-
-                //combobox -> cmbWelkeMeter vullen met de fijnstofmeters die er zijn
-                OleDbCommand cmd = new OleDbCommand();
-                cmd = new OleDbCommand(SQLScripts.sqlMeterID, MijnVerbinding);
-                OleDbDataReader Sdr = cmd.ExecuteReader();
-                while (Sdr.Read())
-                {
-                    for (int i = 0; i < Sdr.FieldCount; i++)
-                    {
-                        cmbWelkeMeter.Items.Add(Sdr.GetString(i));
-                    }
-                }
-                //standaard waarde geven aan cmbWelkeMeter
-                cmbWelkeMeter.SelectedItem = "esp8266-3130811";
-                //---------------------------------------------------
                 MijnVerbinding.Close();
             }
             catch
             {
                 MessageBox.Show("ERROR: Problemen bij verbinding van de gegevens", "Verbinding database mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        public void comboBoxVullen()
+        {
+            OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
+            MijnVerbinding.Open();
+
+            OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAlleGegevens, MijnVerbinding);
+
+            //combobox -> CmbWelkVeld vullen met de tabelnamen van de database
+            DataSet ds = new DataSet();
+            adapter.Fill(ds, "MijnTabelnamen");
+            foreach (DataColumn column in ds.Tables[0].Columns)
+            {
+                    cmbWelkVeld.Items.Add(column.ColumnName);
+            }
+            
+            
+            //---------------------------------------------------
+
+            //combobox -> cmbWelkeMeter vullen met de fijnstofmeters die er zijn
+            OleDbCommand cmd = new OleDbCommand();
+            cmd = new OleDbCommand(SQLScripts.sqlMeterID, MijnVerbinding);
+            OleDbDataReader Sdr = cmd.ExecuteReader();
+            while (Sdr.Read())
+            {
+                for (int i = 0; i < Sdr.FieldCount; i++)
+                {
+                    cmbWelkeMeter.Items.Add(Sdr.GetString(i));
+                }
+            }
+            //standaard waarde geven aan cmbWelkeMeter
+            cmbWelkeMeter.SelectedItem = "esp8266-3130811";
+            //---------------------------------------------------
+            MijnVerbinding.Close();
         }
         #endregion
 

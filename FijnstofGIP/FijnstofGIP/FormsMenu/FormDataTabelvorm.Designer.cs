@@ -48,7 +48,7 @@ namespace FijnstofGIP.FormsMenu
             this.dgvGegevens.Location = new System.Drawing.Point(12, 130);
             this.dgvGegevens.Name = "dgvGegevens";
             this.dgvGegevens.RowHeadersWidth = 51;
-            this.dgvGegevens.Size = new System.Drawing.Size(690, 398);
+            this.dgvGegevens.Size = new System.Drawing.Size(783, 398);
             this.dgvGegevens.TabIndex = 5;
             // 
             // cmbWelkeMeter
@@ -155,7 +155,7 @@ namespace FijnstofGIP.FormsMenu
             this.btnClose.IconColor = System.Drawing.Color.DeepSkyBlue;
             this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClose.IconSize = 20;
-            this.btnClose.Location = new System.Drawing.Point(702, 9);
+            this.btnClose.Location = new System.Drawing.Point(780, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(20, 21);
             this.btnClose.TabIndex = 87;
@@ -167,7 +167,7 @@ namespace FijnstofGIP.FormsMenu
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(714, 540);
+            this.ClientSize = new System.Drawing.Size(807, 540);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.cmbWelkeMeter);
             this.Controls.Add(this.label6);

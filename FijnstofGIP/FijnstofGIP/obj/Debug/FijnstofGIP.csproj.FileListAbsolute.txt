@@ -21,7 +21,6 @@ D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormAdresVeranderen.resources
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormGebruiksersNaamVeranderen.resources
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormWWVeranderen.resources
-D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormFijnstofmeterToevoegen.resources
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormMapWeergeven.resources
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormStatisticheData.resources
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\GMap.NET.Core.dll
@@ -86,7 +85,6 @@ K:\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.csproj.CopyComple
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormData.resources
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.WachtwoordReset.resources
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormDataTabelvorm.resources
-D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.ForCSVToevoegen.resources
 K:\FijnstofGIP\FijnstofGIP\bin\Debug\FijnstofGIP.exe.config
 K:\FijnstofGIP\FijnstofGIP\bin\Debug\FijnstofGIP.exe
 K:\FijnstofGIP\FijnstofGIP\bin\Debug\FijnstofGIP.pdb
@@ -180,3 +178,53 @@ D:\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.csproj.CopyComple
 D:\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.exe
 D:\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.pdb
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormEmailVeranderen.resources
+K:\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormEmailVeranderen.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.csprojAssemblyReference.cache
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.Aanmeldscherm.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormAdresVeranderen.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormEmailVeranderen.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormGebruiksersNaamVeranderen.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormWWVeranderen.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormData.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormDataTabelvorm.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormFijnstofmeterToevoegen.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormMapWeergeven.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormStatisticheData.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.InstellingenGebuiker.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.Laadscherm.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.Menu.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.Properties.Resources.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.Registratiescherm.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.WachtwoordReset.resources
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.csproj.GenerateResource.cache
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.csproj.CoreCompileInputs.cache
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.exe
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.pdb
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\FijnstofGIP.exe.config
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\FijnstofGIP.exe
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\FijnstofGIP.pdb
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\CircularProgressBar.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\EntityFramework.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\EntityFramework.SqlServer.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\FontAwesome.Sharp.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\GMap.NET.Core.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\GMap.NET.WindowsForms.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\Newtonsoft.Json.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\System.Data.SqlClient.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\System.Data.SQLite.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\System.Security.Principal.Windows.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\WinFormAnimation.dll
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\CircularProgressBar.xml
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\EntityFramework.xml
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\EntityFramework.SqlServer.xml
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\Newtonsoft.Json.xml
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\System.Data.SqlClient.xml
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\System.Data.SQLite.xml
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\System.Security.Principal.Windows.xml
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\bin\Debug\WinFormAnimation.xml
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.csproj.CopyComplete
+E:\Gedaan op school\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormCSVToevoegen.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormCSVToevoegen.resources
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsMenu.FormFijnstofMetersBewerken.resources
