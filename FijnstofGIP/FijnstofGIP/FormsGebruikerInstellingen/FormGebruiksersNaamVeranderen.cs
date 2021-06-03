@@ -56,8 +56,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     cmdAdresAanpassen.CommandText = SQLScripts.sqlAanpassenGebruikersnaam;
                     cmdAdresAanpassen.Connection = MijnVerbinding;
 
-                    //updaten van de info over de gebruiker
-                    InfoGebruiker.gebruikersnaam = txtGebruikersnaam.Text;
+                    
 
                     cmdAdresAanpassen.Parameters.AddWithValue("@gebruikersID", Convert.ToString(InfoGebruiker.gebruikersID));
                     cmdAdresAanpassen.Parameters.AddWithValue("@gebruikersnaam", Convert.ToString(txtGebruikersnaam.Text));
@@ -72,6 +71,8 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     cmdAdresAanpassen.ExecuteNonQuery();
                     MijnVerbinding.Close();
                     MessageBox.Show("Jouw gebruikersnaam is veranderd, gelieve uit te loggen zodat U met uw nieuwe gegevens kan inloggen.", "Gebruikersnaam bewaard!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //updaten van de info over de gebruiker
+                    InfoGebruiker.gebruikersnaam = txtGebruikersnaam.Text;
                 }
                 else
                 {
@@ -81,6 +82,10 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             catch
             {
                 MessageBox.Show("ERROR: Gebruikersnaam bestaat al!", "Opslaan Mislukt!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtGebruikersnaam.Clear();
+                txtGebruikersnaam.Focus();
+                pnlgebruikersnaam.BackColor = Color.Red;
+
             }
         }
         #endregion

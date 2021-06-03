@@ -201,6 +201,8 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             {
 
                 MessageBox.Show("ERROR: Email bestaat al!", "Opslaan Mislukt!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtEmail.Clear();
+                pnlEmail.BackColor = Color.Red;
             }
         }
         #endregion
