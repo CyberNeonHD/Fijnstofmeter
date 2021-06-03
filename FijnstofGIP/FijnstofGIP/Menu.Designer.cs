@@ -244,7 +244,7 @@ namespace FijnstofGIP
             this.btnData.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnData.FlatAppearance.BorderSize = 0;
             this.btnData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnData.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnData.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnData.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btnData.IconChar = FontAwesome.Sharp.IconChar.Database;
             this.btnData.IconColor = System.Drawing.Color.DeepSkyBlue;
