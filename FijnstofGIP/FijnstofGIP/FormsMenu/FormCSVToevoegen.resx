@@ -119,10 +119,10 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txtTekst.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 56</value>
+    <value>198, 56</value>
   </data>
   <data name="txtTekst.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 20</value>
+    <value>252, 20</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtTekst.TabIndex" type="System.Int32, mscorlib">
@@ -138,100 +138,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtTekst.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <metadata name="meterID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PM2_5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="PM10.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="temperatuur.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="vochtigheid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="luchtdruk.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="tijdstip.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="datum.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="dgCSV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 106</value>
-  </data>
-  <data name="dgCSV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>783, 391</value>
-  </data>
-  <data name="dgCSV.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;dgCSV.Name" xml:space="preserve">
-    <value>dgCSV</value>
-  </data>
-  <data name="&gt;&gt;dgCSV.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dgCSV.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dgCSV.ZOrder" xml:space="preserve">
     <value>5</value>
-  </data>
-  <metadata name="meterID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="meterID.HeaderText" xml:space="preserve">
-    <value>meterID</value>
-  </data>
-  <metadata name="PM2_5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="PM2_5.HeaderText" xml:space="preserve">
-    <value>PM2_5</value>
-  </data>
-  <metadata name="PM10.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="PM10.HeaderText" xml:space="preserve">
-    <value>PM10</value>
-  </data>
-  <metadata name="temperatuur.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="temperatuur.HeaderText" xml:space="preserve">
-    <value>temperatuur</value>
-  </data>
-  <metadata name="vochtigheid.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="vochtigheid.HeaderText" xml:space="preserve">
-    <value>vochtigheid</value>
-  </data>
-  <metadata name="luchtdruk.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="luchtdruk.HeaderText" xml:space="preserve">
-    <value>luchtdruk</value>
-  </data>
-  <metadata name="tijdstip.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="tijdstip.HeaderText" xml:space="preserve">
-    <value>tijdstip</value>
-  </data>
-  <metadata name="datum.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="datum.HeaderText" xml:space="preserve">
-    <value>datum</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -244,7 +151,7 @@
     <value>Myanmar Text, 15.75pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>345, 9</value>
+    <value>309, 2</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 37</value>
@@ -274,7 +181,7 @@
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
   <data name="btnOpslaan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>288, 503</value>
+    <value>598, 49</value>
   </data>
   <data name="btnOpslaan.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 32</value>
@@ -297,65 +204,35 @@
   <data name="&gt;&gt;btnOpslaan.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="BtnSluiten.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="btnBladeren.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="BtnSluiten.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btnBladeren.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="BtnSluiten.Location" type="System.Drawing.Point, System.Drawing">
-    <value>446, 503</value>
-  </data>
-  <data name="BtnSluiten.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 32</value>
-  </data>
-  <data name="BtnSluiten.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="BtnSluiten.Text" xml:space="preserve">
-    <value>Sluiten</value>
-  </data>
-  <data name="&gt;&gt;BtnSluiten.Name" xml:space="preserve">
-    <value>BtnSluiten</value>
-  </data>
-  <data name="&gt;&gt;BtnSluiten.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BtnSluiten.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BtnSluiten.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btnSelecteren.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnSelecteren.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="btnSelecteren.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btnBladeren.Location" type="System.Drawing.Point, System.Drawing">
     <value>483, 49</value>
   </data>
-  <data name="btnSelecteren.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnBladeren.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 32</value>
   </data>
-  <data name="btnSelecteren.TabIndex" type="System.Int32, mscorlib">
+  <data name="btnBladeren.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="btnSelecteren.Text" xml:space="preserve">
-    <value>Selecteer</value>
+  <data name="btnBladeren.Text" xml:space="preserve">
+    <value>Bladeren</value>
   </data>
-  <data name="&gt;&gt;btnSelecteren.Name" xml:space="preserve">
-    <value>btnSelecteren</value>
+  <data name="&gt;&gt;btnBladeren.Name" xml:space="preserve">
+    <value>btnBladeren</value>
   </data>
-  <data name="&gt;&gt;btnSelecteren.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnBladeren.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnSelecteren.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnBladeren.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnSelecteren.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btnBladeren.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
     <value>780, 2</value>
@@ -376,6 +253,27 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dgvGegevens.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 103</value>
+  </data>
+  <data name="dgvGegevens.Size" type="System.Drawing.Size, System.Drawing">
+    <value>783, 425</value>
+  </data>
+  <data name="dgvGegevens.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;dgvGegevens.Name" xml:space="preserve">
+    <value>dgvGegevens</value>
+  </data>
+  <data name="&gt;&gt;dgvGegevens.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvGegevens.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgvGegevens.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -389,54 +287,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FormCSVToevoegen</value>
-  </data>
-  <data name="&gt;&gt;meterID.Name" xml:space="preserve">
-    <value>meterID</value>
-  </data>
-  <data name="&gt;&gt;meterID.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PM2_5.Name" xml:space="preserve">
-    <value>PM2_5</value>
-  </data>
-  <data name="&gt;&gt;PM2_5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PM10.Name" xml:space="preserve">
-    <value>PM10</value>
-  </data>
-  <data name="&gt;&gt;PM10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;temperatuur.Name" xml:space="preserve">
-    <value>temperatuur</value>
-  </data>
-  <data name="&gt;&gt;temperatuur.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;vochtigheid.Name" xml:space="preserve">
-    <value>vochtigheid</value>
-  </data>
-  <data name="&gt;&gt;vochtigheid.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;luchtdruk.Name" xml:space="preserve">
-    <value>luchtdruk</value>
-  </data>
-  <data name="&gt;&gt;luchtdruk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tijdstip.Name" xml:space="preserve">
-    <value>tijdstip</value>
-  </data>
-  <data name="&gt;&gt;tijdstip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datum.Name" xml:space="preserve">
-    <value>datum</value>
-  </data>
-  <data name="&gt;&gt;datum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormCSVToevoegen</value>

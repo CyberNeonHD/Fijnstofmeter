@@ -508,7 +508,7 @@ namespace FijnstofGIP.FormsMenu
                         cmd.CommandType = CommandType.Text;
                         cmd.CommandText = SQLScripts.sqlDataAanmaken;
                         cmd.Connection = MijnVerbinding;
-                        OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAanmaken, MijnVerbinding);
+                        //OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAanmaken, MijnVerbinding);
 
                         cmd.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
                         cmd.Parameters.AddWithValue("@PM2_5", Convert.ToInt32(txtPM2_5.Text));
