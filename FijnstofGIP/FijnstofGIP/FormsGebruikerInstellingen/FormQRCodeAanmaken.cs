@@ -83,13 +83,21 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
 
         private void btnQROpslaan_Click(object sender, EventArgs e)
         {
-            SaveFileDialog dlg = new SaveFileDialog();
-            dlg.ShowDialog();
-            QRBox.Image.Save(dlg.FileName);
-            MessageBox.Show("QR code opgeslaan");
-            pnlWWCheckSectie.Visible = true;
-            pnlSectieMakenQRCode.Visible = false;
-            txtWW.Clear();
+            try
+            {
+                SaveFileDialog dlg = new SaveFileDialog();
+                dlg.ShowDialog();
+                QRBox.Image.Save(dlg.FileName);
+                MessageBox.Show("QR code opgeslaan");
+                pnlWWCheckSectie.Visible = true;
+                pnlSectieMakenQRCode.Visible = false;
+                txtWW.Clear();
+            }
+            catch 
+            {
+                MessageBox.Show("QR code niet opgeslaan", "Niet opgeslaan", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
         }
 
         private void btnBevestigen_Click(object sender, EventArgs e)
