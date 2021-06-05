@@ -36,6 +36,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\..\Desktop\2\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
     <Reference Include="CircularProgressBar, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\CircularProgressBar.2.2.0.0\lib\net35-Client\CircularProgressBar.dll</HintPath>
     </Reference>
@@ -57,6 +66,11 @@
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -85,8 +99,15 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
     <Reference Include="WinFormAnimation, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\WinFormAnimation.1.3.0.0\lib\net35-Client\WinFormAnimation.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.presentation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +134,12 @@
     </Compile>
     <Compile Include="FormsGebruikerInstellingen\FormGebruiksersNaamVeranderen.Designer.cs">
       <DependentUpon>FormGebruiksersNaamVeranderen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsGebruikerInstellingen\FormQRCodeAanmaken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsGebruikerInstellingen\FormQRCodeAanmaken.Designer.cs">
+      <DependentUpon>FormQRCodeAanmaken.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsGebruikerInstellingen\FormWWVeranderen.cs">
       <SubType>Form</SubType>
@@ -184,6 +211,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QRCodeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QRCodeLogin.Designer.cs">
+      <DependentUpon>QRCodeLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registratiescherm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormsGebruikerInstellingen\FormGebruiksersNaamVeranderen.resx">
       <DependentUpon>FormGebruiksersNaamVeranderen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsGebruikerInstellingen\FormQRCodeAanmaken.resx">
+      <DependentUpon>FormQRCodeAanmaken.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsGebruikerInstellingen\FormWWVeranderen.resx">
       <DependentUpon>FormWWVeranderen.cs</DependentUpon>
@@ -249,6 +285,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QRCodeLogin.resx">
+      <DependentUpon>QRCodeLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registratiescherm.resx">
       <DependentUpon>Registratiescherm.cs</DependentUpon>
     </EmbeddedResource>

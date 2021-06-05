@@ -66,6 +66,14 @@ namespace FijnstofGIP.FormsMenu
             btnClose.Visible = false;
             openChildForm(new FormsGebruikerInstellingen.FormEmailVeranderen());
         }
+        private void BtnQRCodeAanmaken_Click(object sender, EventArgs e)
+        {
+            pnlGebruikerMenuLinks.Visible = false;
+            btnTerugkeren.Visible = true;
+            btnClose.Visible = false;
+            openChildForm(new FormsGebruikerInstellingen.FormQRCodeAanmaken());
+        }
+
         private void btnTerugkeren_Click(object sender, EventArgs e)
         {
             actieveForm.Close();
@@ -78,5 +86,7 @@ namespace FijnstofGIP.FormsMenu
         {
             this.Close();
         }
+
+
     }
 }

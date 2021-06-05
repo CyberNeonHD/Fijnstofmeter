@@ -41,8 +41,10 @@ namespace FijnstofGIP
             this.btnWWVergeten = new System.Windows.Forms.Button();
             this.iconbtnLock = new FontAwesome.Sharp.IconPictureBox();
             this.iconbtnOpenLock = new FontAwesome.Sharp.IconPictureBox();
+            this.btnQRCode = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnLock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnOpenLock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnQRCode)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -215,6 +217,22 @@ namespace FijnstofGIP
             this.iconbtnOpenLock.TabStop = false;
             this.iconbtnOpenLock.Click += new System.EventHandler(this.iconbtnOpenLock_Click);
             // 
+            // btnQRCode
+            // 
+            this.btnQRCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.btnQRCode.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQRCode.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnQRCode.IconChar = FontAwesome.Sharp.IconChar.Qrcode;
+            this.btnQRCode.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnQRCode.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnQRCode.IconSize = 24;
+            this.btnQRCode.Location = new System.Drawing.Point(231, 3);
+            this.btnQRCode.Name = "btnQRCode";
+            this.btnQRCode.Size = new System.Drawing.Size(24, 24);
+            this.btnQRCode.TabIndex = 13;
+            this.btnQRCode.TabStop = false;
+            this.btnQRCode.Click += new System.EventHandler(this.btnQRCode_Click);
+            // 
             // Aanmeldscherm
             // 
             this.AcceptButton = this.btnAanmelden;
@@ -222,6 +240,7 @@ namespace FijnstofGIP
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(258, 389);
+            this.Controls.Add(this.btnQRCode);
             this.Controls.Add(this.btnWWVergeten);
             this.Controls.Add(this.btnGeenAccount);
             this.Controls.Add(this.iconbtnLock);
@@ -242,6 +261,7 @@ namespace FijnstofGIP
             this.Text = "Aanmelden";
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnLock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconbtnOpenLock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnQRCode)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,5 +281,6 @@ namespace FijnstofGIP
         private FontAwesome.Sharp.IconPictureBox iconbtnOpenLock;
         private System.Windows.Forms.Button btnGeenAccount;
         private System.Windows.Forms.Button btnWWVergeten;
+        private FontAwesome.Sharp.IconPictureBox btnQRCode;
     }
 }

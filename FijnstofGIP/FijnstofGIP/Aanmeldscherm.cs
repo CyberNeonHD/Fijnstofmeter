@@ -25,7 +25,7 @@ namespace FijnstofGIP
         DataSet ds = new DataSet();
         DataSet dsWW = new DataSet();
 
-        #region code die naar andere from verwijst
+        #region code die naar andere from gaat
         private void btnGeenAccount_Click(object sender, EventArgs e)
         {
             Registratiescherm volgendForm = new Registratiescherm(); //volgend form declareren
@@ -35,6 +35,12 @@ namespace FijnstofGIP
         private void btnWWVergeten_Click(object sender, EventArgs e)
         {
             WachtwoordReset volgendForm = new WachtwoordReset(); //volgend form declareren
+            volgendForm.Show(); //tonen van volgend form
+            this.Hide(); //Aanmeldscherm form verbergen
+        }
+        private void btnQRCode_Click(object sender, EventArgs e)
+        {
+            QRCodeLogin volgendForm = new QRCodeLogin(); //volgend form declareren
             volgendForm.Show(); //tonen van volgend form
             this.Hide(); //Aanmeldscherm form verbergen
         }
@@ -221,5 +227,7 @@ namespace FijnstofGIP
 
 
         #endregion
+
+
     }
 }
