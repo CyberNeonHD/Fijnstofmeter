@@ -212,6 +212,12 @@ namespace FijnstofGIP
                     pnlWWVeranderenSectie.Visible = true;
                     pnlCodeSectie.Visible = false;
                 }
+                else
+                {
+                    MessageBox.Show("De ingevoerde code is onjuist!", "Foute code", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    pnlCode.BackColor = Color.Red;
+                    txtCode.Clear();
+                }
             }
             catch
             {

@@ -358,8 +358,8 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.ClientSize = new System.Drawing.Size(686, 461);
             this.Controls.Add(this.btnGegevensOpslaan);
             this.Controls.Add(this.lbltitel);
-            this.Controls.Add(this.pnlWWCheckSectie);
             this.Controls.Add(this.pnlWWVeranderenSectie);
+            this.Controls.Add(this.pnlWWCheckSectie);
             this.Name = "FormWWVeranderen";
             this.Text = "FormWWVeranderen";
             this.pnlWWCheckSectie.ResumeLayout(false);

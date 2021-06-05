@@ -69,37 +69,45 @@ namespace FijnstofGIP.FormsMenu
         }
         private void CSVInladen(string locatie)
         {
-            DataTable dt = new DataTable();
-            string[] lines = System.IO.File.ReadAllLines(locatie);
-            if (lines.Length > 0)
+            try
             {
-                string eersteLijn = lines[0];
-
-                string[] hearderLabels = eersteLijn.Split(';');
-
-                foreach (string headerWord in hearderLabels)
+                DataTable dt = new DataTable();
+                string[] lines = System.IO.File.ReadAllLines(locatie);
+                if (lines.Length > 0)
                 {
-                    dt.Columns.Add(new DataColumn(headerWord));
-                }
+                    string eersteLijn = lines[0];
 
-                for (int i = 1; i < lines.Length; i++)
-                {
-                    string[] dataWords = lines[i].Split(';');
-                    DataRow dr = dt.NewRow();
-                    int columnIndex = 0;
+                    string[] hearderLabels = eersteLijn.Split(';');
+
                     foreach (string headerWord in hearderLabels)
                     {
-                        dr[headerWord] = dataWords[columnIndex++];
+                        dt.Columns.Add(new DataColumn(headerWord));
                     }
 
-                    dt.Rows.Add(dr);
-                }
+                    for (int i = 1; i < lines.Length; i++)
+                    {
+                        string[] dataWords = lines[i].Split(';');
+                        DataRow dr = dt.NewRow();
+                        int columnIndex = 0;
+                        foreach (string headerWord in hearderLabels)
+                        {
+                            dr[headerWord] = dataWords[columnIndex++];
+                        }
 
+                        dt.Rows.Add(dr);
+                    }
+
+                }
+                if (dt.Rows.Count > 0)
+                {
+                    dgvGegevens.DataSource = dt;
+                }
             }
-            if (dt.Rows.Count > 0)
+            catch 
             {
-                dgvGegevens.DataSource = dt;
+                MessageBox.Show("ERROR: Toen U het CSV werd ingeladen gebeurde er een onverwachte fout...", "CSV inladen mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
             
         }
 

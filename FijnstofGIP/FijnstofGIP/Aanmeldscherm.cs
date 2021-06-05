@@ -21,8 +21,6 @@ namespace FijnstofGIP
         {
             InitializeComponent();
         }
-
-        DataSet ds = new DataSet();
         DataSet dsWW = new DataSet();
 
         #region code die naar andere from gaat
@@ -81,7 +79,6 @@ namespace FijnstofGIP
         private void txtGebruikersnaam_Enter(object sender, EventArgs e)
         {
             pnlgebruikersnaam.BackColor = Color.DeepSkyBlue;
-            pnlwachtwoord.BackColor = Color.White;
         }
 
         private void txtGebruikersnaam_Leave(object sender, EventArgs e)
@@ -92,7 +89,6 @@ namespace FijnstofGIP
 
         private void txtWachtwoord_Enter(object sender, EventArgs e)
         {
-            pnlgebruikersnaam.BackColor = Color.White;
             pnlwachtwoord.BackColor = Color.DeepSkyBlue;
         }
 
@@ -126,8 +122,9 @@ namespace FijnstofGIP
         #region code voor de knop aanmelden -> ingewikkeld door de 2 tabellen
         private void btnAanmelden_Click(object sender, EventArgs e)
         {
+            
             try
-            {
+            {   
                 //gegevens van gebruiker krijgen bij login -> ik heb een aparte connectie moeten maken en dit voor de wachtwoord check moeten doen anders werden de variabele niet opgevuld 0.0
                 OleDbConnection verbindingInfoGebruiker = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
                 verbindingInfoGebruiker.Open();
@@ -162,23 +159,17 @@ namespace FijnstofGIP
                 //Login instructie ----------------------------------------------------------------------------
                 OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
                 MijnVerbinding.Open();
-                //we nemen de gebruikersnaam via de gebruikersnaam -> we doen dit omdat we de adapter login gaan vullen
-                string login = "SELECT gebruikersnaam FROM tblgebruikers WHERE gebruikersID=@gebruikersID";
                 //via de gebruikersID die we verkregen hebben via gebruikersnaam nemen we het wachtwoord
                 string loginWW = "SELECT wachtwoord FROM tblgebruikersWW WHERE gebruikersID=@gebruikersID";
 
-                OleDbDataAdapter adapter = new OleDbDataAdapter(login, MijnVerbinding);
-                adapter.SelectCommand.Parameters.AddWithValue("@gebruikersID", InfoGebruiker.gebruikersID);
                 OleDbDataAdapter adapterWW = new OleDbDataAdapter(loginWW, MijnVerbinding);
                 adapterWW.SelectCommand.Parameters.AddWithValue("@gebruikersID", InfoGebruiker.gebruikersID);
 
                 //we vullen de datasetten in
-                adapter.Fill(ds, "login");
                 adapterWW.Fill(dsWW, "loginWW");
 
-                //deze if zorgt ervoor dat we de login HOOFDLETTER gevoelig maken, heel belangrijk!
                 //Hasher.Hash_SHA1 neemt de hash code van de string
-                if ((Hasher.Hash_SHA1(txtWachtwoord.Text) == dsWW.Tables[0].Rows[0]["wachtwoord"].ToString()) && (txtGebruikersnaam.Text == ds.Tables[0].Rows[0]["gebruikersnaam"].ToString()))
+                if (Hasher.Hash_SHA1(txtWachtwoord.Text) == dsWW.Tables[0].Rows[0]["wachtwoord"].ToString())
                 {   //als de login klopt wordt je ingelogd
                     Menu volgendForm = new Menu(); //volgend form declareren
                     volgendForm.Show(); //tonen van volgend form
@@ -186,13 +177,11 @@ namespace FijnstofGIP
                 }
                 else
                 {
-                    //als een hoofdletter niet klopt krijg deze melding te zien
                     //uit veiligheid geven we de globale melding "Ongeldige gebruikersnaam of wachtwoord"
                     MessageBox.Show("Ongeldige gebruikersnaam of wachtwoord, probeer opnieuw aub", "Login mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtGebruikersnaam.Text = "";
                     txtWachtwoord.Text = "";
                     txtGebruikersnaam.Focus();
-                    ds.Clear();
                     dsWW.Clear();
                 }
                 

@@ -43,6 +43,7 @@ namespace FijnstofGIP.FormsMenu
         #region Data inladen en comboboxen opvullen
         private void FormDataTabelvorm_Load(object sender, EventArgs e)
         {
+            
             try
             {
                 OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
@@ -50,8 +51,8 @@ namespace FijnstofGIP.FormsMenu
 
                 OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlAlleGegevens, MijnVerbinding);
                 //standaard inladen van de hoofdmeter esp8266-3130811
-                adapter.SelectCommand.Parameters.AddWithValue("@meterid", Convert.ToString("esp8266-3130811"));
-
+                adapter.SelectCommand.Parameters.AddWithValue("@meterID", fijnstofMeter);
+                
                 dsGegevens.Clear();
                 adapter.Fill(dsGegevens, "MijnTabel");
                 GegevensTonen();
@@ -65,37 +66,45 @@ namespace FijnstofGIP.FormsMenu
 
         public void comboBoxVullen()
         {
-            OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
-            MijnVerbinding.Open();
-
-            OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAlleGegevens, MijnVerbinding);
-
-            //combobox -> CmbWelkVeld vullen met de tabelnamen van de database
-            DataSet ds = new DataSet();
-            adapter.Fill(ds, "MijnTabelnamen");
-            foreach (DataColumn column in ds.Tables[0].Columns)
+            try
             {
-                    cmbWelkVeld.Items.Add(column.ColumnName);
-            }
-            
-            
-            //---------------------------------------------------
+                OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
+                MijnVerbinding.Open();
 
-            //combobox -> cmbWelkeMeter vullen met de fijnstofmeters die er zijn
-            OleDbCommand cmd = new OleDbCommand();
-            cmd = new OleDbCommand(SQLScripts.sqlMeterID, MijnVerbinding);
-            OleDbDataReader Sdr = cmd.ExecuteReader();
-            while (Sdr.Read())
-            {
-                for (int i = 0; i < Sdr.FieldCount; i++)
+                OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAlleGegevens, MijnVerbinding);
+
+                //combobox -> CmbWelkVeld vullen met de tabelnamen van de database
+                DataSet ds = new DataSet();
+                adapter.Fill(ds, "MijnTabelnamen");
+                foreach (DataColumn column in ds.Tables[0].Columns)
                 {
-                    cmbWelkeMeter.Items.Add(Sdr.GetString(i));
+                    cmbWelkVeld.Items.Add(column.ColumnName);
                 }
+
+
+                //---------------------------------------------------
+
+                //combobox -> cmbWelkeMeter vullen met de fijnstofmeters die er zijn
+                OleDbCommand cmd = new OleDbCommand();
+                cmd = new OleDbCommand(SQLScripts.sqlMeterID, MijnVerbinding);
+                OleDbDataReader Sdr = cmd.ExecuteReader();
+                while (Sdr.Read())
+                {
+                    for (int i = 0; i < Sdr.FieldCount; i++)
+                    {
+                        cmbWelkeMeter.Items.Add(Sdr.GetString(i));
+                    }
+                }
+                //standaard waarde geven aan cmbWelkeMeter
+                cmbWelkeMeter.SelectedItem = "esp8266-3130811";
+                //---------------------------------------------------
+                MijnVerbinding.Close();
             }
-            //standaard waarde geven aan cmbWelkeMeter
-            cmbWelkeMeter.SelectedItem = "esp8266-3130811";
-            //---------------------------------------------------
-            MijnVerbinding.Close();
+            catch
+            {
+                MessageBox.Show("Er zijn geen fijnstofmeters meer??", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
         #endregion
 
@@ -186,8 +195,16 @@ namespace FijnstofGIP.FormsMenu
 
         public void GegevensTonen()
         {
-            // Opvullen van de datasource
-            dgvGegevens.DataSource = dsGegevens.Tables["MijnTabel"];
+            try
+            {
+                // Opvullen van de datasource
+                dgvGegevens.DataSource = dsGegevens.Tables["MijnTabel"];
+            }
+            catch
+            {
+               MessageBox.Show("Fout bij het inladen van de datatabel", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
         }
         private void btnClose_Click(object sender, EventArgs e)

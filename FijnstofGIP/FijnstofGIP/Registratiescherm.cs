@@ -310,16 +310,20 @@ namespace FijnstofGIP
 
                 string idGebruiker = "";
                 string gebruikersID = "";
+                string email = "";
+                string voornaam = "";
+                string familienaam = "";
                 try
-                {
+                {   //aanmaken van onze eigen gebruikersid
                     gebruikersID = txtVoornaam.Text.ToString().Substring(0, 1).ToUpper() + txtVoornaam.Text.ToString().Substring(1, 1) + txtFamilienaam.Text.ToString().Substring(0, 1).ToUpper() + txtFamilienaam.Text.ToString().Substring(1, 1) + "_" + codeRnd;
 
-                    //Ten allen tijden de eerste letter van de voornaam en familienaam als hoofdletter zetten
-                    string voornaam = txtVoornaam.Text.ToString().Substring(0, 1).ToUpper() + txtVoornaam.Text.ToString().Substring(1, txtVoornaam.Text.Length - 1);
-                    string familienaam = txtFamilienaam.Text.ToString().Substring(0, 1).ToUpper() + txtFamilienaam.Text.ToString().Substring(1, txtFamilienaam.Text.Length - 1);
+                    //Ten allen tijden de eerste letter van de voornaam en familienaam en gebruikersnaam als hoofdletter zetten
+                    string gebruikersnaam = txtGebruikersnaam.Text.ToString().Substring(0, 1).ToUpper() + txtGebruikersnaam.Text.ToString().Substring(1, txtGebruikersnaam.Text.Length - 1);
+                    voornaam = txtVoornaam.Text.ToString().Substring(0, 1).ToUpper() + txtVoornaam.Text.ToString().Substring(1, txtVoornaam.Text.Length - 1);
+                    familienaam = txtFamilienaam.Text.ToString().Substring(0, 1).ToUpper() + txtFamilienaam.Text.ToString().Substring(1, txtFamilienaam.Text.Length - 1);
 
                     cmd.Parameters.AddWithValue("@gebruikersid", gebruikersID);
-                    cmd.Parameters.AddWithValue("@gebruikersnaam", Convert.ToString(txtGebruikersnaam.Text));
+                    cmd.Parameters.AddWithValue("@gebruikersnaam", gebruikersnaam);
                     cmd.Parameters.AddWithValue("@email", Convert.ToString(txtEmail.Text));
                     cmd.Parameters.AddWithValue("@voornaam", voornaam);
                     cmd.Parameters.AddWithValue("@familienaam", familienaam);
@@ -332,13 +336,15 @@ namespace FijnstofGIP
                     pnlvoornaam.BackColor = Color.Red;
                     pnlfamilie.BackColor = Color.Red;
                 }
-                //via deze manier geeft gebruikersID op lijn 421 geen error -_-
+                //via deze manier geeft gebruikersID op lijn 396 geen error -_-
                 idGebruiker = gebruikersID;
 
-                    
+                //via deze manier geeft gebruikersID op lijn 430 geen error -_-
+                email = txtEmail.Text;
 
-                    
-                    
+
+
+
                 //als de gebruiker een tekst ingeeft komt er een error -> we maken dus specifiek deze melding
                 try
                 {
@@ -364,7 +370,7 @@ namespace FijnstofGIP
                 }
                     cmd.Parameters.AddWithValue("@gemeente", Convert.ToString(txtGemeente.Text));
 
-                //we werken met een unieke email en gebruikersnaam -> dit kan een error geven wanneer er dus iemand dezelfde email of gebruikersnaam gebruikt
+            
 
                 // bestaat email ja of nee?
                 Boolean EmailBestaat = false;
@@ -421,10 +427,10 @@ namespace FijnstofGIP
                         MailMessage RegistratieBericht = new MailMessage();
                         string naar, van, ww, bericht, onderwerp;
 
-                        naar = txtEmail.Text;
+                        naar = email;
                         van = InfoGebruiker.KalexEmail;
                         ww = InfoGebruiker.KalexWW;
-                        bericht = "Beste " + txtVoornaam.Text + " " + txtFamilienaam.Text + "," + "<br />" + "<br /> Dank u voor te registreren bij Particulated, het fijnstofmeter programma van Kalex.<br /> Als u ooit problemen heeft kan u ons altijd een mail sturen. <br /> <br /> Met vriendelijke groeten, <br />Kalex";
+                        bericht = "Beste " + voornaam + " " + familienaam + "," + "<br />" + "<br /> Dank u voor te registreren bij Particulated, het fijnstofmeter programma van Kalex.<br /> Als u ooit problemen heeft kan u ons altijd een mail sturen. <br /> <br /> Met vriendelijke groeten, <br />Kalex";
                         onderwerp = "Welkom bij Particulated";
                         RegistratieBericht.To.Add(naar);
                         RegistratieBericht.From = new MailAddress(van);

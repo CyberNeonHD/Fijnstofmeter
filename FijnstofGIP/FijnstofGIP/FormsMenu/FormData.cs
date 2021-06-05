@@ -295,38 +295,46 @@ namespace FijnstofGIP.FormsMenu
         }
         public void comboBoxVullen()
         {
-            OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
-            MijnVerbinding.Open();
-
-            OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAlleGegevens, MijnVerbinding);
-
-            //combobox -> CmbWelkVeld vullen met de tabelnamen van de database
-            DataSet ds = new DataSet();
-            adapter.Fill(ds, "MijnTabelnamen");
-            foreach (DataColumn column in ds.Tables[0].Columns)
+            try
             {
-                cmbWelkVeld.Items.Add(column.ColumnName);
-            }
+                OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
+                MijnVerbinding.Open();
 
+                OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAlleGegevens, MijnVerbinding);
 
-            //---------------------------------------------------
-
-            //combobox -> cmbWelkeMeter vullen met de fijnstofmeters die er zijn
-            OleDbCommand cmd = new OleDbCommand();
-            cmd = new OleDbCommand(SQLScripts.sqlMeterID, MijnVerbinding);
-            OleDbDataReader Sdr = cmd.ExecuteReader();
-            while (Sdr.Read())
-            {
-                for (int i = 0; i < Sdr.FieldCount; i++)
+                //combobox -> CmbWelkVeld vullen met de tabelnamen van de database
+                DataSet ds = new DataSet();
+                adapter.Fill(ds, "MijnTabelnamen");
+                foreach (DataColumn column in ds.Tables[0].Columns)
                 {
-                    cmbWelkeMeter.Items.Add(Sdr.GetString(i));
+                    cmbWelkVeld.Items.Add(column.ColumnName);
                 }
+
+
+                //---------------------------------------------------
+
+                //combobox -> cmbWelkeMeter vullen met de fijnstofmeters die er zijn
+                OleDbCommand cmd = new OleDbCommand();
+                cmd = new OleDbCommand(SQLScripts.sqlMeterID, MijnVerbinding);
+                OleDbDataReader Sdr = cmd.ExecuteReader();
+                while (Sdr.Read())
+                {
+                    for (int i = 0; i < Sdr.FieldCount; i++)
+                    {
+                        cmbWelkeMeter.Items.Add(Sdr.GetString(i));
+                    }
+                }
+                //standaard waarde geven aan cmbWelkeMeter
+                cmbWelkeMeter.SelectedItem = "esp8266-3130811";
+                fijnstofMeter = "esp8266-3130811";
+                //---------------------------------------------------
+                MijnVerbinding.Close();
             }
-            //standaard waarde geven aan cmbWelkeMeter
-            cmbWelkeMeter.SelectedItem = "esp8266-3130811";
-            fijnstofMeter = "esp8266-3130811";
-            //---------------------------------------------------
-            MijnVerbinding.Close();
+            catch
+            {
+                MessageBox.Show("Er zijn geen fijnstofmeters meer??", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         public void GegevensTonen()
@@ -411,8 +419,8 @@ namespace FijnstofGIP.FormsMenu
 
         private void btnVerwijderen_Click(object sender, EventArgs e)
         {
-            try
-            {
+           // try
+            //{
                 if (txtPM2_5.Text == "" && txtPM10.Text == "" && txtTemp.Text == "" && txtVochtigheid.Text == "" && txtLuchtdruk.Text == "" && txtTijdstip.Text == "" && txtDatum.Text == "")
                 {
                     MessageBox.Show("Niet alle records zijn ingevuld!?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -423,21 +431,13 @@ namespace FijnstofGIP.FormsMenu
                     OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
                     if (gegevensVerwijderen == DialogResult.Yes)
                     {
-
+                        
                         OleDbCommand cmdVindID = new OleDbCommand();
                         cmdVindID.CommandType = CommandType.Text;
                         cmdVindID.CommandText = SQLScripts.sqlDataRecordVindID;
                         cmdVindID.Connection = MijnVerbinding;
 
-                        cmdVindID.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
-                        cmdVindID.Parameters.AddWithValue("@PM2_5", Convert.ToInt32(txtPM2_5.Text));
-                        cmdVindID.Parameters.AddWithValue("@PM10", Convert.ToInt32(txtPM10.Text));
-                        cmdVindID.Parameters.AddWithValue("@temperatuur", Convert.ToInt32(txtTemp.Text));
-                        cmdVindID.Parameters.AddWithValue("@vochtigheid", Convert.ToInt32(txtVochtigheid.Text));
-                        cmdVindID.Parameters.AddWithValue("@luchtdruk", Convert.ToInt32(txtLuchtdruk.Text));
-                        cmdVindID.Parameters.AddWithValue("@tijdstip", Convert.ToString(txtTijdstip.Text));
-                        cmdVindID.Parameters.AddWithValue("@datum", Convert.ToString(txtDatum.Text));
-                        cmdVindID.Parameters.AddWithValue("@gegevensid", Convert.ToString(txtGegevensID.Text));
+                        cmdVindID.Parameters.AddWithValue("@gegevensID", Convert.ToString(txtGegevensID.Text));
 
                         MijnVerbinding.Open();
                         cmdVindID.ExecuteNonQuery();
@@ -448,13 +448,15 @@ namespace FijnstofGIP.FormsMenu
                         {
                             gegevensID = drVindID.GetValue(0).ToString();
                         }
+                        drVindID.Close();
 
                         OleDbCommand cmdVerwijderen = new OleDbCommand();
                         cmdVerwijderen.CommandType = CommandType.Text;
                         cmdVerwijderen.CommandText = SQLScripts.sqlDataRecordVerwijderen;
                         cmdVerwijderen.Connection = MijnVerbinding;
 
-                        cmdVerwijderen.Parameters.AddWithValue("@gegevensid", gegevensID);
+
+                        cmdVerwijderen.Parameters.AddWithValue("@gegevensID", gegevensID);
 
                         
                         cmdVerwijderen.ExecuteNonQuery();
@@ -481,11 +483,11 @@ namespace FijnstofGIP.FormsMenu
                     }
                 }  
 
-            }
+            /*}
             catch
             {
                 MessageBox.Show("ERROR, er is een fout gebeurd bij het verwijderen", "Onverwachte error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
 
         }
 
@@ -508,7 +510,8 @@ namespace FijnstofGIP.FormsMenu
                         cmd.CommandType = CommandType.Text;
                         cmd.CommandText = SQLScripts.sqlDataAanmaken;
                         cmd.Connection = MijnVerbinding;
-                        //OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAanmaken, MijnVerbinding);
+
+                        OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAanmaken, MijnVerbinding);
 
                         cmd.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
                         cmd.Parameters.AddWithValue("@PM2_5", Convert.ToInt32(txtPM2_5.Text));

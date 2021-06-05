@@ -117,75 +117,97 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
         {
             try
             {
-                //code voor het verkrijgen van het wachtwoord ID van de gebruiker via GebruikersID -> via deze ID updaten we het WW van de gebruiker
-                OleDbConnection VerbindingInfoWW = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
-                VerbindingInfoWW.Open();
-
-                OleDbCommand cmdInfoWW = new OleDbCommand();
-                cmdInfoWW.CommandType = CommandType.Text;
-                cmdInfoWW.CommandText = SQLScripts.sqlWachtwoordID;
-                cmdInfoWW.Connection = VerbindingInfoWW;
-
-                cmdInfoWW.Parameters.AddWithValue("@gebruikersID", InfoGebruiker.gebruikersID);
-                cmdInfoWW.ExecuteNonQuery();
-
-                OleDbDataReader drInfoWW = cmdInfoWW.ExecuteReader();
-
-                string wachtwoordID = "";
-                while (drInfoWW.Read())
+                if (txtWW.Text == "" & txtWWBevestigen.Text == "")
                 {
-                    wachtwoordID = drInfoWW.GetValue(0).ToString();
+                    MessageBox.Show("Je moet alle velden invullen", "Wachtwoord verandern mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    pnlWW.BackColor = Color.Red;
+                    pnlWWBevestigen.BackColor = Color.Red;
+                }
+                else if (txtWW.Text == txtWWBevestigen.Text)
+                {
+                    //code voor het verkrijgen van het wachtwoord ID van de gebruiker via GebruikersID -> via deze ID updaten we het WW van de gebruiker
+                    OleDbConnection VerbindingInfoWW = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
+                    VerbindingInfoWW.Open();
+
+                    OleDbCommand cmdInfoWW = new OleDbCommand();
+                    cmdInfoWW.CommandType = CommandType.Text;
+                    cmdInfoWW.CommandText = SQLScripts.sqlWachtwoordID;
+                    cmdInfoWW.Connection = VerbindingInfoWW;
+
+                    cmdInfoWW.Parameters.AddWithValue("@gebruikersID", InfoGebruiker.gebruikersID);
+                    cmdInfoWW.ExecuteNonQuery();
+
+                    OleDbDataReader drInfoWW = cmdInfoWW.ExecuteReader();
+
+                    string wachtwoordID = "";
+                    while (drInfoWW.Read())
+                    {
+                        wachtwoordID = drInfoWW.GetValue(0).ToString();
+                    }
+
+                    VerbindingInfoWW.Close();
+
+                    //code voor het wachtwoord te veranderen
+                    OleDbConnection VerbindingWWVeranderen = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
+                    VerbindingWWVeranderen.Open();
+
+                    OleDbCommand cmdWWVeranderen = new OleDbCommand();
+                    cmdWWVeranderen.CommandType = CommandType.Text;
+                    cmdWWVeranderen.CommandText = SQLScripts.sqlAanpassenWWGebruiker;
+                    cmdWWVeranderen.Connection = VerbindingWWVeranderen;
+
+                    //zet het wachtwoord om naar Hash CODE
+                    string hashedWW = Hasher.Hash_SHA1(txtWWBevestigen.Text);
+
+                    cmdWWVeranderen.Parameters.AddWithValue("@gebruikersID", InfoGebruiker.gebruikersID);
+                    cmdWWVeranderen.Parameters.AddWithValue("@wachtwoord", hashedWW);
+                    cmdWWVeranderen.Parameters.AddWithValue("@wachtwoordID", wachtwoordID);
+                    cmdWWVeranderen.ExecuteNonQuery();
+
+                    VerbindingWWVeranderen.Close();
+
+
+                    MessageBox.Show("U heeft uw wachtwoord succesvol verandered, gelieve uit te loggen zodat U met uw nieuwe gegevens kan inloggen.", "Succesvol nieuw wachtwoord", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    pnlWWCheckSectie.Visible = true;
+                    pnlWWVeranderenSectie.Visible = false;
+                    btnGegevensOpslaan.Enabled = false;
+                    txtHuidigWW.Clear();
+                    txtWW.Clear();
+                    txtWWBevestigen.Clear();
+
+                    //versturen van de email om de gebruiker te waarschuwen van het nieuwe wachtwoord
+                    MailMessage CodeMail = new MailMessage();
+                    string naar, van, ww, bericht, onderwerp;
+
+                    naar = InfoGebruiker.email;
+                    van = InfoGebruiker.KalexEmail;
+                    ww = InfoGebruiker.KalexWW;
+                    bericht = "Beste " + InfoGebruiker.voornaam + " " + InfoGebruiker.familienaam + "," + "<br />" + "<br /> U wachtwoord is succesvol veranderd op: " + DateTime.Now.ToString("dd MMMM yyyy") + " om " + DateTime.Now.ToString("H:m:s") + ".<br /> Uw wachtwoord is veranderd via de gebruikersinstellingen (dus na het inloggen).<br /> Als U dit niet was gelieve persoonlijk contact met ons op te nemen.<br /> Nog een prettige dag verder! <br /> <br /> Met vriendelijke groeten, <br />Kalex";
+                    onderwerp = "Wachtwoord veranderd";
+                    CodeMail.To.Add(naar);
+                    CodeMail.From = new MailAddress(van);
+                    CodeMail.Body = bericht;
+                    CodeMail.Subject = onderwerp;
+                    CodeMail.IsBodyHtml = true;
+
+                    SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                    smtp.EnableSsl = true;
+                    smtp.Port = 587;
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtp.Credentials = new NetworkCredential(van, ww);
+                    smtp.Send(CodeMail);
+                    // einde code voor de email -------------------------------------
+                }
+                else
+                {
+                    MessageBox.Show("Wachtwoorden komen niet overeen, gelieve opnieuw te proberen", "Wachtwoord veranderen Mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    pnlWW.BackColor = Color.Red;
+                    pnlWWBevestigen.BackColor = Color.Red;
+
+                    txtWW.Clear();
+                    txtWWBevestigen.Clear();
                 }
 
-                VerbindingInfoWW.Close();
-
-                //code voor het wachtwoord te veranderen
-                OleDbConnection VerbindingWWVeranderen = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
-                VerbindingWWVeranderen.Open();
-
-                OleDbCommand cmdWWVeranderen = new OleDbCommand();
-                cmdWWVeranderen.CommandType = CommandType.Text;
-                cmdWWVeranderen.CommandText = SQLScripts.sqlAanpassenWWGebruiker;
-                cmdWWVeranderen.Connection = VerbindingWWVeranderen;
-
-                //zet het wachtwoord om naar Hash CODE
-                string hashedWW = Hasher.Hash_SHA1(txtWWBevestigen.Text);
-
-                cmdWWVeranderen.Parameters.AddWithValue("@gebruikersID", InfoGebruiker.gebruikersID);
-                cmdWWVeranderen.Parameters.AddWithValue("@wachtwoord", hashedWW);
-                cmdWWVeranderen.Parameters.AddWithValue("@wachtwoordID", wachtwoordID);
-                cmdWWVeranderen.ExecuteNonQuery();
-
-                VerbindingWWVeranderen.Close();
-
-
-                MessageBox.Show("U heeft uw wachtwoord succesvol verandered, gelieve uit te loggen zodat U met uw nieuwe gegevens kan inloggen.", "Succesvol nieuw wachtwoord", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                pnlWWCheckSectie.Visible = true;
-                pnlWWVeranderenSectie.Visible = false;
-                btnGegevensOpslaan.Enabled = false;
-
-                //versturen van de email om de gebruiker te waarschuwen van het nieuwe wachtwoord
-                MailMessage CodeMail = new MailMessage();
-                string naar, van, ww, bericht, onderwerp;
-
-                naar = InfoGebruiker.email;
-                van = InfoGebruiker.KalexEmail;
-                ww = InfoGebruiker.KalexWW;
-                bericht = "Beste " + InfoGebruiker.voornaam + " " + InfoGebruiker.familienaam + "," + "<br />" + "<br /> U wachtwoord is succesvol veranderd op: " + DateTime.Now.ToString("dd MMMM yyyy") + " om " + DateTime.Now.ToString("H:m:s") + ".<br /> Uw wachtwoord is veranderd via de gebruikersinstellingen (dus na het inloggen).<br /> Als U dit niet was gelieve persoonlijk contact met ons op te nemen.<br /> Nog een prettige dag verder! <br /> <br /> Met vriendelijke groeten, <br />Kalex";
-                onderwerp = "Wachtwoord veranderd";
-                CodeMail.To.Add(naar);
-                CodeMail.From = new MailAddress(van);
-                CodeMail.Body = bericht;
-                CodeMail.Subject = onderwerp;
-                CodeMail.IsBodyHtml = true;
-
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-                smtp.EnableSsl = true;
-                smtp.Port = 587;
-                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                smtp.Credentials = new NetworkCredential(van, ww);
-                smtp.Send(CodeMail);
-                // einde code voor de email -------------------------------------
             }
             catch 
             {

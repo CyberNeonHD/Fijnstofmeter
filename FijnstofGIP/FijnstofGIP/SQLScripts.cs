@@ -14,18 +14,18 @@ namespace FijnstofGIP
         public static readonly string sqlDataAlleGegevens = "SELECT * FROM tblgegevens";
 
         //via meterid alle gegevens van de meter opvragen
-        public static readonly string sqlAlleGegevens = "SELECT * FROM tblgegevens WHERE (meterID = @meterid);";
+        public static readonly string sqlAlleGegevens = "SELECT * FROM tblgegevens WHERE (meterID = @meterID) ORDER By gegevensID ASC";
 
         //verwijderen van record op basis van gegevensID
-        public static readonly string sqlDataRecordVerwijderen = "DELETE FROM tblgegevens WHERE " +
-            "(meterID=@meterid, PM2_5=@PM2_5, PM10=@PM10,temperatuur=@temperatuur, vochtigheid=@vochtigheid, luchtdruk=@luchtdruk, tijdstip=@tijdstip,datum=@datum)";
+        public static readonly string sqlDataRecordVerwijderen = "DELETE FROM tblgegevens WHERE (gegevensID = @gegevensID);";
 
         //verkrijgen van gegevensID via de data die aanstaat -> dit zorgt ervoor dat we een "bypass" hebben om een redelijke grote bug te omzeilen
-        public static readonly string sqlDataRecordVindID = "SELECT gegevensID FROM tblgegevens WHERE (gegevensID = @gegevensid)";
+        public static readonly string sqlDataRecordVindID = "SELECT gegevensID FROM tblgegevens WHERE (gegevensID = @gegevensID)";
+
         //aanmaken van record
         public static readonly string sqlDataAanmaken =
            "INSERT INTO tblgegevens (meterID, PM2_5, PM10, temperatuur, vochtigheid, luchtdruk, tijdstip, datum)" +
-           "VALUES (@meterid,@PM2_5, @PM10, @temperatuur, @vochtigheid, @luchtdruk, @tijdstip, @datum)";
+           "VALUES (@meterid,@PM2_5, @PM10, @temperatuur, @vochtigheid, @luchtdruk, @tijdstip, @datum);";
 
         //aanpassen van een record
         public static readonly string sqlAanpassenDataRecord = "UPDATE tblgegevens " +
@@ -37,7 +37,7 @@ namespace FijnstofGIP
 
         #endregion
 
-        #region [WachtwoordReset +  + FormWWVeranderen + FormEmailVeranderen]
+        #region [WachtwoordReset + FormWWVeranderen + FormEmailVeranderen]
         //via de ingevoerde email, de email,voornaam,familienaam opvragen -> 
         //dit doen we om deze op te slaan voor zo de email te kunnen versturen in de code + email extra controleren
         //form: WachtwoordReset
@@ -140,7 +140,8 @@ namespace FijnstofGIP
          "(meterID = @meterid)";
         #endregion
 
-        //verkrijgen van info over een gebruiker
-        public static readonly string sqlInfoGebruikerQRCode = "SELECT gebruikersnaam,email,voornaam,familienaam,huisnummer,straat,postcode,gemeente FROM tblgebruikers WHERE (gebruikersID = @gebruikersID);";
+        #region [QRCodeLogin]
+            public static readonly string sqlInfoGebruikerQRCode = "SELECT gebruikersnaam,email,voornaam,familienaam,huisnummer,straat,postcode,gemeente FROM tblgebruikers WHERE (gebruikersID = @gebruikersID);";
+        #endregion
     }
 }

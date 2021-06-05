@@ -188,8 +188,8 @@ namespace FijnstofGIP.FormsMenu
 
         private void btnVerwijderen_Click(object sender, EventArgs e)
         {
-            /*try
-            {*/
+            try
+            { 
                 if (txtMeterID.Text == "" && txtMeterNaam.Text == "" && txtLatitude.Text == "" && txtLongtitude.Text == "")
                 {
                     MessageBox.Show("Niet alle records zijn ingevuld!?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -229,19 +229,18 @@ namespace FijnstofGIP.FormsMenu
                     }
                 }
 
-            /*}
+            }
             catch
             {
                 MessageBox.Show("ERROR, er is een fout gebeurd bij het verwijderen", "Onverwachte error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
+            }
 
         }
 
         private void btnToevoegen_Click(object sender, EventArgs e)
         {
-            /*try
-            {*/
-
+           try
+           { 
                 if (txtMeterID.Text == "" && txtMeterNaam.Text == "" && txtLatitude.Text == "" && txtLongtitude.Text == "")
                 {
                     MessageBox.Show("Je moet alle velden invullen", "Fijnstofmeter toevoegen mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -309,11 +308,11 @@ namespace FijnstofGIP.FormsMenu
                     }
                 }
 
-            /*}
+            }
             catch
             {
                 MessageBox.Show("ERROR, er is een fout gebeurd", "Onverwachte error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
+            }
 
 
         }
@@ -322,33 +321,37 @@ namespace FijnstofGIP.FormsMenu
         {
             try
             {
-                DialogResult gegevensBewaren = MessageBox.Show("Ben je zeker dat je deze records wilt bewaren?", "Records bewaren", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (gegevensBewaren == DialogResult.Yes)
+                if (txtMeterID.Text == "" && txtMeterNaam.Text == "" && txtLatitude.Text == "" && txtLongtitude.Text == "")
                 {
-                    OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
-
-                    OleDbCommand cmd = new OleDbCommand();
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = SQLScripts.sqlAanpassenMeterRecord;
-                    cmd.Connection = MijnVerbinding;
-
-                    cmd.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
-                    cmd.Parameters.AddWithValue("@meterNaam", Convert.ToString(txtMeterNaam.Text));
-                    cmd.Parameters.AddWithValue("@latitude", Convert.ToString(txtLatitude.Text));
-                    cmd.Parameters.AddWithValue("@longtitude", Convert.ToString(txtLongtitude.Text));
-
-                    MijnVerbinding.Open();
-                    cmd.ExecuteNonQuery();
-                    MijnVerbinding.Close();
-                    MessageBox.Show("Gegevens zijn succesvol bewaard", "Gegevens bewaard!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Je moet alle velden invullen", "Fijnstofmeter toevoegen mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    //er gebeurd dan niks
-                }
+                    DialogResult gegevensBewaren = MessageBox.Show("Ben je zeker dat je deze records wilt bewaren?", "Records bewaren", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (gegevensBewaren == DialogResult.Yes)
+                    {
+                        OleDbConnection MijnVerbinding = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=FijnstofmeterDB.mdb");
 
-                VerbindingGegevens();
-                GegevensTonen();
+                        OleDbCommand cmd = new OleDbCommand();
+                        cmd.CommandType = CommandType.Text;
+                        cmd.CommandText = SQLScripts.sqlAanpassenMeterRecord;
+                        cmd.Connection = MijnVerbinding;
+
+                        cmd.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
+                        cmd.Parameters.AddWithValue("@meterNaam", Convert.ToString(txtMeterNaam.Text));
+                        cmd.Parameters.AddWithValue("@latitude", Convert.ToString(txtLatitude.Text));
+                        cmd.Parameters.AddWithValue("@longtitude", Convert.ToString(txtLongtitude.Text));
+
+                        MijnVerbinding.Open();
+                        cmd.ExecuteNonQuery();
+                        MijnVerbinding.Close();
+                        MessageBox.Show("Gegevens zijn succesvol bewaard", "Gegevens bewaard!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
+
+                    VerbindingGegevens();
+                    GegevensTonen();
+                }
             }
             catch
             {

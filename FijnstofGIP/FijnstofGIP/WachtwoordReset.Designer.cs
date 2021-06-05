@@ -411,9 +411,9 @@ namespace FijnstofGIP
             this.ClientSize = new System.Drawing.Size(540, 232);
             this.Controls.Add(this.btnTerugkeren);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pnlWWVeranderenSectie);
             this.Controls.Add(this.pnlEmailSectie);
             this.Controls.Add(this.pnlCodeSectie);
-            this.Controls.Add(this.pnlWWVeranderenSectie);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "WachtwoordReset";

@@ -234,10 +234,8 @@ D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\zxing.dll
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\AForge.dll
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\AForge.Video.xml
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\AForge.Video.DirectShow.xml
-D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\zxing.pdb
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\zxing.xml
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\AForge.xml
-D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\Zen.Barcode.Core.dll
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.FormsGebruikerInstellingen.FormQRCodeAanmaken.resources
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Debug\FijnstofGIP.QRCodeLogin.resources
 E:\GIP\FijnstofGIP\bin\Debug\FijnstofGIP.exe.config
@@ -299,3 +297,6 @@ E:\GIP\FijnstofGIP\bin\Debug\zxing.presentation.dll
 E:\GIP\FijnstofGIP\bin\Debug\zxing.presentation.xml
 E:\GIP\FijnstofGIP\bin\Debug\QRCoder.dll
 E:\GIP\FijnstofGIP\obj\Debug\FijnstofGIP.csproj.AssemblyReference.cache
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\QRCoder.dll
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\zxing.presentation.dll
+D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Debug\zxing.presentation.xml

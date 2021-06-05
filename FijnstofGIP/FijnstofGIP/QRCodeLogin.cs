@@ -43,7 +43,7 @@ namespace FijnstofGIP
             }
             catch
             {
-                MessageBox.Show("Opgepast, webcam niet gevonden.", "Webcam niet gevonden", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Opgepast, geen webcam gevonden.", "Webcam niet gevonden", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         private void btnWebcam_Click(object sender, EventArgs e)
@@ -59,21 +59,36 @@ namespace FijnstofGIP
             }
             catch 
             {
-
                 MessageBox.Show("Je hebt geen webcam aangeduid", "Webcam niet gevonden", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
         private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
-            WebcamBox.Image = (Bitmap)eventArgs.Frame.Clone();
+            try
+            {
+                WebcamBox.Image = (Bitmap)eventArgs.Frame.Clone();
+            }
+            catch
+            {
+                MessageBox.Show("Onverwachte error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
         private void QRCodeLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (captureDevice.IsRunning == true)
+            try
             {
-                captureDevice.Stop();
+                if (captureDevice.IsRunning == true)
+                {
+                    captureDevice.Stop();
+                }
             }
+            catch
+            {
+                //we willen geen error maar ook geen bericht tonen
+            }
+            
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -156,7 +171,7 @@ namespace FijnstofGIP
             }
             catch
             {
-                MessageBox.Show("Ongeldige QR COde", "Login mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ongeldige QR Code", "Login mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 dsWW.Clear();
             }
         }

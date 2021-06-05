@@ -41,8 +41,16 @@ namespace FijnstofGIP.FormsMenu
         }
         public void GegevensTonen()
         {
-            // Opvullen van de datasource
-            dgvMeters.DataSource = dsMeters.Tables["MijnTabel"];
+            try
+            {
+                // Opvullen van de datasource
+                dgvMeters.DataSource = dsMeters.Tables["MijnTabel"];
+            }
+            catch 
+            {
+                MessageBox.Show("Fout bij het inladen van de datatabel", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void btnClose_Click(object sender, EventArgs e)

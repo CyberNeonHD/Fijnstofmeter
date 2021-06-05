@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Windows.Forms;
-using GMap.NET.MapProviders;   // Nodig voor google map in te laden
-using GMap.NET;
-using GMap.NET.WindowsForms;
-using GMap.NET.WindowsForms.Markers;
-
+using GMap.NET.MapProviders;   // Nodig voor google map
+using GMap.NET;                 // Nodig voor google map 
+using GMap.NET.WindowsForms;    // Nodig voor google map 
+using GMap.NET.WindowsForms.Markers;    // Nodig voor google map
+    
 namespace FijnstofGIP.FormsMenu
 {
     public partial class FormMapWeergeven : Form

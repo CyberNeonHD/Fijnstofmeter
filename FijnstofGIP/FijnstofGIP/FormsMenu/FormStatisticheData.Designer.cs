@@ -287,7 +287,6 @@ namespace FijnstofGIP.FormsMenu
             this.pnlVochtigheidAVG.Name = "pnlVochtigheidAVG";
             this.pnlVochtigheidAVG.Size = new System.Drawing.Size(53, 3);
             this.pnlVochtigheidAVG.TabIndex = 100;
-            this.pnlVochtigheidAVG.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // lblPM2_5
             // 
@@ -711,7 +710,6 @@ namespace FijnstofGIP.FormsMenu
             this.pnlTempMax.Name = "pnlTempMax";
             this.pnlTempMax.Size = new System.Drawing.Size(53, 3);
             this.pnlTempMax.TabIndex = 127;
-            this.pnlTempMax.Paint += new System.Windows.Forms.PaintEventHandler(this.panel14_Paint);
             // 
             // txtLuchtdrukMAX
             // 
