@@ -160,7 +160,5 @@ namespace FijnstofGIP
         {
             lblDatum.Text = DateTime.Now.ToString("dddd dd MMMM yyyy");
         }
-
-
     }
 }

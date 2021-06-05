@@ -365,11 +365,11 @@ namespace FijnstofGIP
             this.lblVersie.AutoSize = true;
             this.lblVersie.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersie.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblVersie.Location = new System.Drawing.Point(755, 515);
+            this.lblVersie.Location = new System.Drawing.Point(777, 523);
             this.lblVersie.Name = "lblVersie";
-            this.lblVersie.Size = new System.Drawing.Size(43, 21);
+            this.lblVersie.Size = new System.Drawing.Size(30, 21);
             this.lblVersie.TabIndex = 3;
-            this.lblVersie.Text = "V0.5";
+            this.lblVersie.Text = "V1";
             // 
             // lblwelkom
             // 
