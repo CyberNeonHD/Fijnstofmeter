@@ -513,12 +513,12 @@ namespace FijnstofGIP.FormsMenu
 
                         OleDbDataAdapter adapter = new OleDbDataAdapter(SQLScripts.sqlDataAanmaken, MijnVerbinding);
 
-                        cmd.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
-                        cmd.Parameters.AddWithValue("@PM2_5", Convert.ToInt32(txtPM2_5.Text));
-                        cmd.Parameters.AddWithValue("@PM10", Convert.ToInt32(txtPM10.Text));
-                        cmd.Parameters.AddWithValue("@temperatuur", Convert.ToInt32(txtTemp.Text));
-                        cmd.Parameters.AddWithValue("@vochtigheid", Convert.ToInt32(txtVochtigheid.Text));
-                        cmd.Parameters.AddWithValue("@luchtdruk", Convert.ToInt32(txtLuchtdruk.Text));
+                        cmd.Parameters.AddWithValue("@meterid", Convert.ToDouble(txtMeterID.Text));
+                        cmd.Parameters.AddWithValue("@PM2_5", Convert.ToDouble(txtPM2_5.Text));
+                        cmd.Parameters.AddWithValue("@PM10", Convert.ToDouble(txtPM10.Text));
+                        cmd.Parameters.AddWithValue("@temperatuur", Convert.ToDouble(txtTemp.Text));
+                        cmd.Parameters.AddWithValue("@vochtigheid", Convert.ToDouble(txtVochtigheid.Text));
+                        cmd.Parameters.AddWithValue("@luchtdruk", Convert.ToDouble(txtLuchtdruk.Text));
                         cmd.Parameters.AddWithValue("@tijdstip", Convert.ToString(txtTijdstip.Text));
                         cmd.Parameters.AddWithValue("@datum", Convert.ToString(txtDatum.Text));
 
@@ -572,11 +572,11 @@ namespace FijnstofGIP.FormsMenu
                     cmd.Connection = MijnVerbinding;
 
                     cmd.Parameters.AddWithValue("@meterid", Convert.ToString(txtMeterID.Text));
-                    cmd.Parameters.AddWithValue("@PM2_5", Convert.ToInt32(txtPM2_5.Text));
-                    cmd.Parameters.AddWithValue("@PM10", Convert.ToInt32(txtPM10.Text));
-                    cmd.Parameters.AddWithValue("@temperatuur", Convert.ToInt32(txtTemp.Text));
-                    cmd.Parameters.AddWithValue("@vochtigheid", Convert.ToInt32(txtVochtigheid.Text));
-                    cmd.Parameters.AddWithValue("@luchtdruk", Convert.ToInt32(txtLuchtdruk.Text));
+                    cmd.Parameters.AddWithValue("@PM2_5", Convert.ToDouble(txtPM2_5.Text));
+                    cmd.Parameters.AddWithValue("@PM10", Convert.ToDouble(txtPM10.Text));
+                    cmd.Parameters.AddWithValue("@temperatuur", Convert.ToDouble(txtTemp.Text));
+                    cmd.Parameters.AddWithValue("@vochtigheid", Convert.ToDouble(txtVochtigheid.Text));
+                    cmd.Parameters.AddWithValue("@luchtdruk", Convert.ToDouble(txtLuchtdruk.Text));
                     cmd.Parameters.AddWithValue("@tijdstip", Convert.ToString(txtTijdstip.Text));
                     cmd.Parameters.AddWithValue("@datum", Convert.ToString(txtDatum.Text));
                     cmd.Parameters.AddWithValue("@gegevensid", Convert.ToString(txtGegevensID.Text));

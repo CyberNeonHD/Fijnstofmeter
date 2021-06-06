@@ -161,7 +161,7 @@ namespace FijnstofGIP.FormsMenu
                 adapter.SelectCommand.Parameters.AddWithValue("@zoekString", txtZoekstring.Text);
 
 
-
+                
                 //deze if's zijn onze eigen error ontwijkers
                 //persoon zoekt zonder veld in te vullen dan kreeg je een speciale catch error maar via deze manier lossen we het op
                 if (zoekVeld == "")
@@ -180,7 +180,7 @@ namespace FijnstofGIP.FormsMenu
                 {
                     dsGegevens.Clear();
                     adapter.Fill(dsGegevens, "MijnTabel");
-                }             
+                }            
                 MijnVerbinding.Close();
             }     
             catch //moest er buiten de comboxen nog errors komen vangt dit het op 

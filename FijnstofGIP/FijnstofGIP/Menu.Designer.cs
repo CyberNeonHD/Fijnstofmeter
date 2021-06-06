@@ -365,11 +365,11 @@ namespace FijnstofGIP
             this.lblVersie.AutoSize = true;
             this.lblVersie.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersie.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblVersie.Location = new System.Drawing.Point(777, 523);
+            this.lblVersie.Location = new System.Drawing.Point(764, 529);
             this.lblVersie.Name = "lblVersie";
-            this.lblVersie.Size = new System.Drawing.Size(30, 21);
+            this.lblVersie.Size = new System.Drawing.Size(43, 21);
             this.lblVersie.TabIndex = 3;
-            this.lblVersie.Text = "V1";
+            this.lblVersie.Text = "V1.2";
             // 
             // lblwelkom
             // 
@@ -413,7 +413,7 @@ namespace FijnstofGIP
             this.Name = "Menu";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Particulated";
+            this.Text = "                                            ";
             this.TopMost = true;
             this.pnlMenuLinks.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnUitloggen)).EndInit();

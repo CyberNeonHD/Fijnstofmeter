@@ -323,7 +323,7 @@ namespace FijnstofGIP.FormsMenu
             {
                 if (txtMeterID.Text == "" && txtMeterNaam.Text == "" && txtLatitude.Text == "" && txtLongtitude.Text == "")
                 {
-                    MessageBox.Show("Je moet alle velden invullen", "Fijnstofmeter toevoegen mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Je moet alle velden invullen", "Fijnstofmeter aanpassen mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -355,7 +355,7 @@ namespace FijnstofGIP.FormsMenu
             }
             catch
             {
-                MessageBox.Show("ERROR, er is een fout gebeurd bij het bewaren van de records+", "Onverwachte error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ERROR, er is een fout gebeurd bij het bewaren van de records", "Onverwachte error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
