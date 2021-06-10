@@ -169,6 +169,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     MessageBox.Show("Jouw email is upgedate!", "Email bewaard!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     btnGegevensOpslaan.Enabled = false;
 
+                    
                     //versturen van de email om de gebruiker te waarschuwen van het nieuwe wachtwoord
                     MailMessage CodeMail = new MailMessage();
                     string naar, van, ww, bericht, onderwerp;
@@ -191,6 +192,7 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     smtp.Credentials = new NetworkCredential(van, ww);
                     smtp.Send(CodeMail);
                     // einde code voor de email -------------------------------------
+                    
                 }
                 else
                 {

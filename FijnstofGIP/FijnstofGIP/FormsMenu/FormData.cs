@@ -596,7 +596,7 @@ namespace FijnstofGIP.FormsMenu
             }
             catch
             {
-                MessageBox.Show("ERROR, er is een fout gebeurd bij het bewaren van de records+", "Onverwachte error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ERROR, er is een fout gebeurd bij het bewaren van de records.", "Onverwachte error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

@@ -32,6 +32,7 @@ namespace FijnstofGIP
             //hier roepen we dus de variabele die we eerder hebben aangemaakt op en geven we het de juiste lengtematen
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
             LaadschermPB.Value = 0; //ronde laadbalk op 0 zetten
+            LaadschermTimer.Start();
         }
         string tekst;
         int lengte = 0;
@@ -50,6 +51,7 @@ namespace FijnstofGIP
 
             if (LaadschermPB.Value == 100)//wanneer de timer 10 sec heeft bereikt
             {
+                LaadschermTimer.Stop();
                 Aanmeldscherm volgendForm = new Aanmeldscherm(); //volgend form declareren
                 volgendForm.Show(); //tonen van volgend form
                 this.Hide(); //laadscherm form sluiten

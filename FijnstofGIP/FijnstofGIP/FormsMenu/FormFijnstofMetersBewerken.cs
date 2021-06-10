@@ -268,13 +268,12 @@ namespace FijnstofGIP.FormsMenu
                         MijnVerbinding.Close();
 
                         //Code voor de email bij aanmaken van fijnstof meter sturen
-
                         MailMessage RegistratieBericht = new MailMessage();
                         string van, ww, bericht, onderwerp;
 
                         van = InfoGebruiker.KalexEmail;
                         ww = InfoGebruiker.KalexWW;
-                        bericht = "Beste " + InfoGebruiker.voornaam + " " + InfoGebruiker.familienaam + "," + "<br />" + "<br /> U heeft succesvol een fijnstof meter toegevoegd aan de database.<br /> De info van deze fijnstof meter is: <br />MeterID: " + txtMeterID.Text + "<br />Naam van de meter: " + txtMeterNaam.Text + "<br />Latitude: " + txtLatitude.Text + "<br />Longitude: " + txtLongtitude.Text + "<br /> Als u ooit problemen heeft of suggesties kan u ons altijd een mail sturen. <br /> <br /> Met vriendelijke groeten, <br />Kalex";
+                        bericht = "Beste " + InfoGebruiker.voornaam + " " + InfoGebruiker.familienaam + "," + "<br />" + "<br /> U heeft succesvol een fijnstof meter toegevoegd aan de database.<br /> De info van deze fijnstof meter is: <br />MeterID: " + txtMeterID.Text + "<br />Naam van de meter: " + txtMeterNaam.Text + "<br />Breedtegraad: " + txtLatitude.Text + "<br />Lengtegraad: " + txtLongtitude.Text + "<br /> Als u ooit problemen heeft of suggesties kan u ons altijd een mail sturen. <br /> <br /> Met vriendelijke groeten, <br />Kalex";
                         onderwerp = "Fijnstof meter succesvol aangemaakt!";
                         RegistratieBericht.To.Add(InfoGebruiker.email);
                         RegistratieBericht.From = new MailAddress(van);

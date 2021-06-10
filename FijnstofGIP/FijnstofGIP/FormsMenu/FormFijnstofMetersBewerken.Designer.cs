@@ -185,7 +185,7 @@
             this.txtLongtitude.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLongtitude.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.txtLongtitude.Location = new System.Drawing.Point(472, 319);
-            this.txtLongtitude.MaxLength = 5;
+            this.txtLongtitude.MaxLength = 27;
             this.txtLongtitude.Multiline = true;
             this.txtLongtitude.Name = "txtLongtitude";
             this.txtLongtitude.Size = new System.Drawing.Size(205, 20);

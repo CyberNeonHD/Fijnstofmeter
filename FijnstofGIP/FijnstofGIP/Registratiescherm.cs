@@ -11,7 +11,6 @@ using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Net; //voor de mail
 using System.Net.Mail; //voor de mail
-using System.Security.Cryptography; //voor beveiliging wachtwoord
 
 namespace FijnstofGIP
 {
@@ -423,6 +422,7 @@ namespace FijnstofGIP
                     }
                     else
                     {
+                        
                         //Code voor de email bij registratie te sturen
                         MailMessage RegistratieBericht = new MailMessage();
                         string naar, van, ww, bericht, onderwerp;
@@ -455,6 +455,7 @@ namespace FijnstofGIP
                         txtStraat.Text = "";
                         txtPostcode.Text = "";
                         txtGemeente.Text = "";
+                        
                     }
                 }
                 catch

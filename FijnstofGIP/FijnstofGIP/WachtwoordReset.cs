@@ -155,7 +155,6 @@ namespace FijnstofGIP
                 if (mailBestaat == true)
                 {
                     //Code aanmaken + versturen van de email
-
                     Random rnd = new Random();
                     Int32 codeRnd = rnd.Next(132579, 999999);
                     codeWW = codeRnd;

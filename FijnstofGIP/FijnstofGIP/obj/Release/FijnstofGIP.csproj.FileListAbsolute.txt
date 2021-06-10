@@ -17,7 +17,6 @@ D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Release\FijnstofGI
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Release\FijnstofGIP.exe
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\obj\Release\FijnstofGIP.pdb
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Release\AForge.dll
-D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Release\AForge.Video.DirectShow.dll
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Release\AForge.Video.dll
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Release\EntityFramework.dll
 D:\Documents\GitHub\Fijnstofmeter\FijnstofGIP\FijnstofGIP\bin\Release\EntityFramework.SqlServer.dll
