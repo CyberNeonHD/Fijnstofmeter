@@ -139,9 +139,8 @@ namespace FijnstofGIP
          "SET meterID=@meterid, meterNaam=@meterNaam, latitude=@latitude,longtitude=@longtitude WHERE " +
          "(meterID = @meterid)";
         #endregion
-
         #region [QRCodeLogin]
-            public static readonly string sqlInfoGebruikerQRCode = "SELECT gebruikersnaam,email,voornaam,familienaam,huisnummer,straat,postcode,gemeente FROM tblgebruikers WHERE (gebruikersID = @gebruikersID);";
+        public static readonly string sqlInfoGebruikerQRCode = "SELECT gebruikersnaam,email,voornaam,familienaam,huisnummer,straat,postcode,gemeente FROM tblgebruikers WHERE (gebruikersID = @gebruikersID);";
         #endregion
     }
 }
