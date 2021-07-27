@@ -75,6 +75,7 @@
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -103,6 +104,7 @@
             // 
             // btnRecordToevoegen
             // 
+            this.btnRecordToevoegen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnRecordToevoegen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordToevoegen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecordToevoegen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -116,6 +118,7 @@
             // 
             // btnRecordBewaren
             // 
+            this.btnRecordBewaren.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnRecordBewaren.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordBewaren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecordBewaren.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -129,6 +132,7 @@
             // 
             // btnRecordVerwijderen
             // 
+            this.btnRecordVerwijderen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnRecordVerwijderen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordVerwijderen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecordVerwijderen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -142,6 +146,7 @@
             // 
             // btnLaatsteRecord
             // 
+            this.btnLaatsteRecord.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnLaatsteRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLaatsteRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLaatsteRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -155,6 +160,7 @@
             // 
             // btnVolgendRecord
             // 
+            this.btnVolgendRecord.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnVolgendRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVolgendRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolgendRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -168,6 +174,7 @@
             // 
             // btnVorigRecord
             // 
+            this.btnVorigRecord.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnVorigRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVorigRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVorigRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -181,6 +188,7 @@
             // 
             // btnEersteRecord
             // 
+            this.btnEersteRecord.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnEersteRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEersteRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEersteRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -194,6 +202,7 @@
             // 
             // lblPM2_5
             // 
+            this.lblPM2_5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPM2_5.AutoSize = true;
             this.lblPM2_5.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.lblPM2_5.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -205,6 +214,7 @@
             // 
             // lblVochtigheid
             // 
+            this.lblVochtigheid.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblVochtigheid.AutoSize = true;
             this.lblVochtigheid.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.lblVochtigheid.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -216,6 +226,7 @@
             // 
             // lblTemperatuur
             // 
+            this.lblTemperatuur.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTemperatuur.AutoSize = true;
             this.lblTemperatuur.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.lblTemperatuur.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -227,6 +238,7 @@
             // 
             // lblMeterID
             // 
+            this.lblMeterID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblMeterID.AutoSize = true;
             this.lblMeterID.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.lblMeterID.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -238,6 +250,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -249,6 +262,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -260,6 +274,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -271,6 +286,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -282,6 +298,7 @@
             // 
             // txtMeterID
             // 
+            this.txtMeterID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtMeterID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtMeterID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMeterID.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -299,6 +316,7 @@
             // 
             // pnlMeterID
             // 
+            this.pnlMeterID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlMeterID.BackColor = System.Drawing.Color.White;
             this.pnlMeterID.Location = new System.Drawing.Point(126, 256);
             this.pnlMeterID.Margin = new System.Windows.Forms.Padding(0);
@@ -308,6 +326,7 @@
             // 
             // txtDatum
             // 
+            this.txtDatum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDatum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtDatum.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDatum.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -325,6 +344,7 @@
             // 
             // pnlDatum
             // 
+            this.pnlDatum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlDatum.BackColor = System.Drawing.Color.White;
             this.pnlDatum.Location = new System.Drawing.Point(306, 318);
             this.pnlDatum.Margin = new System.Windows.Forms.Padding(0);
@@ -334,6 +354,7 @@
             // 
             // txtPM2_5
             // 
+            this.txtPM2_5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPM2_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtPM2_5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPM2_5.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -351,6 +372,7 @@
             // 
             // pnl2_5
             // 
+            this.pnl2_5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnl2_5.BackColor = System.Drawing.Color.White;
             this.pnl2_5.Location = new System.Drawing.Point(306, 379);
             this.pnl2_5.Margin = new System.Windows.Forms.Padding(0);
@@ -360,6 +382,7 @@
             // 
             // txtPM10
             // 
+            this.txtPM10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPM10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtPM10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPM10.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -377,6 +400,7 @@
             // 
             // pnlPM10
             // 
+            this.pnlPM10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlPM10.BackColor = System.Drawing.Color.White;
             this.pnlPM10.Location = new System.Drawing.Point(161, 380);
             this.pnlPM10.Margin = new System.Windows.Forms.Padding(0);
@@ -386,6 +410,7 @@
             // 
             // txtTijdstip
             // 
+            this.txtTijdstip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtTijdstip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtTijdstip.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTijdstip.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -403,6 +428,7 @@
             // 
             // pnlTijdstip
             // 
+            this.pnlTijdstip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlTijdstip.BackColor = System.Drawing.Color.White;
             this.pnlTijdstip.Location = new System.Drawing.Point(161, 320);
             this.pnlTijdstip.Margin = new System.Windows.Forms.Padding(0);
@@ -412,6 +438,7 @@
             // 
             // txtTemp
             // 
+            this.txtTemp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtTemp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtTemp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTemp.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -429,6 +456,7 @@
             // 
             // pnlTemp
             // 
+            this.pnlTemp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlTemp.BackColor = System.Drawing.Color.White;
             this.pnlTemp.Location = new System.Drawing.Point(448, 317);
             this.pnlTemp.Margin = new System.Windows.Forms.Padding(0);
@@ -438,6 +466,7 @@
             // 
             // txtVochtigheid
             // 
+            this.txtVochtigheid.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtVochtigheid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtVochtigheid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtVochtigheid.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -455,6 +484,7 @@
             // 
             // pnlVochtigheid
             // 
+            this.pnlVochtigheid.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlVochtigheid.BackColor = System.Drawing.Color.White;
             this.pnlVochtigheid.Location = new System.Drawing.Point(447, 379);
             this.pnlVochtigheid.Margin = new System.Windows.Forms.Padding(0);
@@ -464,6 +494,7 @@
             // 
             // txtLuchtdruk
             // 
+            this.txtLuchtdruk.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLuchtdruk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtLuchtdruk.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLuchtdruk.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -481,6 +512,7 @@
             // 
             // pnlLuchtdruk
             // 
+            this.pnlLuchtdruk.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlLuchtdruk.BackColor = System.Drawing.Color.White;
             this.pnlLuchtdruk.Location = new System.Drawing.Point(583, 379);
             this.pnlLuchtdruk.Margin = new System.Windows.Forms.Padding(0);
@@ -491,6 +523,7 @@
             // cmbWelkVeld
             // 
             this.cmbWelkVeld.AccessibleDescription = "";
+            this.cmbWelkVeld.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbWelkVeld.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.cmbWelkVeld.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbWelkVeld.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -507,6 +540,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -518,6 +552,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -529,6 +564,7 @@
             // 
             // txtZoekstring
             // 
+            this.txtZoekstring.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtZoekstring.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtZoekstring.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtZoekstring.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -547,6 +583,7 @@
             // 
             // pnlZoekstring
             // 
+            this.pnlZoekstring.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlZoekstring.BackColor = System.Drawing.Color.White;
             this.pnlZoekstring.Location = new System.Drawing.Point(591, 204);
             this.pnlZoekstring.Margin = new System.Windows.Forms.Padding(0);
@@ -556,6 +593,7 @@
             // 
             // btnClear
             // 
+            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -569,6 +607,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -581,6 +620,7 @@
             // cmbWelkeMeter
             // 
             this.cmbWelkeMeter.AccessibleDescription = "";
+            this.cmbWelkeMeter.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbWelkeMeter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.cmbWelkeMeter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbWelkeMeter.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -597,6 +637,7 @@
             // 
             // txtGegevensID
             // 
+            this.txtGegevensID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtGegevensID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtGegevensID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtGegevensID.Cursor = System.Windows.Forms.Cursors.IBeam;

@@ -160,5 +160,10 @@ namespace FijnstofGIP
         {
             lblDatum.Text = DateTime.Now.ToString("dddd dd MMMM yyyy");
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

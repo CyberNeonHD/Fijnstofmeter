@@ -55,6 +55,8 @@
             // 
             // btnClear
             // 
+            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnClear.AutoSize = true;
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -69,6 +71,8 @@
             // 
             // btnRecordToevoegen
             // 
+            this.btnRecordToevoegen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnRecordToevoegen.AutoSize = true;
             this.btnRecordToevoegen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordToevoegen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecordToevoegen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,6 +87,8 @@
             // 
             // btnRecordBewaren
             // 
+            this.btnRecordBewaren.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnRecordBewaren.AutoSize = true;
             this.btnRecordBewaren.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordBewaren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecordBewaren.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -97,6 +103,8 @@
             // 
             // btnRecordVerwijderen
             // 
+            this.btnRecordVerwijderen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnRecordVerwijderen.AutoSize = true;
             this.btnRecordVerwijderen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordVerwijderen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRecordVerwijderen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -111,6 +119,8 @@
             // 
             // btnLaatsteRecord
             // 
+            this.btnLaatsteRecord.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnLaatsteRecord.AutoSize = true;
             this.btnLaatsteRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLaatsteRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLaatsteRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -125,6 +135,8 @@
             // 
             // btnVolgendRecord
             // 
+            this.btnVolgendRecord.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnVolgendRecord.AutoSize = true;
             this.btnVolgendRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVolgendRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolgendRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -139,6 +151,8 @@
             // 
             // btnVorigRecord
             // 
+            this.btnVorigRecord.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnVorigRecord.AutoSize = true;
             this.btnVorigRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVorigRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVorigRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -153,6 +167,8 @@
             // 
             // btnEersteRecord
             // 
+            this.btnEersteRecord.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnEersteRecord.AutoSize = true;
             this.btnEersteRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEersteRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEersteRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -179,6 +195,7 @@
             // 
             // txtLongtitude
             // 
+            this.txtLongtitude.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLongtitude.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtLongtitude.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLongtitude.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -196,6 +213,7 @@
             // 
             // pnllongitude
             // 
+            this.pnllongitude.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnllongitude.BackColor = System.Drawing.Color.White;
             this.pnllongitude.Location = new System.Drawing.Point(475, 338);
             this.pnllongitude.Margin = new System.Windows.Forms.Padding(0);
@@ -205,6 +223,7 @@
             // 
             // txtLatitude
             // 
+            this.txtLatitude.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLatitude.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtLatitude.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLatitude.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -222,6 +241,7 @@
             // 
             // pnlLatitude
             // 
+            this.pnlLatitude.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlLatitude.BackColor = System.Drawing.Color.White;
             this.pnlLatitude.Location = new System.Drawing.Point(127, 338);
             this.pnlLatitude.Margin = new System.Windows.Forms.Padding(0);
@@ -231,6 +251,7 @@
             // 
             // txtMeterNaam
             // 
+            this.txtMeterNaam.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtMeterNaam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtMeterNaam.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMeterNaam.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -248,6 +269,7 @@
             // 
             // pnlMeterNaam
             // 
+            this.pnlMeterNaam.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlMeterNaam.BackColor = System.Drawing.Color.White;
             this.pnlMeterNaam.Location = new System.Drawing.Point(476, 228);
             this.pnlMeterNaam.Margin = new System.Windows.Forms.Padding(0);
@@ -257,6 +279,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -268,6 +291,7 @@
             // 
             // txtMeterID
             // 
+            this.txtMeterID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtMeterID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtMeterID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMeterID.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -285,6 +309,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -296,6 +321,7 @@
             // 
             // pnlMeterID
             // 
+            this.pnlMeterID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlMeterID.BackColor = System.Drawing.Color.White;
             this.pnlMeterID.Location = new System.Drawing.Point(129, 228);
             this.pnlMeterID.Margin = new System.Windows.Forms.Padding(0);
@@ -305,6 +331,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -316,6 +343,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -327,6 +355,7 @@
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.ForeColor = System.Drawing.Color.DeepSkyBlue;

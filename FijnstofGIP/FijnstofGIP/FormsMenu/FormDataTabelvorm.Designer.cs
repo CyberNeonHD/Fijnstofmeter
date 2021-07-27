@@ -44,6 +44,8 @@ namespace FijnstofGIP.FormsMenu
             // 
             // dgvGegevens
             // 
+            this.dgvGegevens.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvGegevens.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvGegevens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGegevens.Location = new System.Drawing.Point(12, 130);
             this.dgvGegevens.Name = "dgvGegevens";
@@ -54,6 +56,7 @@ namespace FijnstofGIP.FormsMenu
             // cmbWelkeMeter
             // 
             this.cmbWelkeMeter.AccessibleDescription = "";
+            this.cmbWelkeMeter.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbWelkeMeter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.cmbWelkeMeter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbWelkeMeter.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -70,6 +73,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -81,6 +85,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtZoekstring
             // 
+            this.txtZoekstring.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtZoekstring.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtZoekstring.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtZoekstring.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -100,6 +105,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnlZoekstring
             // 
+            this.pnlZoekstring.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlZoekstring.BackColor = System.Drawing.Color.White;
             this.pnlZoekstring.Location = new System.Drawing.Point(274, 107);
             this.pnlZoekstring.Margin = new System.Windows.Forms.Padding(0);
@@ -109,6 +115,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -120,6 +127,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -132,6 +140,7 @@ namespace FijnstofGIP.FormsMenu
             // cmbWelkVeld
             // 
             this.cmbWelkVeld.AccessibleDescription = "";
+            this.cmbWelkVeld.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbWelkVeld.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.cmbWelkVeld.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbWelkVeld.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -148,6 +157,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.ForeColor = System.Drawing.Color.DeepSkyBlue;

@@ -32,13 +32,13 @@ namespace FijnstofGIP.FormsMenu
             this.label1 = new System.Windows.Forms.Label();
             this.pnlGebruikerForm = new System.Windows.Forms.Panel();
             this.pnlGebruikerMenuLinks = new System.Windows.Forms.Panel();
+            this.BtnQRCodeAanmaken = new FontAwesome.Sharp.IconButton();
             this.btnEmailVeranderen = new FontAwesome.Sharp.IconButton();
             this.btnGebruikersnaamVeranderen = new FontAwesome.Sharp.IconButton();
             this.btnWWAanpassen = new FontAwesome.Sharp.IconButton();
             this.btnAdresVeranderen = new FontAwesome.Sharp.IconButton();
             this.btnTerugkeren = new System.Windows.Forms.Button();
             this.btnClose = new FontAwesome.Sharp.IconPictureBox();
-            this.BtnQRCodeAanmaken = new FontAwesome.Sharp.IconButton();
             this.pnlGebruikerForm.SuspendLayout();
             this.pnlGebruikerMenuLinks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
@@ -77,6 +77,30 @@ namespace FijnstofGIP.FormsMenu
             this.pnlGebruikerMenuLinks.Name = "pnlGebruikerMenuLinks";
             this.pnlGebruikerMenuLinks.Size = new System.Drawing.Size(267, 402);
             this.pnlGebruikerMenuLinks.TabIndex = 0;
+            // 
+            // BtnQRCodeAanmaken
+            // 
+            this.BtnQRCodeAanmaken.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BtnQRCodeAanmaken.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnQRCodeAanmaken.FlatAppearance.BorderSize = 0;
+            this.BtnQRCodeAanmaken.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnQRCodeAanmaken.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnQRCodeAanmaken.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.BtnQRCodeAanmaken.IconChar = FontAwesome.Sharp.IconChar.Qrcode;
+            this.BtnQRCodeAanmaken.IconColor = System.Drawing.Color.DeepSkyBlue;
+            this.BtnQRCodeAanmaken.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnQRCodeAanmaken.IconSize = 34;
+            this.BtnQRCodeAanmaken.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.BtnQRCodeAanmaken.Location = new System.Drawing.Point(3, 261);
+            this.BtnQRCodeAanmaken.Name = "BtnQRCodeAanmaken";
+            this.BtnQRCodeAanmaken.Padding = new System.Windows.Forms.Padding(0, 14, 0, 0);
+            this.BtnQRCodeAanmaken.Size = new System.Drawing.Size(252, 60);
+            this.BtnQRCodeAanmaken.TabIndex = 6;
+            this.BtnQRCodeAanmaken.Text = "QR Code aanmaken";
+            this.BtnQRCodeAanmaken.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnQRCodeAanmaken.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnQRCodeAanmaken.UseVisualStyleBackColor = true;
+            this.BtnQRCodeAanmaken.Click += new System.EventHandler(this.BtnQRCodeAanmaken_Click);
             // 
             // btnEmailVeranderen
             // 
@@ -192,6 +216,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -205,30 +230,6 @@ namespace FijnstofGIP.FormsMenu
             this.btnClose.TabIndex = 19;
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // BtnQRCodeAanmaken
-            // 
-            this.BtnQRCodeAanmaken.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BtnQRCodeAanmaken.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnQRCodeAanmaken.FlatAppearance.BorderSize = 0;
-            this.BtnQRCodeAanmaken.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnQRCodeAanmaken.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnQRCodeAanmaken.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.BtnQRCodeAanmaken.IconChar = FontAwesome.Sharp.IconChar.Qrcode;
-            this.BtnQRCodeAanmaken.IconColor = System.Drawing.Color.DeepSkyBlue;
-            this.BtnQRCodeAanmaken.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnQRCodeAanmaken.IconSize = 34;
-            this.BtnQRCodeAanmaken.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.BtnQRCodeAanmaken.Location = new System.Drawing.Point(3, 261);
-            this.BtnQRCodeAanmaken.Name = "BtnQRCodeAanmaken";
-            this.BtnQRCodeAanmaken.Padding = new System.Windows.Forms.Padding(0, 14, 0, 0);
-            this.BtnQRCodeAanmaken.Size = new System.Drawing.Size(252, 60);
-            this.BtnQRCodeAanmaken.TabIndex = 6;
-            this.BtnQRCodeAanmaken.Text = "QR Code aanmaken";
-            this.BtnQRCodeAanmaken.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnQRCodeAanmaken.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnQRCodeAanmaken.UseVisualStyleBackColor = true;
-            this.BtnQRCodeAanmaken.Click += new System.EventHandler(this.BtnQRCodeAanmaken_Click);
             // 
             // InstellingenGebuiker
             // 

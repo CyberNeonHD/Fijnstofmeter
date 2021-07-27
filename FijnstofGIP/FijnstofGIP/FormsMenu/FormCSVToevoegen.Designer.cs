@@ -53,8 +53,8 @@ namespace FijnstofGIP.FormsMenu
             // 
             // btnOpslaan
             // 
-            this.btnOpslaan.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.btnOpslaan, "btnOpslaan");
+            this.btnOpslaan.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOpslaan.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btnOpslaan.Name = "btnOpslaan";
             this.btnOpslaan.UseVisualStyleBackColor = true;
@@ -62,8 +62,8 @@ namespace FijnstofGIP.FormsMenu
             // 
             // btnBladeren
             // 
-            this.btnBladeren.Cursor = System.Windows.Forms.Cursors.Hand;
             resources.ApplyResources(this.btnBladeren, "btnBladeren");
+            this.btnBladeren.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBladeren.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btnBladeren.Name = "btnBladeren";
             this.btnBladeren.UseVisualStyleBackColor = true;
@@ -71,6 +71,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // btnClose
             // 
+            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -78,15 +79,14 @@ namespace FijnstofGIP.FormsMenu
             this.btnClose.IconColor = System.Drawing.Color.DeepSkyBlue;
             this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClose.IconSize = 20;
-            resources.ApplyResources(this.btnClose, "btnClose");
             this.btnClose.Name = "btnClose";
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // dgvGegevens
             // 
-            this.dgvGegevens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.dgvGegevens, "dgvGegevens");
+            this.dgvGegevens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGegevens.Name = "dgvGegevens";
             // 
             // FormCSVToevoegen

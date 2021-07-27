@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             this.dgvMeters = new System.Windows.Forms.DataGridView();
-            this.btnClose = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnClose = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMeters)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvMeters
             // 
+            this.dgvMeters.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dgvMeters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMeters.Location = new System.Drawing.Point(184, 89);
             this.dgvMeters.Name = "dgvMeters";
@@ -45,8 +46,22 @@
             this.dgvMeters.Size = new System.Drawing.Size(455, 427);
             this.dgvMeters.TabIndex = 6;
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label2.Location = new System.Drawing.Point(318, 2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(203, 37);
+            this.label2.TabIndex = 89;
+            this.label2.Text = "Lijst Fijnstofmeters";
+            this.label2.UseMnemonic = false;
+            // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -60,18 +75,6 @@
             this.btnClose.TabIndex = 88;
             this.btnClose.TabStop = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label2.Location = new System.Drawing.Point(318, 2);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(203, 37);
-            this.label2.TabIndex = 89;
-            this.label2.Text = "Lijst Fijnstofmeters";
-            this.label2.UseMnemonic = false;
             // 
             // FormLijstFijnstofmeters
             // 

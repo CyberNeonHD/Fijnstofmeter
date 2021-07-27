@@ -275,6 +275,9 @@
     <EmbeddedResource Include="FormsMenu\FormFijnstofMetersBewerken.resx">
       <DependentUpon>FormFijnstofMetersBewerken.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormsMenu\FormLijstFijnstofmeters.resx">
+      <DependentUpon>FormLijstFijnstofmeters.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsMenu\FormMapWeergeven.resx">
       <DependentUpon>FormMapWeergeven.cs</DependentUpon>
     </EmbeddedResource>

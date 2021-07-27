@@ -104,6 +104,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Myanmar Text", 15.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -117,6 +118,7 @@ namespace FijnstofGIP.FormsMenu
             // cmbWelkeMeter
             // 
             this.cmbWelkeMeter.AccessibleDescription = "";
+            this.cmbWelkeMeter.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbWelkeMeter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.cmbWelkeMeter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbWelkeMeter.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -133,6 +135,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -144,6 +147,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // dtpDatumP1
             // 
+            this.dtpDatumP1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpDatumP1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDatumP1.Location = new System.Drawing.Point(338, 83);
             this.dtpDatumP1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
@@ -154,6 +158,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -165,6 +170,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtTempAVG
             // 
+            this.txtTempAVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtTempAVG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtTempAVG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTempAVG.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -181,6 +187,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnlTempAVG
             // 
+            this.pnlTempAVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlTempAVG.BackColor = System.Drawing.Color.White;
             this.pnlTempAVG.Location = new System.Drawing.Point(306, 349);
             this.pnlTempAVG.Margin = new System.Windows.Forms.Padding(0);
@@ -190,6 +197,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtLuchtdrukAVG
             // 
+            this.txtLuchtdrukAVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLuchtdrukAVG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtLuchtdrukAVG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLuchtdrukAVG.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -206,6 +214,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(369, 423);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
@@ -215,6 +224,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtPM2_5AVG
             // 
+            this.txtPM2_5AVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPM2_5AVG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtPM2_5AVG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPM2_5AVG.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -231,6 +241,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnl2_5PMAVG
             // 
+            this.pnl2_5PMAVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnl2_5PMAVG.BackColor = System.Drawing.Color.White;
             this.pnl2_5PMAVG.Location = new System.Drawing.Point(303, 278);
             this.pnl2_5PMAVG.Margin = new System.Windows.Forms.Padding(0);
@@ -240,6 +251,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtPM10AVG
             // 
+            this.txtPM10AVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPM10AVG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtPM10AVG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPM10AVG.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -256,6 +268,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnlPM10AVG
             // 
+            this.pnlPM10AVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlPM10AVG.BackColor = System.Drawing.Color.White;
             this.pnlPM10AVG.Location = new System.Drawing.Point(418, 278);
             this.pnlPM10AVG.Margin = new System.Windows.Forms.Padding(0);
@@ -265,6 +278,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtVochtigheidAVG
             // 
+            this.txtVochtigheidAVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtVochtigheidAVG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtVochtigheidAVG.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtVochtigheidAVG.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -281,6 +295,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnlVochtigheidAVG
             // 
+            this.pnlVochtigheidAVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlVochtigheidAVG.BackColor = System.Drawing.Color.White;
             this.pnlVochtigheidAVG.Location = new System.Drawing.Point(419, 349);
             this.pnlVochtigheidAVG.Margin = new System.Windows.Forms.Padding(0);
@@ -290,6 +305,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // lblPM2_5
             // 
+            this.lblPM2_5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPM2_5.AutoSize = true;
             this.lblPM2_5.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.lblPM2_5.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -301,6 +317,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -312,6 +329,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label7.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -323,6 +341,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label8.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -334,6 +353,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label9.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -345,6 +365,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // lblVochtigheid
             // 
+            this.lblVochtigheid.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblVochtigheid.AutoSize = true;
             this.lblVochtigheid.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.lblVochtigheid.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -356,6 +377,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -367,6 +389,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label10.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -378,6 +401,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label11.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -389,6 +413,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label12.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -400,6 +425,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label13.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -411,6 +437,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label14.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -422,6 +449,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtVochtigheidMIN
             // 
+            this.txtVochtigheidMIN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtVochtigheidMIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtVochtigheidMIN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtVochtigheidMIN.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -438,6 +466,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnlVochtigheidMin
             // 
+            this.pnlVochtigheidMin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlVochtigheidMin.BackColor = System.Drawing.Color.White;
             this.pnlVochtigheidMin.Location = new System.Drawing.Point(137, 349);
             this.pnlVochtigheidMin.Margin = new System.Windows.Forms.Padding(0);
@@ -447,6 +476,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtPM2_5MIN
             // 
+            this.txtPM2_5MIN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPM2_5MIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtPM2_5MIN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPM2_5MIN.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -463,6 +493,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnl2_5PMMin
             // 
+            this.pnl2_5PMMin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnl2_5PMMin.BackColor = System.Drawing.Color.White;
             this.pnl2_5PMMin.Location = new System.Drawing.Point(21, 278);
             this.pnl2_5PMMin.Margin = new System.Windows.Forms.Padding(0);
@@ -472,6 +503,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtPM10MIN
             // 
+            this.txtPM10MIN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPM10MIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtPM10MIN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPM10MIN.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -488,6 +520,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnl10PMMin
             // 
+            this.pnl10PMMin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnl10PMMin.BackColor = System.Drawing.Color.White;
             this.pnl10PMMin.Location = new System.Drawing.Point(136, 278);
             this.pnl10PMMin.Margin = new System.Windows.Forms.Padding(0);
@@ -497,6 +530,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtTempMIN
             // 
+            this.txtTempMIN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtTempMIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtTempMIN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTempMIN.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -513,6 +547,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnlTempMin
             // 
+            this.pnlTempMin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlTempMin.BackColor = System.Drawing.Color.White;
             this.pnlTempMin.Location = new System.Drawing.Point(24, 349);
             this.pnlTempMin.Margin = new System.Windows.Forms.Padding(0);
@@ -522,6 +557,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtLuchtdrukMIN
             // 
+            this.txtLuchtdrukMIN.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLuchtdrukMIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtLuchtdrukMIN.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLuchtdrukMIN.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -538,6 +574,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // panel10
             // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel10.BackColor = System.Drawing.Color.White;
             this.panel10.Location = new System.Drawing.Point(28, 423);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
@@ -547,6 +584,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label15
             // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label15.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -558,6 +596,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label16
             // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label16.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -569,6 +608,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label17
             // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label17.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -580,6 +620,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label18
             // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label18.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -591,6 +632,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label19
             // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label19.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -602,6 +644,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label20
             // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label20.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -613,6 +656,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtVochtigheidMAX
             // 
+            this.txtVochtigheidMAX.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtVochtigheidMAX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtVochtigheidMAX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtVochtigheidMAX.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -629,6 +673,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnlVochtigheidMAX
             // 
+            this.pnlVochtigheidMAX.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlVochtigheidMAX.BackColor = System.Drawing.Color.White;
             this.pnlVochtigheidMAX.Location = new System.Drawing.Point(688, 349);
             this.pnlVochtigheidMAX.Margin = new System.Windows.Forms.Padding(0);
@@ -638,6 +683,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtPM2_5MAX
             // 
+            this.txtPM2_5MAX.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPM2_5MAX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtPM2_5MAX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPM2_5MAX.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -654,6 +700,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnl2_5PMMax
             // 
+            this.pnl2_5PMMax.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnl2_5PMMax.BackColor = System.Drawing.Color.White;
             this.pnl2_5PMMax.Location = new System.Drawing.Point(572, 278);
             this.pnl2_5PMMax.Margin = new System.Windows.Forms.Padding(0);
@@ -663,6 +710,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtPM10MAX
             // 
+            this.txtPM10MAX.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPM10MAX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtPM10MAX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPM10MAX.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -679,6 +727,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnl10PMMax
             // 
+            this.pnl10PMMax.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnl10PMMax.BackColor = System.Drawing.Color.White;
             this.pnl10PMMax.Location = new System.Drawing.Point(687, 278);
             this.pnl10PMMax.Margin = new System.Windows.Forms.Padding(0);
@@ -688,6 +737,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtTempMAX
             // 
+            this.txtTempMAX.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtTempMAX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtTempMAX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTempMAX.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -704,6 +754,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // pnlTempMax
             // 
+            this.pnlTempMax.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlTempMax.BackColor = System.Drawing.Color.White;
             this.pnlTempMax.Location = new System.Drawing.Point(575, 349);
             this.pnlTempMax.Margin = new System.Windows.Forms.Padding(0);
@@ -713,6 +764,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // txtLuchtdrukMAX
             // 
+            this.txtLuchtdrukMAX.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLuchtdrukMAX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtLuchtdrukMAX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLuchtdrukMAX.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -729,6 +781,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // panel15
             // 
+            this.panel15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel15.BackColor = System.Drawing.Color.White;
             this.panel15.Location = new System.Drawing.Point(691, 423);
             this.panel15.Margin = new System.Windows.Forms.Padding(0);
@@ -738,6 +791,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -754,6 +808,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // dtpDatumP2
             // 
+            this.dtpDatumP2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpDatumP2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDatumP2.Location = new System.Drawing.Point(472, 83);
             this.dtpDatumP2.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
@@ -764,6 +819,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -775,6 +831,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label21
             // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -786,6 +843,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label22
             // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -797,6 +855,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label23
             // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -808,6 +867,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label24
             // 
+            this.label24.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -819,6 +879,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label25
             // 
+            this.label25.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -830,6 +891,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label26
             // 
+            this.label26.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -841,6 +903,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label27
             // 
+            this.label27.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -852,6 +915,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label28
             // 
+            this.label28.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -863,6 +927,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label29
             // 
+            this.label29.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -874,6 +939,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label30
             // 
+            this.label30.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -885,6 +951,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label31
             // 
+            this.label31.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -896,6 +963,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label32
             // 
+            this.label32.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -907,6 +975,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label33
             // 
+            this.label33.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -918,6 +987,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             // label34
             // 
+            this.label34.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.DeepSkyBlue;

@@ -362,14 +362,15 @@ namespace FijnstofGIP
             // 
             // lblVersie
             // 
+            this.lblVersie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblVersie.AutoSize = true;
             this.lblVersie.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersie.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblVersie.Location = new System.Drawing.Point(764, 529);
+            this.lblVersie.Location = new System.Drawing.Point(768, 523);
             this.lblVersie.Name = "lblVersie";
-            this.lblVersie.Size = new System.Drawing.Size(43, 21);
+            this.lblVersie.Size = new System.Drawing.Size(30, 21);
             this.lblVersie.TabIndex = 3;
-            this.lblVersie.Text = "V1.2";
+            this.lblVersie.Text = "V2";
             // 
             // lblwelkom
             // 
@@ -401,20 +402,21 @@ namespace FijnstofGIP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1030, 608);
             this.Controls.Add(this.pnlMainForms);
             this.Controls.Add(this.pnlTopMenu);
             this.Controls.Add(this.pnlMenuLinks);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.MinimumSize = new System.Drawing.Size(966, 639);
             this.Name = "Menu";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "                                            ";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.pnlMenuLinks.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnUitloggen)).EndInit();
             this.pnlLogo.ResumeLayout(false);
