@@ -121,14 +121,14 @@ namespace FijnstofGIP.FormsMenu
             this.cmbWelkeMeter.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbWelkeMeter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.cmbWelkeMeter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbWelkeMeter.Font = new System.Drawing.Font("Microsoft JhengHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbWelkeMeter.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbWelkeMeter.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.cmbWelkeMeter.FormattingEnabled = true;
             this.cmbWelkeMeter.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.cmbWelkeMeter.ItemHeight = 14;
+            this.cmbWelkeMeter.ItemHeight = 15;
             this.cmbWelkeMeter.Location = new System.Drawing.Point(472, 122);
             this.cmbWelkeMeter.Name = "cmbWelkeMeter";
-            this.cmbWelkeMeter.Size = new System.Drawing.Size(119, 22);
+            this.cmbWelkeMeter.Size = new System.Drawing.Size(119, 23);
             this.cmbWelkeMeter.TabIndex = 82;
             this.cmbWelkeMeter.Tag = "Hier kan je kiezen in welk veld je wil zoeken";
             this.cmbWelkeMeter.SelectionChangeCommitted += new System.EventHandler(this.cmbWelkeMeter_SelectionChangeCommitted);
@@ -137,22 +137,23 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label6.Location = new System.Drawing.Point(195, 123);
+            this.label6.Location = new System.Drawing.Point(182, 120);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(219, 23);
+            this.label6.Size = new System.Drawing.Size(255, 20);
             this.label6.TabIndex = 81;
             this.label6.Text = "Kies hier de meter die u wilt inladen";
             // 
             // dtpDatumP1
             // 
             this.dtpDatumP1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dtpDatumP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDatumP1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDatumP1.Location = new System.Drawing.Point(338, 83);
             this.dtpDatumP1.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpDatumP1.Name = "dtpDatumP1";
-            this.dtpDatumP1.Size = new System.Drawing.Size(119, 20);
+            this.dtpDatumP1.Size = new System.Drawing.Size(119, 21);
             this.dtpDatumP1.TabIndex = 83;
             this.dtpDatumP1.ValueChanged += new System.EventHandler(this.dtpDatum_ValueChanged);
             // 
@@ -160,11 +161,12 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Myanmar Text", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(195, 83);
+            this.label1.Location = new System.Drawing.Point(182, 83);
+            this.label1.MaximumSize = new System.Drawing.Size(150, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 23);
+            this.label1.Size = new System.Drawing.Size(150, 20);
             this.label1.TabIndex = 84;
             this.label1.Text = "Kies hier uw periode";
             // 
@@ -176,7 +178,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtTempAVG.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTempAVG.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTempAVG.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtTempAVG.Location = new System.Drawing.Point(303, 330);
+            this.txtTempAVG.Location = new System.Drawing.Point(299, 351);
             this.txtTempAVG.MaxLength = 5;
             this.txtTempAVG.Multiline = true;
             this.txtTempAVG.Name = "txtTempAVG";
@@ -189,7 +191,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnlTempAVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlTempAVG.BackColor = System.Drawing.Color.White;
-            this.pnlTempAVG.Location = new System.Drawing.Point(306, 349);
+            this.pnlTempAVG.Location = new System.Drawing.Point(302, 370);
             this.pnlTempAVG.Margin = new System.Windows.Forms.Padding(0);
             this.pnlTempAVG.Name = "pnlTempAVG";
             this.pnlTempAVG.Size = new System.Drawing.Size(53, 3);
@@ -203,7 +205,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtLuchtdrukAVG.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLuchtdrukAVG.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLuchtdrukAVG.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtLuchtdrukAVG.Location = new System.Drawing.Point(366, 404);
+            this.txtLuchtdrukAVG.Location = new System.Drawing.Point(362, 442);
             this.txtLuchtdrukAVG.MaxLength = 5;
             this.txtLuchtdrukAVG.Multiline = true;
             this.txtLuchtdrukAVG.Name = "txtLuchtdrukAVG";
@@ -216,7 +218,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(369, 423);
+            this.panel3.Location = new System.Drawing.Point(365, 461);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(53, 3);
@@ -230,7 +232,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtPM2_5AVG.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPM2_5AVG.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPM2_5AVG.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtPM2_5AVG.Location = new System.Drawing.Point(300, 259);
+            this.txtPM2_5AVG.Location = new System.Drawing.Point(299, 263);
             this.txtPM2_5AVG.MaxLength = 5;
             this.txtPM2_5AVG.Multiline = true;
             this.txtPM2_5AVG.Name = "txtPM2_5AVG";
@@ -243,7 +245,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnl2_5PMAVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnl2_5PMAVG.BackColor = System.Drawing.Color.White;
-            this.pnl2_5PMAVG.Location = new System.Drawing.Point(303, 278);
+            this.pnl2_5PMAVG.Location = new System.Drawing.Point(302, 282);
             this.pnl2_5PMAVG.Margin = new System.Windows.Forms.Padding(0);
             this.pnl2_5PMAVG.Name = "pnl2_5PMAVG";
             this.pnl2_5PMAVG.Size = new System.Drawing.Size(53, 3);
@@ -257,7 +259,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtPM10AVG.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPM10AVG.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPM10AVG.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtPM10AVG.Location = new System.Drawing.Point(415, 259);
+            this.txtPM10AVG.Location = new System.Drawing.Point(414, 263);
             this.txtPM10AVG.MaxLength = 5;
             this.txtPM10AVG.Multiline = true;
             this.txtPM10AVG.Name = "txtPM10AVG";
@@ -270,7 +272,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnlPM10AVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlPM10AVG.BackColor = System.Drawing.Color.White;
-            this.pnlPM10AVG.Location = new System.Drawing.Point(418, 278);
+            this.pnlPM10AVG.Location = new System.Drawing.Point(417, 282);
             this.pnlPM10AVG.Margin = new System.Windows.Forms.Padding(0);
             this.pnlPM10AVG.Name = "pnlPM10AVG";
             this.pnlPM10AVG.Size = new System.Drawing.Size(53, 3);
@@ -284,7 +286,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtVochtigheidAVG.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtVochtigheidAVG.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVochtigheidAVG.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtVochtigheidAVG.Location = new System.Drawing.Point(416, 330);
+            this.txtVochtigheidAVG.Location = new System.Drawing.Point(412, 351);
             this.txtVochtigheidAVG.MaxLength = 5;
             this.txtVochtigheidAVG.Multiline = true;
             this.txtVochtigheidAVG.Name = "txtVochtigheidAVG";
@@ -297,7 +299,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnlVochtigheidAVG.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlVochtigheidAVG.BackColor = System.Drawing.Color.White;
-            this.pnlVochtigheidAVG.Location = new System.Drawing.Point(419, 349);
+            this.pnlVochtigheidAVG.Location = new System.Drawing.Point(415, 370);
             this.pnlVochtigheidAVG.Margin = new System.Windows.Forms.Padding(0);
             this.pnlVochtigheidAVG.Name = "pnlVochtigheidAVG";
             this.pnlVochtigheidAVG.Size = new System.Drawing.Size(53, 3);
@@ -333,7 +335,7 @@ namespace FijnstofGIP.FormsMenu
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label7.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label7.Location = new System.Drawing.Point(285, 300);
+            this.label7.Location = new System.Drawing.Point(282, 314);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 27);
             this.label7.TabIndex = 104;
@@ -345,7 +347,7 @@ namespace FijnstofGIP.FormsMenu
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label8.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label8.Location = new System.Drawing.Point(361, 374);
+            this.label8.Location = new System.Drawing.Point(358, 403);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(76, 27);
             this.label8.TabIndex = 105;
@@ -355,11 +357,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label9.Location = new System.Drawing.Point(352, 190);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 27);
+            this.label9.Size = new System.Drawing.Size(105, 20);
             this.label9.TabIndex = 106;
             this.label9.Text = "Gemiddelde";
             // 
@@ -369,7 +371,7 @@ namespace FijnstofGIP.FormsMenu
             this.lblVochtigheid.AutoSize = true;
             this.lblVochtigheid.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.lblVochtigheid.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lblVochtigheid.Location = new System.Drawing.Point(402, 300);
+            this.lblVochtigheid.Location = new System.Drawing.Point(399, 314);
             this.lblVochtigheid.Name = "lblVochtigheid";
             this.lblVochtigheid.Size = new System.Drawing.Size(92, 27);
             this.lblVochtigheid.TabIndex = 107;
@@ -381,7 +383,7 @@ namespace FijnstofGIP.FormsMenu
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label5.Location = new System.Drawing.Point(120, 300);
+            this.label5.Location = new System.Drawing.Point(117, 314);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 27);
             this.label5.TabIndex = 123;
@@ -391,11 +393,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label10.Location = new System.Drawing.Point(70, 190);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 27);
+            this.label10.Size = new System.Drawing.Size(85, 20);
             this.label10.TabIndex = 122;
             this.label10.Text = "Minumum";
             // 
@@ -405,7 +407,7 @@ namespace FijnstofGIP.FormsMenu
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label11.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label11.Location = new System.Drawing.Point(20, 374);
+            this.label11.Location = new System.Drawing.Point(17, 403);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(76, 27);
             this.label11.TabIndex = 121;
@@ -417,7 +419,7 @@ namespace FijnstofGIP.FormsMenu
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label12.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label12.Location = new System.Drawing.Point(5, 300);
+            this.label12.Location = new System.Drawing.Point(2, 314);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(97, 27);
             this.label12.TabIndex = 120;
@@ -455,7 +457,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtVochtigheidMIN.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtVochtigheidMIN.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVochtigheidMIN.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtVochtigheidMIN.Location = new System.Drawing.Point(134, 330);
+            this.txtVochtigheidMIN.Location = new System.Drawing.Point(130, 351);
             this.txtVochtigheidMIN.MaxLength = 45;
             this.txtVochtigheidMIN.Multiline = true;
             this.txtVochtigheidMIN.Name = "txtVochtigheidMIN";
@@ -468,7 +470,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnlVochtigheidMin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlVochtigheidMin.BackColor = System.Drawing.Color.White;
-            this.pnlVochtigheidMin.Location = new System.Drawing.Point(137, 349);
+            this.pnlVochtigheidMin.Location = new System.Drawing.Point(133, 370);
             this.pnlVochtigheidMin.Margin = new System.Windows.Forms.Padding(0);
             this.pnlVochtigheidMin.Name = "pnlVochtigheidMin";
             this.pnlVochtigheidMin.Size = new System.Drawing.Size(53, 3);
@@ -482,7 +484,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtPM2_5MIN.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPM2_5MIN.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPM2_5MIN.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtPM2_5MIN.Location = new System.Drawing.Point(18, 259);
+            this.txtPM2_5MIN.Location = new System.Drawing.Point(17, 263);
             this.txtPM2_5MIN.MaxLength = 45;
             this.txtPM2_5MIN.Multiline = true;
             this.txtPM2_5MIN.Name = "txtPM2_5MIN";
@@ -495,7 +497,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnl2_5PMMin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnl2_5PMMin.BackColor = System.Drawing.Color.White;
-            this.pnl2_5PMMin.Location = new System.Drawing.Point(21, 278);
+            this.pnl2_5PMMin.Location = new System.Drawing.Point(20, 282);
             this.pnl2_5PMMin.Margin = new System.Windows.Forms.Padding(0);
             this.pnl2_5PMMin.Name = "pnl2_5PMMin";
             this.pnl2_5PMMin.Size = new System.Drawing.Size(53, 3);
@@ -509,7 +511,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtPM10MIN.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPM10MIN.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPM10MIN.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtPM10MIN.Location = new System.Drawing.Point(133, 259);
+            this.txtPM10MIN.Location = new System.Drawing.Point(132, 263);
             this.txtPM10MIN.MaxLength = 45;
             this.txtPM10MIN.Multiline = true;
             this.txtPM10MIN.Name = "txtPM10MIN";
@@ -522,7 +524,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnl10PMMin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnl10PMMin.BackColor = System.Drawing.Color.White;
-            this.pnl10PMMin.Location = new System.Drawing.Point(136, 278);
+            this.pnl10PMMin.Location = new System.Drawing.Point(135, 282);
             this.pnl10PMMin.Margin = new System.Windows.Forms.Padding(0);
             this.pnl10PMMin.Name = "pnl10PMMin";
             this.pnl10PMMin.Size = new System.Drawing.Size(53, 3);
@@ -536,7 +538,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtTempMIN.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTempMIN.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTempMIN.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtTempMIN.Location = new System.Drawing.Point(21, 330);
+            this.txtTempMIN.Location = new System.Drawing.Point(17, 351);
             this.txtTempMIN.MaxLength = 45;
             this.txtTempMIN.Multiline = true;
             this.txtTempMIN.Name = "txtTempMIN";
@@ -549,7 +551,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnlTempMin.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlTempMin.BackColor = System.Drawing.Color.White;
-            this.pnlTempMin.Location = new System.Drawing.Point(24, 349);
+            this.pnlTempMin.Location = new System.Drawing.Point(20, 370);
             this.pnlTempMin.Margin = new System.Windows.Forms.Padding(0);
             this.pnlTempMin.Name = "pnlTempMin";
             this.pnlTempMin.Size = new System.Drawing.Size(53, 3);
@@ -563,7 +565,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtLuchtdrukMIN.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLuchtdrukMIN.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLuchtdrukMIN.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtLuchtdrukMIN.Location = new System.Drawing.Point(25, 404);
+            this.txtLuchtdrukMIN.Location = new System.Drawing.Point(21, 442);
             this.txtLuchtdrukMIN.MaxLength = 45;
             this.txtLuchtdrukMIN.Multiline = true;
             this.txtLuchtdrukMIN.Name = "txtLuchtdrukMIN";
@@ -576,7 +578,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.panel10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Location = new System.Drawing.Point(28, 423);
+            this.panel10.Location = new System.Drawing.Point(24, 461);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(53, 3);
@@ -588,7 +590,7 @@ namespace FijnstofGIP.FormsMenu
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label15.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label15.Location = new System.Drawing.Point(669, 300);
+            this.label15.Location = new System.Drawing.Point(671, 314);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(92, 27);
             this.label15.TabIndex = 139;
@@ -598,11 +600,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label16.Location = new System.Drawing.Point(618, 190);
+            this.label16.Location = new System.Drawing.Point(623, 190);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(78, 27);
+            this.label16.Size = new System.Drawing.Size(83, 20);
             this.label16.TabIndex = 138;
             this.label16.Text = "Maximum";
             // 
@@ -612,7 +614,7 @@ namespace FijnstofGIP.FormsMenu
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label17.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label17.Location = new System.Drawing.Point(682, 374);
+            this.label17.Location = new System.Drawing.Point(684, 403);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(76, 27);
             this.label17.TabIndex = 137;
@@ -624,7 +626,7 @@ namespace FijnstofGIP.FormsMenu
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label18.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label18.Location = new System.Drawing.Point(555, 300);
+            this.label18.Location = new System.Drawing.Point(557, 314);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(97, 27);
             this.label18.TabIndex = 136;
@@ -636,7 +638,7 @@ namespace FijnstofGIP.FormsMenu
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label19.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label19.Location = new System.Drawing.Point(690, 229);
+            this.label19.Location = new System.Drawing.Point(695, 229);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(49, 27);
             this.label19.TabIndex = 135;
@@ -648,7 +650,7 @@ namespace FijnstofGIP.FormsMenu
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Myanmar Text", 11.25F);
             this.label20.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label20.Location = new System.Drawing.Point(572, 229);
+            this.label20.Location = new System.Drawing.Point(577, 229);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(56, 27);
             this.label20.TabIndex = 134;
@@ -662,7 +664,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtVochtigheidMAX.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtVochtigheidMAX.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtVochtigheidMAX.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtVochtigheidMAX.Location = new System.Drawing.Point(685, 330);
+            this.txtVochtigheidMAX.Location = new System.Drawing.Point(686, 351);
             this.txtVochtigheidMAX.MaxLength = 45;
             this.txtVochtigheidMAX.Multiline = true;
             this.txtVochtigheidMAX.Name = "txtVochtigheidMAX";
@@ -675,7 +677,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnlVochtigheidMAX.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlVochtigheidMAX.BackColor = System.Drawing.Color.White;
-            this.pnlVochtigheidMAX.Location = new System.Drawing.Point(688, 349);
+            this.pnlVochtigheidMAX.Location = new System.Drawing.Point(689, 370);
             this.pnlVochtigheidMAX.Margin = new System.Windows.Forms.Padding(0);
             this.pnlVochtigheidMAX.Name = "pnlVochtigheidMAX";
             this.pnlVochtigheidMAX.Size = new System.Drawing.Size(53, 3);
@@ -689,7 +691,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtPM2_5MAX.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPM2_5MAX.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPM2_5MAX.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtPM2_5MAX.Location = new System.Drawing.Point(569, 259);
+            this.txtPM2_5MAX.Location = new System.Drawing.Point(573, 263);
             this.txtPM2_5MAX.MaxLength = 45;
             this.txtPM2_5MAX.Multiline = true;
             this.txtPM2_5MAX.Name = "txtPM2_5MAX";
@@ -702,7 +704,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnl2_5PMMax.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnl2_5PMMax.BackColor = System.Drawing.Color.White;
-            this.pnl2_5PMMax.Location = new System.Drawing.Point(572, 278);
+            this.pnl2_5PMMax.Location = new System.Drawing.Point(576, 282);
             this.pnl2_5PMMax.Margin = new System.Windows.Forms.Padding(0);
             this.pnl2_5PMMax.Name = "pnl2_5PMMax";
             this.pnl2_5PMMax.Size = new System.Drawing.Size(53, 3);
@@ -716,7 +718,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtPM10MAX.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPM10MAX.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPM10MAX.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtPM10MAX.Location = new System.Drawing.Point(684, 259);
+            this.txtPM10MAX.Location = new System.Drawing.Point(688, 263);
             this.txtPM10MAX.MaxLength = 45;
             this.txtPM10MAX.Multiline = true;
             this.txtPM10MAX.Name = "txtPM10MAX";
@@ -729,7 +731,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnl10PMMax.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnl10PMMax.BackColor = System.Drawing.Color.White;
-            this.pnl10PMMax.Location = new System.Drawing.Point(687, 278);
+            this.pnl10PMMax.Location = new System.Drawing.Point(691, 282);
             this.pnl10PMMax.Margin = new System.Windows.Forms.Padding(0);
             this.pnl10PMMax.Name = "pnl10PMMax";
             this.pnl10PMMax.Size = new System.Drawing.Size(53, 3);
@@ -743,7 +745,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtTempMAX.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTempMAX.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTempMAX.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtTempMAX.Location = new System.Drawing.Point(572, 330);
+            this.txtTempMAX.Location = new System.Drawing.Point(573, 351);
             this.txtTempMAX.MaxLength = 45;
             this.txtTempMAX.Multiline = true;
             this.txtTempMAX.Name = "txtTempMAX";
@@ -756,7 +758,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.pnlTempMax.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pnlTempMax.BackColor = System.Drawing.Color.White;
-            this.pnlTempMax.Location = new System.Drawing.Point(575, 349);
+            this.pnlTempMax.Location = new System.Drawing.Point(576, 370);
             this.pnlTempMax.Margin = new System.Windows.Forms.Padding(0);
             this.pnlTempMax.Name = "pnlTempMax";
             this.pnlTempMax.Size = new System.Drawing.Size(53, 3);
@@ -770,7 +772,7 @@ namespace FijnstofGIP.FormsMenu
             this.txtLuchtdrukMAX.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLuchtdrukMAX.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLuchtdrukMAX.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtLuchtdrukMAX.Location = new System.Drawing.Point(688, 404);
+            this.txtLuchtdrukMAX.Location = new System.Drawing.Point(689, 442);
             this.txtLuchtdrukMAX.MaxLength = 45;
             this.txtLuchtdrukMAX.Multiline = true;
             this.txtLuchtdrukMAX.Name = "txtLuchtdrukMAX";
@@ -783,7 +785,7 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.panel15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel15.BackColor = System.Drawing.Color.White;
-            this.panel15.Location = new System.Drawing.Point(691, 423);
+            this.panel15.Location = new System.Drawing.Point(692, 461);
             this.panel15.Margin = new System.Windows.Forms.Padding(0);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(53, 3);
@@ -809,11 +811,12 @@ namespace FijnstofGIP.FormsMenu
             // dtpDatumP2
             // 
             this.dtpDatumP2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dtpDatumP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDatumP2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDatumP2.Location = new System.Drawing.Point(472, 83);
             this.dtpDatumP2.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.dtpDatumP2.Name = "dtpDatumP2";
-            this.dtpDatumP2.Size = new System.Drawing.Size(119, 20);
+            this.dtpDatumP2.Size = new System.Drawing.Size(119, 21);
             this.dtpDatumP2.TabIndex = 141;
             this.dtpDatumP2.ValueChanged += new System.EventHandler(this.dtpDatumP2_ValueChanged);
             // 
@@ -821,11 +824,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label4.Location = new System.Drawing.Point(81, 259);
+            this.label4.Location = new System.Drawing.Point(80, 263);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 18);
+            this.label4.Size = new System.Drawing.Size(48, 19);
             this.label4.TabIndex = 142;
             this.label4.Text = "µg/m";
             // 
@@ -833,11 +836,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label21.Location = new System.Drawing.Point(196, 259);
+            this.label21.Location = new System.Drawing.Point(195, 263);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 18);
+            this.label21.Size = new System.Drawing.Size(48, 19);
             this.label21.TabIndex = 143;
             this.label21.Text = "µg/m";
             // 
@@ -845,11 +848,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label22.Location = new System.Drawing.Point(360, 260);
+            this.label22.Location = new System.Drawing.Point(359, 264);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 18);
+            this.label22.Size = new System.Drawing.Size(48, 19);
             this.label22.TabIndex = 144;
             this.label22.Text = "µg/m";
             // 
@@ -857,11 +860,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label23.Location = new System.Drawing.Point(475, 259);
+            this.label23.Location = new System.Drawing.Point(474, 263);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(41, 18);
+            this.label23.Size = new System.Drawing.Size(48, 19);
             this.label23.TabIndex = 145;
             this.label23.Text = "µg/m";
             // 
@@ -869,11 +872,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label24.Location = new System.Drawing.Point(632, 259);
+            this.label24.Location = new System.Drawing.Point(636, 263);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(41, 18);
+            this.label24.Size = new System.Drawing.Size(48, 19);
             this.label24.TabIndex = 146;
             this.label24.Text = "µg/m";
             // 
@@ -881,11 +884,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label25.Location = new System.Drawing.Point(743, 259);
+            this.label25.Location = new System.Drawing.Point(747, 263);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(41, 18);
+            this.label25.Size = new System.Drawing.Size(48, 19);
             this.label25.TabIndex = 147;
             this.label25.Text = "µg/m";
             // 
@@ -893,11 +896,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label26.Location = new System.Drawing.Point(81, 332);
+            this.label26.Location = new System.Drawing.Point(77, 353);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(25, 18);
+            this.label26.Size = new System.Drawing.Size(25, 19);
             this.label26.TabIndex = 148;
             this.label26.Text = "°C";
             // 
@@ -905,11 +908,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label27.Location = new System.Drawing.Point(359, 334);
+            this.label27.Location = new System.Drawing.Point(355, 355);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(25, 18);
+            this.label27.Size = new System.Drawing.Size(25, 19);
             this.label27.TabIndex = 149;
             this.label27.Text = "°C";
             // 
@@ -917,11 +920,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label28.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label28.Location = new System.Drawing.Point(633, 334);
+            this.label28.Location = new System.Drawing.Point(634, 355);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(25, 18);
+            this.label28.Size = new System.Drawing.Size(25, 19);
             this.label28.TabIndex = 150;
             this.label28.Text = "°C";
             // 
@@ -929,11 +932,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label29.Location = new System.Drawing.Point(196, 332);
+            this.label29.Location = new System.Drawing.Point(192, 353);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(21, 18);
+            this.label29.Size = new System.Drawing.Size(22, 19);
             this.label29.TabIndex = 151;
             this.label29.Text = "%";
             // 
@@ -941,11 +944,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label30.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label30.Location = new System.Drawing.Point(475, 334);
+            this.label30.Location = new System.Drawing.Point(471, 355);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(21, 18);
+            this.label30.Size = new System.Drawing.Size(22, 19);
             this.label30.TabIndex = 152;
             this.label30.Text = "%";
             // 
@@ -953,11 +956,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label31.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label31.Location = new System.Drawing.Point(745, 334);
+            this.label31.Location = new System.Drawing.Point(746, 355);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(21, 18);
+            this.label31.Size = new System.Drawing.Size(22, 19);
             this.label31.TabIndex = 153;
             this.label31.Text = "%";
             // 
@@ -965,11 +968,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label32.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label32.Location = new System.Drawing.Point(429, 410);
+            this.label32.Location = new System.Drawing.Point(425, 448);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(32, 16);
+            this.label32.Size = new System.Drawing.Size(35, 19);
             this.label32.TabIndex = 154;
             this.label32.Text = "hPa";
             // 
@@ -977,11 +980,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label33.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label33.Location = new System.Drawing.Point(747, 410);
+            this.label33.Location = new System.Drawing.Point(748, 448);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(32, 16);
+            this.label33.Size = new System.Drawing.Size(35, 19);
             this.label33.TabIndex = 155;
             this.label33.Text = "hPa";
             // 
@@ -989,11 +992,11 @@ namespace FijnstofGIP.FormsMenu
             // 
             this.label34.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Font = new System.Drawing.Font("Microsoft JhengHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label34.Location = new System.Drawing.Point(88, 410);
+            this.label34.Location = new System.Drawing.Point(84, 448);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(32, 16);
+            this.label34.Size = new System.Drawing.Size(35, 19);
             this.label34.TabIndex = 156;
             this.label34.Text = "hPa";
             // 

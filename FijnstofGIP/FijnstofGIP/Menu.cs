@@ -165,5 +165,10 @@ namespace FijnstofGIP
         {
 
         }
+
+        private void lblwelkom_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

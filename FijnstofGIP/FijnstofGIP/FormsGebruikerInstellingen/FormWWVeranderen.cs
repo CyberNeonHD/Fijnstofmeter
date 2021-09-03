@@ -19,6 +19,9 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
         public FormWWVeranderen()
         {
             InitializeComponent();
+
+            //deze knop moet eerst onzichtbaar zijn
+            btnGegevensOpslaan.Visible = false;
         }
         DataSet dsWW = new DataSet();
 
@@ -170,7 +173,6 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     MessageBox.Show("U heeft uw wachtwoord succesvol verandered, gelieve uit te loggen zodat U met uw nieuwe gegevens kan inloggen.", "Succesvol nieuw wachtwoord", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     pnlWWCheckSectie.Visible = true;
                     pnlWWVeranderenSectie.Visible = false;
-                    btnGegevensOpslaan.Enabled = false;
                     txtHuidigWW.Clear();
                     txtWW.Clear();
                     txtWWBevestigen.Clear();
@@ -239,12 +241,13 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
                     pnlWWCheckSectie.Visible = false;
                     pnlWWVeranderenSectie.Visible = true;
                     MessageBox.Show("Wachtwoord klopt", "Juist wachtwoord", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    btnGegevensOpslaan.Enabled = true;
+                    btnGegevensOpslaan.Visible = true;
                 }
                 else
                 {
                     //als een hoofdletter niet klopt krijg deze melding te zien
                     MessageBox.Show("Ongeldig wachtwoord, probeer opnieuw aub", "Login mislukt", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    pnlHuidigWW.BackColor = Color.Red;
                 }
 
                 MijnVerbinding.Close();

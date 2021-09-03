@@ -55,15 +55,15 @@
             // 
             // btnClear
             // 
-            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnClear.AutoSize = true;
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnClear.Location = new System.Drawing.Point(237, 496);
+            this.btnClear.Location = new System.Drawing.Point(217, 486);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(155, 32);
+            this.btnClear.Size = new System.Drawing.Size(181, 42);
             this.btnClear.TabIndex = 6;
             this.btnClear.Text = "Records blanco maken";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -71,15 +71,15 @@
             // 
             // btnRecordToevoegen
             // 
-            this.btnRecordToevoegen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnRecordToevoegen.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnRecordToevoegen.AutoSize = true;
             this.btnRecordToevoegen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordToevoegen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecordToevoegen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecordToevoegen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecordToevoegen.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnRecordToevoegen.Location = new System.Drawing.Point(412, 496);
+            this.btnRecordToevoegen.Location = new System.Drawing.Point(419, 486);
             this.btnRecordToevoegen.Name = "btnRecordToevoegen";
-            this.btnRecordToevoegen.Size = new System.Drawing.Size(155, 32);
+            this.btnRecordToevoegen.Size = new System.Drawing.Size(181, 42);
             this.btnRecordToevoegen.TabIndex = 7;
             this.btnRecordToevoegen.Text = "Record toevoegen";
             this.btnRecordToevoegen.UseVisualStyleBackColor = true;
@@ -87,15 +87,15 @@
             // 
             // btnRecordBewaren
             // 
-            this.btnRecordBewaren.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnRecordBewaren.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnRecordBewaren.AutoSize = true;
             this.btnRecordBewaren.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordBewaren.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecordBewaren.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecordBewaren.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecordBewaren.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnRecordBewaren.Location = new System.Drawing.Point(587, 496);
+            this.btnRecordBewaren.Location = new System.Drawing.Point(606, 486);
             this.btnRecordBewaren.Name = "btnRecordBewaren";
-            this.btnRecordBewaren.Size = new System.Drawing.Size(155, 32);
+            this.btnRecordBewaren.Size = new System.Drawing.Size(181, 42);
             this.btnRecordBewaren.TabIndex = 8;
             this.btnRecordBewaren.Text = "Record aanpassen";
             this.btnRecordBewaren.UseVisualStyleBackColor = true;
@@ -103,15 +103,15 @@
             // 
             // btnRecordVerwijderen
             // 
-            this.btnRecordVerwijderen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnRecordVerwijderen.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnRecordVerwijderen.AutoSize = true;
             this.btnRecordVerwijderen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRecordVerwijderen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecordVerwijderen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecordVerwijderen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRecordVerwijderen.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnRecordVerwijderen.Location = new System.Drawing.Point(56, 496);
+            this.btnRecordVerwijderen.Location = new System.Drawing.Point(30, 486);
             this.btnRecordVerwijderen.Name = "btnRecordVerwijderen";
-            this.btnRecordVerwijderen.Size = new System.Drawing.Size(155, 32);
+            this.btnRecordVerwijderen.Size = new System.Drawing.Size(181, 42);
             this.btnRecordVerwijderen.TabIndex = 5;
             this.btnRecordVerwijderen.Text = "Record verwijderen";
             this.btnRecordVerwijderen.UseVisualStyleBackColor = true;
@@ -123,11 +123,11 @@
             this.btnLaatsteRecord.AutoSize = true;
             this.btnLaatsteRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLaatsteRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLaatsteRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLaatsteRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLaatsteRecord.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.btnLaatsteRecord.Location = new System.Drawing.Point(606, 55);
             this.btnLaatsteRecord.Name = "btnLaatsteRecord";
-            this.btnLaatsteRecord.Size = new System.Drawing.Size(113, 29);
+            this.btnLaatsteRecord.Size = new System.Drawing.Size(181, 42);
             this.btnLaatsteRecord.TabIndex = 12;
             this.btnLaatsteRecord.Text = "Laatste record";
             this.btnLaatsteRecord.UseVisualStyleBackColor = true;
@@ -139,11 +139,11 @@
             this.btnVolgendRecord.AutoSize = true;
             this.btnVolgendRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVolgendRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolgendRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolgendRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolgendRecord.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnVolgendRecord.Location = new System.Drawing.Point(471, 55);
+            this.btnVolgendRecord.Location = new System.Drawing.Point(419, 55);
             this.btnVolgendRecord.Name = "btnVolgendRecord";
-            this.btnVolgendRecord.Size = new System.Drawing.Size(113, 29);
+            this.btnVolgendRecord.Size = new System.Drawing.Size(181, 42);
             this.btnVolgendRecord.TabIndex = 11;
             this.btnVolgendRecord.Text = "Volgend record";
             this.btnVolgendRecord.UseVisualStyleBackColor = true;
@@ -155,11 +155,11 @@
             this.btnVorigRecord.AutoSize = true;
             this.btnVorigRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVorigRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVorigRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVorigRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVorigRecord.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnVorigRecord.Location = new System.Drawing.Point(204, 55);
+            this.btnVorigRecord.Location = new System.Drawing.Point(217, 55);
             this.btnVorigRecord.Name = "btnVorigRecord";
-            this.btnVorigRecord.Size = new System.Drawing.Size(113, 29);
+            this.btnVorigRecord.Size = new System.Drawing.Size(181, 42);
             this.btnVorigRecord.TabIndex = 10;
             this.btnVorigRecord.Text = "Vorig Record";
             this.btnVorigRecord.UseVisualStyleBackColor = true;
@@ -171,11 +171,11 @@
             this.btnEersteRecord.AutoSize = true;
             this.btnEersteRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEersteRecord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEersteRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEersteRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEersteRecord.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnEersteRecord.Location = new System.Drawing.Point(69, 55);
+            this.btnEersteRecord.Location = new System.Drawing.Point(30, 55);
             this.btnEersteRecord.Name = "btnEersteRecord";
-            this.btnEersteRecord.Size = new System.Drawing.Size(113, 29);
+            this.btnEersteRecord.Size = new System.Drawing.Size(181, 42);
             this.btnEersteRecord.TabIndex = 9;
             this.btnEersteRecord.Text = "Eerste Record";
             this.btnEersteRecord.UseVisualStyleBackColor = true;
@@ -195,13 +195,13 @@
             // 
             // txtLongtitude
             // 
-            this.txtLongtitude.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtLongtitude.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLongtitude.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtLongtitude.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLongtitude.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLongtitude.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLongtitude.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtLongtitude.Location = new System.Drawing.Point(472, 319);
+            this.txtLongtitude.Location = new System.Drawing.Point(472, 320);
             this.txtLongtitude.MaxLength = 27;
             this.txtLongtitude.Multiline = true;
             this.txtLongtitude.Name = "txtLongtitude";
@@ -213,9 +213,9 @@
             // 
             // pnllongitude
             // 
-            this.pnllongitude.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pnllongitude.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnllongitude.BackColor = System.Drawing.Color.White;
-            this.pnllongitude.Location = new System.Drawing.Point(475, 338);
+            this.pnllongitude.Location = new System.Drawing.Point(475, 339);
             this.pnllongitude.Margin = new System.Windows.Forms.Padding(0);
             this.pnllongitude.Name = "pnllongitude";
             this.pnllongitude.Size = new System.Drawing.Size(201, 3);
@@ -223,13 +223,13 @@
             // 
             // txtLatitude
             // 
-            this.txtLatitude.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtLatitude.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLatitude.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtLatitude.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtLatitude.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLatitude.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLatitude.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtLatitude.Location = new System.Drawing.Point(122, 319);
+            this.txtLatitude.Location = new System.Drawing.Point(122, 320);
             this.txtLatitude.MaxLength = 27;
             this.txtLatitude.Multiline = true;
             this.txtLatitude.Name = "txtLatitude";
@@ -241,9 +241,9 @@
             // 
             // pnlLatitude
             // 
-            this.pnlLatitude.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pnlLatitude.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlLatitude.BackColor = System.Drawing.Color.White;
-            this.pnlLatitude.Location = new System.Drawing.Point(127, 338);
+            this.pnlLatitude.Location = new System.Drawing.Point(127, 339);
             this.pnlLatitude.Margin = new System.Windows.Forms.Padding(0);
             this.pnlLatitude.Name = "pnlLatitude";
             this.pnlLatitude.Size = new System.Drawing.Size(199, 3);
@@ -251,13 +251,13 @@
             // 
             // txtMeterNaam
             // 
-            this.txtMeterNaam.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtMeterNaam.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMeterNaam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtMeterNaam.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMeterNaam.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMeterNaam.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMeterNaam.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtMeterNaam.Location = new System.Drawing.Point(473, 209);
+            this.txtMeterNaam.Location = new System.Drawing.Point(472, 212);
             this.txtMeterNaam.MaxLength = 45;
             this.txtMeterNaam.Multiline = true;
             this.txtMeterNaam.Name = "txtMeterNaam";
@@ -269,9 +269,9 @@
             // 
             // pnlMeterNaam
             // 
-            this.pnlMeterNaam.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pnlMeterNaam.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlMeterNaam.BackColor = System.Drawing.Color.White;
-            this.pnlMeterNaam.Location = new System.Drawing.Point(476, 228);
+            this.pnlMeterNaam.Location = new System.Drawing.Point(475, 231);
             this.pnlMeterNaam.Margin = new System.Windows.Forms.Padding(0);
             this.pnlMeterNaam.Name = "pnlMeterNaam";
             this.pnlMeterNaam.Size = new System.Drawing.Size(200, 3);
@@ -279,25 +279,25 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label1.Location = new System.Drawing.Point(469, 293);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 27);
+            this.label1.Size = new System.Drawing.Size(100, 29);
             this.label1.TabIndex = 127;
             this.label1.Text = "Lengtegraad";
             // 
             // txtMeterID
             // 
-            this.txtMeterID.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtMeterID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMeterID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(60)))));
             this.txtMeterID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMeterID.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMeterID.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMeterID.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtMeterID.Location = new System.Drawing.Point(124, 209);
+            this.txtMeterID.Location = new System.Drawing.Point(123, 212);
             this.txtMeterID.MaxLength = 27;
             this.txtMeterID.Multiline = true;
             this.txtMeterID.Name = "txtMeterID";
@@ -309,21 +309,21 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label5.Location = new System.Drawing.Point(122, 293);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 27);
+            this.label5.Size = new System.Drawing.Size(106, 29);
             this.label5.TabIndex = 128;
             this.label5.Text = "Breedtegraad";
             // 
             // pnlMeterID
             // 
-            this.pnlMeterID.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pnlMeterID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlMeterID.BackColor = System.Drawing.Color.White;
-            this.pnlMeterID.Location = new System.Drawing.Point(129, 228);
+            this.pnlMeterID.Location = new System.Drawing.Point(128, 231);
             this.pnlMeterID.Margin = new System.Windows.Forms.Padding(0);
             this.pnlMeterID.Name = "pnlMeterID";
             this.pnlMeterID.Size = new System.Drawing.Size(198, 3);
@@ -331,25 +331,25 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label4.Location = new System.Drawing.Point(470, 183);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 27);
+            this.label4.Size = new System.Drawing.Size(97, 29);
             this.label4.TabIndex = 129;
             this.label4.Text = "Meter naam";
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Myanmar Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label3.Location = new System.Drawing.Point(123, 183);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 27);
+            this.label3.Size = new System.Drawing.Size(69, 29);
             this.label3.TabIndex = 130;
             this.label3.Text = "MeterID";
             // 

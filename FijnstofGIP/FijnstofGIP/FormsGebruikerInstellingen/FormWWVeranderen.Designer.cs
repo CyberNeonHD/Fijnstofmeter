@@ -77,7 +77,6 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             // btnGegevensOpslaan
             // 
             this.btnGegevensOpslaan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGegevensOpslaan.Enabled = false;
             this.btnGegevensOpslaan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGegevensOpslaan.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGegevensOpslaan.ForeColor = System.Drawing.Color.DeepSkyBlue;
@@ -358,8 +357,8 @@ namespace FijnstofGIP.FormsGebruikerInstellingen
             this.ClientSize = new System.Drawing.Size(686, 461);
             this.Controls.Add(this.btnGegevensOpslaan);
             this.Controls.Add(this.lbltitel);
-            this.Controls.Add(this.pnlWWVeranderenSectie);
             this.Controls.Add(this.pnlWWCheckSectie);
+            this.Controls.Add(this.pnlWWVeranderenSectie);
             this.Name = "FormWWVeranderen";
             this.Text = "FormWWVeranderen";
             this.pnlWWCheckSectie.ResumeLayout(false);
