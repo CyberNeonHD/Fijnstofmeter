@@ -64,7 +64,7 @@ namespace FijnstofGIP
             this.WebcamBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.WebcamBox.Location = new System.Drawing.Point(83, 100);
             this.WebcamBox.Name = "WebcamBox";
-            this.WebcamBox.Size = new System.Drawing.Size(634, 338);
+            this.WebcamBox.Size = new System.Drawing.Size(634, 482);
             this.WebcamBox.TabIndex = 4;
             this.WebcamBox.TabStop = false;
             // 
@@ -109,7 +109,7 @@ namespace FijnstofGIP
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 596);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnWebcam);
             this.Controls.Add(this.WebcamBox);
