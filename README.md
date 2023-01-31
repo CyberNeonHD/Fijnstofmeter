@@ -1,4 +1,4 @@
-# Fijnstofmeter
+# Fijnstofmeter - (outdated)
 GIP Project fijnstofmeter
 
 (Dit programma is gemaakt in het kader van een GIP project)
@@ -18,5 +18,3 @@ De hoofdfijnstofmeter staat getoond op een google maps.
 
 Je kan nadat je ingelogdt bent via de gebruikersinstellingen jouw persoonlijke QR code aanmaken en deze dan gebruiken om in te loggen (hiervoor heb je wel een webcam nodig).
 Nadat je een account hebt aangemaakt kan je zelf jouw eigen gegevens zoals adres, email, wachtwoord en gebruikersnaam veranderen.
-
-Als er bugs zijn kan je deze persoonlijk melden op Kobbe.vereecken@hotmail.com.
